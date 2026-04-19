@@ -1,6 +1,5 @@
 __pycache__/
 .vscode/
 *.pyc
-data/paper_portfolio_weather.json
 data/*.csv
 *.log
