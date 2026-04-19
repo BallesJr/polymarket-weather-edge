@@ -183,7 +183,7 @@ def _fetch_condition_id(series_slug: str, event_date: str) -> str | None:
     city = series_slug.replace("-daily-weather", "")
     try:
         date_obj = datetime.strptime(event_date, "%Y-%m-%d")
-        date_str = date_obj.strftime("%B-%#d-%Y").lower()
+        date_str = date_obj.strftime("%B-%-d-%Y").lower()
     except ValueError:
         return None
     
