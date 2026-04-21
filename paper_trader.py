@@ -30,6 +30,7 @@ class Position:
     # Trade details
     direction: str # "BUY YES" or "BUY NO"
     token_id: str # Token bought (yes or no)
+    token_yes: str  # Always the YES token, regardless of direction
     entry_prob: float # Market price at entry
     model_prob: float # Model probability at entry
     edge: float # Raw edge at entry
@@ -124,6 +125,7 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
             temp_str=signal.temp_str,
             direction=signal.direction,
             token_id=token_id,
+            token_yes=signal.token_yes,
             entry_prob=signal.market_prob if signal.direction == "BUY_YES" else 1 - signal.market_prob,
             model_prob=signal.model_prob,
             edge=signal.edge,
@@ -244,8 +246,11 @@ def check_resolutions(portfolio: dict) -> list[dict]:
 
         # Market resolved - determine win/loss
         winning_token = resolution["winning_token"]
-        won = (pos["token_id"] == winning_token)
-
+        if pos["direction"] == "BUY_YES":
+            won = (pos["token_id"] == winning_token)
+        else:  # BUY_NO
+            won = (pos["token_yes"] != winning_token)
+        
         if won:
             # Winning token redeems at $1 per share
             # Shares bought = size_usd / entry_prob
