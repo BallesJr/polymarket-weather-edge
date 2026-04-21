@@ -347,7 +347,7 @@ def run_cycle(bankroll: float = INITIAL_BANKROLL) -> dict:
         print(f"[PaperTrader] {len(opened)} new position(s) opened")
 
     # STEP 5: Save and summarize
-    portfolio["total_pnl"] = portfolio["bankroll"] - portfolio["initial_bankroll"]
+    portfolio["total_pnl"] = sum(t["pnl_usd"] for t in portfolio["closed_trades"])
     _save_portfolio(portfolio)
     print_summary(portfolio)
 
