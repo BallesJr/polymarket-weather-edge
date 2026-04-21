@@ -217,7 +217,7 @@ def check_resolutions(portfolio: dict) -> list[dict]:
         # Skip if event date is in the future
         event_date = datetime.strptime(pos["event_date"], "%Y-%m-%d").date()
         today = datetime.now(timezone.utc).date()
-        if event_date > today:
+        if event_date >= today:
             still_open.append(pos)
             continue
 
@@ -250,7 +250,7 @@ def check_resolutions(portfolio: dict) -> list[dict]:
             won = (pos["token_id"] == winning_token)
         else:  # BUY_NO
             won = (pos["token_yes"] != winning_token)
-        
+    
         if won:
             # Winning token redeems at $1 per share
             # Shares bought = size_usd / entry_prob
