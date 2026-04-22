@@ -130,7 +130,9 @@ def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
         if pd.isna(model_prob) or pd.isna(market_prob):
             continue
 
-        horizon_days = int(row.get("forecast_horizon_days", 1) or 1)
+        raw = row.get("forecast_horizon_days", 1)
+        horizon_days = int(raw) if pd.notna(raw) else 1
+        
         threshold = _get_threshold(horizon_days)
         liquidity = row.get("liquidity", 0)
 
