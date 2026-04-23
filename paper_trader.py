@@ -181,30 +181,6 @@ def _fetch_market_resolution(condition_id: str) -> dict:
     
     except requests.RequestException:
         return {"resolved": False}
-    
-# Fetch the condition ID for a specific weather event from Gamma API
-def _fetch_condition_id(series_slug: str, event_date: str) -> str | None:
-    city = series_slug.replace("-daily-weather", "")
-    try:
-        date_obj = datetime.strptime(event_date, "%Y-%m-%d")
-        date_str = date_obj.strftime("%B-%-d-%Y").lower()
-    except ValueError:
-        return None
-    
-    slug = f"highest-temperature-in-{city}-on-{date_str}"
-    try:
-        resp = requests.get(
-            f"{GAMMA_URL}/events",
-            params={"slug": slug},
-            headers={"User-Agent": "Mozilla/5.0"},
-            timeout=10,
-        )
-        data = resp.json()
-        if data and data[0].get("markets"):
-            return data[0]["markets"][0].get("conditionId")
-    except requests.RequestException:
-        pass
-    return None
 
 # Check all open positions for resolution, updates portfolio state in-place and returns list of resolved positions
 def check_resolutions(portfolio: dict) -> list[dict]:
