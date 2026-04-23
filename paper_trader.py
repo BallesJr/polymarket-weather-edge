@@ -25,6 +25,7 @@ class Position:
     series_slug: str
     event_date: str
     question: str
+    condition_id: str # Specific condition ID for this outcome
     temp_str: str
 
     # Trade details
@@ -122,6 +123,7 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
             series_slug=signal.series_slug,
             event_date=signal.event_date,
             question=signal.question,
+            condition_id=row["condition_id"].iloc[0] if not row.empty else "",
             temp_str=signal.temp_str,
             direction=signal.direction,
             token_id=token_id,
@@ -222,7 +224,7 @@ def check_resolutions(portfolio: dict) -> list[dict]:
             continue
 
         # Fetch condition ID and check resolution
-        condition_id = _fetch_condition_id(pos["series_slug"], pos["event_date"])
+        condition_id = pos.get("condition_id")
         if not condition_id:
             still_open.append(pos)
             continue
