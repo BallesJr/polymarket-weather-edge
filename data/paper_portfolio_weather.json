@@ -1,5 +1,5 @@
 {
-  "bankroll": 1.9007999999999436,
+  "bankroll": 0.9007999999999436,
   "initial_bankroll": 50.0,
   "positions": [
     {
@@ -526,6 +526,30 @@
       "observed_max_c": 28.0,
       "status": "OPEN",
       "opened_at": "2026-05-18T02:01:59.705875+00:00",
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null
+    },
+    {
+      "series_slug": "mexico-city-daily-weather",
+      "event_date": "2026-05-19",
+      "question": "Will the highest temperature in Mexico City be 25\u00b0C or higher on May 19?",
+      "condition_id": "0x1d66fa19f0187f054d9df47a697c9aaac73d9442e2f40a662bcc1c2f469e4ee8",
+      "temp_str": "25\u00b0C or higher",
+      "direction": "BUY_NO",
+      "token_id": "10096466281954587738136733699268380662090077356837619688270411480300662064121",
+      "token_yes": "73186226147212571923056863562681279678774319180126260606444466885512744086461",
+      "entry_prob": 0.135,
+      "model_prob": 0.3711,
+      "edge": -0.4939,
+      "net_edge": 0.4822,
+      "size_usd": 1,
+      "forecast_temp_c": 24.2,
+      "forecast_horizon_days": 1,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "status": "OPEN",
+      "opened_at": "2026-05-18T06:11:14.319948+00:00",
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null
@@ -6682,5 +6706,5 @@
   "n_lost": 155,
   "n_expired": 0,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-05-18T02:01:59.706127+00:00"
+  "last_updated": "2026-05-18T06:11:14.320149+00:00"
 }
