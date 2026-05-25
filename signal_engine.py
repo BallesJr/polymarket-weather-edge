@@ -31,6 +31,9 @@ KELLY_FRACTION = 0.5
 # Maximum position size as fraction of bankroll per trade
 MAX_POSITION_FRACTION = 0.10
 
+# Maximum position size as an absolute value per trade
+MAX_POSITION_USD = 5.0
+
 # --- Signal dataclass ---
 
 @dataclass
@@ -169,6 +172,7 @@ def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
         # Cap at max fraction of bankroll
         position_fraction = min(half_kelly, MAX_POSITION_FRACTION)
         position_size = round(bankroll * position_fraction, 2)
+        position_size = min(position_size, MAX_POSITION_USD)
         position_size = max(position_size, 1) # Minimum $1 trade
 
         confidence = _get_confidence(net_edge, horizon_days)
