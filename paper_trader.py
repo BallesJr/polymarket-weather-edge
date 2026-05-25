@@ -44,6 +44,9 @@ class Position:
     data_source: str # "observation" or "forecast"
     observed_max_c: float # NaN if not today's market
 
+    # Source
+    source_model: str # "base" or "calibration_rf"
+
     # Status
     status: str # "OPEN", "WON", "LOST", "EXPIRED"
     opened_at: str # ISO timestamp
@@ -137,6 +140,7 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
             forecast_horizon_days=signal.horizon_days,
             data_source=signal.data_source,
             observed_max_c=observed_max,
+            source_model="base",
             status="OPEN",
             opened_at=datetime.now(timezone.utc).isoformat()
         )
