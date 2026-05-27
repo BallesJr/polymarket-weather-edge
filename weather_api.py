@@ -4,6 +4,8 @@ import numpy as np
 import time
 from datetime import datetime, timedelta, timezone
 from scipy.stats import norm
+import pickle
+import os
 
 from market_filter import STATION_COORDS
 
@@ -14,6 +16,14 @@ OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 # How many forecast days to request (today + next N days)
 # Weather markets typically cover today and the next 1-2 days
 FORECAST_DAYS = 3
+
+RF_MODEL_PATH = "models/rf_weather.pkl"
+
+def _load_rf_model():
+    if os.path.exists(RF_MODEL_PATH):
+        with open(RF_MODEL_PATH, "rb") as f:
+            return pickle.load(f)
+    return None
 
 # Fetch a URL with automatic retry on connection errors
 # Waits delay seconds between attempts, doubling each time (exponential backoff)
@@ -243,6 +253,8 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     model_probs = []
 
+    rf_model = _load_rf_model()
+
     for _, row in df.iterrows():
         # Use real observation for today if available, forecast otherwise
         if pd.notna(row.get("observed_max_c")) and not np.isnan(row.get("observed_max_c", np.nan)):
@@ -277,6 +289,23 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
         model_probs.append(prob)
 
     df["model_prob"] = model_probs
+
+    if rf_model is not None:
+        city_codes = df["series_slug"].astype("category").cat.codes
+        X_live = pd.DataFrame({
+            "entry_prob": df["prob_yes"],
+            "model_prob": df["model_prob"],
+            "forecast_horizon_datys": df["forecast_horizon_days"].fillna(1),
+            "is_buy_yes": 0,
+            "city_code": city_codes,
+            "is_observation": df["observed_max_c"].notna().astype(int),
+            "forecast_temp_c": df["forecast_temp_c"].fillna(df["forecast_temp_c"].median()),
+            "temp_diff": df["observed_max_c"] - df["forecast_temp_c"],
+        })
+        X_live = X_live.fillna(X_live.median())
+        df["model_prob"] = rf_model.predict_proba(X_live)[:, 1]
+        print(f"[WeatherAPI] RF model applied to {len(df)} outcomes")
+
     return df
 
 if __name__ == "__main__":
