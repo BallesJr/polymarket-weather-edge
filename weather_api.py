@@ -295,7 +295,7 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
         X_live = pd.DataFrame({
             "entry_prob": df["prob_yes"],
             "model_prob": df["model_prob"],
-            "forecast_horizon_datys": df["forecast_horizon_days"].fillna(1),
+            "forecast_horizon_days": df["forecast_horizon_days"].fillna(1),
             "is_buy_yes": 0,
             "city_code": city_codes,
             "is_observation": df["observed_max_c"].notna().astype(int),
