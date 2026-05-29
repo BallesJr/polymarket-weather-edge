@@ -32,6 +32,7 @@ class Position:
     direction: str # "BUY YES" or "BUY NO"
     token_id: str # Token bought (yes or no)
     token_yes: str  # Always the YES token, regardless of direction
+    model_prob_gaussian: float  # Gaussian model probability before RF refinement
     entry_prob: float # Market price at entry
     model_prob: float # Model probability at entry
     edge: float # Raw edge at entry
@@ -131,6 +132,7 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
             direction=signal.direction,
             token_id=token_id,
             token_yes=signal.token_yes,
+            model_prob_gaussian=float(row["model_prob_gaussian"].iloc[0]) if not row.empty and pd.notna(row["model_prob_gaussian"].iloc[0]) else float("nan"),
             entry_prob=signal.market_prob if signal.direction == "BUY_YES" else 1 - signal.market_prob,
             model_prob=signal.model_prob,
             edge=signal.edge,

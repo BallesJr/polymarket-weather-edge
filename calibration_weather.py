@@ -41,8 +41,14 @@ def preprocess(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
     # Temperature difference(forecast vs observed, NaN if forecast)
     features["temp_diff"] = features["observed_max_c"] - features["forecast_temp_c"]
 
-    feature_cols = ["entry_prob", "model_prob", "forecast_horizon_days", "is_buy_yes", "city_code",
-                    "is_observation", "forecast_temp_c", "temp_diff"]
+    # Use model_prob_gaussian if available, otherwise fall back to model_prob
+    if "model_prob_gaussian" in features.columns:
+        features["model_prob_gaussian"] = features["model_prob_gaussian"].fillna(features["model_prob"])
+    else:
+        features["model_prob_gaussian"] = features["model_prob"]
+
+    feature_cols = ["entry_prob", "model_prob_gaussian", "forecast_horizon_days", "is_buy_yes", "city_code",
+                "is_observation", "forecast_temp_c", "temp_diff"]
     
     X = features[feature_cols].copy()
     y = features["won"]

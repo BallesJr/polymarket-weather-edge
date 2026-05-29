@@ -288,13 +288,14 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
         )
         model_probs.append(prob)
 
+    df["model_prob_gaussian"] = model_probs  # original gaussian, before RF refinement
     df["model_prob"] = model_probs
 
     if rf_model is not None:
         city_codes = df["series_slug"].astype("category").cat.codes
         X_live = pd.DataFrame({
             "entry_prob": df["prob_yes"],
-            "model_prob": df["model_prob"],
+            "model_prob": df["model_prob_gaussian"],
             "forecast_horizon_days": df["forecast_horizon_days"].fillna(1),
             "is_buy_yes": 0,
             "city_code": city_codes,
