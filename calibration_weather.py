@@ -8,6 +8,7 @@ import os
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import brier_score_loss, roc_auc_score
+from sklearn.model_selection import cross_val_score
 
 RAW_URL = "https://raw.githubusercontent.com/BallesJr/polymarket-weather-edge/main/data/paper_portfolio_weather.json"
 
@@ -59,7 +60,6 @@ def preprocess(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
     return X, y
 
 def train_model(X: pd.DataFrame, y: pd.Series):
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     model = RandomForestClassifier(
         n_estimators=100,
@@ -67,15 +67,14 @@ def train_model(X: pd.DataFrame, y: pd.Series):
         min_samples_leaf=10, # At least 10 samples per leaf
         random_state=42
     )
-    model.fit(X_train, y_train)
+    
+    scores_brier = cross_val_score(model, X, y, cv=5, scoring="neg_brier_score")
+    scores_auc = cross_val_score(model, X, y, cv=5, scoring="roc_auc")
 
-    # Evaluate
-    y_pred_proba = model.predict_proba(X_test)[:, 1]
-    brier = brier_score_loss(y_test, y_pred_proba)
-    auc = roc_auc_score(y_test, y_pred_proba)
+    print(f"Brier score: {-scores_brier.mean():.4f} ± {scores_brier.std():.4f} (lower is better, random = 0.25)")
+    print(f"AUC-ROC:     {scores_auc.mean():.4f} ± {scores_auc.std():.4f} (higher is better, random = 0.50)")
 
-    print(f"Brier score: {brier:.4f} (lower is better, random = 0.25)")
-    print(f"AUC-ROC:  {auc:.4f} (higher is better, random = 0.50)")
+    model.fit(X, y)
 
     # Feature importance
     for feat, imp in sorted(zip(X.columns, model.feature_importances_), key=lambda x: -x[-1]):
