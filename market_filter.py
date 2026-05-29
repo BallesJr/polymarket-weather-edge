@@ -29,6 +29,13 @@ RESOLUTION_STATIONS = {
     "austin-daily-weather": "KAUS", # Austin-Bergstrom
     "boston-daily-weather": "KBOS", # Boston Logan
     "houston-daily-weather": "KHOU", # Houston Hobby
+    "lucknow-daily-weather": "VILK", # Lucknow Airport
+    "beijing-daily-weather": "ZBAA", # Beijing Capital International Airport
+    "munich-daily-weather": "EDDM", # Munich Airport
+    "denver-daily-weather": "KBKF", # Buckley Space Force Base (Fahrenheit)
+    "shenzhen-daily-weather": "ZGSZ", # Shenzhen Bao'an International Airport
+    "amsterdam-daily-weather": "EHAM", # Amsterdam Airport Schiphol
+    "madrid-daily-weather": "LEMD", # Adolfo Suárez Madrid-Barajas Airport
     # TODO: Add Tel Aviv (LLBG) - uses NOAA instead of Weather Underground
     # TODO: Add Hong Kong (HKO) - uses HK Observatory instead of Weather Underground
 }
@@ -54,6 +61,12 @@ STATION_COORDS = {
     "KHOU": (29.6454, -95.2789), # Houston Hobby
     "VILK": (26.7606,  80.8893), # Lucknow Airport
     "KBOS": (42.3656, -71.0096), # Boston Logan
+    "ZBAA": (40.0799, 116.6031), # Beijing Capital International Airport
+    "EDDM": (48.3538, 11.7861), # Munich Airport
+    "KBKF": (39.7169, -104.7519), # Buckley Space Force Base, Denver
+    "ZGSZ": (22.6397, 113.8105), # Shenzhen Bao'an International Airport
+    "EHAM": (52.3105, 4.7683), # Amsterdam Airport Schiphol
+    "LEMD": (40.4719, -3.5626), # Adolfo Suárez Madrid-Barajas Airport
 }
 
 # Fetch active events for a given series slug via Gamma API
