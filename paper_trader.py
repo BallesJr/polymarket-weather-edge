@@ -140,7 +140,7 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
             forecast_horizon_days=signal.horizon_days,
             data_source=signal.data_source,
             observed_max_c=observed_max,
-            source_model="base",
+            source_model="calibration_rf" if os.path.exists("models/rf_weather.pkl") else "base",
             status="OPEN",
             opened_at=datetime.now(timezone.utc).isoformat()
         )
