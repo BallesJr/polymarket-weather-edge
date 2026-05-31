@@ -1,6 +1,6 @@
 {
   "bankroll": 10000,
-  "initial_bankroll": 10100,
+  "initial_bankroll": 10000,
   "positions": [],
   "closed_trades": [
     {
