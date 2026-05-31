@@ -1,6 +1,6 @@
 {
-  "bankroll": 0.8183999999999574,
-  "initial_bankroll": 50.0,
+  "bankroll": 10000,
+  "initial_bankroll": 10100,
   "positions": [],
   "closed_trades": [
     {
