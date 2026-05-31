@@ -1,33 +1,7 @@
 {
   "bankroll": 0.8183999999999574,
   "initial_bankroll": 50.0,
-  "positions": [
-    {
-      "series_slug": "london-daily-weather",
-      "event_date": "2026-05-30",
-      "question": "Will the highest temperature in London be 30\u00b0C on May 30?",
-      "condition_id": "0xe78eb9b400d8296f10a086ce7af41e8b7160acc601001e82d7141877743d57e2",
-      "temp_str": "30\u00b0C",
-      "direction": "BUY_YES",
-      "token_id": "2149478343277978111393293378668637701444011594184361893470514493283930212229",
-      "token_yes": "2149478343277978111393293378668637701444011594184361893470514493283930212229",
-      "entry_prob": 0.025,
-      "model_prob": 0.3083,
-      "edge": 0.2833,
-      "net_edge": 0.2808,
-      "size_usd": 1.47,
-      "forecast_temp_c": 26.3,
-      "forecast_horizon_days": 2,
-      "data_source": "forecast",
-      "observed_max_c": NaN,
-      "source_model": "base",
-      "status": "OPEN",
-      "opened_at": "2026-05-28T17:26:24.148998+00:00",
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null
-    }
-  ],
+  "positions": [],
   "closed_trades": [
     {
       "series_slug": "warsaw-daily-weather",
@@ -9130,12 +9104,37 @@
       "closed_at": "2026-05-31T06:37:22.033019+00:00",
       "pnl_usd": -1.47,
       "resolved_temp": null
+    },
+    {
+      "series_slug": "london-daily-weather",
+      "event_date": "2026-05-30",
+      "question": "Will the highest temperature in London be 30\u00b0C on May 30?",
+      "condition_id": "0xe78eb9b400d8296f10a086ce7af41e8b7160acc601001e82d7141877743d57e2",
+      "temp_str": "30\u00b0C",
+      "direction": "BUY_YES",
+      "token_id": "2149478343277978111393293378668637701444011594184361893470514493283930212229",
+      "token_yes": "2149478343277978111393293378668637701444011594184361893470514493283930212229",
+      "entry_prob": 0.025,
+      "model_prob": 0.3083,
+      "edge": 0.2833,
+      "net_edge": 0.2808,
+      "size_usd": 1.47,
+      "forecast_temp_c": 26.3,
+      "forecast_horizon_days": 2,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "base",
+      "status": "LOST",
+      "opened_at": "2026-05-28T17:26:24.148998+00:00",
+      "closed_at": "2026-05-31T14:24:36.049780+00:00",
+      "pnl_usd": -1.47,
+      "resolved_temp": null
     }
   ],
-  "total_pnl": -96.9716,
+  "total_pnl": -98.4416,
   "n_won": 142,
-  "n_lost": 228,
+  "n_lost": 229,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-05-31T13:00:43.294470+00:00"
+  "last_updated": "2026-05-31T14:31:13.125105+00:00"
 }
