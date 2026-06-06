@@ -1,5 +1,5 @@
 {
-  "bankroll": 8840.3129,
+  "bankroll": 8830.3129,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -5328,6 +5328,58 @@
       "source_model": "calibration_rf",
       "status": "OPEN",
       "opened_at": "2026-06-06T19:20:05.030296+00:00",
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null
+    },
+    {
+      "series_slug": "austin-daily-weather",
+      "event_date": "2026-06-06",
+      "question": "Will the highest temperature in Austin be between 90-91\u00b0F on June 6?",
+      "condition_id": "0x81915bdfb4033ec0207f6965997d11f6e8f7d6a87cbd1193815192fad0e21ed8",
+      "temp_str": "between 90-91\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "14513828958192518093419825823028774074511520586255794933540338610730171037831",
+      "token_yes": "76260739865644278071702282306282178154254756947819048836203378906652465381261",
+      "model_prob_gaussian": NaN,
+      "entry_prob": 0.08499999999999996,
+      "model_prob": 0.5004,
+      "edge": -0.4146,
+      "net_edge": 0.4069,
+      "size_usd": 5.0,
+      "forecast_temp_c": 33.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.3,
+      "source_model": "calibration_rf",
+      "status": "OPEN",
+      "opened_at": "2026-06-06T20:44:06.192743+00:00",
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null
+    },
+    {
+      "series_slug": "denver-daily-weather",
+      "event_date": "2026-06-06",
+      "question": "Will the highest temperature in Denver be between 88-89\u00b0F on June 6?",
+      "condition_id": "0xa0f94e6f8609b81fe76dffa96893100f128690f303d2857145232459cd8222d2",
+      "temp_str": "between 88-89\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "19726722996882089198578512166609696161722581007671618176738861815066916711327",
+      "token_yes": "62910576113964286484406599972098694289823346667700605221723080332512498772151",
+      "model_prob_gaussian": NaN,
+      "entry_prob": 0.24,
+      "model_prob": 0.4945,
+      "edge": -0.2655,
+      "net_edge": 0.2472,
+      "size_usd": 5.0,
+      "forecast_temp_c": 33.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.7,
+      "source_model": "calibration_rf",
+      "status": "OPEN",
+      "opened_at": "2026-06-06T20:44:06.193748+00:00",
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null
@@ -30665,5 +30717,5 @@
   "n_lost": 763,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-06T19:20:05.030562+00:00"
+  "last_updated": "2026-06-06T20:44:06.193997+00:00"
 }
