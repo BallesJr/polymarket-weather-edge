@@ -3,6 +3,12 @@ import pandas as pd
 
 PORTFOLIO_PATH = "data/paper_portfolio_weather.json"
 
+def load_open_positions() -> pd.DataFrame:
+    with open(PORTFOLIO_PATH) as f:
+        data = json.load(f)
+    return pd.DataFrame(data.get("positions", []))
+
+
 def load_trades() -> pd.DataFrame:
     with open(PORTFOLIO_PATH) as f:
         data = json.load(f)
@@ -142,11 +148,29 @@ def edge_calibration(df: pd.DataFrame) -> None:
     g["edge_vs_wr"] = g["avg_edge"] - g["win_rate"]
     print(g[["trades","avg_edge","win_rate","edge_vs_wr","pnl"]].to_string())
 
-if __name__ == "__main__":
-    df = load_trades()
+def open_positions_summary(df: pd.DataFrame) -> None:
+    if df.empty:
+        print("No open positions.")
+        return
+    open_df = df[df["status"] == "OPEN"].copy()
+    n = len(open_df)
+    exposure = open_df["size_usd"].sum()
+    print(f"\n--- Open positions: {n} | Total exposure: ${exposure:.2f} ---")
+    cols = ["series_slug", "event_date", "direction", "net_edge", "size_usd", "opened_at"]
+    available = [c for c in cols if c in open_df.columns]
+    open_df["opened_at"] = open_df["opened_at"].astype(str).str[:10]
+    print(open_df[available].sort_values("net_edge", ascending=False).to_string(index=False))
 
-    # Original analysis
-    summary(df) 
+
+if __name__ == "__main__":
+    # Open positions
+    positions = load_open_positions()
+    open_positions_summary(positions)
+
+    # Closed trades analysis
+    df = load_trades()
+    print()
+    summary(df)
     by_horizon(df)
     by_edge_bucket(df)
     by_direction(df)
