@@ -234,14 +234,18 @@ def parse_temp_range(temp_str: str, unit: str = "C") -> tuple[float, float]:
     
 # Compute the model's probability that the actual temperature falls within the outcome's temperature range (given the forecast and its uncertainty)
 def compute_model_probability(
-        forecast_temp: float, 
-        forecast_low: float, 
+        forecast_temp: float,
+        forecast_low: float,
         forecast_high: float,
         temp_range_low: float,
         temp_range_high: float,
+        day_complete: bool = False,
         ) -> float:
-    
-        sigma = max((forecast_high - forecast_low) / 3.29, 0.5) # Min 0.5°C to avoid overconfidence
+
+        # When the day is complete, observed_max is final — use tight sigma (source diff ~0.1°C)
+        # Otherwise keep minimum 0.5°C to avoid overconfidence on forecasts
+        min_sigma = 0.1 if day_complete else 0.5
+        sigma = max((forecast_high - forecast_low) / 3.29, min_sigma)
 
         cdf_high = norm.cdf(temp_range_high + 0.5, loc=forecast_temp, scale=sigma) if not np.isinf(temp_range_high) else 1.0
 
@@ -263,14 +267,13 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
 
     for _, row in df.iterrows():
         # Use real observation for today if available, forecast otherwise
+        is_complete = False
         if pd.notna(row.get("observed_max_c")) and not np.isnan(row.get("observed_max_c", np.nan)):
             obs_max = row["observed_max_c"]
-            day_complete = row.get("day_complete", False)
-            # If day is complete, the observed max is the final temperature
-            # If day is ongoing, model uncertainty remains but observation constrains the lower bound
+            is_complete = bool(row.get("day_complete", False))
             effective_temp = obs_max
-            effective_low = obs_max if day_complete else obs_max - 0.5
-            effective_high = obs_max if day_complete else obs_max + 2.0
+            effective_low = obs_max if is_complete else obs_max - 0.5
+            effective_high = obs_max if is_complete else obs_max + 2.0
         elif not row.get("forecast_available", False) or pd.isna(row.get("forecast_temp_c")):
             model_probs.append(np.nan)
             continue
@@ -291,6 +294,7 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
             forecast_high=effective_high,
             temp_range_low=temp_low,
             temp_range_high=temp_high,
+            day_complete=is_complete,
         )
         model_probs.append(prob)
 

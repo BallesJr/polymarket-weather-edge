@@ -1,3 +1,5 @@
+import json
+import os
 import pandas as pd
 import numpy as np
 from dataclasses import dataclass, field
@@ -33,6 +35,30 @@ MAX_POSITION_FRACTION = 0.10
 
 # Maximum position size as an absolute value per trade
 MAX_POSITION_USD = 5.0
+
+# City performance filter: skip cities with win_rate below threshold (min trades required)
+MIN_CITY_WIN_RATE  = 0.35
+MIN_CITY_TRADES    = 10
+PORTFOLIO_PATH     = "data/paper_portfolio_weather.json"
+
+
+def _city_win_rates() -> dict[str, float]:
+    """Return {series_slug: win_rate} for BUY_NO T+0 trades with enough history."""
+    if not os.path.exists(PORTFOLIO_PATH):
+        return {}
+    try:
+        with open(PORTFOLIO_PATH) as f:
+            data = json.load(f)
+        df = pd.DataFrame(data.get("closed_trades", []))
+        if df.empty:
+            return {}
+        df = df[df["status"].isin(["WON", "LOST"])]
+        df = df[(df["direction"] == "BUY_NO") & (df["forecast_horizon_days"] == 0)]
+        g = df.groupby("series_slug").agg(trades=("status", "count"), won=("status", lambda x: (x == "WON").sum()))
+        g["win_rate"] = g["won"] / g["trades"]
+        return g[g["trades"] >= MIN_CITY_TRADES]["win_rate"].to_dict()
+    except Exception:
+        return {}
 
 # --- Signal dataclass ---
 
@@ -125,6 +151,7 @@ def _get_confidence(net_edge: float, horizon_days: int) -> str:
 # For each outcome, computes the edge, adjusts for fees, applies Kelly sizing, and returns a Signal if the net edge exceeds the threshold
 def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
     signals = []
+    city_rates = _city_win_rates()
 
     for _, row in df.iterrows():
         model_prob = row.get("model_prob")
@@ -140,6 +167,11 @@ def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
         liquidity = row.get("liquidity", 0)
 
         if liquidity < MIN_LIQUIDITY:
+            continue
+
+        # Skip cities with poor historical BUY_NO T+0 win rate
+        slug = row.get("series_slug", "")
+        if slug in city_rates and city_rates[slug] < MIN_CITY_WIN_RATE:
             continue
 
         # Determine data source
