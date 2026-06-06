@@ -1,5 +1,5 @@
 {
-  "bankroll": 8900.3129,
+  "bankroll": 8895.3129,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -5016,6 +5016,32 @@
       "source_model": "calibration_rf",
       "status": "OPEN",
       "opened_at": "2026-06-06T14:27:08.225756+00:00",
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null
+    },
+    {
+      "series_slug": "milan-daily-weather",
+      "event_date": "2026-06-06",
+      "question": "Will the highest temperature in Milan be 24\u00b0C on June 6?",
+      "condition_id": "0x4393c848857978e85dcf4251fb0243df4fc04e9468b2a650965478eeb66883cd",
+      "temp_str": "24\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "89693307129471813747055298744423556293025939220762054601490030999640855751226",
+      "token_yes": "26613149682344786637181141030056909506830374634194189578370917403416410992956",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.12,
+      "model_prob": 0.4311,
+      "edge": -0.4489,
+      "net_edge": 0.4383,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.1,
+      "source_model": "calibration_rf",
+      "status": "OPEN",
+      "opened_at": "2026-06-06T15:52:29.734254+00:00",
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null
@@ -30353,5 +30379,5 @@
   "n_lost": 763,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-06T14:27:08.225998+00:00"
+  "last_updated": "2026-06-06T15:52:29.734749+00:00"
 }
