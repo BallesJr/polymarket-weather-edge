@@ -1,5 +1,5 @@
 {
-  "bankroll": 8830.3129,
+  "bankroll": 8820.3129,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -5380,6 +5380,58 @@
       "source_model": "calibration_rf",
       "status": "OPEN",
       "opened_at": "2026-06-06T20:44:06.193748+00:00",
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null
+    },
+    {
+      "series_slug": "tokyo-daily-weather",
+      "event_date": "2026-06-08",
+      "question": "Will the highest temperature in Tokyo be 27\u00b0C on June 8?",
+      "condition_id": "0x4e87594ee5603873aa5adc8cd24532f5cc412e7e512613dc5ea587df008af6ff",
+      "temp_str": "27\u00b0C",
+      "direction": "BUY_YES",
+      "token_id": "37553807083831935128054970755387845620245977672892527740001868065699614734667",
+      "token_yes": "37553807083831935128054970755387845620245977672892527740001868065699614734667",
+      "model_prob_gaussian": NaN,
+      "entry_prob": 0.0255,
+      "model_prob": 0.1532,
+      "edge": 0.1277,
+      "net_edge": 0.1253,
+      "size_usd": 5.0,
+      "forecast_temp_c": NaN,
+      "forecast_horizon_days": 1,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "calibration_rf",
+      "status": "OPEN",
+      "opened_at": "2026-06-06T21:59:18.128508+00:00",
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null
+    },
+    {
+      "series_slug": "tokyo-daily-weather",
+      "event_date": "2026-06-08",
+      "question": "Will the highest temperature in Tokyo be 20\u00b0C on June 8?",
+      "condition_id": "0x498d4cddff6cfce7ba899cc4a5ec4df84ddb7ac3cccfa0b9a1e90af799ee32ed",
+      "temp_str": "20\u00b0C",
+      "direction": "BUY_YES",
+      "token_id": "39630617544587942569533715981401621732975735078911132648591782466547183785174",
+      "token_yes": "39630617544587942569533715981401621732975735078911132648591782466547183785174",
+      "model_prob_gaussian": NaN,
+      "entry_prob": 0.0265,
+      "model_prob": 0.1532,
+      "edge": 0.1267,
+      "net_edge": 0.1242,
+      "size_usd": 5.0,
+      "forecast_temp_c": NaN,
+      "forecast_horizon_days": 1,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "calibration_rf",
+      "status": "OPEN",
+      "opened_at": "2026-06-06T21:59:18.129863+00:00",
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null
@@ -30717,5 +30769,5 @@
   "n_lost": 763,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-06T20:44:06.193997+00:00"
+  "last_updated": "2026-06-06T21:59:18.130117+00:00"
 }
