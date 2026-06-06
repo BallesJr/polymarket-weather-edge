@@ -11,10 +11,10 @@ from weather_api import fetch_forecasts_for_markets, add_model_probabilities
 # Minimum edge required to generate a signal
 # Edge = model_prob - market_prob (positive = BUY YES, negative = BUY NO)
 # A higher threshold means fewer but higher-confidence trades
-# Threshold is adjusted by forecast horizon: further out = higher bar required
-MIN_EDGE_TODAY = 0.08 # T+0: observation-based, high confidence
-MIN_EDGE_TOMORROW = 0.12 # T+1: forecast, moderate confidence
-MIN_EDGE_D2 = 0.18 # T+2: forecast, lower confidence, need bigger edge
+# Only T+0 (observation-based) is active: win rates for T+1 (18%) and T+2 (4%) are too low
+MIN_EDGE_TODAY = 0.25  # T+0: observation-based, raised from 0.08 (historical win rate ~33% BUY_NO)
+MIN_EDGE_TOMORROW = 0.99  # T+1: disabled (win rate 18%, not profitable)
+MIN_EDGE_D2 = 0.99  # T+2: disabled (win rate 4%, catastrophic)
 
 # Minimum liquidity (USDC) required to trade an outcome
 # Below this, market impact would be too large for small position sizes
@@ -150,14 +150,12 @@ def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
         edge = model_prob - market_prob
 
         # Determine direction and entry price
-        if edge >= threshold:
-            direction = "BUY_YES"
-            entry_prob = market_prob
-        elif edge <= -threshold:
+        # BUY_YES disabled: historical win rate 11% vs BUY_NO 41%
+        if edge <= -threshold:
             direction = "BUY_NO"
-            entry_prob = 1 - market_prob # NO token price
+            entry_prob = 1 - market_prob  # NO token price
         else:
-            continue # Edge too small
+            continue  # Edge too small or BUY_YES
 
         # Fee adjusted net edge
         net_edge = _compute_net_edge(abs(edge), entry_prob)
