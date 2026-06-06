@@ -19,11 +19,17 @@ FORECAST_DAYS = 3
 
 RF_MODEL_PATH = "models/rf_weather.pkl"
 
-def _load_rf_model():
+_DEFAULT_FEATURES = ["entry_prob", "model_prob_gaussian", "forecast_horizon_days", "is_buy_yes",
+                     "city_code", "is_observation", "forecast_temp_c", "temp_diff"]
+
+def _load_rf_model() -> tuple:
     if os.path.exists(RF_MODEL_PATH):
         with open(RF_MODEL_PATH, "rb") as f:
-            return pickle.load(f)
-    return None
+            payload = pickle.load(f)
+        if isinstance(payload, tuple):
+            return payload  # (model, feature_cols)
+        return payload, _DEFAULT_FEATURES  # legacy single-object format
+    return None, _DEFAULT_FEATURES
 
 # Fetch a URL with automatic retry on connection errors
 # Waits delay seconds between attempts, doubling each time (exponential backoff)
@@ -253,7 +259,7 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     model_probs = []
 
-    rf_model = _load_rf_model()
+    rf_model, rf_features = _load_rf_model()
 
     for _, row in df.iterrows():
         # Use real observation for today if available, forecast otherwise
@@ -293,7 +299,7 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
 
     if rf_model is not None:
         city_codes = df["series_slug"].astype("category").cat.codes
-        X_live = pd.DataFrame({
+        all_cols = pd.DataFrame({
             "entry_prob": df["prob_yes"],
             "model_prob_gaussian": df["model_prob_gaussian"],
             "forecast_horizon_days": df["forecast_horizon_days"].fillna(1),
@@ -303,9 +309,9 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
             "forecast_temp_c": df["forecast_temp_c"].fillna(df["forecast_temp_c"].median()),
             "temp_diff": df["observed_max_c"] - df["forecast_temp_c"],
         })
-        X_live = X_live.fillna(X_live.median())
+        X_live = all_cols[rf_features].fillna(all_cols[rf_features].median())
         df["model_prob"] = rf_model.predict_proba(X_live)[:, 1]
-        print(f"[WeatherAPI] RF model applied to {len(df)} outcomes")
+        print(f"[WeatherAPI] RF model applied ({len(rf_features)} features: {rf_features})")
 
     return df
 
