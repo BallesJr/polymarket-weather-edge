@@ -77,7 +77,7 @@ def _fetch_events_by_series(series_slug: str) -> list[dict]:
 
     for days_ahead in range(3): # Today, tomorrow, next tomorrow
         target = today + timedelta(days=days_ahead)
-        date_str = target.strftime("%B-%-d-%Y").lower() # "april-16-2026"
+        date_str = f"{target.strftime('%B').lower()}-{target.day}-{target.year}"  # "april-16-2026"
         slug = f"highest-temperature-in-{city}-on-{date_str}"
 
         try:
