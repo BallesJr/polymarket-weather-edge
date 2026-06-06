@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime, timezone
 from dataclasses import dataclass, asdict
 
-from signal_engine import Signal, generate_signals
+from signal_engine import Signal, generate_signals, WEATHER_FEE_RATE
 from market_filter import fetch_active_weather_markets
 from weather_api import fetch_forecasts_for_markets, add_model_probabilities
 
@@ -198,10 +198,10 @@ def check_resolutions(portfolio: dict) -> list[dict]:
             still_open.append(pos)
             continue
 
-        # Skip if event date is in the future
+        # Skip if event date is today or in the future (wait for final temperature)
         event_date = datetime.strptime(pos["event_date"], "%Y-%m-%d").date()
         today = datetime.now(timezone.utc).date()
-        if event_date >= today:
+        if event_date > today:
             still_open.append(pos)
             continue
 
@@ -217,8 +217,7 @@ def check_resolutions(portfolio: dict) -> list[dict]:
             if (today - event_date).days > 3:
                 pos["status"] = "EXPIRED"
                 pos["closed_at"] = datetime.now(timezone.utc).isoformat()
-                pos["pnl_usd"] = -pos["size_usd"]
-                portfolio["bankroll"] += 0 # Expired = full loss
+                pos["pnl_usd"] = -pos["size_usd"]  # bankroll already decremented at open
                 portfolio["n_expired"] += 1
                 portfolio["total_pnl"] += pos["pnl_usd"]
                 portfolio["closed_trades"].append(pos)
@@ -235,17 +234,18 @@ def check_resolutions(portfolio: dict) -> list[dict]:
         else:  # BUY_NO
             won = (pos["token_yes"] != winning_token)
     
+        # Entry fee: feeRate * size * (1 - entry_prob), paid regardless of outcome
+        entry_fee = round(WEATHER_FEE_RATE * pos["size_usd"] * (1 - pos["entry_prob"]), 4)
+
         if won:
-            # Winning token redeems at $1 per share
-            # Shares bought = size_usd / entry_prob
             shares = pos["size_usd"] / pos["entry_prob"]
-            gross_pnl = shares - pos["size_usd"] # Gain before fees
+            gross_pnl = shares - pos["size_usd"]
             pos["status"] = "WON"
-            pos["pnl_usd"] = round(gross_pnl, 4)
+            pos["pnl_usd"] = round(gross_pnl - entry_fee, 4)
             portfolio["n_won"] += 1
         else:
             pos["status"] = "LOST"
-            pos["pnl_usd"] = -pos["size_usd"]
+            pos["pnl_usd"] = round(-pos["size_usd"] - entry_fee, 4)
             portfolio["n_lost"] += 1
 
         pos["closed_at"] = datetime.now(timezone.utc).isoformat()
