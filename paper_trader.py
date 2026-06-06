@@ -119,7 +119,7 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
         ]
 
         forecast_temp = float(row["forecast_temp_c"].iloc[0]) if not row.empty else float("nan")
-        observed_max  = float(row["observed_max_c"].iloc[0]) if not row.empty and pd.notna(row["observed_max_c"].iloc[0]) else float("nan")
+        observed_max = float(row["observed_max_c"].iloc[0]) if not row.empty and pd.notna(row["observed_max_c"].iloc[0]) else float("nan")
 
         # Determine which token was bought
         token_id = signal.token_yes if signal.direction == "BUY_YES" else signal.token_no

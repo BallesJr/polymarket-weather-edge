@@ -32,10 +32,10 @@ def load_trades() -> pd.DataFrame:
 
 def preprocess(df: pd.DataFrame) -> pd.DataFrame:
     features = df.copy()
-    features["is_buy_yes"]     = (features["direction"] == "BUY_YES").astype(int)
-    features["city_code"]      = features["series_slug"].astype("category").cat.codes
+    features["is_buy_yes"] = (features["direction"] == "BUY_YES").astype(int)
+    features["city_code"] = features["series_slug"].astype("category").cat.codes
     features["is_observation"] = (features["data_source"] == "observation").astype(int)
-    features["temp_diff"]      = features["observed_max_c"] - features["forecast_temp_c"]
+    features["temp_diff"] = features["observed_max_c"] - features["forecast_temp_c"]
 
     if "model_prob_gaussian" in features.columns:
         features["model_prob_gaussian"] = features["model_prob_gaussian"].fillna(features["model_prob"])
@@ -50,7 +50,7 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
 def calibration_diagnostic(probs: np.ndarray, y: pd.Series, label: str = "") -> None:
     if label:
         print(f"\n[{label}] Calibration diagnostic (predicted prob vs actual win rate)")
-    bins   = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 1.0]
+    bins = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 1.0]
     labels = ["<0.10","0.10-0.20","0.20-0.30","0.30-0.40","0.40-0.50","0.50-0.60","0.60-0.70",">0.70"]
     df_cal = pd.DataFrame({"prob": probs, "won": y.values})
     df_cal["bucket"] = pd.cut(df_cal["prob"], bins=bins, labels=labels)
@@ -105,7 +105,7 @@ def train_model(df_all: pd.DataFrame, X_all: pd.DataFrame, y_all: pd.Series):
 
     if n_spec >= MIN_SPECIALIZED_SAMPLES:
         X_spec_raw = X_all[mask][SPECIALIZED_FEATURES]
-        y_spec     = y_all[mask]
+        y_spec = y_all[mask]
         model_spec, method_spec, brier_spec, feats_spec = _best_model(
             X_spec_raw, y_spec, SPECIALIZED_FEATURES, "BUY_NO T+0 specialized"
         )

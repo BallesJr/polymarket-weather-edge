@@ -37,10 +37,10 @@ MAX_POSITION_FRACTION = 0.10
 MAX_POSITION_USD = 5.0
 
 # City performance filter: skip cities with win_rate below threshold (min trades required)
-MIN_CITY_WIN_RATE  = 0.35
-MIN_CITY_TRADES    = 10
-CITY_WINDOW_DAYS   = 60   # rolling window: old trades age out, giving blocked cities a second chance
-PORTFOLIO_PATH     = "data/paper_portfolio_weather.json"
+MIN_CITY_WIN_RATE = 0.35
+MIN_CITY_TRADES = 10
+CITY_WINDOW_DAYS = 60   # rolling window: old trades age out, giving blocked cities a second chance
+PORTFOLIO_PATH = "data/paper_portfolio_weather.json"
 
 
 def _city_win_rates() -> dict[str, float]:

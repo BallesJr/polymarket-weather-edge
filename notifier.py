@@ -2,7 +2,7 @@ import os
 import requests
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID   = os.getenv("TELEGRAM_CHAT_ID", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
 
 def _send(message: str) -> bool:
@@ -21,13 +21,13 @@ def _send(message: str) -> bool:
 
 
 def notify_cycle_summary(portfolio: dict, n_opened: int, n_resolved: int) -> None:
-    bankroll  = portfolio["bankroll"]
+    bankroll = portfolio["bankroll"]
     total_pnl = portfolio["total_pnl"]
-    n_won     = portfolio["n_won"]
-    n_lost    = portfolio["n_lost"]
-    n_open    = len(portfolio["positions"])
-    win_rate  = n_won / max(n_won + n_lost, 1)
-    roi       = (bankroll - portfolio["initial_bankroll"]) / portfolio["initial_bankroll"]
+    n_won = portfolio["n_won"]
+    n_lost = portfolio["n_lost"]
+    n_open = len(portfolio["positions"])
+    win_rate = n_won / max(n_won + n_lost, 1)
+    roi = (bankroll - portfolio["initial_bankroll"]) / portfolio["initial_bankroll"]
 
     msg = (
         f"<b>Weather Edge Bot</b>\n"
