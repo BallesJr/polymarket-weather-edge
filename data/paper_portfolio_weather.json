@@ -1,5 +1,5 @@
 {
-  "bankroll": 8850.3129,
+  "bankroll": 8840.3129,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -5276,6 +5276,58 @@
       "source_model": "calibration_rf",
       "status": "OPEN",
       "opened_at": "2026-06-06T18:04:11.460472+00:00",
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null
+    },
+    {
+      "series_slug": "chicago-daily-weather",
+      "event_date": "2026-06-06",
+      "question": "Will the highest temperature in Chicago be between 84-85\u00b0F on June 6?",
+      "condition_id": "0xf46b05b4caec04eec1db0e7a9227a3d1465f42cf761963ad2f921fd0e8155a52",
+      "temp_str": "between 84-85\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "17578465167810373594751044426848034590211168053301335581784668625220502922897",
+      "token_yes": "10493511592542144487206009792341425135008450083846732734861402504610722363658",
+      "model_prob_gaussian": NaN,
+      "entry_prob": 0.28,
+      "model_prob": 0.5119,
+      "edge": -0.2081,
+      "net_edge": 0.188,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.8,
+      "source_model": "calibration_rf",
+      "status": "OPEN",
+      "opened_at": "2026-06-06T19:20:05.028897+00:00",
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null
+    },
+    {
+      "series_slug": "warsaw-daily-weather",
+      "event_date": "2026-06-07",
+      "question": "Will the highest temperature in Warsaw be 27\u00b0C on June 7?",
+      "condition_id": "0x81e4e7f6bcfda506555691d354d6e8b3d0d72c6e77eb1cce2eb35dd5c29d91e3",
+      "temp_str": "27\u00b0C",
+      "direction": "BUY_YES",
+      "token_id": "53639365017962093807562143274168193309632005147926909920467517188099697623311",
+      "token_yes": "53639365017962093807562143274168193309632005147926909920467517188099697623311",
+      "model_prob_gaussian": NaN,
+      "entry_prob": 0.0295,
+      "model_prob": 0.1543,
+      "edge": 0.1248,
+      "net_edge": 0.1219,
+      "size_usd": 5.0,
+      "forecast_temp_c": NaN,
+      "forecast_horizon_days": 1,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "calibration_rf",
+      "status": "OPEN",
+      "opened_at": "2026-06-06T19:20:05.030296+00:00",
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null
@@ -30613,5 +30665,5 @@
   "n_lost": 763,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-06T18:04:11.460697+00:00"
+  "last_updated": "2026-06-06T19:20:05.030562+00:00"
 }
