@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import numpy as np
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 from market_filter import fetch_active_weather_markets
 from weather_api import fetch_forecasts_for_markets, add_model_probabilities
@@ -39,11 +39,17 @@ MAX_POSITION_USD = 5.0
 # City performance filter: skip cities with win_rate below threshold (min trades required)
 MIN_CITY_WIN_RATE  = 0.35
 MIN_CITY_TRADES    = 10
+CITY_WINDOW_DAYS   = 60   # rolling window: old trades age out, giving blocked cities a second chance
 PORTFOLIO_PATH     = "data/paper_portfolio_weather.json"
 
 
 def _city_win_rates() -> dict[str, float]:
-    """Return {series_slug: win_rate} for BUY_NO T+0 trades with enough history."""
+    """Return {series_slug: win_rate} for BUY_NO T+0 trades within the rolling window.
+
+    Cities with < MIN_CITY_TRADES in the window are excluded from the dict,
+    meaning they are NOT filtered — this is how blocked cities get a second chance
+    once their old bad trades age out of the window.
+    """
     if not os.path.exists(PORTFOLIO_PATH):
         return {}
     try:
@@ -54,6 +60,12 @@ def _city_win_rates() -> dict[str, float]:
             return {}
         df = df[df["status"].isin(["WON", "LOST"])]
         df = df[(df["direction"] == "BUY_NO") & (df["forecast_horizon_days"] == 0)]
+
+        # Rolling window: only trades opened within the last CITY_WINDOW_DAYS
+        cutoff = datetime.now(timezone.utc) - timedelta(days=CITY_WINDOW_DAYS)
+        df["opened_at"] = pd.to_datetime(df["opened_at"], utc=True)
+        df = df[df["opened_at"] >= cutoff]
+
         g = df.groupby("series_slug").agg(trades=("status", "count"), won=("status", lambda x: (x == "WON").sum()))
         g["win_rate"] = g["won"] / g["trades"]
         return g[g["trades"] >= MIN_CITY_TRADES]["win_rate"].to_dict()
