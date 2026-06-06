@@ -8,6 +8,7 @@ from dataclasses import dataclass, asdict
 from signal_engine import Signal, generate_signals, WEATHER_FEE_RATE
 from market_filter import fetch_active_weather_markets
 from weather_api import fetch_forecasts_for_markets, add_model_probabilities
+from notifier import notify_cycle_summary, notify_high_edge_open, notify_resolution
 
 # Portfolio state is persisted to disk so it survives bot restarts
 PORTFOLIO_PATH = "data/paper_portfolio_weather.json"
@@ -155,6 +156,10 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
         print(f"[PaperTrader] OPEN {signal.direction} | {signal.temp_str} in {city} "
               f"on {signal.event_date} | ${signal.position_size} @ {signal.market_prob:.3f} "
               f"| edge {signal.net_edge:+.3f}")
+
+        if signal.net_edge >= 0.40:
+            notify_high_edge_open(signal.direction, signal.temp_str, city,
+                                  signal.event_date, signal.net_edge, signal.position_size)
         
     return opened
 
@@ -258,6 +263,8 @@ def check_resolutions(portfolio: dict) -> list[dict]:
         result = "WON" if won else "LOST"
         print(f"[PaperTrader] {result} | {pos['temp_str']} in {city} | "
               f"${pos['pnl_usd']:+.2f} | bankroll ${portfolio['bankroll']:.2f}")
+        notify_resolution(pos["direction"], pos["temp_str"], city,
+                          result, pos["pnl_usd"], portfolio["bankroll"])
         
     portfolio["positions"] = still_open
     return resolved
@@ -334,6 +341,7 @@ def run_cycle(bankroll: float = INITIAL_BANKROLL) -> dict:
     portfolio["total_pnl"] = sum(t["pnl_usd"] for t in portfolio["closed_trades"])
     _save_portfolio(portfolio)
     print_summary(portfolio)
+    notify_cycle_summary(portfolio, n_opened=len(opened) if signals else 0, n_resolved=len(resolved))
 
     return portfolio
 
