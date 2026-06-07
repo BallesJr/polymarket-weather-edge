@@ -52,6 +52,7 @@ class Position:
     # Status
     status: str # "OPEN", "WON", "LOST", "EXPIRED"
     opened_at: str # ISO timestamp
+    entry_fee: float = 0.0 # Taker fee paid at open (deducted from bankroll immediately)
     closed_at: str = ""
     pnl_usd: float = 0.0
     resolved_temp: float = None # Actual temperature at resolution
@@ -105,9 +106,12 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
         if _is_duplicate(signal, portfolio):
             continue
 
-        if portfolio["bankroll"] < signal.position_size:
+        entry_prob_val = signal.market_prob if signal.direction == "BUY_YES" else 1 - signal.market_prob
+        open_fee = round(WEATHER_FEE_RATE * signal.position_size * (1 - entry_prob_val), 4)
+
+        if portfolio["bankroll"] < signal.position_size + open_fee:
             print(f"[PaperTrader] Insufficient bankroll for {signal.temp_str} in "
-                  f"{signal.series_slug} (need ${signal.position_size:.2f}, "
+                  f"{signal.series_slug} (need ${signal.position_size + open_fee:.2f}, "
                   f"have ${portfolio['bankroll']:.2f})")
             continue
 
@@ -139,6 +143,7 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
             edge=signal.edge,
             net_edge=signal.net_edge,
             size_usd=signal.position_size,
+            entry_fee=open_fee,
             forecast_temp_c=forecast_temp,
             forecast_horizon_days=signal.horizon_days,
             data_source=signal.data_source,
@@ -148,7 +153,7 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
             opened_at=datetime.now(timezone.utc).isoformat()
         )
         
-        portfolio["bankroll"] -= signal.position_size
+        portfolio["bankroll"] -= signal.position_size + open_fee
         portfolio["positions"].append(asdict(position))
         opened.append(position)
 
@@ -222,7 +227,8 @@ def check_resolutions(portfolio: dict) -> list[dict]:
             if (today - event_date).days > 3:
                 pos["status"] = "EXPIRED"
                 pos["closed_at"] = datetime.now(timezone.utc).isoformat()
-                pos["pnl_usd"] = -pos["size_usd"]  # bankroll already decremented at open
+                expired_fee = pos.get("entry_fee", 0.0)
+                pos["pnl_usd"] = -(pos["size_usd"] + expired_fee)  # bankroll already decremented at open
                 portfolio["n_expired"] += 1
                 portfolio["total_pnl"] += pos["pnl_usd"]
                 portfolio["closed_trades"].append(pos)
@@ -239,8 +245,10 @@ def check_resolutions(portfolio: dict) -> list[dict]:
         else:  # BUY_NO
             won = (pos["token_yes"] != winning_token)
     
-        # Entry fee: feeRate * size * (1 - entry_prob), paid regardless of outcome
-        entry_fee = round(WEATHER_FEE_RATE * pos["size_usd"] * (1 - pos["entry_prob"]), 4)
+        # Use stored entry_fee for positions opened after the fee-at-open fix;
+        # fall back to computing it for older positions (fee embedded in pnl only)
+        stored_fee = pos.get("entry_fee")
+        entry_fee = stored_fee if stored_fee else round(WEATHER_FEE_RATE * pos["size_usd"] * (1 - pos["entry_prob"]), 4)
 
         if won:
             shares = pos["size_usd"] / pos["entry_prob"]
@@ -254,7 +262,9 @@ def check_resolutions(portfolio: dict) -> list[dict]:
             portfolio["n_lost"] += 1
 
         pos["closed_at"] = datetime.now(timezone.utc).isoformat()
-        portfolio["bankroll"] += pos["size_usd"] + pos["pnl_usd"]
+        # For positions opened after the fee-at-open fix, add back the pre-paid fee so
+        # the close credit is gross (the fee was already absorbed at open time)
+        portfolio["bankroll"] += pos["size_usd"] + pos["pnl_usd"] + (stored_fee or 0.0)
         portfolio["total_pnl"] += pos["pnl_usd"]
         portfolio["closed_trades"].append(pos)
         resolved.append(pos)

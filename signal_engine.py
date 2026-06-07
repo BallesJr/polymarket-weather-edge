@@ -24,7 +24,7 @@ MIN_LIQUIDITY = 200.0
 
 # Fee rate for Weather category markets (confirmed from Polymarket docs)
 # fee = feeRate * C * p * (1 - p), where C = shares, p = price
-# As a taker, we pay this fee on entry and exit
+# Charged only at entry; Polymarket does not charge a fee on resolution
 WEATHER_FEE_RATE = 0.05
  
 # Half-Kelly fraction: conservative position sizing to limit variance
@@ -112,18 +112,16 @@ class Signal:
 
     generated_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
 
-# Compute the taker fee as a fraction of trade value for a given probability
-# fee_fraction = feeRate * p * (1-p) (for a roundtrip (entry + exit), multiply by 2)
+# Compute the taker fee per share for a given probability
+# fee_per_share = feeRate * p * (1-p), where p = entry price
 def _compute_fee(prob: float) -> float:
     return WEATHER_FEE_RATE * prob * (1 - prob)
 
 # Adjust raw edge for taker fees
-# For BUY YES at prob p:
-# - Entry fee: feeRate * p * (1 - p)
-# - Exit (sell or resolution): no fee on resolution, fee on early sell. We assume one roundtrip fee
+# Only entry fee applies: Polymarket charges no fee on resolution (tokens settle at $1)
 def _compute_net_edge(edge: float, entry_prob: float) -> float:
     fee = _compute_fee(entry_prob)
-    return edge - 2 * fee
+    return edge - fee
 
 # Compute the full Kelly fraction for a binary bet
 def _compute_kelly(model_prob: float, market_prob: float, direction: str) -> float:
