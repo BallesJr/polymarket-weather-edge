@@ -1,5 +1,5 @@
 {
-  "bankroll": 9191.449599999996,
+  "bankroll": 9186.204899999997,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -2104,6 +2104,33 @@
       "source_model": "calibration_rf",
       "status": "OPEN",
       "opened_at": "2026-06-07T06:52:58.379863+00:00",
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null
+    },
+    {
+      "series_slug": "lucknow-daily-weather",
+      "event_date": "2026-06-07",
+      "question": "Will the highest temperature in Lucknow be 40\u00b0C on June 7?",
+      "condition_id": "0x47cc7ca1b93d2e3bb936d91708a04f51acf37b3deae85c9856c4bac60ba05093",
+      "temp_str": "40\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "60684446545833303884958926533410820048812664507979089965348079051472105000867",
+      "token_yes": "113233787611338156850302531459891324802070842200340385419124510821426971039086",
+      "model_prob_gaussian": 0.017308287197365324,
+      "entry_prob": 0.02100000000000002,
+      "model_prob": 0.5308,
+      "edge": -0.4482,
+      "net_edge": 0.4472,
+      "size_usd": 5.0,
+      "forecast_temp_c": 37.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 37.9,
+      "source_model": "calibration_rf",
+      "status": "OPEN",
+      "opened_at": "2026-06-07T11:52:04.221697+00:00",
+      "entry_fee": 0.2447,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null
@@ -30899,5 +30926,5 @@
   "n_lost": 875,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-07T10:04:00.520226+00:00"
+  "last_updated": "2026-06-07T11:52:04.811225+00:00"
 }
