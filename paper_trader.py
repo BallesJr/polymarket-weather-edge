@@ -7,7 +7,7 @@ from dataclasses import dataclass, asdict
 
 from signal_engine import Signal, generate_signals, WEATHER_FEE_RATE
 from market_filter import fetch_active_weather_markets
-from weather_api import fetch_forecasts_for_markets, add_model_probabilities
+from weather_api import fetch_forecasts_for_markets, add_model_probabilities, fetch_observed_max
 from notifier import notify_cycle_summary, notify_high_edge_open, notify_resolution
 
 # Portfolio state is persisted to disk so it survives bot restarts
@@ -227,6 +227,7 @@ def check_resolutions(portfolio: dict) -> list[dict]:
             if (today - event_date).days > 3:
                 pos["status"] = "EXPIRED"
                 pos["closed_at"] = datetime.now(timezone.utc).isoformat()
+                pos["resolved_temp"] = fetch_observed_max(pos["series_slug"], pos["event_date"])
                 expired_fee = pos.get("entry_fee", 0.0)
                 pos["pnl_usd"] = -(pos["size_usd"] + expired_fee)  # bankroll already decremented at open
                 portfolio["n_expired"] += 1
@@ -262,6 +263,8 @@ def check_resolutions(portfolio: dict) -> list[dict]:
             portfolio["n_lost"] += 1
 
         pos["closed_at"] = datetime.now(timezone.utc).isoformat()
+        # Record actual observed high for auditing/bias analysis (best-effort, may be None)
+        pos["resolved_temp"] = fetch_observed_max(pos["series_slug"], pos["event_date"])
         # For positions opened after the fee-at-open fix, add back the pre-paid fee so
         # the close credit is gross (the fee was already absorbed at open time)
         portfolio["bankroll"] += pos["size_usd"] + pos["pnl_usd"] + (stored_fee or 0.0)

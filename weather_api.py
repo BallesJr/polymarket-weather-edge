@@ -7,11 +7,15 @@ from scipy.stats import norm
 import pickle
 import os
 
-from market_filter import STATION_COORDS
+from market_filter import STATION_COORDS, RESOLUTION_STATIONS
 
 # Open-Meteo public API - free, no API key required
 # Documentation: https://open-meteo.com/en/docs
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
+
+# Historical reanalysis (ERA5) archive — independent of our forecast model.
+# Available from ~event+1 day, so it is ready by the time markets resolve.
+OPEN_METEO_ARCHIVE_URL = "https://archive-api.open-meteo.com/v1/archive"
 
 # How many forecast days to request (today + next N days)
 # Weather markets typically cover today and the next 1-2 days
@@ -134,6 +138,43 @@ def fetch_current_observation(lat: float, lon: float) -> dict:
     except requests.RequestException as e:
         print(f"[WeatherAPI] Observation error for ({lat}, {lon}): {e}")
         return {"available": False}
+# Fetch the actual observed daily max temperature (°C) for a resolved market.
+# Used purely for instrumentation/auditing: stored in Position.resolved_temp so we can
+# measure forecast bias per city (forecast_temp_c - resolved_temp) over time.
+# Resolves coords via series_slug -> RESOLUTION_STATIONS -> STATION_COORDS, then reads the
+# daily max from the ERA5 archive — an INDEPENDENT reanalysis (not our forecast model),
+# which is what makes it useful for bias detection. Available from ~event+1 day.
+# NOTE: ERA5 is a ~25km grid, NOT the exact station Polymarket resolves on; a residual
+# 1-2°C gap to the resolution source can remain. Returns None if unavailable.
+def fetch_observed_max(series_slug: str, event_date: str) -> float | None:
+    station = RESOLUTION_STATIONS.get(series_slug)
+    lat, lon = STATION_COORDS.get(station, (None, None)) if station else (None, None)
+    if lat is None or lon is None:
+        return None
+
+    try:
+        target = datetime.strptime(event_date, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+    if target >= datetime.now(timezone.utc).date():
+        return None  # event today/future: archive not yet available
+
+    try:
+        data = _fetch_with_retry(OPEN_METEO_ARCHIVE_URL, params={
+            "latitude": lat,
+            "longitude": lon,
+            "start_date": event_date,
+            "end_date": event_date,
+            "daily": "temperature_2m_max",
+            "timezone": "auto",
+        })
+        temps = data.get("daily", {}).get("temperature_2m_max", [])
+        if temps and temps[0] is not None:
+            return round(float(temps[0]), 1)
+    except requests.RequestException as e:
+        print(f"[WeatherAPI] Observed-max fetch failed for {series_slug} {event_date}: {e}")
+    return None
+
 # Fetch temperature forecasts for all markets in the DataFrame
 # For each unique combination (series_slug, event_date):
 # makes one API call to Open-Meteo and attaches the forecast to all outcome for that event
