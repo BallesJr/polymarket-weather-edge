@@ -274,6 +274,7 @@ def fetch_forecasts_for_markets(df: pd.DataFrame) -> pd.DataFrame:
     df["observed_max_c"] = np.nan
     df["observation_hour"] = np.nan
     df["day_complete"] = False
+    df["obs_source"] = ""
 
     # Deduplicate: one API call per pair (station. date)
     unique_events = df[["series_slug", "event_date", "lat", "lon", "station"]].drop_duplicates()
@@ -319,6 +320,7 @@ def fetch_forecasts_for_markets(df: pd.DataFrame) -> pd.DataFrame:
                 df.loc[mask, "observed_max_c"] = obs["observed_max_c"]
                 df.loc[mask, "observation_hour"] = obs["hour_local"]
                 df.loc[mask, "day_complete"] = obs["day_complete"]
+                df.loc[mask, "obs_source"] = obs.get("obs_source", "")
     
     available = df["forecast_available"].sum()
     print(f"[WeatherAPI] Forecasts available for {available}/{len(df)} outcomes")

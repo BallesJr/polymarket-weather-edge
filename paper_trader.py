@@ -56,6 +56,7 @@ class Position:
     closed_at: str = ""
     pnl_usd: float = 0.0
     resolved_temp: float = None # Actual temperature at resolution
+    obs_source: str = "" # "metar" (resolution station) or "openmeteo" (model fallback); "" if no observation
 
 # --- Portfolio persistence ---
 
@@ -150,7 +151,8 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
             observed_max_c=observed_max,
             source_model="calibration_rf" if os.path.exists("models/rf_weather.pkl") else "base",
             status="OPEN",
-            opened_at=datetime.now(timezone.utc).isoformat()
+            opened_at=datetime.now(timezone.utc).isoformat(),
+            obs_source=str(row["obs_source"].iloc[0]) if not row.empty and "obs_source" in row.columns else "",
         )
         
         portfolio["bankroll"] -= signal.position_size + open_fee
