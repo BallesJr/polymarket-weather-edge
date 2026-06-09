@@ -18,6 +18,17 @@ MIN_EDGE_TODAY = 0.25  # T+0: observation-based, raised from 0.08 (historical wi
 MIN_EDGE_TOMORROW = 0.99  # T+1: disabled (win rate 18%, not profitable)
 MIN_EDGE_D2 = 0.99  # T+2: disabled (win rate 4%, catastrophic)
 
+# NO-token price band for BUY_NO trades.
+# entry_prob (the NO token price = 1 - market_prob) carries more signal than edge:
+# when the NO token is very cheap, the market is near-certain on YES for a same-day
+# temperature and is almost always right. Betting against it is adverse selection.
+# Historical BUY_NO T+0 win rate by NO price bucket (341 trades):
+#   0.00-0.05: 0%   (-$192)   0.05-0.10: 6.5% (-$17)   0.10-0.20: 16.7% (-$1)
+#   0.20-0.35: 62% (+$146)    0.35-0.50: 39.7% (-$16)
+# The only consistently profitable zone is ~0.20-0.35; the extreme-cheap NO is a sink.
+MIN_NO_PRICE = 0.15
+MAX_NO_PRICE = 0.40
+
 # Minimum liquidity (USDC) required to trade an outcome
 # Below this, market impact would be too large for small position sizes
 MIN_LIQUIDITY = 200.0
@@ -198,6 +209,11 @@ def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
             entry_prob = 1 - market_prob  # NO token price
         else:
             continue  # Edge too small or BUY_YES
+
+        # Skip extreme NO prices: betting against a near-certain same-day market
+        # has a ~0% win rate (see MIN_NO_PRICE/MAX_NO_PRICE rationale above).
+        if entry_prob < MIN_NO_PRICE or entry_prob > MAX_NO_PRICE:
+            continue
 
         # Fee adjusted net edge
         net_edge = _compute_net_edge(abs(edge), entry_prob)
