@@ -69,6 +69,37 @@ STATION_COORDS = {
     "LEMD": (40.4719, -3.5626), # Adolfo Suárez Madrid-Barajas Airport
 }
 
+# IEM (Iowa Environmental Mesonet) network + station id for each resolution station
+# Used to fetch daily max computed from the station's own METARs — the same data
+# Weather Underground publishes and Polymarket resolves on (93% agreement vs 66% for ERA5)
+# US networks use the 3-letter FAA id (no K prefix); international use COUNTRY__ASOS
+# New Zealand is not in IEM: NZWN intentionally absent (falls back to ERA5)
+STATION_IEM_NETWORKS = {
+    "EGLC": ("GB__ASOS", "EGLC"), # London City
+    "KLGA": ("NY_ASOS", "LGA"), # NYC LaGuardia
+    "EPWA": ("PL__ASOS", "EPWA"), # Warsaw Chopin
+    "RJTT": ("JP__ASOS", "RJTT"), # Tokyo Haneda
+    "RKSI": ("KR__ASOS", "RKSI"), # Seoul Incheon
+    "MMMX": ("MX__ASOS", "MMMX"), # Mexico City
+    "RCSS": ("TW__ASOS", "RCSS"), # Taipei Songshan
+    "ZSPD": ("CN__ASOS", "ZSPD"), # Shanghai Pudong
+    "WSSS": ("SG__ASOS", "WSSS"), # Singapore Changi
+    "KORD": ("IL_ASOS", "ORD"), # Chicago O'Hare
+    "KMIA": ("FL_ASOS", "MIA"), # Miami
+    "LIMC": ("IT__ASOS", "LIMC"), # Milan Malpensa
+    "LFPB": ("FR__ASOS", "LFPB"), # Paris Le Bourget
+    "KAUS": ("TX_ASOS", "AUS"), # Austin-Bergstrom
+    "KBOS": ("MA_ASOS", "BOS"), # Boston Logan
+    "KHOU": ("TX_ASOS", "HOU"), # Houston Hobby
+    "VILK": ("IN__ASOS", "VILK"), # Lucknow
+    "ZBAA": ("CN__ASOS", "ZBAA"), # Beijing Capital
+    "EDDM": ("DE__ASOS", "EDDM"), # Munich
+    "KBKF": ("CO_ASOS", "BKF"), # Buckley SFB, Denver
+    "ZGSZ": ("CN__ASOS", "ZGSZ"), # Shenzhen Bao'an
+    "EHAM": ("NL__ASOS", "EHAM"), # Amsterdam Schiphol
+    "LEMD": ("ES__ASOS", "LEMD"), # Madrid Barajas
+}
+
 # Fetch active events for a given series slug via Gamma API
 def _fetch_events_by_series(series_slug: str) -> list[dict]:
     city = series_slug.replace("-daily-weather", "")

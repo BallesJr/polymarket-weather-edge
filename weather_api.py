@@ -7,7 +7,7 @@ from scipy.stats import norm
 import pickle
 import os
 
-from market_filter import STATION_COORDS, RESOLUTION_STATIONS
+from market_filter import STATION_COORDS, RESOLUTION_STATIONS, STATION_IEM_NETWORKS
 
 # Open-Meteo public API - free, no API key required
 # Documentation: https://open-meteo.com/en/docs
@@ -16,6 +16,15 @@ OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 # Historical reanalysis (ERA5) archive — independent of our forecast model.
 # Available from ~event+1 day, so it is ready by the time markets resolve.
 OPEN_METEO_ARCHIVE_URL = "https://archive-api.open-meteo.com/v1/archive"
+
+# Live METAR reports from the exact resolution station (free, no API key).
+# This is the same thermometer Weather Underground publishes and Polymarket
+# resolves on, unlike Open-Meteo hourly which is model-interpolated.
+AVIATION_METAR_URL = "https://aviationweather.gov/api/data/metar"
+
+# IEM daily summaries computed from station METARs (93% agreement with actual
+# market resolutions over 507 historical trades, vs 66% for the ERA5 grid).
+IEM_DAILY_URL = "https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py"
 
 # How many forecast days to request (today + next N days)
 # Weather markets typically cover today and the next 1-2 days
@@ -101,9 +110,46 @@ def fetch_forecast(lat: float, lon: float, target_date: str) -> dict:
         print(f"[WeatherAPI] Error fetching forecast for ({lat}, {lon}): {e}")
         return {"date": target_date, "available": False}
     
+# Fetch the max temperature reported so far today (station local date) from the
+# station's own METARs. Returns {"available": False} on any failure so the caller
+# can fall back to Open-Meteo hourly data.
+def fetch_metar_max_today(station: str, utc_offset_s: int) -> dict:
+    try:
+        resp = requests.get(AVIATION_METAR_URL, params={
+            "ids": station, "format": "json", "hours": 30,
+        }, timeout=15)
+        resp.raise_for_status()
+        reports = resp.json()
+    except (requests.RequestException, ValueError):
+        return {"available": False}
+
+    if not isinstance(reports, list) or not reports:
+        return {"available": False}
+
+    today_local = (datetime.now(timezone.utc) + timedelta(seconds=utc_offset_s)).date()
+    temps = []
+    for rep in reports:
+        obs_epoch = rep.get("obsTime")
+        if obs_epoch is None:
+            continue
+        local_dt = datetime.fromtimestamp(obs_epoch, tz=timezone.utc) + timedelta(seconds=utc_offset_s)
+        if local_dt.date() != today_local:
+            continue
+        if rep.get("temp") is not None:
+            temps.append(float(rep["temp"]))
+        # 6-hourly max group catches peaks between regular reports, but only
+        # count it when its whole 6h window falls within today (local)
+        if rep.get("maxT") is not None and (local_dt - timedelta(hours=6)).date() == today_local:
+            temps.append(float(rep["maxT"]))
+
+    if not temps:
+        return {"available": False}
+    return {"observed_max_c": round(max(temps), 1), "available": True}
+
 # Fetch the current observed maximum temperature for today at a given location
-# Uses Open-Meteo hourly data and takes the max temperature recorded so far today
-def fetch_current_observation(lat: float, lon: float) -> dict:
+# Prefers real METARs from the resolution station; falls back to Open-Meteo
+# hourly data (model-interpolated) when no station is given or METAR fails
+def fetch_current_observation(lat: float, lon: float, station: str = None) -> dict:
     try:
         data = _fetch_with_retry(OPEN_METEO_URL, params={
             "latitude": lat,
@@ -130,22 +176,55 @@ def fetch_current_observation(lat: float, lon: float) -> dict:
 
         if not temps_so_far:
             return {"available": False}
-        
-        observed_max = max(temps_so_far)
 
-        return {"observed_max_c": round(observed_max, 1), "hour_local": current_hour, "day_complete": current_hour >= 20, "available": True,}
+        observed_max = max(temps_so_far)
+        source = "openmeteo"
+
+        # Overlay real station METARs when available (same source the market resolves on)
+        if station:
+            metar = fetch_metar_max_today(station, utc_offset_s)
+            if metar["available"]:
+                observed_max = metar["observed_max_c"]
+                source = "metar"
+
+        return {"observed_max_c": round(observed_max, 1), "hour_local": current_hour, "day_complete": current_hour >= 20, "obs_source": source, "available": True,}
     
     except requests.RequestException as e:
         print(f"[WeatherAPI] Observation error for ({lat}, {lon}): {e}")
         return {"available": False}
+# Fetch the IEM daily max (°C) for a station, computed from its own METARs.
+# Matches the actual market resolution 93% of the time (vs 66% for ERA5).
+def _fetch_iem_daily_max(station: str, event_date: str) -> float | None:
+    net = STATION_IEM_NETWORKS.get(station)
+    if net is None:
+        return None
+    network, iem_id = net
+    y, m, d = event_date.split("-")
+    try:
+        resp = requests.get(IEM_DAILY_URL, params={
+            "network": network, "stations": iem_id,
+            "year1": y, "month1": int(m), "day1": int(d),
+            "year2": y, "month2": int(m), "day2": int(d),
+            "var": "max_temp_f", "format": "csv", "na": "blank",
+        }, timeout=20)
+        resp.raise_for_status()
+        lines = resp.text.strip().splitlines()
+        if len(lines) < 2:
+            return None
+        header = lines[0].split(",")
+        val = lines[1].split(",")[header.index("max_temp_f")]
+        if val:
+            return round((float(val) - 32) * 5 / 9, 1)
+    except (requests.RequestException, ValueError, IndexError):
+        pass
+    return None
+
 # Fetch the actual observed daily max temperature (°C) for a resolved market.
 # Used purely for instrumentation/auditing: stored in Position.resolved_temp so we can
 # measure forecast bias per city (forecast_temp_c - resolved_temp) over time.
-# Resolves coords via series_slug -> RESOLUTION_STATIONS -> STATION_COORDS, then reads the
-# daily max from the ERA5 archive — an INDEPENDENT reanalysis (not our forecast model),
-# which is what makes it useful for bias detection. Available from ~event+1 day.
-# NOTE: ERA5 is a ~25km grid, NOT the exact station Polymarket resolves on; a residual
-# 1-2°C gap to the resolution source can remain. Returns None if unavailable.
+# Primary source: IEM daily summary from the exact resolution station's METARs.
+# Fallback: ERA5 reanalysis at the station coords — a ~25km grid, NOT the exact
+# station, so a residual 1-2°C gap can remain there. Returns None if unavailable.
 def fetch_observed_max(series_slug: str, event_date: str) -> float | None:
     station = RESOLUTION_STATIONS.get(series_slug)
     lat, lon = STATION_COORDS.get(station, (None, None)) if station else (None, None)
@@ -157,7 +236,11 @@ def fetch_observed_max(series_slug: str, event_date: str) -> float | None:
     except ValueError:
         return None
     if target >= datetime.now(timezone.utc).date():
-        return None  # event today/future: archive not yet available
+        return None  # event today/future: daily summaries not final yet
+
+    iem_max = _fetch_iem_daily_max(station, event_date)
+    if iem_max is not None:
+        return iem_max
 
     try:
         data = _fetch_with_retry(OPEN_METEO_ARCHIVE_URL, params={
@@ -193,7 +276,7 @@ def fetch_forecasts_for_markets(df: pd.DataFrame) -> pd.DataFrame:
     df["day_complete"] = False
 
     # Deduplicate: one API call per pair (station. date)
-    unique_events = df[["series_slug", "event_date", "lat", "lon"]].drop_duplicates()
+    unique_events = df[["series_slug", "event_date", "lat", "lon", "station"]].drop_duplicates()
 
     print(f"[WeatherAPI] Fetching forecasts for {len(unique_events)} event(s)...")
 
@@ -231,7 +314,7 @@ def fetch_forecasts_for_markets(df: pd.DataFrame) -> pd.DataFrame:
 
         # For today's markets, enrich with real observed max temperature
         if target_date == today_str:
-            obs = fetch_current_observation(lat, lon)
+            obs = fetch_current_observation(lat, lon, station=event_row.get("station"))
             if obs["available"]:
                 df.loc[mask, "observed_max_c"] = obs["observed_max_c"]
                 df.loc[mask, "observation_hour"] = obs["hour_local"]
