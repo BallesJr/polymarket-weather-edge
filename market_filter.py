@@ -25,7 +25,7 @@ RESOLUTION_STATIONS = {
     "chicago-daily-weather": "KORD", # Chicago O'Hare
     "miami-daily-weather": "KMIA", # Miami Airport
     "milan-daily-weather": "LIMC", # Milan Malpensa
-    "paris-daily-weather": "LFPG", # Paris CDG
+    "paris-daily-weather": "LFPB", # Paris Le Bourget (NOT CDG: market description points to LFPB)
     "austin-daily-weather": "KAUS", # Austin-Bergstrom
     "boston-daily-weather": "KBOS", # Boston Logan
     "houston-daily-weather": "KHOU", # Houston Hobby
@@ -56,7 +56,7 @@ STATION_COORDS = {
     "KORD": (41.9742, -87.9073), # Chicago O'Hare
     "KMIA": (25.7959, -80.2870), # Miami Airport
     "LIMC": (45.6306,   8.7281), # Milan Malpensa
-    "LFPG": (49.0097,   2.5479), # Paris CDG
+    "LFPB": (48.9694,   2.4414), # Paris Le Bourget
     "KAUS": (30.1975, -97.6664), # Austin-Bergstrom
     "KHOU": (29.6454, -95.2789), # Houston Hobby
     "VILK": (26.7606,  80.8893), # Lucknow Airport
