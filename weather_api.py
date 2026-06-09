@@ -242,10 +242,14 @@ def fetch_forecasts_for_markets(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 # Parse a temperature label from a Polymarket question into a (low, high) range in Celsius
-def parse_temp_range(temp_str: str, unit: str = "C") -> tuple[float, float]:
+# Returns (low_c, high_c, is_fahrenheit); is_fahrenheit tells the caller the market's
+# native bin width (1°F vs 1°C) for the continuity correction
+def parse_temp_range(temp_str: str) -> tuple[float, float, bool]:
     s = temp_str.strip().upper().replace("°", "").replace(" ", "")
 
     is_fahrenheit = "F" in s
+    # US markets phrase ranges as "between 88-89°F"; strip the keyword before parsing numbers
+    s = s.replace("BETWEEN", "")
     s = s.replace("C", "").replace("F", "")
 
     def to_celsius(t: float) -> float:
@@ -253,25 +257,25 @@ def parse_temp_range(temp_str: str, unit: str = "C") -> tuple[float, float]:
     
     if "ORHIGHER" in s:
         val = float(s.replace("ORHIGHER", ""))
-        return (to_celsius(val), np.inf)
-    
+        return (to_celsius(val), np.inf, is_fahrenheit)
+
     if "ORBELOW" in s:
         val = float(s.replace("ORBELOW", ""))
-        return(-np.inf, to_celsius(val))
-    
+        return(-np.inf, to_celsius(val), is_fahrenheit)
+
     if "-" in s:
         parts = s.split("-")
         try:
             lo, hi = float(parts[0]), float(parts[1])
-            return (to_celsius(lo), to_celsius(hi))
+            return (to_celsius(lo), to_celsius(hi), is_fahrenheit)
         except ValueError:
             pass
 
     try:
         val = float(s)
-        return (to_celsius(val), to_celsius(val))
+        return (to_celsius(val), to_celsius(val), is_fahrenheit)
     except ValueError:
-        return(np.nan, np.nan)
+        return(np.nan, np.nan, is_fahrenheit)
     
 # Compute the model's probability that the actual temperature falls within the outcome's temperature range (given the forecast and its uncertainty)
 def compute_model_probability(
@@ -281,6 +285,7 @@ def compute_model_probability(
         temp_range_low: float,
         temp_range_high: float,
         day_complete: bool = False,
+        half_bin: float = 0.5,
         ) -> float:
 
         # When the day is complete, observed_max is final — use tight sigma (source diff ~0.1°C)
@@ -288,9 +293,13 @@ def compute_model_probability(
         min_sigma = 0.1 if day_complete else 0.5
         sigma = max((forecast_high - forecast_low) / 3.29, min_sigma)
 
-        cdf_high = norm.cdf(temp_range_high + 0.5, loc=forecast_temp, scale=sigma) if not np.isinf(temp_range_high) else 1.0
+        # half_bin: half the market's bin width in °C — 0.5 for 1°C markets,
+        # ~0.278 for 1°F markets. The resolution source rounds to the nearest
+        # whole degree in the market's native unit, so the true range extends
+        # half a bin beyond each labeled boundary.
+        cdf_high = norm.cdf(temp_range_high + half_bin, loc=forecast_temp, scale=sigma) if not np.isinf(temp_range_high) else 1.0
 
-        cdf_low = norm.cdf(temp_range_low - 0.5, loc=forecast_temp, scale=sigma) if not np.isinf(temp_range_low) else 0.0
+        cdf_low = norm.cdf(temp_range_low - half_bin, loc=forecast_temp, scale=sigma) if not np.isinf(temp_range_low) else 0.0
 
         prob = cdf_high - cdf_low
         return float(np.clip(prob, 0.001, 0.999))
@@ -323,7 +332,7 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
             effective_low = row["forecast_temp_c_low"]
             effective_high = row["forecast_temp_c_high"]
 
-        temp_low, temp_high = parse_temp_range(row["temp_str"])
+        temp_low, temp_high, is_fahrenheit = parse_temp_range(row["temp_str"])
 
         if np.isnan(temp_low) and np.isnan(temp_high):
             model_probs.append(np.nan)
@@ -336,6 +345,7 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
             temp_range_low=temp_low,
             temp_range_high=temp_high,
             day_complete=is_complete,
+            half_bin=0.5 * 5 / 9 if is_fahrenheit else 0.5,
         )
         model_probs.append(prob)
 
