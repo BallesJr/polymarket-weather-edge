@@ -51,6 +51,11 @@ MAX_POSITION_USD = 5.0
 MIN_CITY_WIN_RATE = 0.35
 MIN_CITY_TRADES = 10
 CITY_WINDOW_DAYS = 60   # rolling window: old trades age out, giving blocked cities a second chance
+
+# Trades before this date ran under known data bugs (wrong Paris station, NaN
+# gaussian on all Fahrenheit markets, model-interpolated observations instead of
+# station METARs) and must not penalize cities under the current regime
+REGIME_START = "2026-06-10"
 PORTFOLIO_PATH = "data/paper_portfolio_weather.json"
 
 
@@ -72,8 +77,10 @@ def _city_win_rates() -> dict[str, float]:
         df = df[df["status"].isin(["WON", "LOST"])]
         df = df[(df["direction"] == "BUY_NO") & (df["forecast_horizon_days"] == 0)]
 
-        # Rolling window: only trades opened within the last CITY_WINDOW_DAYS
+        # Rolling window: only trades opened within the last CITY_WINDOW_DAYS,
+        # and never earlier than the start of the current (clean-data) regime
         cutoff = datetime.now(timezone.utc) - timedelta(days=CITY_WINDOW_DAYS)
+        cutoff = max(cutoff, datetime.strptime(REGIME_START, "%Y-%m-%d").replace(tzinfo=timezone.utc))
         df["opened_at"] = pd.to_datetime(df["opened_at"], utc=True)
         df = df[df["opened_at"] >= cutoff]
 
