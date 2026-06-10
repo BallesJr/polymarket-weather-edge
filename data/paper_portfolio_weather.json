@@ -1,36 +1,7 @@
 {
   "bankroll": 9344.082100000005,
   "initial_bankroll": 10000,
-  "positions": [
-    {
-      "series_slug": "munich-daily-weather",
-      "event_date": "2026-06-10",
-      "question": "Will the highest temperature in Munich be 13\u00b0C on June 10?",
-      "condition_id": "0x368f6208d5d0bc0ec0b41001de24a22a6c0651afa75b0cde0835cac719df5472",
-      "temp_str": "13\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "66394913995472410033845192751107495541744009659857716306750963348274354328036",
-      "token_yes": "94916143258848063151267740265984901947517145691426447620803387879369901422148",
-      "model_prob_gaussian": 0.48946186884544657,
-      "entry_prob": 0.18500000000000005,
-      "model_prob": 0.4657,
-      "edge": -0.3493,
-      "net_edge": 0.3418,
-      "size_usd": 5.0,
-      "forecast_temp_c": 12.8,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 13.0,
-      "source_model": "calibration_rf",
-      "status": "OPEN",
-      "opened_at": "2026-06-10T14:20:58.457496+00:00",
-      "entry_fee": 0.2037,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
-    }
-  ],
+  "positions": [],
   "closed_trades": [
     {
       "series_slug": "warsaw-daily-weather",
@@ -31730,12 +31701,40 @@
       "closed_at": "2026-06-10T06:46:27.123447+00:00",
       "pnl_usd": 21.8233,
       "resolved_temp": 31.1
+    },
+    {
+      "series_slug": "munich-daily-weather",
+      "event_date": "2026-06-10",
+      "question": "Will the highest temperature in Munich be 13\u00b0C on June 10?",
+      "condition_id": "0x368f6208d5d0bc0ec0b41001de24a22a6c0651afa75b0cde0835cac719df5472",
+      "temp_str": "13\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "66394913995472410033845192751107495541744009659857716306750963348274354328036",
+      "token_yes": "94916143258848063151267740265984901947517145691426447620803387879369901422148",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.18500000000000005,
+      "model_prob": 0.4657,
+      "edge": -0.3493,
+      "net_edge": 0.3418,
+      "size_usd": 5.0,
+      "forecast_temp_c": 12.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 13.0,
+      "source_model": "calibration_rf",
+      "status": "LOST",
+      "opened_at": "2026-06-10T14:20:58.457496+00:00",
+      "entry_fee": 0.2037,
+      "closed_at": "2026-06-10T23:52:40.546058+00:00",
+      "pnl_usd": -5.2037,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -749.1558,
+  "total_pnl": -754.3595,
   "n_won": 259,
-  "n_lost": 979,
+  "n_lost": 980,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-10T22:28:31.963680+00:00"
+  "last_updated": "2026-06-10T23:59:15.260668+00:00"
 }
