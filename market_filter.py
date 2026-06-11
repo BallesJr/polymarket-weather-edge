@@ -36,8 +36,29 @@ RESOLUTION_STATIONS = {
     "shenzhen-daily-weather": "ZGSZ", # Shenzhen Bao'an International Airport
     "amsterdam-daily-weather": "EHAM", # Amsterdam Airport Schiphol
     "madrid-daily-weather": "LEMD", # Adolfo Suárez Madrid-Barajas Airport
-    # TODO: Add Tel Aviv (LLBG) - uses NOAA instead of Weather Underground
-    # TODO: Add Hong Kong (HKO) - uses HK Observatory instead of Weather Underground
+    # Batch added 2026-06-11, stations taken from each market's own description and
+    # validated against actual resolutions (IEM daily max vs winning bin, 06-02..06-09):
+    "ankara-daily-weather": "LTAC", # Ankara Esenboga (8/8)
+    "buenos-aires-daily-weather": "SAEZ", # Buenos Aires Ezeiza / Ministro Pistarini (8/8)
+    "busan-daily-weather": "RKPK", # Busan Gimhae (8/8)
+    "cape-town-daily-weather": "FACT", # Cape Town International (8/8)
+    "chengdu-daily-weather": "ZUUU", # Chengdu Shuangliu (8/8)
+    "chongqing-daily-weather": "ZUCK", # Chongqing Jiangbei (8/8)
+    "guangzhou-daily-weather": "ZGGG", # Guangzhou Baiyun (8/8)
+    "helsinki-daily-weather": "EFHK", # Helsinki Vantaa (8/8)
+    "istanbul-daily-weather": "LTFM", # Istanbul Airport, NOAA-sourced (8/8)
+    "jeddah-daily-weather": "OEJN", # Jeddah King Abdulaziz (8/8)
+    "kuala-lumpur-daily-weather": "WMKK", # Kuala Lumpur International (8/8)
+    "manila-daily-weather": "RPLL", # Manila Ninoy Aquino (8/8)
+    "qingdao-daily-weather": "ZSQD", # Qingdao Jiaodong (8/8)
+    "sao-paulo-daily-weather": "SBGR", # Sao Paulo Guarulhos (8/8)
+    "seattle-daily-weather": "KSEA", # Seattle-Tacoma, Fahrenheit (7/8, like Seoul)
+    "tel-aviv-daily-weather": "LLBG", # Tel Aviv Ben Gurion, NOAA-sourced (8/8)
+    "toronto-daily-weather": "CYYZ", # Toronto Pearson (8/8)
+    "wuhan-daily-weather": "ZHHH", # Wuhan Tianhe (8/8)
+    # Skipped after the same validation: hong-kong (resolves on the HK Observatory,
+    # not an airport METAR), atlanta KATL (4/8 agreement), dallas KDAL (6/8),
+    # moscow UUWW (6/8), karachi OPMR (no METAR or IEM data)
 }
 
 # Coordinates for each station (used by weather_api.py to fetch Open-Meteo forecasts)
@@ -67,6 +88,25 @@ STATION_COORDS = {
     "ZGSZ": (22.6397, 113.8105), # Shenzhen Bao'an International Airport
     "EHAM": (52.3105, 4.7683), # Amsterdam Airport Schiphol
     "LEMD": (40.4719, -3.5626), # Adolfo Suárez Madrid-Barajas Airport
+    # Coordinates below come from each station's own METAR reports (aviationweather.gov)
+    "LTAC": (40.128, 32.995), # Ankara Esenboga
+    "SAEZ": (-34.822, -58.536), # Buenos Aires Ezeiza
+    "RKPK": (35.179, 128.938), # Busan Gimhae
+    "FACT": (-33.965, 18.602), # Cape Town International
+    "ZUUU": (30.576, 103.950), # Chengdu Shuangliu
+    "ZUCK": (29.718, 106.639), # Chongqing Jiangbei
+    "ZGGG": (23.392, 113.307), # Guangzhou Baiyun
+    "EFHK": (60.327, 24.957), # Helsinki Vantaa
+    "LTFM": (41.262, 28.740), # Istanbul Airport
+    "OEJN": (21.685, 39.166), # Jeddah King Abdulaziz
+    "WMKK": (2.747, 101.714), # Kuala Lumpur International
+    "RPLL": (14.507, 121.004), # Manila Ninoy Aquino
+    "ZSQD": (36.362, 120.087), # Qingdao Jiaodong
+    "SBGR": (-23.432, -46.469), # Sao Paulo Guarulhos
+    "KSEA": (47.4447, -122.3144), # Seattle-Tacoma
+    "LLBG": (32.011, 34.887), # Tel Aviv Ben Gurion
+    "CYYZ": (43.679, -79.629), # Toronto Pearson
+    "ZHHH": (30.783, 114.205), # Wuhan Tianhe
 }
 
 # IEM (Iowa Environmental Mesonet) network + station id for each resolution station
@@ -98,6 +138,24 @@ STATION_IEM_NETWORKS = {
     "ZGSZ": ("CN__ASOS", "ZGSZ"), # Shenzhen Bao'an
     "EHAM": ("NL__ASOS", "EHAM"), # Amsterdam Schiphol
     "LEMD": ("ES__ASOS", "LEMD"), # Madrid Barajas
+    "LTAC": ("TR__ASOS", "LTAC"), # Ankara Esenboga
+    "SAEZ": ("AR__ASOS", "SAEZ"), # Buenos Aires Ezeiza
+    "RKPK": ("KR__ASOS", "RKPK"), # Busan Gimhae
+    "FACT": ("ZA__ASOS", "FACT"), # Cape Town International
+    "ZUUU": ("CN__ASOS", "ZUUU"), # Chengdu Shuangliu
+    "ZUCK": ("CN__ASOS", "ZUCK"), # Chongqing Jiangbei
+    "ZGGG": ("CN__ASOS", "ZGGG"), # Guangzhou Baiyun
+    "EFHK": ("FI__ASOS", "EFHK"), # Helsinki Vantaa
+    "LTFM": ("TR__ASOS", "LTFM"), # Istanbul Airport
+    "OEJN": ("SA__ASOS", "OEJN"), # Jeddah King Abdulaziz
+    "WMKK": ("MY__ASOS", "WMKK"), # Kuala Lumpur International
+    "RPLL": ("PH__ASOS", "RPLL"), # Manila Ninoy Aquino
+    "ZSQD": ("CN__ASOS", "ZSQD"), # Qingdao Jiaodong
+    "SBGR": ("BR__ASOS", "SBGR"), # Sao Paulo Guarulhos
+    "KSEA": ("WA_ASOS", "SEA"), # Seattle-Tacoma
+    "LLBG": ("IL__ASOS", "LLBG"), # Tel Aviv Ben Gurion
+    "CYYZ": ("CA_ON_ASOS", "CYYZ"), # Toronto Pearson
+    "ZHHH": ("CN__ASOS", "ZHHH"), # Wuhan Tianhe
 }
 
 # IANA timezone for each station, so local date/hour can be computed without
@@ -127,6 +185,24 @@ STATION_TZ = {
     "ZGSZ": "Asia/Shanghai",
     "EHAM": "Europe/Amsterdam",
     "LEMD": "Europe/Madrid",
+    "LTAC": "Europe/Istanbul",
+    "SAEZ": "America/Argentina/Buenos_Aires",
+    "RKPK": "Asia/Seoul",
+    "FACT": "Africa/Johannesburg",
+    "ZUUU": "Asia/Shanghai",
+    "ZUCK": "Asia/Shanghai",
+    "ZGGG": "Asia/Shanghai",
+    "EFHK": "Europe/Helsinki",
+    "LTFM": "Europe/Istanbul",
+    "OEJN": "Asia/Riyadh",
+    "WMKK": "Asia/Kuala_Lumpur",
+    "RPLL": "Asia/Manila",
+    "ZSQD": "Asia/Shanghai",
+    "SBGR": "America/Sao_Paulo",
+    "KSEA": "America/Los_Angeles",
+    "LLBG": "Asia/Jerusalem",
+    "CYYZ": "America/Toronto",
+    "ZHHH": "Asia/Shanghai",
 }
 
 # Fetch active events for a given series slug via Gamma API
