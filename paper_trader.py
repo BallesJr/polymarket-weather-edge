@@ -312,19 +312,33 @@ def check_resolutions(portfolio: dict) -> list[dict]:
 
 # How far back to retry filling missing resolved_temp on closed trades
 BACKFILL_WINDOW_DAYS = 7
+# Hour (UTC) of the once-daily full-window pass
+BACKFILL_FULL_PASS_HOUR = 6
 
 # Fill resolved_temp on recently closed trades where it is still missing.
 # Same-UTC-day resolutions (Asia-Pacific stations) and IEM publication lag mean
 # the value is often not available at close time but becomes available later.
+# Fresh events (last 2 days) are retried every cycle since they usually fill
+# within hours; the full window is retried once a day, so values that never
+# materialize (e.g. stations with source gaps) don't add hundreds of futile
+# API lookups to every 30-minute cycle.
 def backfill_resolved_temps(portfolio: dict) -> int:
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=BACKFILL_WINDOW_DAYS)).isoformat()
+    now = datetime.now(timezone.utc)
+    closed_cutoff = (now - timedelta(days=BACKFILL_WINDOW_DAYS)).isoformat()
+    fresh_cutoff = (now - timedelta(days=2)).strftime("%Y-%m-%d")
+    full_pass = now.hour == BACKFILL_FULL_PASS_HOUR
     filled = 0
     for pos in portfolio["closed_trades"]:
-        if pos.get("resolved_temp") is None and pos.get("closed_at", "") >= cutoff:
-            temp = fetch_observed_max(pos["series_slug"], pos["event_date"])
-            if temp is not None:
-                pos["resolved_temp"] = temp
-                filled += 1
+        if pos.get("resolved_temp") is not None:
+            continue
+        if pos.get("closed_at", "") < closed_cutoff:
+            continue
+        if pos["event_date"] < fresh_cutoff and not full_pass:
+            continue
+        temp = fetch_observed_max(pos["series_slug"], pos["event_date"])
+        if temp is not None:
+            pos["resolved_temp"] = temp
+            filled += 1
     if filled:
         print(f"[PaperTrader] Backfilled resolved_temp for {filled} closed trade(s)")
     return filled
