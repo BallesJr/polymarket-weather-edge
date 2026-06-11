@@ -2,8 +2,16 @@ name: Weather Edge Bot
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # Fallback only: GitHub throttles busy cron slots heavily (observed ~7 runs/day
+    # on */30). The primary trigger is an external scheduler calling
+    # workflow_dispatch every 30 minutes; :07/:37 avoids the congested :00/:30 slots.
+    - cron: "7,37 * * * *"
   workflow_dispatch:
+
+# Serialize runs that write to the repo so portfolio commits never race
+concurrency:
+  group: weather-bot-write
+  cancel-in-progress: false
 
 jobs:
   run-bot:
@@ -21,7 +29,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests pandas numpy scipy scikit-learn
+        run: pip install -r requirements.txt
 
       - name: Run bot cycle
         run: python paper_trader.py

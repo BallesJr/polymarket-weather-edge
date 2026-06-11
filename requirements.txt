@@ -1,0 +1,7 @@
+# scikit-learn is pinned exactly: model pickles are not portable across versions
+requests>=2.31
+pandas>=2.2
+numpy>=1.26
+scipy>=1.13
+scikit-learn==1.9.0
+tzdata>=2024.1
