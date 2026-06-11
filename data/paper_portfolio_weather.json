@@ -1,5 +1,5 @@
 {
-  "bankroll": 9199.0284,
+  "bankroll": 9193.877199999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -221,6 +221,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-11T20:46:12.866028+00:00",
       "entry_fee": 0.1995,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "denver-daily-weather",
+      "event_date": "2026-06-11",
+      "question": "Will the highest temperature in Denver be between 78-79\u00b0F on June 11?",
+      "condition_id": "0x553f45b67a9d99b76089a42577e7ca790026764ee152f4e9290f9ff4a98e6517",
+      "temp_str": "between 78-79\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "72945073252274490280684407835647907883811726772914656232536434399269615393729",
+      "token_yes": "5267580922865566643232747662900936124005092372027084241100091569762067057920",
+      "model_prob_gaussian": 0.2270338113858027,
+      "entry_prob": 0.395,
+      "model_prob": 0.227,
+      "edge": -0.378,
+      "net_edge": 0.3661,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.8,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-11T21:15:22.690367+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -31989,5 +32017,5 @@
   "n_lost": 981,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-11T20:46:12.866386+00:00"
+  "last_updated": "2026-06-11T21:15:22.690715+00:00"
 }
