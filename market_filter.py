@@ -100,6 +100,35 @@ STATION_IEM_NETWORKS = {
     "LEMD": ("ES__ASOS", "LEMD"), # Madrid Barajas
 }
 
+# IANA timezone for each station, so local date/hour can be computed without
+# depending on an Open-Meteo response (markets resolve on the station's local day)
+STATION_TZ = {
+    "EGLC": "Europe/London",
+    "KLGA": "America/New_York",
+    "EPWA": "Europe/Warsaw",
+    "RJTT": "Asia/Tokyo",
+    "RKSI": "Asia/Seoul",
+    "MMMX": "America/Mexico_City",
+    "NZWN": "Pacific/Auckland",
+    "RCSS": "Asia/Taipei",
+    "ZSPD": "Asia/Shanghai",
+    "WSSS": "Asia/Singapore",
+    "KORD": "America/Chicago",
+    "KMIA": "America/New_York",
+    "LIMC": "Europe/Rome",
+    "LFPB": "Europe/Paris",
+    "KAUS": "America/Chicago",
+    "KHOU": "America/Chicago",
+    "VILK": "Asia/Kolkata",
+    "KBOS": "America/New_York",
+    "ZBAA": "Asia/Shanghai",
+    "EDDM": "Europe/Berlin",
+    "KBKF": "America/Denver",
+    "ZGSZ": "Asia/Shanghai",
+    "EHAM": "Europe/Amsterdam",
+    "LEMD": "Europe/Madrid",
+}
+
 # Fetch active events for a given series slug via Gamma API
 def _fetch_events_by_series(series_slug: str) -> list[dict]:
     city = series_slug.replace("-daily-weather", "")
@@ -191,7 +220,8 @@ def _parse_market_outcomes(event: dict, series_slug: str) -> list[dict]:
 def _extract_temp_from_question(question: str) -> str:
     q = question.lower()
     # Find the "be X" pattern: "Will the highest temperature in London 14°C on..."
-    if "be" in q:
+    # Match " be " with spaces: a bare "be" also matches inside words like "Beijing"
+    if " be " in q:
         after_be = question[q.index(" be ") + 4:]
         # Take everything up to " on "
         if " on " in after_be.lower():

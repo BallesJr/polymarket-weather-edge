@@ -3,14 +3,18 @@ import pandas as pd
 import numpy as np
 import pickle
 import os
+import sys
+from datetime import datetime, timezone
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.model_selection import cross_val_score
 
+from signal_engine import REGIME_START
+
 RAW_URL = "https://raw.githubusercontent.com/BallesJr/polymarket-weather-edge/main/data/paper_portfolio_weather.json"
 
-MIN_SPECIALIZED_SAMPLES = 150  # minimum BUY_NO T+0 trades to use the specialized model
+MIN_SPECIALIZED_SAMPLES = 150  # minimum BUY_NO T+0 trades to train and deploy a model
 
 # Features for the general model (all trades)
 ALL_FEATURES = ["entry_prob", "model_prob_gaussian", "forecast_horizon_days", "is_buy_yes",
@@ -26,14 +30,21 @@ def load_trades() -> pd.DataFrame:
     portfolio = resp.json()
     df = pd.DataFrame(portfolio["closed_trades"])
     df = df[df["status"].isin(["WON", "LOST"])].copy()
+    # Clean-data regime only: trades before REGIME_START ran under known data
+    # bugs (wrong Paris station, NaN gaussian on Fahrenheit markets, model
+    # observations instead of station METARs) and would teach the model noise
+    df = df[df["opened_at"] >= REGIME_START].copy()
     df["won"] = (df["status"] == "WON").astype(int)
     return df
 
 
-def preprocess(df: pd.DataFrame) -> pd.DataFrame:
+def preprocess(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series, list]:
     features = df.copy()
     features["is_buy_yes"] = (features["direction"] == "BUY_YES").astype(int)
-    features["city_code"] = features["series_slug"].astype("category").cat.codes
+    # Fixed category list so the slug->code mapping can be persisted with the
+    # model and reproduced exactly at inference time
+    city_categories = sorted(features["series_slug"].unique())
+    features["city_code"] = pd.Categorical(features["series_slug"], categories=city_categories).codes
     features["is_observation"] = (features["data_source"] == "observation").astype(int)
     features["temp_diff"] = features["observed_max_c"] - features["forecast_temp_c"]
 
@@ -44,7 +55,7 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
 
     X = features[ALL_FEATURES].copy().fillna(features[ALL_FEATURES].median())
     y = features["won"]
-    return X, y
+    return X, y, city_categories
 
 
 def calibration_diagnostic(probs: np.ndarray, y: pd.Series, label: str = "") -> None:
@@ -87,55 +98,64 @@ def _best_model(X: pd.DataFrame, y: pd.Series, feat_cols: list, label: str) -> t
     return model, best_method, best_brier, feat_cols
 
 
-def train_model(df_all: pd.DataFrame, X_all: pd.DataFrame, y_all: pd.Series):
+def train_model(df_all: pd.DataFrame, X_all: pd.DataFrame, y_all: pd.Series, city_categories: list):
     print("=" * 60)
     print("CV Brier comparison (5-fold, lower = better)")
     print("=" * 60)
 
-    # General model (all trades)
-    model_gen, method_gen, brier_gen, feats_gen = _best_model(
-        X_all[ALL_FEATURES], y_all, ALL_FEATURES, "all trades"
-    )
-
-    # Specialized model: BUY_NO T+0 only
+    # Specialized model: BUY_NO T+0 only (under the current regime this is the
+    # entire population — every trade the bot opens is BUY_NO T+0)
     mask = (df_all["direction"] == "BUY_NO") & (df_all["forecast_horizon_days"] == 0)
-    df_spec = df_all[mask].copy()
-    n_spec = len(df_spec)
-    print(f"\n  BUY_NO T+0 samples: {n_spec} (min required: {MIN_SPECIALIZED_SAMPLES})")
+    n_spec = int(mask.sum())
+    print(f"  BUY_NO T+0 samples: {n_spec} (min required: {MIN_SPECIALIZED_SAMPLES})")
 
-    if n_spec >= MIN_SPECIALIZED_SAMPLES:
-        X_spec_raw = X_all[mask][SPECIALIZED_FEATURES]
-        y_spec = y_all[mask]
-        model_spec, method_spec, brier_spec, feats_spec = _best_model(
-            X_spec_raw, y_spec, SPECIALIZED_FEATURES, "BUY_NO T+0 specialized"
-        )
-        print(f"\nWinner: specialized BUY_NO T+0 model ({method_spec}, Brier {brier_spec:.4f})")
-        final_model, final_feats = model_spec, feats_spec
-        X_best, y_best = X_spec_raw, y_spec
-    else:
-        print(f"\nInsufficient data for specialized model — using general model ({method_gen}, Brier {brier_gen:.4f})")
-        final_model, final_feats = model_gen, feats_gen
-        X_best, y_best = X_all[ALL_FEATURES], y_all
+    if n_spec < MIN_SPECIALIZED_SAMPLES:
+        print("\nInsufficient clean data — model NOT saved, existing file left untouched.")
+        return None, None
+
+    X_spec = X_all[mask][SPECIALIZED_FEATURES]
+    y_spec = y_all[mask]
+    model, method, brier, feats = _best_model(
+        X_spec, y_spec, SPECIALIZED_FEATURES, "BUY_NO T+0 specialized"
+    )
+    print(f"\nWinner: specialized BUY_NO T+0 model ({method}, Brier {brier:.4f})")
 
     # Feature importances
     base_rf = RandomForestClassifier(n_estimators=100, max_depth=5, min_samples_leaf=20, random_state=42)
-    base_rf.fit(X_best, y_best)
+    base_rf.fit(X_spec, y_spec)
     print("\nFeature importances:")
-    for feat, imp in sorted(zip(X_best.columns, base_rf.feature_importances_), key=lambda x: -x[-1]):
+    for feat, imp in sorted(zip(X_spec.columns, base_rf.feature_importances_), key=lambda x: -x[-1]):
         print(f"  {feat:<25} {imp:.3f}")
 
-    calibration_diagnostic(base_rf.predict_proba(X_best)[:, 1], y_best, label="final model (in-sample)")
+    calibration_diagnostic(base_rf.predict_proba(X_spec)[:, 1], y_spec, label="final model (in-sample)")
 
+    # Self-describing payload: everything inference needs to rebuild the exact
+    # feature row, including the slug->city_code mapping used in training
+    payload = {
+        "model": model,
+        "features": feats,
+        "city_categories": city_categories,
+        "n_train": n_spec,
+        "trained_at": datetime.now(timezone.utc).isoformat(),
+        "regime_start": REGIME_START,
+    }
     os.makedirs("models", exist_ok=True)
     with open("models/rf_weather.pkl", "wb") as f:
-        pickle.dump((final_model, final_feats), f)
-    print(f"\nSaved: models/rf_weather.pkl  [features: {final_feats}]")
+        pickle.dump(payload, f)
+    print(f"\nSaved: models/rf_weather.pkl  [features: {feats}, n_train: {n_spec}]")
 
-    return final_model, final_feats
+    return model, feats
 
 
 if __name__ == "__main__":
     df = load_trades()
-    X, y = preprocess(df)
-    print(f"Total resolved trades: {len(df)}")
-    train_model(df, X, y)
+    n_spec = len(df[(df["direction"] == "BUY_NO") & (df["forecast_horizon_days"] == 0)])
+    print(f"Clean-regime resolved trades (opened >= {REGIME_START}): {len(df)}  [BUY_NO T+0: {n_spec}]")
+
+    if n_spec < MIN_SPECIALIZED_SAMPLES:
+        print(f"Need {MIN_SPECIALIZED_SAMPLES} clean BUY_NO T+0 trades to train; "
+              f"have {n_spec}. Nothing trained, existing model file untouched.")
+        sys.exit(0)
+
+    X, y, city_categories = preprocess(df)
+    train_model(df, X, y, city_categories)

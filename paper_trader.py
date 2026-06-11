@@ -2,10 +2,11 @@ import json
 import os
 import requests
 import pandas as pd
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from dataclasses import dataclass, asdict
 
-from signal_engine import Signal, generate_signals, WEATHER_FEE_RATE
+from signal_engine import (Signal, generate_signals, WEATHER_FEE_RATE,
+                           MIN_NO_PRICE, MAX_NO_PRICE, _compute_net_edge)
 from market_filter import fetch_active_weather_markets
 from weather_api import fetch_forecasts_for_markets, add_model_probabilities, fetch_observed_max
 from notifier import notify_cycle_summary, notify_high_edge_open, notify_resolution
@@ -47,7 +48,7 @@ class Position:
     observed_max_c: float # NaN if not today's market
 
     # Source
-    source_model: str # "base" or "calibration_rf"
+    source_model: str # "band_rule" (current); historical: "base" / "calibration_rf"
 
     # Status
     status: str # "OPEN", "WON", "LOST", "EXPIRED"
@@ -99,12 +100,37 @@ def _is_duplicate(signal: Signal, portfolio: dict) -> bool:
             return True
     return False
 
+# Refresh a signal's market price with the live CLOB midpoint (best effort).
+# Gamma outcomePrices can be stale; filling at a stale price fabricates edge.
+def _refresh_market_prob(signal: Signal) -> None:
+    try:
+        resp = requests.get(
+            f"{CLOB_URL}/midpoint",
+            params={"token_id": signal.token_yes},
+            timeout=5,
+        )
+        resp.raise_for_status()
+        mid = float(resp.json()["mid"])
+    except Exception:
+        return  # keep the Gamma price
+    signal.market_prob = round(mid, 4)
+    signal.edge = round(signal.model_prob - mid, 4)
+    signal.net_edge = round(_compute_net_edge(abs(signal.edge), 1 - mid), 4)
+
 # Open new paper position for qualifying signals
 def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataFrame) -> list[Position]:
     opened = []
 
     for signal in signals:
         if _is_duplicate(signal, portfolio):
+            continue
+
+        # Re-check the price band at the live midpoint before committing
+        _refresh_market_prob(signal)
+        no_price = 1 - signal.market_prob
+        if no_price < MIN_NO_PRICE or no_price > MAX_NO_PRICE:
+            print(f"[PaperTrader] SKIP {signal.temp_str} in {signal.series_slug}: "
+                  f"live NO price {no_price:.3f} moved out of band")
             continue
 
         entry_prob_val = signal.market_prob if signal.direction == "BUY_YES" else 1 - signal.market_prob
@@ -149,7 +175,7 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
             forecast_horizon_days=signal.horizon_days,
             data_source=signal.data_source,
             observed_max_c=observed_max,
-            source_model="calibration_rf" if os.path.exists("models/rf_weather.pkl") else "base",
+            source_model="band_rule",
             status="OPEN",
             opened_at=datetime.now(timezone.utc).isoformat(),
             obs_source=str(row["obs_source"].iloc[0]) if not row.empty and "obs_source" in row.columns else "",
@@ -161,8 +187,8 @@ def open_positions(signals: list[Signal], portfolio: dict, df_enriched: pd.DataF
 
         city = signal.series_slug.replace("-daily-weather", "").replace("-", " ").title()
         print(f"[PaperTrader] OPEN {signal.direction} | {signal.temp_str} in {city} "
-              f"on {signal.event_date} | ${signal.position_size} @ {signal.market_prob:.3f} "
-              f"| edge {signal.net_edge:+.3f}")
+              f"on {signal.event_date} | ${signal.position_size} @ NO {entry_prob_val:.3f} "
+              f"| gaussian edge {signal.net_edge:+.3f}")
 
         if signal.net_edge >= 0.40:
             notify_high_edge_open(signal.direction, signal.temp_str, city,
@@ -284,6 +310,25 @@ def check_resolutions(portfolio: dict) -> list[dict]:
     portfolio["positions"] = still_open
     return resolved
 
+# How far back to retry filling missing resolved_temp on closed trades
+BACKFILL_WINDOW_DAYS = 7
+
+# Fill resolved_temp on recently closed trades where it is still missing.
+# Same-UTC-day resolutions (Asia-Pacific stations) and IEM publication lag mean
+# the value is often not available at close time but becomes available later.
+def backfill_resolved_temps(portfolio: dict) -> int:
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=BACKFILL_WINDOW_DAYS)).isoformat()
+    filled = 0
+    for pos in portfolio["closed_trades"]:
+        if pos.get("resolved_temp") is None and pos.get("closed_at", "") >= cutoff:
+            temp = fetch_observed_max(pos["series_slug"], pos["event_date"])
+            if temp is not None:
+                pos["resolved_temp"] = temp
+                filled += 1
+    if filled:
+        print(f"[PaperTrader] Backfilled resolved_temp for {filled} closed trade(s)")
+    return filled
+
 # --- Summary ---
 
 # Print a formatted portfolio summary
@@ -329,10 +374,11 @@ def run_cycle(bankroll: float = INITIAL_BANKROLL) -> dict:
     # STEP 1: Load portfolio
     portfolio = _load_portfolio(bankroll)
 
-    # STEP 2: Check resolutions
+    # STEP 2: Check resolutions and retry missing resolved_temp
     resolved = check_resolutions(portfolio)
     if resolved:
         print(f"[PaperTrader] {len(resolved)} position(s) resolved")
+    backfill_resolved_temps(portfolio)
 
     # STEP 3: Fetch markets and generate signals
     df = fetch_active_weather_markets()
@@ -376,6 +422,7 @@ if __name__ == "__main__":
         portfolio = _load_portfolio()
         resolved = check_resolutions(portfolio)
         print(f"Resolved: {len(resolved)}")
+        backfill_resolved_temps(portfolio)
         _save_portfolio(portfolio)
         print_summary(portfolio)
 

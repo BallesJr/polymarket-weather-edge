@@ -3,11 +3,10 @@ import pandas as pd
 import numpy as np
 import time
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from scipy.stats import norm
-import pickle
-import os
 
-from market_filter import STATION_COORDS, RESOLUTION_STATIONS, STATION_IEM_NETWORKS
+from market_filter import STATION_COORDS, RESOLUTION_STATIONS, STATION_IEM_NETWORKS, STATION_TZ
 
 # Open-Meteo public API - free, no API key required
 # Documentation: https://open-meteo.com/en/docs
@@ -30,19 +29,15 @@ IEM_DAILY_URL = "https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py"
 # Weather markets typically cover today and the next 1-2 days
 FORECAST_DAYS = 3
 
-RF_MODEL_PATH = "models/rf_weather.pkl"
-
-_DEFAULT_FEATURES = ["entry_prob", "model_prob_gaussian", "forecast_horizon_days", "is_buy_yes",
-                     "city_code", "is_observation", "forecast_temp_c", "temp_diff"]
-
-def _load_rf_model() -> tuple:
-    if os.path.exists(RF_MODEL_PATH):
-        with open(RF_MODEL_PATH, "rb") as f:
-            payload = pickle.load(f)
-        if isinstance(payload, tuple):
-            return payload  # (model, feature_cols)
-        return payload, _DEFAULT_FEATURES  # legacy single-object format
-    return None, _DEFAULT_FEATURES
+# Current UTC offset (seconds) of a station's local clock, or None if unknown
+def _station_utc_offset_s(station: str) -> int | None:
+    tz_name = STATION_TZ.get(station) if station else None
+    if not tz_name:
+        return None
+    try:
+        return int(datetime.now(ZoneInfo(tz_name)).utcoffset().total_seconds())
+    except Exception:
+        return None
 
 # Fetch a URL with automatic retry on connection errors
 # Waits delay seconds between attempts, doubling each time (exponential backoff)
@@ -147,9 +142,27 @@ def fetch_metar_max_today(station: str, utc_offset_s: int) -> dict:
     return {"observed_max_c": round(max(temps), 1), "available": True}
 
 # Fetch the current observed maximum temperature for today at a given location
-# Prefers real METARs from the resolution station; falls back to Open-Meteo
-# hourly data (model-interpolated) when no station is given or METAR fails
+# Prefers real METARs from the resolution station (same thermometer the market
+# resolves on); falls back to Open-Meteo hourly data (model-interpolated) when
+# no station is given or METAR fails. The station's local clock comes from its
+# own timezone, so METARs still work when Open-Meteo is down.
 def fetch_current_observation(lat: float, lon: float, station: str = None) -> dict:
+    utc_offset_s = _station_utc_offset_s(station)
+
+    # METAR from the resolution station is the preferred source
+    if station and utc_offset_s is not None:
+        metar = fetch_metar_max_today(station, utc_offset_s)
+        if metar["available"]:
+            current_hour = (datetime.now(timezone.utc) + timedelta(seconds=utc_offset_s)).hour
+            return {
+                "observed_max_c": metar["observed_max_c"],
+                "hour_local": current_hour,
+                "day_complete": current_hour >= 20,
+                "obs_source": "metar",
+                "available": True,
+            }
+
+    # Fallback: Open-Meteo hourly (model-interpolated, not the actual station)
     try:
         data = _fetch_with_retry(OPEN_METEO_URL, params={
             "latitude": lat,
@@ -165,9 +178,10 @@ def fetch_current_observation(lat: float, lon: float, station: str = None) -> di
 
         if not times or not temps:
             return {"available": False}
-        
+
         # Find current local hour at the station
-        utc_offset_s = data.get("utc_offset_seconds", 0)
+        if utc_offset_s is None:
+            utc_offset_s = data.get("utc_offset_seconds", 0)
         now_local = datetime.now(timezone.utc) + timedelta(seconds=utc_offset_s)
         current_hour = now_local.hour
 
@@ -177,18 +191,14 @@ def fetch_current_observation(lat: float, lon: float, station: str = None) -> di
         if not temps_so_far:
             return {"available": False}
 
-        observed_max = max(temps_so_far)
-        source = "openmeteo"
+        return {
+            "observed_max_c": round(max(temps_so_far), 1),
+            "hour_local": current_hour,
+            "day_complete": current_hour >= 20,
+            "obs_source": "openmeteo",
+            "available": True,
+        }
 
-        # Overlay real station METARs when available (same source the market resolves on)
-        if station:
-            metar = fetch_metar_max_today(station, utc_offset_s)
-            if metar["available"]:
-                observed_max = metar["observed_max_c"]
-                source = "metar"
-
-        return {"observed_max_c": round(observed_max, 1), "hour_local": current_hour, "day_complete": current_hour >= 20, "obs_source": source, "available": True,}
-    
     except requests.RequestException as e:
         print(f"[WeatherAPI] Observation error for ({lat}, {lon}): {e}")
         return {"available": False}
@@ -235,8 +245,13 @@ def fetch_observed_max(series_slug: str, event_date: str) -> float | None:
         target = datetime.strptime(event_date, "%Y-%m-%d").date()
     except ValueError:
         return None
-    if target >= datetime.now(timezone.utc).date():
-        return None  # event today/future: daily summaries not final yet
+    # Daily summaries are only final once the station's LOCAL day has ended.
+    # Comparing against the UTC date would return None forever for stations
+    # east of UTC, whose markets resolve while UTC is still on the event date.
+    offset_s = _station_utc_offset_s(station)
+    now_station = datetime.now(timezone.utc) + timedelta(seconds=offset_s or 0)
+    if target >= now_station.date():
+        return None  # station-local day not finished yet
 
     iem_max = _fetch_iem_daily_max(station, event_date)
     if iem_max is not None:
@@ -281,8 +296,6 @@ def fetch_forecasts_for_markets(df: pd.DataFrame) -> pd.DataFrame:
 
     print(f"[WeatherAPI] Fetching forecasts for {len(unique_events)} event(s)...")
 
-    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-
     for _, event_row  in unique_events.iterrows():
         slug = event_row["series_slug"]
         target_date = str(event_row["event_date"])[:10]
@@ -313,8 +326,13 @@ def fetch_forecasts_for_markets(df: pd.DataFrame) -> pd.DataFrame:
         df.loc[mask, "forecast_horizon_days"] = forecast.get("horizon_days")
         df.loc[mask, "forecast_available"] = forecast.get("available", False)
 
-        # For today's markets, enrich with real observed max temperature
-        if target_date == today_str:
+        # For today's markets, enrich with real observed max temperature.
+        # "Today" means the STATION'S local date: comparing against the UTC date
+        # would attach yesterday-evening observations to tomorrow's US events
+        # after 00:00 UTC (and miss live hours for stations east of UTC)
+        offset_s = _station_utc_offset_s(event_row.get("station"))
+        local_today = (datetime.now(timezone.utc) + timedelta(seconds=offset_s or 0)).strftime("%Y-%m-%d")
+        if target_date == local_today:
             obs = fetch_current_observation(lat, lon, station=event_row.get("station"))
             if obs["available"]:
                 df.loc[mask, "observed_max_c"] = obs["observed_max_c"]
@@ -398,17 +416,24 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     model_probs = []
 
-    rf_model, rf_features = _load_rf_model()
-
     for _, row in df.iterrows():
         # Use real observation for today if available, forecast otherwise
         is_complete = False
         if pd.notna(row.get("observed_max_c")) and not np.isnan(row.get("observed_max_c", np.nan)):
             obs_max = row["observed_max_c"]
             is_complete = bool(row.get("day_complete", False))
-            effective_temp = obs_max
-            effective_low = obs_max if is_complete else obs_max - 0.5
-            effective_high = obs_max if is_complete else obs_max + 2.0
+            if is_complete:
+                effective_temp = obs_max
+                effective_low = obs_max
+                effective_high = obs_max
+            else:
+                # Day still running: the final max can never be below what was
+                # already observed, so center on the higher of observation and
+                # forecast instead of assuming the morning max is the day's max
+                fc = row.get("forecast_temp_c")
+                effective_temp = max(obs_max, fc) if pd.notna(fc) else obs_max
+                effective_low = effective_temp - 0.5
+                effective_high = effective_temp + 2.0
         elif not row.get("forecast_available", False) or pd.isna(row.get("forecast_temp_c")):
             model_probs.append(np.nan)
             continue
@@ -434,24 +459,13 @@ def add_model_probabilities(df: pd.DataFrame) -> pd.DataFrame:
         )
         model_probs.append(prob)
 
-    df["model_prob_gaussian"] = model_probs  # original gaussian, before RF refinement
+    # The RF is intentionally NOT applied here. Its live inference had feature
+    # and sign mismatches vs training that saturated the output to ~0.5, so the
+    # deployed system was de facto a NO-price band rule. The band rule is now
+    # explicit in signal_engine; model_prob stays the pure gaussian and is
+    # recorded as a feature so a clean-data RF can be reintroduced later.
+    df["model_prob_gaussian"] = model_probs
     df["model_prob"] = model_probs
-
-    if rf_model is not None:
-        city_codes = df["series_slug"].astype("category").cat.codes
-        all_cols = pd.DataFrame({
-            "entry_prob": df["prob_yes"],
-            "model_prob_gaussian": df["model_prob_gaussian"],
-            "forecast_horizon_days": df["forecast_horizon_days"].fillna(1),
-            "is_buy_yes": 0,
-            "city_code": city_codes,
-            "is_observation": df["observed_max_c"].notna().astype(int),
-            "forecast_temp_c": df["forecast_temp_c"].fillna(df["forecast_temp_c"].median()),
-            "temp_diff": df["observed_max_c"] - df["forecast_temp_c"],
-        })
-        X_live = all_cols[rf_features].fillna(all_cols[rf_features].median())
-        df["model_prob"] = rf_model.predict_proba(X_live)[:, 1]
-        print(f"[WeatherAPI] RF model applied ({len(rf_features)} features: {rf_features})")
 
     return df
 

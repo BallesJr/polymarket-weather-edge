@@ -10,18 +10,22 @@ from weather_api import fetch_forecasts_for_markets, add_model_probabilities
 
 # --- Configuration ---
 
-# Minimum edge required to generate a signal
-# Edge = model_prob - market_prob (positive = BUY YES, negative = BUY NO)
-# A higher threshold means fewer but higher-confidence trades
-# Only T+0 (observation-based) is active: win rates for T+1 (18%) and T+2 (4%) are too low
-MIN_EDGE_TODAY = 0.25  # T+0: observation-based, raised from 0.08 (historical win rate ~33% BUY_NO)
-MIN_EDGE_TOMORROW = 0.99  # T+1: disabled (win rate 18%, not profitable)
-MIN_EDGE_D2 = 0.99  # T+2: disabled (win rate 4%, catastrophic)
+# THE STRATEGY: buy the NO token on same-day (T+0) temperature markets when its
+# price is inside [MIN_NO_PRICE, MAX_NO_PRICE]. This was already the system's
+# de facto behavior (the RF live output was saturated near 0.5, reducing the
+# edge threshold to a NO-price cutoff); making it explicit keeps the behavior
+# that the historical stats validate while removing the broken RF inference.
+# The gaussian model probability is still computed and stored on every trade
+# as a feature, so a clean-data model can be reintroduced once retrained.
+#
+# Only T+0 is traded: historical win rates for T+1 (18%) and T+2 (4%) are too low,
+# and BUY_YES (11% vs 41% for BUY_NO) is disabled.
+TRADE_HORIZON_DAYS = 0
 
-# NO-token price band for BUY_NO trades.
-# entry_prob (the NO token price = 1 - market_prob) carries more signal than edge:
-# when the NO token is very cheap, the market is near-certain on YES for a same-day
-# temperature and is almost always right. Betting against it is adverse selection.
+# NO-token price band.
+# The NO price carries more signal than model edge: when the NO token is very
+# cheap, the market is near-certain on YES for a same-day temperature and is
+# almost always right. Betting against it is adverse selection.
 # Historical BUY_NO T+0 win rate by NO price bucket (341 trades):
 #   0.00-0.05: 0%   (-$192)   0.05-0.10: 6.5% (-$17)   0.10-0.20: 16.7% (-$1)
 #   0.20-0.35: 62% (+$146)    0.35-0.50: 39.7% (-$16)
@@ -156,27 +160,20 @@ def _compute_kelly(model_prob: float, market_prob: float, direction: str) -> flo
     kelly = (b * q - p) / b
     return float(max(kelly, 0.0)) # Never negative
 
-# Return the minimum edge threshold for a given forecast horizon
-def _get_threshold(horizon_days: int) -> float:
-    if horizon_days == 0:
-        return MIN_EDGE_TODAY
-    elif horizon_days == 1:
-        return MIN_EDGE_TOMORROW
-    else:
-        return MIN_EDGE_D2
-    
-# Classify signal confidence based on net edge and horizon
-def _get_confidence(net_edge: float, horizon_days: int) -> str:
-    threshold = _get_threshold(horizon_days)
-    if net_edge >= threshold * 2:
+# Classify signal confidence from the gaussian net edge (informational only,
+# the band rule does not gate on it)
+def _get_confidence(net_edge: float) -> str:
+    if net_edge >= 0.50:
         return "HIGH"
-    elif net_edge >= threshold * 1.3:
+    elif net_edge >= 0.33:
         return "MEDIUM"
-    else: 
+    else:
         return "LOW"
-    
-# Generate trading signals from a DataFrame with model probabilities
-# For each outcome, computes the edge, adjusts for fees, applies Kelly sizing, and returns a Signal if the net edge exceeds the threshold
+
+# Generate trading signals from a DataFrame with model probabilities.
+# Trade rule: BUY_NO on T+0 markets whose NO price is inside the band.
+# The gaussian edge, kelly and confidence are computed and stored for analysis
+# and future model training, but do not gate the decision.
 def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
     signals = []
     city_rates = _city_win_rates()
@@ -185,15 +182,18 @@ def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
         model_prob = row.get("model_prob")
         market_prob = row.get("prob_yes")
 
+        # Require the gaussian: a NaN means no forecast and no observation, and
+        # a trade without weather features is useless for future training
         if pd.isna(model_prob) or pd.isna(market_prob):
             continue
 
         raw = row.get("forecast_horizon_days", 1)
         horizon_days = int(raw) if pd.notna(raw) else 1
-        
-        threshold = _get_threshold(horizon_days)
-        liquidity = row.get("liquidity", 0)
 
+        if horizon_days != TRADE_HORIZON_DAYS:
+            continue
+
+        liquidity = row.get("liquidity", 0)
         if liquidity < MIN_LIQUIDITY:
             continue
 
@@ -206,39 +206,25 @@ def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
         has_obs = pd.notna(row.get("observed_max_c"))
         data_source = "observation" if has_obs else "forecast"
 
-        # Compute raw edge
-        edge = model_prob - market_prob
-
-        # Determine direction and entry price
-        # BUY_YES disabled: historical win rate 11% vs BUY_NO 41%
-        if edge <= -threshold:
-            direction = "BUY_NO"
-            entry_prob = 1 - market_prob  # NO token price
-        else:
-            continue  # Edge too small or BUY_YES
-
-        # Skip extreme NO prices: betting against a near-certain same-day market
-        # has a ~0% win rate (see MIN_NO_PRICE/MAX_NO_PRICE rationale above).
+        # Band rule: NO price inside [MIN_NO_PRICE, MAX_NO_PRICE].
+        # Outside the band, betting against a near-certain same-day market has
+        # a ~0% win rate (see rationale above).
+        direction = "BUY_NO"
+        entry_prob = 1 - market_prob  # NO token price
         if entry_prob < MIN_NO_PRICE or entry_prob > MAX_NO_PRICE:
             continue
 
-        # Fee adjusted net edge
+        # Gaussian edge and Kelly, recorded for analysis (not used to decide)
+        edge = model_prob - market_prob
         net_edge = _compute_net_edge(abs(edge), entry_prob)
-
-        if net_edge <= 0:
-            continue # Fees eat the entire edge
-
-        # Kelly position sizing
         kelly = _compute_kelly(model_prob, market_prob, direction)
-        half_kelly = kelly * KELLY_FRACTION
 
-        # Cap at max fraction of bankroll
-        position_fraction = min(half_kelly, MAX_POSITION_FRACTION)
-        position_size = round(bankroll * position_fraction, 2)
-        position_size = min(position_size, MAX_POSITION_USD)
+        # Flat sizing: MAX_POSITION_USD capped by bankroll fraction (this is
+        # what Kelly sizing produced in practice anyway with the current caps)
+        position_size = min(round(bankroll * MAX_POSITION_FRACTION, 2), MAX_POSITION_USD)
         position_size = max(position_size, 1) # Minimum $1 trade
 
-        confidence = _get_confidence(net_edge, horizon_days)
+        confidence = _get_confidence(net_edge)
 
         signals.append(Signal(
             series_slug=row["series_slug"],
