@@ -18621,7 +18621,7 @@
       "opened_at": "2026-06-02T07:10:32.746690+00:00",
       "closed_at": "2026-06-05T02:01:59.060761+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 38.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -18647,7 +18647,7 @@
       "opened_at": "2026-06-02T07:10:32.748583+00:00",
       "closed_at": "2026-06-05T02:01:59.187756+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 34.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -18673,7 +18673,7 @@
       "opened_at": "2026-06-02T07:10:32.751180+00:00",
       "closed_at": "2026-06-05T02:01:59.443472+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 36.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -18699,7 +18699,7 @@
       "opened_at": "2026-06-02T07:10:32.752396+00:00",
       "closed_at": "2026-06-05T02:01:59.577116+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -18725,7 +18725,7 @@
       "opened_at": "2026-06-02T07:10:32.753626+00:00",
       "closed_at": "2026-06-05T02:01:59.709579+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 36.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -18751,7 +18751,7 @@
       "opened_at": "2026-06-02T07:10:32.754836+00:00",
       "closed_at": "2026-06-05T02:01:59.836821+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -18777,7 +18777,7 @@
       "opened_at": "2026-06-02T07:10:32.758886+00:00",
       "closed_at": "2026-06-05T02:01:59.980401+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -18803,7 +18803,7 @@
       "opened_at": "2026-06-02T11:53:26.587023+00:00",
       "closed_at": "2026-06-05T02:02:00.120051+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 38.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -18829,7 +18829,7 @@
       "opened_at": "2026-06-02T11:53:26.588387+00:00",
       "closed_at": "2026-06-05T02:02:00.237898+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -18855,7 +18855,7 @@
       "opened_at": "2026-06-02T11:53:26.589694+00:00",
       "closed_at": "2026-06-05T02:02:00.358676+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -18881,7 +18881,7 @@
       "opened_at": "2026-06-02T11:53:26.590941+00:00",
       "closed_at": "2026-06-05T02:02:00.487730+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -18907,7 +18907,7 @@
       "opened_at": "2026-06-02T11:53:26.592193+00:00",
       "closed_at": "2026-06-05T02:02:00.615869+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -18933,7 +18933,7 @@
       "opened_at": "2026-06-02T11:53:26.594744+00:00",
       "closed_at": "2026-06-05T02:02:00.745172+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -18959,7 +18959,7 @@
       "opened_at": "2026-06-02T11:53:26.598739+00:00",
       "closed_at": "2026-06-05T02:02:00.877564+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -18985,7 +18985,7 @@
       "opened_at": "2026-06-02T15:58:28.621245+00:00",
       "closed_at": "2026-06-05T02:02:01.003300+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -19011,7 +19011,7 @@
       "opened_at": "2026-06-02T15:58:28.622486+00:00",
       "closed_at": "2026-06-05T02:02:01.153289+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -19037,7 +19037,7 @@
       "opened_at": "2026-06-02T15:58:28.623715+00:00",
       "closed_at": "2026-06-05T02:02:01.280144+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -19063,7 +19063,7 @@
       "opened_at": "2026-06-02T19:40:49.033284+00:00",
       "closed_at": "2026-06-05T02:02:01.554825+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -19089,7 +19089,7 @@
       "opened_at": "2026-06-02T19:40:49.035844+00:00",
       "closed_at": "2026-06-05T02:02:01.695680+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -19115,7 +19115,7 @@
       "opened_at": "2026-06-02T22:19:41.881708+00:00",
       "closed_at": "2026-06-05T02:02:02.247952+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -19141,7 +19141,7 @@
       "opened_at": "2026-06-02T22:19:41.883458+00:00",
       "closed_at": "2026-06-05T02:02:02.814778+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -19167,7 +19167,7 @@
       "opened_at": "2026-06-02T22:19:41.886644+00:00",
       "closed_at": "2026-06-05T02:02:02.944510+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 34.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -19193,7 +19193,7 @@
       "opened_at": "2026-06-03T00:17:26.405265+00:00",
       "closed_at": "2026-06-05T02:02:03.071228+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -19219,7 +19219,7 @@
       "opened_at": "2026-06-03T00:17:26.410402+00:00",
       "closed_at": "2026-06-05T02:02:03.313516+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -19245,7 +19245,7 @@
       "opened_at": "2026-06-03T00:17:26.414149+00:00",
       "closed_at": "2026-06-05T02:02:03.601339+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -19271,7 +19271,7 @@
       "opened_at": "2026-06-03T00:17:26.415327+00:00",
       "closed_at": "2026-06-05T02:02:03.743754+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -19297,7 +19297,7 @@
       "opened_at": "2026-06-03T00:17:26.417667+00:00",
       "closed_at": "2026-06-05T02:02:03.870355+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -19323,7 +19323,7 @@
       "opened_at": "2026-06-03T00:17:26.418821+00:00",
       "closed_at": "2026-06-05T02:02:03.988036+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 38.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -19349,7 +19349,7 @@
       "opened_at": "2026-06-03T00:17:26.421179+00:00",
       "closed_at": "2026-06-05T02:02:04.115410+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -19375,7 +19375,7 @@
       "opened_at": "2026-06-03T00:17:26.422337+00:00",
       "closed_at": "2026-06-05T02:02:04.252583+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -19401,7 +19401,7 @@
       "opened_at": "2026-06-03T00:17:26.423519+00:00",
       "closed_at": "2026-06-05T02:02:04.464264+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -19427,7 +19427,7 @@
       "opened_at": "2026-06-03T00:17:26.425815+00:00",
       "closed_at": "2026-06-05T02:02:04.728742+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -19453,7 +19453,7 @@
       "opened_at": "2026-06-03T00:17:26.426967+00:00",
       "closed_at": "2026-06-05T02:02:04.854612+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -19479,7 +19479,7 @@
       "opened_at": "2026-06-03T00:17:26.430443+00:00",
       "closed_at": "2026-06-05T02:02:04.989883+00:00",
       "pnl_usd": 35.0,
-      "resolved_temp": null
+      "resolved_temp": 34.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -19505,7 +19505,7 @@
       "opened_at": "2026-06-03T00:17:26.431598+00:00",
       "closed_at": "2026-06-05T02:02:05.125311+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 36.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -19531,7 +19531,7 @@
       "opened_at": "2026-06-03T00:17:26.435070+00:00",
       "closed_at": "2026-06-05T02:02:05.246002+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -19557,7 +19557,7 @@
       "opened_at": "2026-06-03T00:17:26.445691+00:00",
       "closed_at": "2026-06-05T02:02:05.802565+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -19583,7 +19583,7 @@
       "opened_at": "2026-06-03T00:17:26.449140+00:00",
       "closed_at": "2026-06-05T02:02:05.934774+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -19609,7 +19609,7 @@
       "opened_at": "2026-06-03T05:28:53.715501+00:00",
       "closed_at": "2026-06-05T02:02:06.195633+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -19635,7 +19635,7 @@
       "opened_at": "2026-06-03T05:28:53.716810+00:00",
       "closed_at": "2026-06-05T02:02:06.321673+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 36.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -19661,7 +19661,7 @@
       "opened_at": "2026-06-03T05:28:53.718071+00:00",
       "closed_at": "2026-06-05T02:02:06.456064+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -19687,7 +19687,7 @@
       "opened_at": "2026-06-03T05:28:53.719343+00:00",
       "closed_at": "2026-06-05T02:02:06.813461+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -19713,7 +19713,7 @@
       "opened_at": "2026-06-03T05:28:53.721791+00:00",
       "closed_at": "2026-06-05T02:02:07.102080+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -19739,7 +19739,7 @@
       "opened_at": "2026-06-03T05:28:53.725471+00:00",
       "closed_at": "2026-06-05T02:02:07.362918+00:00",
       "pnl_usd": 42.619,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -19765,7 +19765,7 @@
       "opened_at": "2026-06-03T10:22:03.773786+00:00",
       "closed_at": "2026-06-05T02:02:07.479437+00:00",
       "pnl_usd": 13.8679,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -19791,7 +19791,7 @@
       "opened_at": "2026-06-03T10:22:03.778237+00:00",
       "closed_at": "2026-06-05T02:02:07.600567+00:00",
       "pnl_usd": 139.9275,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -19817,7 +19817,7 @@
       "opened_at": "2026-06-03T10:22:03.781175+00:00",
       "closed_at": "2026-06-05T02:02:07.730638+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -19843,7 +19843,7 @@
       "opened_at": "2026-06-03T10:22:03.788452+00:00",
       "closed_at": "2026-06-05T02:02:07.850867+00:00",
       "pnl_usd": 5.7527,
-      "resolved_temp": null
+      "resolved_temp": 16.4
     },
     {
       "series_slug": "paris-daily-weather",
@@ -19869,7 +19869,7 @@
       "opened_at": "2026-06-03T10:22:03.791250+00:00",
       "closed_at": "2026-06-05T02:02:07.974349+00:00",
       "pnl_usd": 108.6364,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -19895,7 +19895,7 @@
       "opened_at": "2026-06-03T10:22:03.795456+00:00",
       "closed_at": "2026-06-05T02:02:08.096287+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -19921,7 +19921,7 @@
       "opened_at": "2026-06-03T10:22:03.796828+00:00",
       "closed_at": "2026-06-05T02:02:08.259209+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -19947,7 +19947,7 @@
       "opened_at": "2026-06-03T15:17:25.970854+00:00",
       "closed_at": "2026-06-05T02:02:08.649512+00:00",
       "pnl_usd": 13.8679,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -19973,7 +19973,7 @@
       "opened_at": "2026-06-03T15:17:25.974470+00:00",
       "closed_at": "2026-06-05T02:02:09.009230+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -19999,7 +19999,7 @@
       "opened_at": "2026-06-03T15:17:25.975683+00:00",
       "closed_at": "2026-06-05T02:02:09.159222+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -20025,7 +20025,7 @@
       "opened_at": "2026-06-03T19:08:20.940025+00:00",
       "closed_at": "2026-06-05T02:02:09.412859+00:00",
       "pnl_usd": 38.4783,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -20051,7 +20051,7 @@
       "opened_at": "2026-06-03T19:08:20.944189+00:00",
       "closed_at": "2026-06-05T02:02:09.609941+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -20077,7 +20077,7 @@
       "opened_at": "2026-06-03T19:08:20.945631+00:00",
       "closed_at": "2026-06-05T02:02:09.766104+00:00",
       "pnl_usd": 7.1951,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -20103,7 +20103,7 @@
       "opened_at": "2026-06-03T22:12:08.006555+00:00",
       "closed_at": "2026-06-05T02:02:10.107982+00:00",
       "pnl_usd": 3.1301,
-      "resolved_temp": null
+      "resolved_temp": 16.4
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -20129,7 +20129,7 @@
       "opened_at": "2026-06-04T00:16:56.126862+00:00",
       "closed_at": "2026-06-05T02:02:10.223409+00:00",
       "pnl_usd": 47.6316,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -20155,7 +20155,7 @@
       "opened_at": "2026-06-04T00:16:56.133016+00:00",
       "closed_at": "2026-06-05T02:02:10.353307+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -20181,7 +20181,7 @@
       "opened_at": "2026-06-04T00:16:56.135397+00:00",
       "closed_at": "2026-06-05T02:02:10.508488+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 36.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -20207,7 +20207,7 @@
       "opened_at": "2026-06-04T00:16:56.140234+00:00",
       "closed_at": "2026-06-05T02:02:10.631021+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -20233,7 +20233,7 @@
       "opened_at": "2026-06-04T00:16:56.146152+00:00",
       "closed_at": "2026-06-05T02:02:11.030617+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -20259,7 +20259,7 @@
       "opened_at": "2026-06-04T00:16:56.149673+00:00",
       "closed_at": "2026-06-05T02:02:11.154853+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -20285,7 +20285,7 @@
       "opened_at": "2026-06-04T00:16:56.156572+00:00",
       "closed_at": "2026-06-05T02:02:11.407435+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -20311,7 +20311,7 @@
       "opened_at": "2026-06-04T00:16:56.157743+00:00",
       "closed_at": "2026-06-05T02:02:11.533171+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -20337,7 +20337,7 @@
       "opened_at": "2026-06-04T00:16:56.158897+00:00",
       "closed_at": "2026-06-05T02:02:11.677942+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -20363,7 +20363,7 @@
       "opened_at": "2026-06-04T00:16:56.160075+00:00",
       "closed_at": "2026-06-05T02:02:11.810091+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 36.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -20389,7 +20389,7 @@
       "opened_at": "2026-06-04T00:16:56.161239+00:00",
       "closed_at": "2026-06-05T02:02:11.947765+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 36.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -20415,7 +20415,7 @@
       "opened_at": "2026-06-04T00:16:56.165980+00:00",
       "closed_at": "2026-06-05T02:02:12.072775+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -20441,7 +20441,7 @@
       "opened_at": "2026-06-04T00:16:56.170668+00:00",
       "closed_at": "2026-06-05T02:02:12.330149+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -20467,7 +20467,7 @@
       "opened_at": "2026-06-04T00:16:56.171827+00:00",
       "closed_at": "2026-06-05T02:02:12.458917+00:00",
       "pnl_usd": 13.1818,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -20493,7 +20493,7 @@
       "opened_at": "2026-06-04T00:16:56.172979+00:00",
       "closed_at": "2026-06-05T02:02:12.589152+00:00",
       "pnl_usd": 24.4118,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -20519,7 +20519,7 @@
       "opened_at": "2026-06-04T00:16:56.174144+00:00",
       "closed_at": "2026-06-05T02:02:12.710095+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -20545,7 +20545,7 @@
       "opened_at": "2026-06-04T00:16:56.175294+00:00",
       "closed_at": "2026-06-05T02:02:12.847779+00:00",
       "pnl_usd": 11.3934,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -20571,7 +20571,7 @@
       "opened_at": "2026-06-04T00:16:56.176446+00:00",
       "closed_at": "2026-06-05T02:02:13.030145+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -20597,7 +20597,7 @@
       "opened_at": "2026-06-04T05:25:16.356822+00:00",
       "closed_at": "2026-06-05T02:02:13.286769+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -20623,7 +20623,7 @@
       "opened_at": "2026-06-04T05:25:16.358268+00:00",
       "closed_at": "2026-06-05T02:02:13.414071+00:00",
       "pnl_usd": 6.6279,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -20649,7 +20649,7 @@
       "opened_at": "2026-06-04T05:25:16.359519+00:00",
       "closed_at": "2026-06-05T02:02:13.541412+00:00",
       "pnl_usd": 55.241,
-      "resolved_temp": null
+      "resolved_temp": 16.4
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -20675,7 +20675,7 @@
       "opened_at": "2026-06-04T05:25:16.365661+00:00",
       "closed_at": "2026-06-05T02:02:14.075233+00:00",
       "pnl_usd": 10.1515,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -20701,7 +20701,7 @@
       "opened_at": "2026-06-04T05:25:16.366875+00:00",
       "closed_at": "2026-06-05T02:02:14.211792+00:00",
       "pnl_usd": 10.873,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -20727,7 +20727,7 @@
       "opened_at": "2026-06-04T09:11:24.810086+00:00",
       "closed_at": "2026-06-05T02:02:14.337940+00:00",
       "pnl_usd": 11.3934,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -20753,7 +20753,7 @@
       "opened_at": "2026-06-04T09:11:24.811363+00:00",
       "closed_at": "2026-06-05T02:02:14.459985+00:00",
       "pnl_usd": 6.4943,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -20779,7 +20779,7 @@
       "opened_at": "2026-06-04T12:49:31.640957+00:00",
       "closed_at": "2026-06-05T02:02:14.702100+00:00",
       "pnl_usd": 24.4118,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -20805,7 +20805,7 @@
       "opened_at": "2026-06-04T15:56:40.115090+00:00",
       "closed_at": "2026-06-05T02:02:14.947318+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -20831,7 +20831,7 @@
       "opened_at": "2026-06-04T15:56:40.120248+00:00",
       "closed_at": "2026-06-05T02:02:15.192482+00:00",
       "pnl_usd": 13.1818,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "houston-daily-weather",
@@ -20857,7 +20857,7 @@
       "opened_at": "2026-06-02T07:10:32.749936+00:00",
       "closed_at": "2026-06-05T06:46:21.591610+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -20883,7 +20883,7 @@
       "opened_at": "2026-06-02T15:58:28.624930+00:00",
       "closed_at": "2026-06-05T06:46:21.771936+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -20909,7 +20909,7 @@
       "opened_at": "2026-06-02T19:40:49.037049+00:00",
       "closed_at": "2026-06-05T06:46:21.969676+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -20935,7 +20935,7 @@
       "opened_at": "2026-06-02T19:40:49.039477+00:00",
       "closed_at": "2026-06-05T06:46:22.200462+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -20961,7 +20961,7 @@
       "opened_at": "2026-06-02T19:40:49.041892+00:00",
       "closed_at": "2026-06-05T06:46:22.384970+00:00",
       "pnl_usd": 12.5439,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "austin-daily-weather",
@@ -20987,7 +20987,7 @@
       "opened_at": "2026-06-03T00:17:26.409195+00:00",
       "closed_at": "2026-06-05T06:46:22.538112+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "austin-daily-weather",
@@ -21013,7 +21013,7 @@
       "opened_at": "2026-06-03T00:17:26.411646+00:00",
       "closed_at": "2026-06-05T06:46:22.727007+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "miami-daily-weather",
@@ -21039,7 +21039,7 @@
       "opened_at": "2026-06-03T00:17:26.424649+00:00",
       "closed_at": "2026-06-05T06:46:22.921006+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "houston-daily-weather",
@@ -21065,7 +21065,7 @@
       "opened_at": "2026-06-03T00:17:26.438567+00:00",
       "closed_at": "2026-06-05T06:46:23.123099+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "houston-daily-weather",
@@ -21091,7 +21091,7 @@
       "opened_at": "2026-06-03T00:17:26.443387+00:00",
       "closed_at": "2026-06-05T06:46:23.286396+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -21117,7 +21117,7 @@
       "opened_at": "2026-06-03T00:17:26.444533+00:00",
       "closed_at": "2026-06-05T06:46:23.454008+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -21143,7 +21143,7 @@
       "opened_at": "2026-06-03T05:28:53.724216+00:00",
       "closed_at": "2026-06-05T06:46:23.980069+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "austin-daily-weather",
@@ -21169,7 +21169,7 @@
       "opened_at": "2026-06-03T15:17:25.968407+00:00",
       "closed_at": "2026-06-05T06:46:24.139800+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "austin-daily-weather",
@@ -21195,7 +21195,7 @@
       "opened_at": "2026-06-03T15:17:25.969626+00:00",
       "closed_at": "2026-06-05T06:46:24.338214+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "miami-daily-weather",
@@ -21221,7 +21221,7 @@
       "opened_at": "2026-06-03T15:17:25.972068+00:00",
       "closed_at": "2026-06-05T06:46:24.501749+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -21247,7 +21247,7 @@
       "opened_at": "2026-06-03T15:17:25.976865+00:00",
       "closed_at": "2026-06-05T06:46:24.658919+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "austin-daily-weather",
@@ -21273,7 +21273,7 @@
       "opened_at": "2026-06-04T00:16:56.142566+00:00",
       "closed_at": "2026-06-05T06:46:25.053064+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "houston-daily-weather",
@@ -21299,7 +21299,7 @@
       "opened_at": "2026-06-04T00:16:56.144972+00:00",
       "closed_at": "2026-06-05T06:46:25.244643+00:00",
       "pnl_usd": 16.2766,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "houston-daily-weather",
@@ -21325,7 +21325,7 @@
       "opened_at": "2026-06-04T00:16:56.151968+00:00",
       "closed_at": "2026-06-05T06:46:25.437475+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "austin-daily-weather",
@@ -21351,7 +21351,7 @@
       "opened_at": "2026-06-04T00:16:56.167122+00:00",
       "closed_at": "2026-06-05T06:46:25.610662+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "houston-daily-weather",
@@ -21377,7 +21377,7 @@
       "opened_at": "2026-06-04T00:16:56.177583+00:00",
       "closed_at": "2026-06-05T06:46:25.760736+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "miami-daily-weather",
@@ -21403,7 +21403,7 @@
       "opened_at": "2026-06-04T05:25:16.363252+00:00",
       "closed_at": "2026-06-05T06:46:26.103630+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "miami-daily-weather",
@@ -21429,7 +21429,7 @@
       "opened_at": "2026-06-04T05:25:16.364461+00:00",
       "closed_at": "2026-06-05T06:46:26.265281+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "houston-daily-weather",
@@ -21455,7 +21455,7 @@
       "opened_at": "2026-06-04T12:49:31.642063+00:00",
       "closed_at": "2026-06-05T06:46:26.651672+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "miami-daily-weather",
@@ -21481,7 +21481,7 @@
       "opened_at": "2026-06-04T15:56:40.117739+00:00",
       "closed_at": "2026-06-05T06:46:26.840623+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "miami-daily-weather",
@@ -21507,7 +21507,7 @@
       "opened_at": "2026-06-04T18:10:14.867393+00:00",
       "closed_at": "2026-06-05T06:46:27.035523+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -21533,7 +21533,7 @@
       "opened_at": "2026-06-04T18:10:14.868848+00:00",
       "closed_at": "2026-06-05T06:46:27.203954+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "austin-daily-weather",
@@ -21559,7 +21559,7 @@
       "opened_at": "2026-06-04T20:33:45.135972+00:00",
       "closed_at": "2026-06-05T06:46:27.378823+00:00",
       "pnl_usd": 35.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "houston-daily-weather",
@@ -21585,7 +21585,7 @@
       "opened_at": "2026-06-04T22:03:27.074011+00:00",
       "closed_at": "2026-06-05T06:46:27.526174+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -21611,7 +21611,7 @@
       "opened_at": "2026-06-03T00:17:26.450279+00:00",
       "closed_at": "2026-06-05T10:38:52.625937+00:00",
       "pnl_usd": 16.2766,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -21637,7 +21637,7 @@
       "opened_at": "2026-06-03T05:28:53.720581+00:00",
       "closed_at": "2026-06-05T10:38:52.760616+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -21663,7 +21663,7 @@
       "opened_at": "2026-06-03T19:08:20.947044+00:00",
       "closed_at": "2026-06-05T10:38:52.896772+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -21689,7 +21689,7 @@
       "opened_at": "2026-06-04T05:25:16.360743+00:00",
       "closed_at": "2026-06-05T10:38:53.039564+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -21715,7 +21715,7 @@
       "opened_at": "2026-06-04T09:11:24.813922+00:00",
       "closed_at": "2026-06-05T10:38:53.188151+00:00",
       "pnl_usd": 3.6957,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -21741,7 +21741,7 @@
       "opened_at": "2026-06-04T22:03:27.075451+00:00",
       "closed_at": "2026-06-05T10:38:53.325898+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -21767,7 +21767,7 @@
       "opened_at": "2026-06-03T05:28:53.679588+00:00",
       "closed_at": "2026-06-06T02:13:35.291619+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -21793,7 +21793,7 @@
       "opened_at": "2026-06-03T05:28:53.682055+00:00",
       "closed_at": "2026-06-06T02:13:45.523892+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -21819,7 +21819,7 @@
       "opened_at": "2026-06-03T05:28:53.683289+00:00",
       "closed_at": "2026-06-06T02:13:45.721949+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -21845,7 +21845,7 @@
       "opened_at": "2026-06-03T05:28:53.685784+00:00",
       "closed_at": "2026-06-06T02:13:46.107920+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -21871,7 +21871,7 @@
       "opened_at": "2026-06-03T05:28:53.687028+00:00",
       "closed_at": "2026-06-06T02:13:46.299690+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -21897,7 +21897,7 @@
       "opened_at": "2026-06-03T05:28:53.690837+00:00",
       "closed_at": "2026-06-06T02:13:56.547890+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -21923,7 +21923,7 @@
       "opened_at": "2026-06-03T05:28:53.692721+00:00",
       "closed_at": "2026-06-06T02:13:56.747752+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -21949,7 +21949,7 @@
       "opened_at": "2026-06-03T05:28:53.696485+00:00",
       "closed_at": "2026-06-06T02:13:57.088752+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -21975,7 +21975,7 @@
       "opened_at": "2026-06-03T05:28:53.698155+00:00",
       "closed_at": "2026-06-06T02:13:57.291634+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -22001,7 +22001,7 @@
       "opened_at": "2026-06-03T05:28:53.699442+00:00",
       "closed_at": "2026-06-06T02:13:57.495088+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -22027,7 +22027,7 @@
       "opened_at": "2026-06-03T05:28:53.700699+00:00",
       "closed_at": "2026-06-06T02:13:57.693154+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -22053,7 +22053,7 @@
       "opened_at": "2026-06-03T05:28:53.701925+00:00",
       "closed_at": "2026-06-06T02:14:03.191960+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -22079,7 +22079,7 @@
       "opened_at": "2026-06-03T05:28:53.703152+00:00",
       "closed_at": "2026-06-06T02:14:03.396471+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -22105,7 +22105,7 @@
       "opened_at": "2026-06-03T05:28:53.704399+00:00",
       "closed_at": "2026-06-06T02:14:03.595209+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -22131,7 +22131,7 @@
       "opened_at": "2026-06-03T05:28:53.705660+00:00",
       "closed_at": "2026-06-06T02:14:03.757427+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -22157,7 +22157,7 @@
       "opened_at": "2026-06-03T05:28:53.706906+00:00",
       "closed_at": "2026-06-06T02:14:03.914234+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -22183,7 +22183,7 @@
       "opened_at": "2026-06-03T05:28:53.708132+00:00",
       "closed_at": "2026-06-06T02:14:04.101431+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -22209,7 +22209,7 @@
       "opened_at": "2026-06-03T05:28:53.709349+00:00",
       "closed_at": "2026-06-06T02:14:04.284349+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -22235,7 +22235,7 @@
       "opened_at": "2026-06-03T05:28:53.711804+00:00",
       "closed_at": "2026-06-06T02:14:04.674857+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -22261,7 +22261,7 @@
       "opened_at": "2026-06-03T05:28:53.713035+00:00",
       "closed_at": "2026-06-06T02:14:04.857729+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -22287,7 +22287,7 @@
       "opened_at": "2026-06-03T10:22:03.775325+00:00",
       "closed_at": "2026-06-06T02:14:05.228713+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -22313,7 +22313,7 @@
       "opened_at": "2026-06-03T10:22:03.776794+00:00",
       "closed_at": "2026-06-06T02:14:05.742755+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -22339,7 +22339,7 @@
       "opened_at": "2026-06-03T10:22:03.779742+00:00",
       "closed_at": "2026-06-06T02:14:05.910608+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -22365,7 +22365,7 @@
       "opened_at": "2026-06-03T10:22:03.782619+00:00",
       "closed_at": "2026-06-06T02:14:06.074382+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -22391,7 +22391,7 @@
       "opened_at": "2026-06-03T10:22:03.784030+00:00",
       "closed_at": "2026-06-06T02:14:06.229614+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -22417,7 +22417,7 @@
       "opened_at": "2026-06-03T15:17:25.962841+00:00",
       "closed_at": "2026-06-06T02:14:06.957545+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -22443,7 +22443,7 @@
       "opened_at": "2026-06-03T15:17:25.964377+00:00",
       "closed_at": "2026-06-06T02:14:07.154343+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -22469,7 +22469,7 @@
       "opened_at": "2026-06-03T15:17:25.965676+00:00",
       "closed_at": "2026-06-06T02:14:07.347433+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -22495,7 +22495,7 @@
       "opened_at": "2026-06-03T19:08:20.935736+00:00",
       "closed_at": "2026-06-06T02:14:07.713272+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -22521,7 +22521,7 @@
       "opened_at": "2026-06-03T19:08:20.937158+00:00",
       "closed_at": "2026-06-06T02:14:07.882485+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -22547,7 +22547,7 @@
       "opened_at": "2026-06-03T19:08:20.942769+00:00",
       "closed_at": "2026-06-06T02:14:08.629451+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -22573,7 +22573,7 @@
       "opened_at": "2026-06-03T22:12:08.003646+00:00",
       "closed_at": "2026-06-06T02:14:09.013619+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -22599,7 +22599,7 @@
       "opened_at": "2026-06-03T22:12:08.005099+00:00",
       "closed_at": "2026-06-06T02:14:09.222485+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -22625,7 +22625,7 @@
       "opened_at": "2026-06-04T00:16:56.128181+00:00",
       "closed_at": "2026-06-06T02:14:09.420162+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -22651,7 +22651,7 @@
       "opened_at": "2026-06-04T00:16:56.129413+00:00",
       "closed_at": "2026-06-06T02:14:09.645479+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -22703,7 +22703,7 @@
       "opened_at": "2026-06-04T00:16:56.131823+00:00",
       "closed_at": "2026-06-06T02:14:10.086862+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -22729,7 +22729,7 @@
       "opened_at": "2026-06-04T00:16:56.134218+00:00",
       "closed_at": "2026-06-06T02:14:10.281680+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -22755,7 +22755,7 @@
       "opened_at": "2026-06-04T00:16:56.141408+00:00",
       "closed_at": "2026-06-06T02:14:11.014510+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -22781,7 +22781,7 @@
       "opened_at": "2026-06-04T00:16:56.143759+00:00",
       "closed_at": "2026-06-06T02:14:11.181988+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -22807,7 +22807,7 @@
       "opened_at": "2026-06-04T00:16:56.147309+00:00",
       "closed_at": "2026-06-06T02:14:11.411586+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -22833,7 +22833,7 @@
       "opened_at": "2026-06-04T00:16:56.148481+00:00",
       "closed_at": "2026-06-06T02:14:11.608603+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -22859,7 +22859,7 @@
       "opened_at": "2026-06-04T00:16:56.153114+00:00",
       "closed_at": "2026-06-06T02:14:11.955459+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -22885,7 +22885,7 @@
       "opened_at": "2026-06-04T00:16:56.154269+00:00",
       "closed_at": "2026-06-06T02:14:12.142286+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -22911,7 +22911,7 @@
       "opened_at": "2026-06-04T00:16:56.155412+00:00",
       "closed_at": "2026-06-06T02:14:19.313188+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -22937,7 +22937,7 @@
       "opened_at": "2026-06-04T00:16:56.163673+00:00",
       "closed_at": "2026-06-06T02:14:19.701261+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -22963,7 +22963,7 @@
       "opened_at": "2026-06-04T00:16:56.164817+00:00",
       "closed_at": "2026-06-06T02:14:19.896375+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -22989,7 +22989,7 @@
       "opened_at": "2026-06-04T00:16:56.168285+00:00",
       "closed_at": "2026-06-06T02:14:20.082456+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -23015,7 +23015,7 @@
       "opened_at": "2026-06-04T00:16:56.169448+00:00",
       "closed_at": "2026-06-06T02:14:20.242750+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -23041,7 +23041,7 @@
       "opened_at": "2026-06-04T09:11:24.812631+00:00",
       "closed_at": "2026-06-06T02:14:20.754340+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -23067,7 +23067,7 @@
       "opened_at": "2026-06-04T12:49:31.643045+00:00",
       "closed_at": "2026-06-06T02:14:20.945390+00:00",
       "pnl_usd": 146.5152,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -23093,7 +23093,7 @@
       "opened_at": "2026-06-04T12:49:31.644904+00:00",
       "closed_at": "2026-06-06T02:14:21.265304+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -23119,7 +23119,7 @@
       "opened_at": "2026-06-04T12:49:31.645784+00:00",
       "closed_at": "2026-06-06T02:14:21.440200+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -23145,7 +23145,7 @@
       "opened_at": "2026-06-04T12:49:31.646669+00:00",
       "closed_at": "2026-06-06T02:14:21.629038+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -23171,7 +23171,7 @@
       "opened_at": "2026-06-04T12:49:31.647526+00:00",
       "closed_at": "2026-06-06T02:14:21.818534+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -23197,7 +23197,7 @@
       "opened_at": "2026-06-04T12:49:31.649307+00:00",
       "closed_at": "2026-06-06T02:14:22.227510+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -23223,7 +23223,7 @@
       "opened_at": "2026-06-04T12:49:31.650198+00:00",
       "closed_at": "2026-06-06T02:14:22.389952+00:00",
       "pnl_usd": 61.6667,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -23249,7 +23249,7 @@
       "opened_at": "2026-06-04T12:49:31.651083+00:00",
       "closed_at": "2026-06-06T02:14:22.558364+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -23275,7 +23275,7 @@
       "opened_at": "2026-06-04T12:49:31.651961+00:00",
       "closed_at": "2026-06-06T02:14:31.513541+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -23301,7 +23301,7 @@
       "opened_at": "2026-06-04T12:49:31.652837+00:00",
       "closed_at": "2026-06-06T02:14:31.710209+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -23327,7 +23327,7 @@
       "opened_at": "2026-06-04T12:49:31.653680+00:00",
       "closed_at": "2026-06-06T02:14:31.876958+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -23353,7 +23353,7 @@
       "opened_at": "2026-06-04T12:49:31.654518+00:00",
       "closed_at": "2026-06-06T02:14:32.057513+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -23379,7 +23379,7 @@
       "opened_at": "2026-06-04T12:49:31.655413+00:00",
       "closed_at": "2026-06-06T02:14:36.563545+00:00",
       "pnl_usd": 35.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -23405,7 +23405,7 @@
       "opened_at": "2026-06-04T12:49:31.656272+00:00",
       "closed_at": "2026-06-06T02:14:37.757001+00:00",
       "pnl_usd": 32.037,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -23431,7 +23431,7 @@
       "opened_at": "2026-06-04T12:49:31.657140+00:00",
       "closed_at": "2026-06-06T02:14:37.939081+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -23457,7 +23457,7 @@
       "opened_at": "2026-06-04T15:56:40.116446+00:00",
       "closed_at": "2026-06-06T02:14:38.103465+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 15.7
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -23483,7 +23483,7 @@
       "opened_at": "2026-06-04T15:56:40.118923+00:00",
       "closed_at": "2026-06-06T02:14:38.266365+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 15.7
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -23509,7 +23509,7 @@
       "opened_at": "2026-06-04T15:56:40.121444+00:00",
       "closed_at": "2026-06-06T02:14:38.582096+00:00",
       "pnl_usd": 32.037,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -23535,7 +23535,7 @@
       "opened_at": "2026-06-04T15:56:40.122684+00:00",
       "closed_at": "2026-06-06T02:14:38.739772+00:00",
       "pnl_usd": 4.009,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -23561,7 +23561,7 @@
       "opened_at": "2026-06-04T20:33:45.137283+00:00",
       "closed_at": "2026-06-06T02:14:38.893057+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -23587,7 +23587,7 @@
       "opened_at": "2026-06-04T20:33:45.138486+00:00",
       "closed_at": "2026-06-06T02:14:39.110393+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -23613,7 +23613,7 @@
       "opened_at": "2026-06-04T22:03:27.076926+00:00",
       "closed_at": "2026-06-06T02:14:44.082619+00:00",
       "pnl_usd": 13.5185,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -23639,7 +23639,7 @@
       "opened_at": "2026-06-04T23:43:31.596902+00:00",
       "closed_at": "2026-06-06T02:14:44.409306+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -23665,7 +23665,7 @@
       "opened_at": "2026-06-04T23:43:31.598343+00:00",
       "closed_at": "2026-06-06T02:14:44.629694+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -23691,7 +23691,7 @@
       "opened_at": "2026-06-05T02:06:38.877340+00:00",
       "closed_at": "2026-06-06T02:14:44.808139+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -23717,7 +23717,7 @@
       "opened_at": "2026-06-05T02:06:38.880240+00:00",
       "closed_at": "2026-06-06T02:14:45.196849+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -23743,7 +23743,7 @@
       "opened_at": "2026-06-05T02:06:38.882779+00:00",
       "closed_at": "2026-06-06T02:14:45.550011+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -23769,7 +23769,7 @@
       "opened_at": "2026-06-05T02:06:38.885254+00:00",
       "closed_at": "2026-06-06T02:14:45.867705+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -23795,7 +23795,7 @@
       "opened_at": "2026-06-05T02:06:38.887739+00:00",
       "closed_at": "2026-06-06T02:14:46.228175+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -23821,7 +23821,7 @@
       "opened_at": "2026-06-05T02:06:38.888984+00:00",
       "closed_at": "2026-06-06T02:14:46.425782+00:00",
       "pnl_usd": 12.8571,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -23847,7 +23847,7 @@
       "opened_at": "2026-06-05T02:06:38.890178+00:00",
       "closed_at": "2026-06-06T02:14:46.587619+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -23873,7 +23873,7 @@
       "opened_at": "2026-06-05T02:06:38.892551+00:00",
       "closed_at": "2026-06-06T02:14:46.958086+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -23899,7 +23899,7 @@
       "opened_at": "2026-06-05T02:06:38.893727+00:00",
       "closed_at": "2026-06-06T02:14:47.141234+00:00",
       "pnl_usd": 15.0,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -23925,7 +23925,7 @@
       "opened_at": "2026-06-05T02:06:38.894883+00:00",
       "closed_at": "2026-06-06T02:14:47.301357+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -23951,7 +23951,7 @@
       "opened_at": "2026-06-05T02:06:38.896062+00:00",
       "closed_at": "2026-06-06T02:14:47.522728+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -23977,7 +23977,7 @@
       "opened_at": "2026-06-05T02:06:38.897243+00:00",
       "closed_at": "2026-06-06T02:14:47.683435+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -24003,7 +24003,7 @@
       "opened_at": "2026-06-05T02:06:38.898422+00:00",
       "closed_at": "2026-06-06T02:14:47.852524+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -24029,7 +24029,7 @@
       "opened_at": "2026-06-05T02:06:38.900687+00:00",
       "closed_at": "2026-06-06T02:14:48.222235+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -24055,7 +24055,7 @@
       "opened_at": "2026-06-05T02:06:38.901805+00:00",
       "closed_at": "2026-06-06T02:14:48.440550+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -24081,7 +24081,7 @@
       "opened_at": "2026-06-05T06:53:27.489889+00:00",
       "closed_at": "2026-06-06T02:14:48.787363+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -24107,7 +24107,7 @@
       "opened_at": "2026-06-05T06:53:27.493115+00:00",
       "closed_at": "2026-06-06T02:14:48.943724+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -24133,7 +24133,7 @@
       "opened_at": "2026-06-05T06:53:27.500382+00:00",
       "closed_at": "2026-06-06T02:14:49.130197+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -24159,7 +24159,7 @@
       "opened_at": "2026-06-05T06:53:27.539384+00:00",
       "closed_at": "2026-06-06T02:14:49.655886+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -24185,7 +24185,7 @@
       "opened_at": "2026-06-05T10:43:20.032729+00:00",
       "closed_at": "2026-06-06T02:14:51.625925+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -24211,7 +24211,7 @@
       "opened_at": "2026-06-05T13:50:25.216452+00:00",
       "closed_at": "2026-06-06T02:14:51.788788+00:00",
       "pnl_usd": 18.2558,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -24237,7 +24237,7 @@
       "opened_at": "2026-06-05T13:50:25.221075+00:00",
       "closed_at": "2026-06-06T02:14:51.985595+00:00",
       "pnl_usd": 29.4828,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -24263,7 +24263,7 @@
       "opened_at": "2026-06-05T13:50:25.226863+00:00",
       "closed_at": "2026-06-06T02:14:52.142789+00:00",
       "pnl_usd": 5.7527,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -24289,7 +24289,7 @@
       "opened_at": "2026-06-05T16:28:48.739392+00:00",
       "closed_at": "2026-06-06T02:14:52.348446+00:00",
       "pnl_usd": 17.2222,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -24315,7 +24315,7 @@
       "opened_at": "2026-06-05T16:28:48.754810+00:00",
       "closed_at": "2026-06-06T02:14:52.680004+00:00",
       "pnl_usd": 24.4118,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -24341,7 +24341,7 @@
       "opened_at": "2026-06-03T05:28:53.678320+00:00",
       "closed_at": "2026-06-06T06:05:48.689677+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -24367,7 +24367,7 @@
       "opened_at": "2026-06-03T05:28:53.680834+00:00",
       "closed_at": "2026-06-06T06:05:48.883967+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -24393,7 +24393,7 @@
       "opened_at": "2026-06-03T05:28:53.684525+00:00",
       "closed_at": "2026-06-06T06:05:49.067131+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -24419,7 +24419,7 @@
       "opened_at": "2026-06-03T05:28:53.688927+00:00",
       "closed_at": "2026-06-06T06:05:49.244447+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 28.0
     },
     {
       "series_slug": "miami-daily-weather",
@@ -24445,7 +24445,7 @@
       "opened_at": "2026-06-03T05:28:53.694621+00:00",
       "closed_at": "2026-06-06T06:05:49.413638+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -24471,7 +24471,7 @@
       "opened_at": "2026-06-03T05:28:53.710576+00:00",
       "closed_at": "2026-06-06T06:05:49.588957+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -24497,7 +24497,7 @@
       "opened_at": "2026-06-03T10:22:03.786891+00:00",
       "closed_at": "2026-06-06T06:05:49.947570+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "miami-daily-weather",
@@ -24523,7 +24523,7 @@
       "opened_at": "2026-06-03T10:22:03.792666+00:00",
       "closed_at": "2026-06-06T06:05:50.126249+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "miami-daily-weather",
@@ -24549,7 +24549,7 @@
       "opened_at": "2026-06-03T10:22:03.794039+00:00",
       "closed_at": "2026-06-06T06:05:50.303550+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "miami-daily-weather",
@@ -24575,7 +24575,7 @@
       "opened_at": "2026-06-03T15:17:25.973265+00:00",
       "closed_at": "2026-06-06T06:05:50.476076+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -24601,7 +24601,7 @@
       "opened_at": "2026-06-04T00:16:56.137863+00:00",
       "closed_at": "2026-06-06T06:05:51.408869+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -24627,7 +24627,7 @@
       "opened_at": "2026-06-04T00:16:56.139008+00:00",
       "closed_at": "2026-06-06T06:05:51.605194+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -24653,7 +24653,7 @@
       "opened_at": "2026-06-04T05:25:16.362015+00:00",
       "closed_at": "2026-06-06T06:05:52.161530+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -24679,7 +24679,7 @@
       "opened_at": "2026-06-04T23:43:31.595446+00:00",
       "closed_at": "2026-06-06T06:05:52.897494+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "miami-daily-weather",
@@ -24705,7 +24705,7 @@
       "opened_at": "2026-06-05T02:06:38.883998+00:00",
       "closed_at": "2026-06-06T06:05:53.439617+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "miami-daily-weather",
@@ -24731,7 +24731,7 @@
       "opened_at": "2026-06-05T02:06:38.891331+00:00",
       "closed_at": "2026-06-06T06:05:53.800418+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -24757,7 +24757,7 @@
       "opened_at": "2026-06-05T16:28:48.750705+00:00",
       "closed_at": "2026-06-06T06:05:54.339172+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "miami-daily-weather",
@@ -24783,7 +24783,7 @@
       "opened_at": "2026-06-05T18:22:31.161388+00:00",
       "closed_at": "2026-06-06T06:05:54.712584+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -24809,7 +24809,7 @@
       "opened_at": "2026-06-03T05:28:53.723010+00:00",
       "closed_at": "2026-06-06T09:05:13.517865+00:00",
       "pnl_usd": 120.0,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "houston-daily-weather",
@@ -24835,7 +24835,7 @@
       "opened_at": "2026-06-03T19:08:20.938617+00:00",
       "closed_at": "2026-06-06T09:05:13.709568+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "houston-daily-weather",
@@ -24861,7 +24861,7 @@
       "opened_at": "2026-06-03T19:08:20.941404+00:00",
       "closed_at": "2026-06-06T09:05:13.912579+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "houston-daily-weather",
@@ -24887,7 +24887,7 @@
       "opened_at": "2026-06-03T19:08:20.948422+00:00",
       "closed_at": "2026-06-06T09:05:14.131642+00:00",
       "pnl_usd": 13.1818,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "houston-daily-weather",
@@ -24913,7 +24913,7 @@
       "opened_at": "2026-06-04T00:16:56.136687+00:00",
       "closed_at": "2026-06-06T09:05:14.330123+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "houston-daily-weather",
@@ -24939,7 +24939,7 @@
       "opened_at": "2026-06-04T00:16:56.150807+00:00",
       "closed_at": "2026-06-06T09:05:14.589487+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "austin-daily-weather",
@@ -24965,7 +24965,7 @@
       "opened_at": "2026-06-04T00:16:56.162470+00:00",
       "closed_at": "2026-06-06T09:05:14.807192+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "austin-daily-weather",
@@ -24991,7 +24991,7 @@
       "opened_at": "2026-06-04T09:11:24.808693+00:00",
       "closed_at": "2026-06-06T09:05:15.003498+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "houston-daily-weather",
@@ -25017,7 +25017,7 @@
       "opened_at": "2026-06-04T12:49:31.643980+00:00",
       "closed_at": "2026-06-06T09:05:15.410839+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -25043,7 +25043,7 @@
       "opened_at": "2026-06-04T12:49:31.648424+00:00",
       "closed_at": "2026-06-06T09:05:15.614440+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "houston-daily-weather",
@@ -25069,7 +25069,7 @@
       "opened_at": "2026-06-05T02:06:38.878826+00:00",
       "closed_at": "2026-06-06T09:05:15.813610+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "austin-daily-weather",
@@ -25095,7 +25095,7 @@
       "opened_at": "2026-06-05T02:06:38.881543+00:00",
       "closed_at": "2026-06-06T09:05:16.034534+00:00",
       "pnl_usd": 16.7391,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "austin-daily-weather",
@@ -25121,7 +25121,7 @@
       "opened_at": "2026-06-05T02:06:38.886522+00:00",
       "closed_at": "2026-06-06T09:05:16.279326+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -25147,7 +25147,7 @@
       "opened_at": "2026-06-05T02:06:38.899560+00:00",
       "closed_at": "2026-06-06T09:05:16.503393+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -25173,7 +25173,7 @@
       "opened_at": "2026-06-05T02:06:38.902913+00:00",
       "closed_at": "2026-06-06T09:05:16.695537+00:00",
       "pnl_usd": 4.0909,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "austin-daily-weather",
@@ -25199,7 +25199,7 @@
       "opened_at": "2026-06-05T18:22:31.160408+00:00",
       "closed_at": "2026-06-06T09:05:16.893235+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "houston-daily-weather",
@@ -25225,7 +25225,7 @@
       "opened_at": "2026-06-05T20:23:31.575445+00:00",
       "closed_at": "2026-06-06T09:05:17.085185+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 29.4
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -25251,7 +25251,7 @@
       "opened_at": "2026-06-05T20:23:31.576887+00:00",
       "closed_at": "2026-06-06T09:05:17.285994+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -25277,7 +25277,7 @@
       "opened_at": "2026-06-05T20:23:31.578316+00:00",
       "closed_at": "2026-06-06T09:05:17.486402+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -25303,7 +25303,7 @@
       "opened_at": "2026-06-05T21:54:10.250711+00:00",
       "closed_at": "2026-06-06T09:05:17.694863+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -25329,7 +25329,7 @@
       "opened_at": "2026-06-05T21:54:10.254964+00:00",
       "closed_at": "2026-06-06T09:05:17.890936+00:00",
       "pnl_usd": 4.1912,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -25355,7 +25355,7 @@
       "opened_at": "2026-06-05T22:57:01.558934+00:00",
       "closed_at": "2026-06-06T09:05:18.087816+00:00",
       "pnl_usd": -5.0,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -25381,7 +25381,7 @@
       "opened_at": "2026-06-05T06:53:27.488603+00:00",
       "closed_at": "2026-06-06T22:17:44.027762+00:00",
       "pnl_usd": -5.2338,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -25407,7 +25407,7 @@
       "opened_at": "2026-06-05T06:53:27.491105+00:00",
       "closed_at": "2026-06-06T22:17:44.668763+00:00",
       "pnl_usd": 28.1208,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -25433,7 +25433,7 @@
       "opened_at": "2026-06-05T06:53:27.495098+00:00",
       "closed_at": "2026-06-06T22:17:45.140226+00:00",
       "pnl_usd": -5.2445,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -25459,7 +25459,7 @@
       "opened_at": "2026-06-05T06:53:27.496730+00:00",
       "closed_at": "2026-06-06T22:17:45.648542+00:00",
       "pnl_usd": -5.2442,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -25485,7 +25485,7 @@
       "opened_at": "2026-06-05T06:53:27.497966+00:00",
       "closed_at": "2026-06-06T22:17:46.201799+00:00",
       "pnl_usd": -5.2412,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -25511,7 +25511,7 @@
       "opened_at": "2026-06-05T06:53:27.499177+00:00",
       "closed_at": "2026-06-06T22:17:46.753603+00:00",
       "pnl_usd": -5.2399,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -25537,7 +25537,7 @@
       "opened_at": "2026-06-05T06:53:27.505034+00:00",
       "closed_at": "2026-06-06T22:17:48.925098+00:00",
       "pnl_usd": -5.2399,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -25563,7 +25563,7 @@
       "opened_at": "2026-06-05T06:53:27.506196+00:00",
       "closed_at": "2026-06-06T22:17:49.397855+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -25589,7 +25589,7 @@
       "opened_at": "2026-06-05T06:53:27.515367+00:00",
       "closed_at": "2026-06-06T22:17:53.304442+00:00",
       "pnl_usd": -5.2379,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -25615,7 +25615,7 @@
       "opened_at": "2026-06-05T06:53:27.518827+00:00",
       "closed_at": "2026-06-06T22:17:55.187236+00:00",
       "pnl_usd": -5.2387,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -25641,7 +25641,7 @@
       "opened_at": "2026-06-05T06:53:27.526864+00:00",
       "closed_at": "2026-06-06T22:17:58.772210+00:00",
       "pnl_usd": -5.2445,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -25667,7 +25667,7 @@
       "opened_at": "2026-06-05T06:53:27.528031+00:00",
       "closed_at": "2026-06-06T22:17:59.242971+00:00",
       "pnl_usd": -5.2323,
-      "resolved_temp": null
+      "resolved_temp": 15.3
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -25693,7 +25693,7 @@
       "opened_at": "2026-06-05T06:53:27.529162+00:00",
       "closed_at": "2026-06-06T22:17:59.936192+00:00",
       "pnl_usd": -5.2239,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -25719,7 +25719,7 @@
       "opened_at": "2026-06-05T10:43:20.034167+00:00",
       "closed_at": "2026-06-06T22:18:04.685798+00:00",
       "pnl_usd": -5.2387,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -25745,7 +25745,7 @@
       "opened_at": "2026-06-05T10:43:20.035494+00:00",
       "closed_at": "2026-06-06T22:18:05.229310+00:00",
       "pnl_usd": -5.241,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -25771,7 +25771,7 @@
       "opened_at": "2026-06-05T10:43:20.037895+00:00",
       "closed_at": "2026-06-06T22:18:06.278772+00:00",
       "pnl_usd": -5.2387,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -25797,7 +25797,7 @@
       "opened_at": "2026-06-05T10:43:20.039148+00:00",
       "closed_at": "2026-06-06T22:18:06.744628+00:00",
       "pnl_usd": -5.2313,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -25823,7 +25823,7 @@
       "opened_at": "2026-06-05T10:43:20.041532+00:00",
       "closed_at": "2026-06-06T22:18:07.885235+00:00",
       "pnl_usd": -5.2395,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -25849,7 +25849,7 @@
       "opened_at": "2026-06-05T10:43:20.042730+00:00",
       "closed_at": "2026-06-06T22:18:08.384332+00:00",
       "pnl_usd": 3.8977,
-      "resolved_temp": null
+      "resolved_temp": 15.3
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -25875,7 +25875,7 @@
       "opened_at": "2026-06-05T13:50:25.218012+00:00",
       "closed_at": "2026-06-06T22:18:09.558882+00:00",
       "pnl_usd": -5.2238,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -25901,7 +25901,7 @@
       "opened_at": "2026-06-05T13:50:25.219581+00:00",
       "closed_at": "2026-06-06T22:18:10.029791+00:00",
       "pnl_usd": 42.3952,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -25927,7 +25927,7 @@
       "opened_at": "2026-06-05T13:50:25.222600+00:00",
       "closed_at": "2026-06-06T22:18:10.540785+00:00",
       "pnl_usd": -5.1825,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -25953,7 +25953,7 @@
       "opened_at": "2026-06-05T13:50:25.225423+00:00",
       "closed_at": "2026-06-06T22:18:11.470796+00:00",
       "pnl_usd": -5.1688,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -25979,7 +25979,7 @@
       "opened_at": "2026-06-05T16:28:48.740988+00:00",
       "closed_at": "2026-06-06T22:18:11.945188+00:00",
       "pnl_usd": -5.2421,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -26005,7 +26005,7 @@
       "opened_at": "2026-06-05T16:28:48.745238+00:00",
       "closed_at": "2026-06-06T22:18:14.070656+00:00",
       "pnl_usd": -5.2387,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -26031,7 +26031,7 @@
       "opened_at": "2026-06-05T16:28:48.746595+00:00",
       "closed_at": "2026-06-06T22:18:14.584811+00:00",
       "pnl_usd": -5.2087,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -26057,7 +26057,7 @@
       "opened_at": "2026-06-05T16:28:48.747984+00:00",
       "closed_at": "2026-06-06T22:18:15.067996+00:00",
       "pnl_usd": -5.2087,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -26083,7 +26083,7 @@
       "opened_at": "2026-06-05T23:59:12.412610+00:00",
       "closed_at": "2026-06-06T22:18:25.539640+00:00",
       "pnl_usd": -5.2263,
-      "resolved_temp": null
+      "resolved_temp": 15.3
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -26109,7 +26109,7 @@
       "opened_at": "2026-06-05T23:59:12.414114+00:00",
       "closed_at": "2026-06-06T22:18:26.113515+00:00",
       "pnl_usd": -5.2424,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -26135,7 +26135,7 @@
       "opened_at": "2026-06-06T02:19:25.677344+00:00",
       "closed_at": "2026-06-06T22:18:28.350492+00:00",
       "pnl_usd": -5.2385,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -26161,7 +26161,7 @@
       "opened_at": "2026-06-06T02:19:25.683272+00:00",
       "closed_at": "2026-06-06T22:18:31.080588+00:00",
       "pnl_usd": -5.2338,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -26187,7 +26187,7 @@
       "opened_at": "2026-06-06T02:19:25.688955+00:00",
       "closed_at": "2026-06-06T22:18:33.792901+00:00",
       "pnl_usd": -5.1788,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -26213,7 +26213,7 @@
       "opened_at": "2026-06-06T02:19:25.690098+00:00",
       "closed_at": "2026-06-06T22:18:34.271614+00:00",
       "pnl_usd": -5.2112,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -26239,7 +26239,7 @@
       "opened_at": "2026-06-06T02:19:25.691250+00:00",
       "closed_at": "2026-06-06T22:18:34.849132+00:00",
       "pnl_usd": -5.244,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -26265,7 +26265,7 @@
       "opened_at": "2026-06-06T02:19:25.695831+00:00",
       "closed_at": "2026-06-06T22:18:37.314250+00:00",
       "pnl_usd": 13.336,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -26291,7 +26291,7 @@
       "opened_at": "2026-06-06T02:19:25.701471+00:00",
       "closed_at": "2026-06-06T22:18:39.954657+00:00",
       "pnl_usd": -5.165,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -26317,7 +26317,7 @@
       "opened_at": "2026-06-06T02:19:25.702584+00:00",
       "closed_at": "2026-06-06T22:18:40.752643+00:00",
       "pnl_usd": 9.5409,
-      "resolved_temp": null
+      "resolved_temp": 37.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -26343,7 +26343,7 @@
       "opened_at": "2026-06-06T06:15:23.850194+00:00",
       "closed_at": "2026-06-06T22:18:41.790585+00:00",
       "pnl_usd": -5.2437,
-      "resolved_temp": null
+      "resolved_temp": 32.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -26369,7 +26369,7 @@
       "opened_at": "2026-06-06T06:15:23.851742+00:00",
       "closed_at": "2026-06-06T22:18:42.441474+00:00",
       "pnl_usd": -5.2387,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -26395,7 +26395,7 @@
       "opened_at": "2026-06-06T06:15:23.883044+00:00",
       "closed_at": "2026-06-06T22:18:43.076313+00:00",
       "pnl_usd": -5.2357,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -26421,7 +26421,7 @@
       "opened_at": "2026-06-06T06:15:23.895670+00:00",
       "closed_at": "2026-06-06T22:18:43.730003+00:00",
       "pnl_usd": -5.1487,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -26447,7 +26447,7 @@
       "opened_at": "2026-06-06T06:15:23.914298+00:00",
       "closed_at": "2026-06-06T22:18:44.441579+00:00",
       "pnl_usd": -5.1812,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -26473,7 +26473,7 @@
       "opened_at": "2026-06-06T06:15:23.941130+00:00",
       "closed_at": "2026-06-06T22:18:45.392027+00:00",
       "pnl_usd": 4.5875,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -26499,7 +26499,7 @@
       "opened_at": "2026-06-06T09:13:29.356235+00:00",
       "closed_at": "2026-06-06T22:18:45.952100+00:00",
       "pnl_usd": -5.2437,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -26525,7 +26525,7 @@
       "opened_at": "2026-06-05T06:53:27.524537+00:00",
       "closed_at": "2026-06-06T22:52:27.763211+00:00",
       "pnl_usd": -5.2417,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -26551,7 +26551,7 @@
       "opened_at": "2026-06-05T06:53:27.531419+00:00",
       "closed_at": "2026-06-06T22:52:28.182565+00:00",
       "pnl_usd": -5.2439,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -26577,7 +26577,7 @@
       "opened_at": "2026-06-05T10:43:20.036709+00:00",
       "closed_at": "2026-06-06T22:52:29.183955+00:00",
       "pnl_usd": -5.2313,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -26603,7 +26603,7 @@
       "opened_at": "2026-06-05T18:22:31.163278+00:00",
       "closed_at": "2026-06-06T22:52:30.552368+00:00",
       "pnl_usd": -5.2441,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -26629,7 +26629,7 @@
       "opened_at": "2026-06-05T18:22:31.164182+00:00",
       "closed_at": "2026-06-06T22:52:30.749271+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -26655,7 +26655,7 @@
       "opened_at": "2026-06-05T18:22:31.165949+00:00",
       "closed_at": "2026-06-06T22:52:31.027476+00:00",
       "pnl_usd": -5.2411,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -26681,7 +26681,7 @@
       "opened_at": "2026-06-05T22:57:01.562038+00:00",
       "closed_at": "2026-06-06T22:52:32.251017+00:00",
       "pnl_usd": -5.1187,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -26707,7 +26707,7 @@
       "opened_at": "2026-06-06T02:19:25.680981+00:00",
       "closed_at": "2026-06-06T22:52:33.090190+00:00",
       "pnl_usd": -5.2365,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -26733,7 +26733,7 @@
       "opened_at": "2026-06-06T02:19:25.682106+00:00",
       "closed_at": "2026-06-06T22:52:33.230951+00:00",
       "pnl_usd": -5.2263,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -26759,7 +26759,7 @@
       "opened_at": "2026-06-06T02:19:25.698089+00:00",
       "closed_at": "2026-06-06T22:52:34.496853+00:00",
       "pnl_usd": -5.1825,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -26785,7 +26785,7 @@
       "opened_at": "2026-06-06T02:19:25.699207+00:00",
       "closed_at": "2026-06-06T22:52:34.641122+00:00",
       "pnl_usd": -5.2,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -26811,7 +26811,7 @@
       "opened_at": "2026-06-06T09:13:29.368789+00:00",
       "closed_at": "2026-06-06T22:52:35.328431+00:00",
       "pnl_usd": -5.1888,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -26837,7 +26837,7 @@
       "opened_at": "2026-06-06T11:08:49.272259+00:00",
       "closed_at": "2026-06-06T22:52:35.599655+00:00",
       "pnl_usd": 6.2236,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -26863,7 +26863,7 @@
       "opened_at": "2026-06-06T12:52:31.132722+00:00",
       "closed_at": "2026-06-06T22:52:36.188012+00:00",
       "pnl_usd": -5.2372,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -26889,7 +26889,7 @@
       "opened_at": "2026-06-06T14:27:08.222564+00:00",
       "closed_at": "2026-06-06T22:52:36.363812+00:00",
       "pnl_usd": -5.2338,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -26915,7 +26915,7 @@
       "opened_at": "2026-06-06T14:27:08.224182+00:00",
       "closed_at": "2026-06-06T22:52:36.514730+00:00",
       "pnl_usd": -5.15,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -26941,7 +26941,7 @@
       "opened_at": "2026-06-06T14:27:08.225756+00:00",
       "closed_at": "2026-06-06T22:52:36.647698+00:00",
       "pnl_usd": 10.2158,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -26967,7 +26967,7 @@
       "opened_at": "2026-06-06T16:59:42.442326+00:00",
       "closed_at": "2026-06-06T22:52:36.924877+00:00",
       "pnl_usd": 9.329,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -26993,7 +26993,7 @@
       "opened_at": "2026-06-05T06:53:27.507346+00:00",
       "closed_at": "2026-06-06T23:54:24.734134+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -27019,7 +27019,7 @@
       "opened_at": "2026-06-05T06:53:27.508543+00:00",
       "closed_at": "2026-06-06T23:54:25.496840+00:00",
       "pnl_usd": -5.2436,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -27045,7 +27045,7 @@
       "opened_at": "2026-06-05T06:53:27.516501+00:00",
       "closed_at": "2026-06-06T23:54:27.411350+00:00",
       "pnl_usd": -5.2437,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -27071,7 +27071,7 @@
       "opened_at": "2026-06-05T06:53:27.521103+00:00",
       "closed_at": "2026-06-06T23:54:28.480206+00:00",
       "pnl_usd": -5.2449,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -27097,7 +27097,7 @@
       "opened_at": "2026-06-05T06:53:27.530289+00:00",
       "closed_at": "2026-06-06T23:54:29.711546+00:00",
       "pnl_usd": 35.7641,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -27123,7 +27123,7 @@
       "opened_at": "2026-06-05T10:43:20.040337+00:00",
       "closed_at": "2026-06-06T23:54:31.546445+00:00",
       "pnl_usd": -5.2409,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -27149,7 +27149,7 @@
       "opened_at": "2026-06-05T16:28:48.749333+00:00",
       "closed_at": "2026-06-06T23:54:33.046898+00:00",
       "pnl_usd": -5.1888,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -27175,7 +27175,7 @@
       "opened_at": "2026-06-05T18:22:31.166833+00:00",
       "closed_at": "2026-06-06T23:54:34.494475+00:00",
       "pnl_usd": -5.2338,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -27201,7 +27201,7 @@
       "opened_at": "2026-06-05T23:59:12.417046+00:00",
       "closed_at": "2026-06-06T23:54:36.737000+00:00",
       "pnl_usd": -5.2397,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -27227,7 +27227,7 @@
       "opened_at": "2026-06-05T23:59:12.418477+00:00",
       "closed_at": "2026-06-06T23:54:37.398992+00:00",
       "pnl_usd": -5.1825,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -27253,7 +27253,7 @@
       "opened_at": "2026-06-06T02:19:25.679789+00:00",
       "closed_at": "2026-06-06T23:54:38.250005+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -27279,7 +27279,7 @@
       "opened_at": "2026-06-06T02:19:25.692417+00:00",
       "closed_at": "2026-06-06T23:54:39.754036+00:00",
       "pnl_usd": -5.1913,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -27305,7 +27305,7 @@
       "opened_at": "2026-06-06T02:19:25.693551+00:00",
       "closed_at": "2026-06-06T23:54:40.439011+00:00",
       "pnl_usd": 20.4398,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -27331,7 +27331,7 @@
       "opened_at": "2026-06-06T11:08:49.266399+00:00",
       "closed_at": "2026-06-06T23:54:42.443905+00:00",
       "pnl_usd": 17.5323,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -27357,7 +27357,7 @@
       "opened_at": "2026-06-06T11:08:49.273600+00:00",
       "closed_at": "2026-06-06T23:54:43.133642+00:00",
       "pnl_usd": 4.0605,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -27383,7 +27383,7 @@
       "opened_at": "2026-06-06T12:52:31.126891+00:00",
       "closed_at": "2026-06-06T23:54:43.858213+00:00",
       "pnl_usd": -5.2313,
-      "resolved_temp": null
+      "resolved_temp": 20.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -27409,7 +27409,7 @@
       "opened_at": "2026-06-06T12:52:31.129905+00:00",
       "closed_at": "2026-06-06T23:54:44.524276+00:00",
       "pnl_usd": 9.5409,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -27435,7 +27435,7 @@
       "opened_at": "2026-06-06T15:52:29.734254+00:00",
       "closed_at": "2026-06-06T23:54:45.227961+00:00",
       "pnl_usd": -5.22,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -27461,7 +27461,7 @@
       "opened_at": "2026-06-05T06:53:27.513112+00:00",
       "closed_at": "2026-06-07T02:08:20.148305+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 17.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -27487,7 +27487,7 @@
       "opened_at": "2026-06-05T16:28:48.742456+00:00",
       "closed_at": "2026-06-07T02:08:23.332149+00:00",
       "pnl_usd": -5.2404,
-      "resolved_temp": null
+      "resolved_temp": 17.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -27513,7 +27513,7 @@
       "opened_at": "2026-06-05T16:28:48.753408+00:00",
       "closed_at": "2026-06-07T02:08:24.362356+00:00",
       "pnl_usd": -5.1088,
-      "resolved_temp": null
+      "resolved_temp": 17.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -27539,7 +27539,7 @@
       "opened_at": "2026-06-05T18:22:31.167695+00:00",
       "closed_at": "2026-06-07T02:08:25.415146+00:00",
       "pnl_usd": -5.1837,
-      "resolved_temp": null
+      "resolved_temp": 17.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -27565,7 +27565,7 @@
       "opened_at": "2026-06-06T02:19:25.694686+00:00",
       "closed_at": "2026-06-07T02:08:28.374389+00:00",
       "pnl_usd": -5.1938,
-      "resolved_temp": null
+      "resolved_temp": 17.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -27591,7 +27591,7 @@
       "opened_at": "2026-06-05T06:53:27.502736+00:00",
       "closed_at": "2026-06-07T06:45:26.581684+00:00",
       "pnl_usd": -5.2439,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "miami-daily-weather",
@@ -27617,7 +27617,7 @@
       "opened_at": "2026-06-05T06:53:27.509699+00:00",
       "closed_at": "2026-06-07T06:45:30.089083+00:00",
       "pnl_usd": -5.244,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "houston-daily-weather",
@@ -27643,7 +27643,7 @@
       "opened_at": "2026-06-05T06:53:27.510827+00:00",
       "closed_at": "2026-06-07T06:45:30.534211+00:00",
       "pnl_usd": -5.2425,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -27669,7 +27669,7 @@
       "opened_at": "2026-06-05T06:53:27.514245+00:00",
       "closed_at": "2026-06-07T06:45:31.119957+00:00",
       "pnl_usd": -5.2436,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "houston-daily-weather",
@@ -27695,7 +27695,7 @@
       "opened_at": "2026-06-05T06:53:27.517665+00:00",
       "closed_at": "2026-06-07T06:45:31.556467+00:00",
       "pnl_usd": -5.2401,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -27721,7 +27721,7 @@
       "opened_at": "2026-06-05T06:53:27.519952+00:00",
       "closed_at": "2026-06-07T06:45:31.999241+00:00",
       "pnl_usd": -5.2412,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "miami-daily-weather",
@@ -27747,7 +27747,7 @@
       "opened_at": "2026-06-05T06:53:27.522309+00:00",
       "closed_at": "2026-06-07T06:45:32.447693+00:00",
       "pnl_usd": -5.2387,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "austin-daily-weather",
@@ -27773,7 +27773,7 @@
       "opened_at": "2026-06-05T06:53:27.523427+00:00",
       "closed_at": "2026-06-07T06:45:33.905329+00:00",
       "pnl_usd": -5.235,
-      "resolved_temp": null
+      "resolved_temp": 33.3
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -27799,7 +27799,7 @@
       "opened_at": "2026-06-05T06:53:27.532624+00:00",
       "closed_at": "2026-06-07T06:45:38.898131+00:00",
       "pnl_usd": -5.2288,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -27825,7 +27825,7 @@
       "opened_at": "2026-06-05T06:53:27.534869+00:00",
       "closed_at": "2026-06-07T06:45:39.505043+00:00",
       "pnl_usd": -5.2338,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -27851,7 +27851,7 @@
       "opened_at": "2026-06-05T06:53:27.535980+00:00",
       "closed_at": "2026-06-07T06:45:39.944688+00:00",
       "pnl_usd": -5.2213,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "houston-daily-weather",
@@ -27877,7 +27877,7 @@
       "opened_at": "2026-06-05T06:53:27.537068+00:00",
       "closed_at": "2026-06-07T06:45:40.374334+00:00",
       "pnl_usd": -5.2313,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -27903,7 +27903,7 @@
       "opened_at": "2026-06-05T13:50:25.223993+00:00",
       "closed_at": "2026-06-07T06:45:41.096704+00:00",
       "pnl_usd": -5.1713,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "austin-daily-weather",
@@ -27929,7 +27929,7 @@
       "opened_at": "2026-06-05T16:28:48.743882+00:00",
       "closed_at": "2026-06-07T06:45:41.523721+00:00",
       "pnl_usd": -5.2263,
-      "resolved_temp": null
+      "resolved_temp": 33.3
     },
     {
       "series_slug": "austin-daily-weather",
@@ -27955,7 +27955,7 @@
       "opened_at": "2026-06-05T18:22:31.162357+00:00",
       "closed_at": "2026-06-07T06:45:42.081680+00:00",
       "pnl_usd": -5.2401,
-      "resolved_temp": null
+      "resolved_temp": 33.3
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -27981,7 +27981,7 @@
       "opened_at": "2026-06-05T18:22:31.165059+00:00",
       "closed_at": "2026-06-07T06:45:42.514135+00:00",
       "pnl_usd": -5.1812,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -28007,7 +28007,7 @@
       "opened_at": "2026-06-05T18:22:31.168554+00:00",
       "closed_at": "2026-06-07T06:45:42.952140+00:00",
       "pnl_usd": -5.2162,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -28033,7 +28033,7 @@
       "opened_at": "2026-06-05T20:23:31.580178+00:00",
       "closed_at": "2026-06-07T06:45:43.405502+00:00",
       "pnl_usd": -5.2381,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "miami-daily-weather",
@@ -28059,7 +28059,7 @@
       "opened_at": "2026-06-05T21:54:10.252191+00:00",
       "closed_at": "2026-06-07T06:45:43.979349+00:00",
       "pnl_usd": -5.1837,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -28085,7 +28085,7 @@
       "opened_at": "2026-06-05T21:54:10.253583+00:00",
       "closed_at": "2026-06-07T06:45:44.409019+00:00",
       "pnl_usd": 12.3651,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -28111,7 +28111,7 @@
       "opened_at": "2026-06-05T23:59:12.415603+00:00",
       "closed_at": "2026-06-07T06:45:44.961218+00:00",
       "pnl_usd": -5.2421,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "houston-daily-weather",
@@ -28137,7 +28137,7 @@
       "opened_at": "2026-06-06T02:19:25.678607+00:00",
       "closed_at": "2026-06-07T06:45:45.627194+00:00",
       "pnl_usd": -5.1913,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "austin-daily-weather",
@@ -28163,7 +28163,7 @@
       "opened_at": "2026-06-06T02:19:25.684397+00:00",
       "closed_at": "2026-06-07T06:45:46.062391+00:00",
       "pnl_usd": 19.8,
-      "resolved_temp": null
+      "resolved_temp": 33.3
     },
     {
       "series_slug": "austin-daily-weather",
@@ -28189,7 +28189,7 @@
       "opened_at": "2026-06-06T02:19:25.685530+00:00",
       "closed_at": "2026-06-07T06:45:46.494521+00:00",
       "pnl_usd": -5.1988,
-      "resolved_temp": null
+      "resolved_temp": 33.3
     },
     {
       "series_slug": "houston-daily-weather",
@@ -28215,7 +28215,7 @@
       "opened_at": "2026-06-06T02:19:25.686656+00:00",
       "closed_at": "2026-06-07T06:45:46.916425+00:00",
       "pnl_usd": 19.1914,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "miami-daily-weather",
@@ -28241,7 +28241,7 @@
       "opened_at": "2026-06-06T02:19:25.687787+00:00",
       "closed_at": "2026-06-07T06:45:47.362117+00:00",
       "pnl_usd": -5.2112,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "austin-daily-weather",
@@ -28267,7 +28267,7 @@
       "opened_at": "2026-06-06T02:19:25.696922+00:00",
       "closed_at": "2026-06-07T06:45:47.808079+00:00",
       "pnl_usd": -5.1613,
-      "resolved_temp": null
+      "resolved_temp": 33.3
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -28293,7 +28293,7 @@
       "opened_at": "2026-06-06T02:19:25.703707+00:00",
       "closed_at": "2026-06-07T06:45:48.387994+00:00",
       "pnl_usd": 7.668,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "houston-daily-weather",
@@ -28319,7 +28319,7 @@
       "opened_at": "2026-06-06T18:04:11.454457+00:00",
       "closed_at": "2026-06-07T06:45:58.753137+00:00",
       "pnl_usd": -5.2263,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "miami-daily-weather",
@@ -28345,7 +28345,7 @@
       "opened_at": "2026-06-06T18:04:11.455904+00:00",
       "closed_at": "2026-06-07T06:45:59.197033+00:00",
       "pnl_usd": -5.2087,
-      "resolved_temp": null
+      "resolved_temp": 30.6
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -28371,7 +28371,7 @@
       "opened_at": "2026-06-06T18:04:11.457659+00:00",
       "closed_at": "2026-06-07T06:45:59.625926+00:00",
       "pnl_usd": -5.1713,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -28397,7 +28397,7 @@
       "opened_at": "2026-06-06T19:20:05.028897+00:00",
       "closed_at": "2026-06-07T06:46:00.325415+00:00",
       "pnl_usd": -5.18,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "austin-daily-weather",
@@ -28423,7 +28423,7 @@
       "opened_at": "2026-06-06T20:44:06.192743+00:00",
       "closed_at": "2026-06-07T06:46:00.900217+00:00",
       "pnl_usd": -5.2288,
-      "resolved_temp": null
+      "resolved_temp": 33.3
     },
     {
       "series_slug": "denver-daily-weather",
@@ -28449,7 +28449,7 @@
       "opened_at": "2026-06-05T06:53:27.501553+00:00",
       "closed_at": "2026-06-07T09:54:25.638745+00:00",
       "pnl_usd": -5.2416,
-      "resolved_temp": null
+      "resolved_temp": 33.9
     },
     {
       "series_slug": "denver-daily-weather",
@@ -28475,7 +28475,7 @@
       "opened_at": "2026-06-05T06:53:27.503896+00:00",
       "closed_at": "2026-06-07T09:54:26.220591+00:00",
       "pnl_usd": -5.24,
-      "resolved_temp": null
+      "resolved_temp": 33.9
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -28501,7 +28501,7 @@
       "opened_at": "2026-06-05T06:53:27.511966+00:00",
       "closed_at": "2026-06-07T09:54:26.758772+00:00",
       "pnl_usd": -5.2361,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -28527,7 +28527,7 @@
       "opened_at": "2026-06-05T06:53:27.525723+00:00",
       "closed_at": "2026-06-07T09:54:27.299126+00:00",
       "pnl_usd": -5.2311,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "denver-daily-weather",
@@ -28553,7 +28553,7 @@
       "opened_at": "2026-06-05T06:53:27.533748+00:00",
       "closed_at": "2026-06-07T09:54:27.813265+00:00",
       "pnl_usd": -5.2188,
-      "resolved_temp": null
+      "resolved_temp": 33.9
     },
     {
       "series_slug": "denver-daily-weather",
@@ -28579,7 +28579,7 @@
       "opened_at": "2026-06-05T06:53:27.538181+00:00",
       "closed_at": "2026-06-07T09:54:28.324035+00:00",
       "pnl_usd": -5.2137,
-      "resolved_temp": null
+      "resolved_temp": 33.9
     },
     {
       "series_slug": "denver-daily-weather",
@@ -28605,7 +28605,7 @@
       "opened_at": "2026-06-05T10:43:20.043880+00:00",
       "closed_at": "2026-06-07T09:54:28.804409+00:00",
       "pnl_usd": 12.0639,
-      "resolved_temp": null
+      "resolved_temp": 33.9
     },
     {
       "series_slug": "denver-daily-weather",
@@ -28631,7 +28631,7 @@
       "opened_at": "2026-06-05T16:28:48.752047+00:00",
       "closed_at": "2026-06-07T09:54:29.326249+00:00",
       "pnl_usd": -5.1688,
-      "resolved_temp": null
+      "resolved_temp": 33.9
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -28657,7 +28657,7 @@
       "opened_at": "2026-06-05T20:23:31.581621+00:00",
       "closed_at": "2026-06-07T09:54:29.829810+00:00",
       "pnl_usd": -5.2426,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -28683,7 +28683,7 @@
       "opened_at": "2026-06-05T22:57:01.560482+00:00",
       "closed_at": "2026-06-07T09:54:30.319867+00:00",
       "pnl_usd": -5.2447,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -28709,7 +28709,7 @@
       "opened_at": "2026-06-06T02:19:25.700324+00:00",
       "closed_at": "2026-06-07T09:54:30.911511+00:00",
       "pnl_usd": 14.0458,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -28735,7 +28735,7 @@
       "opened_at": "2026-06-06T06:15:23.939682+00:00",
       "closed_at": "2026-06-07T09:54:39.674032+00:00",
       "pnl_usd": -5.1812,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -28761,7 +28761,7 @@
       "opened_at": "2026-06-06T09:13:29.367423+00:00",
       "closed_at": "2026-06-07T09:54:40.970785+00:00",
       "pnl_usd": -5.1837,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "denver-daily-weather",
@@ -28787,7 +28787,7 @@
       "opened_at": "2026-06-06T20:44:06.193748+00:00",
       "closed_at": "2026-06-07T09:54:42.947934+00:00",
       "pnl_usd": 15.6433,
-      "resolved_temp": null
+      "resolved_temp": 33.9
     },
     {
       "series_slug": "denver-daily-weather",
@@ -28813,7 +28813,7 @@
       "opened_at": "2026-06-07T00:01:21.059371+00:00",
       "closed_at": "2026-06-07T09:54:43.458017+00:00",
       "pnl_usd": -5.2426,
-      "resolved_temp": null
+      "resolved_temp": 33.9
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -28839,7 +28839,7 @@
       "opened_at": "2026-06-06T06:15:23.931179+00:00",
       "closed_at": "2026-06-07T13:14:16.976176+00:00",
       "pnl_usd": -5.24,
-      "resolved_temp": null
+      "resolved_temp": 13.8
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -28865,7 +28865,7 @@
       "opened_at": "2026-06-06T11:08:49.268326+00:00",
       "closed_at": "2026-06-07T13:14:19.678164+00:00",
       "pnl_usd": -5.2391,
-      "resolved_temp": null
+      "resolved_temp": 13.8
     },
     {
       "series_slug": "wellington-daily-weather",
@@ -28891,7 +28891,7 @@
       "opened_at": "2026-06-06T11:08:49.271006+00:00",
       "closed_at": "2026-06-07T13:14:20.563327+00:00",
       "pnl_usd": -5.1063,
-      "resolved_temp": null
+      "resolved_temp": 13.8
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -28917,7 +28917,7 @@
       "opened_at": "2026-06-06T06:15:23.861776+00:00",
       "closed_at": "2026-06-07T16:48:27.128963+00:00",
       "pnl_usd": -5.2447,
-      "resolved_temp": null
+      "resolved_temp": 27.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -28943,7 +28943,7 @@
       "opened_at": "2026-06-06T06:15:23.864762+00:00",
       "closed_at": "2026-06-07T16:48:27.733743+00:00",
       "pnl_usd": -5.2424,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -28969,7 +28969,7 @@
       "opened_at": "2026-06-06T06:15:23.881621+00:00",
       "closed_at": "2026-06-07T16:48:29.610052+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -28995,7 +28995,7 @@
       "opened_at": "2026-06-06T06:15:23.887271+00:00",
       "closed_at": "2026-06-07T16:48:30.311361+00:00",
       "pnl_usd": -5.235,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -29021,7 +29021,7 @@
       "opened_at": "2026-06-06T06:15:23.899884+00:00",
       "closed_at": "2026-06-07T16:48:31.666561+00:00",
       "pnl_usd": -5.2263,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -29047,7 +29047,7 @@
       "opened_at": "2026-06-06T06:15:23.902724+00:00",
       "closed_at": "2026-06-07T16:48:32.260990+00:00",
       "pnl_usd": -5.2275,
-      "resolved_temp": null
+      "resolved_temp": 27.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -29073,7 +29073,7 @@
       "opened_at": "2026-06-06T06:15:23.904128+00:00",
       "closed_at": "2026-06-07T16:48:32.706041+00:00",
       "pnl_usd": -5.229,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "shanghai-daily-weather",
@@ -29099,7 +29099,7 @@
       "opened_at": "2026-06-06T06:15:23.936794+00:00",
       "closed_at": "2026-06-07T16:48:35.720720+00:00",
       "pnl_usd": -5.1913,
-      "resolved_temp": null
+      "resolved_temp": 27.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -29125,7 +29125,7 @@
       "opened_at": "2026-06-06T09:13:29.358028+00:00",
       "closed_at": "2026-06-07T16:48:36.427927+00:00",
       "pnl_usd": -5.244,
-      "resolved_temp": null
+      "resolved_temp": 31.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -29151,7 +29151,7 @@
       "opened_at": "2026-06-06T09:13:29.364484+00:00",
       "closed_at": "2026-06-07T16:48:37.844901+00:00",
       "pnl_usd": -5.2375,
-      "resolved_temp": null
+      "resolved_temp": 21.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -29177,7 +29177,7 @@
       "opened_at": "2026-06-06T11:08:49.269702+00:00",
       "closed_at": "2026-06-07T16:48:38.456780+00:00",
       "pnl_usd": -5.2137,
-      "resolved_temp": null
+      "resolved_temp": 31.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -29203,7 +29203,7 @@
       "opened_at": "2026-06-06T18:04:11.460472+00:00",
       "closed_at": "2026-06-07T16:48:39.684603+00:00",
       "pnl_usd": -5.1938,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -29229,7 +29229,7 @@
       "opened_at": "2026-06-07T06:52:57.686864+00:00",
       "closed_at": "2026-06-07T16:48:40.259133+00:00",
       "pnl_usd": -5.245,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -29255,7 +29255,7 @@
       "opened_at": "2026-06-07T06:52:58.014374+00:00",
       "closed_at": "2026-06-07T16:48:40.708272+00:00",
       "pnl_usd": -5.2446,
-      "resolved_temp": null
+      "resolved_temp": 31.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -29281,7 +29281,7 @@
       "opened_at": "2026-06-07T06:52:58.379863+00:00",
       "closed_at": "2026-06-07T16:48:41.195353+00:00",
       "pnl_usd": -5.2338,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -29307,7 +29307,7 @@
       "opened_at": "2026-06-06T06:15:23.858909+00:00",
       "closed_at": "2026-06-07T17:57:03.243294+00:00",
       "pnl_usd": -5.2445,
-      "resolved_temp": null
+      "resolved_temp": 31.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -29333,7 +29333,7 @@
       "opened_at": "2026-06-06T06:15:23.860335+00:00",
       "closed_at": "2026-06-07T17:57:04.070578+00:00",
       "pnl_usd": -5.2444,
-      "resolved_temp": null
+      "resolved_temp": 31.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -29359,7 +29359,7 @@
       "opened_at": "2026-06-06T06:15:23.863277+00:00",
       "closed_at": "2026-06-07T17:57:04.787379+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 35.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -29385,7 +29385,7 @@
       "opened_at": "2026-06-06T06:15:23.874610+00:00",
       "closed_at": "2026-06-07T17:57:06.635420+00:00",
       "pnl_usd": -5.2436,
-      "resolved_temp": null
+      "resolved_temp": 35.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -29411,7 +29411,7 @@
       "opened_at": "2026-06-06T06:15:23.911473+00:00",
       "closed_at": "2026-06-07T17:57:10.663526+00:00",
       "pnl_usd": -5.2389,
-      "resolved_temp": null
+      "resolved_temp": 31.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -29437,7 +29437,7 @@
       "opened_at": "2026-06-06T06:15:23.929754+00:00",
       "closed_at": "2026-06-07T17:57:13.435195+00:00",
       "pnl_usd": -5.2263,
-      "resolved_temp": null
+      "resolved_temp": 35.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -29463,7 +29463,7 @@
       "opened_at": "2026-06-06T09:13:29.363088+00:00",
       "closed_at": "2026-06-07T17:57:15.366769+00:00",
       "pnl_usd": 29.2691,
-      "resolved_temp": null
+      "resolved_temp": 35.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -29489,7 +29489,7 @@
       "opened_at": "2026-06-06T12:52:31.131364+00:00",
       "closed_at": "2026-06-07T17:57:16.404180+00:00",
       "pnl_usd": -5.2375,
-      "resolved_temp": null
+      "resolved_temp": 31.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -29515,7 +29515,7 @@
       "opened_at": "2026-06-06T16:59:42.440604+00:00",
       "closed_at": "2026-06-07T17:57:17.150279+00:00",
       "pnl_usd": -5.2436,
-      "resolved_temp": null
+      "resolved_temp": 35.0
     },
     {
       "series_slug": "shenzhen-daily-weather",
@@ -29541,7 +29541,7 @@
       "opened_at": "2026-06-06T16:59:42.443990+00:00",
       "closed_at": "2026-06-07T17:57:17.849073+00:00",
       "pnl_usd": 40.232,
-      "resolved_temp": null
+      "resolved_temp": 31.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -29567,7 +29567,7 @@
       "opened_at": "2026-06-06T06:15:23.853184+00:00",
       "closed_at": "2026-06-07T20:41:33.288523+00:00",
       "pnl_usd": -5.2444,
-      "resolved_temp": null
+      "resolved_temp": 40.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -29593,7 +29593,7 @@
       "opened_at": "2026-06-06T06:15:23.885869+00:00",
       "closed_at": "2026-06-07T20:41:35.844995+00:00",
       "pnl_usd": -5.2429,
-      "resolved_temp": null
+      "resolved_temp": 40.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -29619,7 +29619,7 @@
       "opened_at": "2026-06-06T06:15:23.925574+00:00",
       "closed_at": "2026-06-07T20:41:39.230467+00:00",
       "pnl_usd": -5.22,
-      "resolved_temp": null
+      "resolved_temp": 40.0
     },
     {
       "series_slug": "lucknow-daily-weather",
@@ -29646,7 +29646,7 @@
       "entry_fee": 0.2447,
       "closed_at": "2026-06-07T20:41:41.678154+00:00",
       "pnl_usd": -5.2447,
-      "resolved_temp": null
+      "resolved_temp": 40.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -29672,7 +29672,7 @@
       "opened_at": "2026-06-06T06:15:23.875997+00:00",
       "closed_at": "2026-06-07T22:53:25.326603+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -29698,7 +29698,7 @@
       "opened_at": "2026-06-06T06:15:23.878803+00:00",
       "closed_at": "2026-06-07T22:53:26.240239+00:00",
       "pnl_usd": -5.2372,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -29724,7 +29724,7 @@
       "opened_at": "2026-06-06T06:15:23.880196+00:00",
       "closed_at": "2026-06-07T22:53:26.967654+00:00",
       "pnl_usd": -5.2372,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -29750,7 +29750,7 @@
       "opened_at": "2026-06-06T06:15:23.897062+00:00",
       "closed_at": "2026-06-07T22:53:28.820883+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -29776,7 +29776,7 @@
       "opened_at": "2026-06-06T06:15:23.898482+00:00",
       "closed_at": "2026-06-07T22:53:29.525872+00:00",
       "pnl_usd": -5.245,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -29802,7 +29802,7 @@
       "opened_at": "2026-06-06T06:15:23.908594+00:00",
       "closed_at": "2026-06-07T22:53:30.770882+00:00",
       "pnl_usd": -5.2387,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -29828,7 +29828,7 @@
       "opened_at": "2026-06-06T06:15:23.921366+00:00",
       "closed_at": "2026-06-07T22:53:32.608275+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -29854,7 +29854,7 @@
       "opened_at": "2026-06-06T06:15:23.924129+00:00",
       "closed_at": "2026-06-07T22:53:33.477123+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -29880,7 +29880,7 @@
       "opened_at": "2026-06-06T06:15:23.938205+00:00",
       "closed_at": "2026-06-07T22:53:35.078825+00:00",
       "pnl_usd": -5.1788,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -29906,7 +29906,7 @@
       "opened_at": "2026-06-06T19:20:05.030296+00:00",
       "closed_at": "2026-06-07T22:53:36.961230+00:00",
       "pnl_usd": -5.2426,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -29933,7 +29933,7 @@
       "entry_fee": 0.245,
       "closed_at": "2026-06-07T22:53:37.619835+00:00",
       "pnl_usd": -5.245,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "paris-daily-weather",
@@ -29960,7 +29960,7 @@
       "entry_fee": 0.24,
       "closed_at": "2026-06-07T22:53:38.465261+00:00",
       "pnl_usd": -5.24,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -29987,7 +29987,7 @@
       "entry_fee": 0.2366,
       "closed_at": "2026-06-07T22:53:39.245683+00:00",
       "pnl_usd": -5.2366,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -30013,7 +30013,7 @@
       "opened_at": "2026-06-06T06:15:23.854630+00:00",
       "closed_at": "2026-06-07T23:55:26.653976+00:00",
       "pnl_usd": -5.245,
-      "resolved_temp": null
+      "resolved_temp": 27.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -30039,7 +30039,7 @@
       "opened_at": "2026-06-06T06:15:23.856055+00:00",
       "closed_at": "2026-06-07T23:55:27.138925+00:00",
       "pnl_usd": -5.245,
-      "resolved_temp": null
+      "resolved_temp": 27.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -30065,7 +30065,7 @@
       "opened_at": "2026-06-06T06:15:23.857495+00:00",
       "closed_at": "2026-06-07T23:55:27.650977+00:00",
       "pnl_usd": -5.2449,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -30091,7 +30091,7 @@
       "opened_at": "2026-06-06T06:15:23.894231+00:00",
       "closed_at": "2026-06-07T23:55:29.684888+00:00",
       "pnl_usd": -5.2319,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -30117,7 +30117,7 @@
       "opened_at": "2026-06-06T06:15:23.901289+00:00",
       "closed_at": "2026-06-07T23:55:30.139373+00:00",
       "pnl_usd": -5.23,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -30143,7 +30143,7 @@
       "opened_at": "2026-06-06T06:15:23.907024+00:00",
       "closed_at": "2026-06-07T23:55:30.735813+00:00",
       "pnl_usd": -5.2449,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -30169,7 +30169,7 @@
       "opened_at": "2026-06-06T06:15:23.919958+00:00",
       "closed_at": "2026-06-07T23:55:31.769560+00:00",
       "pnl_usd": -5.2338,
-      "resolved_temp": null
+      "resolved_temp": 27.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -30195,7 +30195,7 @@
       "opened_at": "2026-06-06T09:13:29.365936+00:00",
       "closed_at": "2026-06-07T23:55:33.164395+00:00",
       "pnl_usd": -5.2313,
-      "resolved_temp": null
+      "resolved_temp": 27.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -30222,7 +30222,7 @@
       "entry_fee": 0.2362,
       "closed_at": "2026-06-07T23:55:33.953322+00:00",
       "pnl_usd": -5.2362,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "milan-daily-weather",
@@ -30249,7 +30249,7 @@
       "entry_fee": 0.225,
       "closed_at": "2026-06-07T23:55:34.403392+00:00",
       "pnl_usd": -5.225,
-      "resolved_temp": null
+      "resolved_temp": 27.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -30275,7 +30275,7 @@
       "opened_at": "2026-06-06T09:13:29.359759+00:00",
       "closed_at": "2026-06-08T02:13:17.974483+00:00",
       "pnl_usd": -5.245,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -30301,7 +30301,7 @@
       "opened_at": "2026-06-06T12:52:31.128466+00:00",
       "closed_at": "2026-06-08T02:13:18.942792+00:00",
       "pnl_usd": -5.2432,
-      "resolved_temp": null
+      "resolved_temp": 19.0
     },
     {
       "series_slug": "austin-daily-weather",
@@ -30327,7 +30327,7 @@
       "opened_at": "2026-06-06T06:15:23.866152+00:00",
       "closed_at": "2026-06-08T07:11:05.662066+00:00",
       "pnl_usd": -5.2435,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -30353,7 +30353,7 @@
       "opened_at": "2026-06-06T06:15:23.867555+00:00",
       "closed_at": "2026-06-08T07:11:06.195308+00:00",
       "pnl_usd": -5.2439,
-      "resolved_temp": null
+      "resolved_temp": 28.3
     },
     {
       "series_slug": "austin-daily-weather",
@@ -30379,7 +30379,7 @@
       "opened_at": "2026-06-06T06:15:23.870331+00:00",
       "closed_at": "2026-06-08T07:11:06.782078+00:00",
       "pnl_usd": -5.2426,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -30405,7 +30405,7 @@
       "opened_at": "2026-06-06T06:15:23.873193+00:00",
       "closed_at": "2026-06-08T07:11:07.362891+00:00",
       "pnl_usd": -5.2424,
-      "resolved_temp": null
+      "resolved_temp": 28.3
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -30431,7 +30431,7 @@
       "opened_at": "2026-06-06T06:15:23.877385+00:00",
       "closed_at": "2026-06-08T07:11:07.812283+00:00",
       "pnl_usd": 137.6159,
-      "resolved_temp": null
+      "resolved_temp": 28.3
     },
     {
       "series_slug": "houston-daily-weather",
@@ -30457,7 +30457,7 @@
       "opened_at": "2026-06-06T06:15:23.884483+00:00",
       "closed_at": "2026-06-08T07:11:08.277850+00:00",
       "pnl_usd": -5.2442,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "houston-daily-weather",
@@ -30483,7 +30483,7 @@
       "opened_at": "2026-06-06T06:15:23.888669+00:00",
       "closed_at": "2026-06-08T07:11:08.747369+00:00",
       "pnl_usd": -5.2435,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "miami-daily-weather",
@@ -30509,7 +30509,7 @@
       "opened_at": "2026-06-06T06:15:23.890040+00:00",
       "closed_at": "2026-06-08T07:11:09.220039+00:00",
       "pnl_usd": -5.2407,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "austin-daily-weather",
@@ -30535,7 +30535,7 @@
       "opened_at": "2026-06-06T06:15:23.891448+00:00",
       "closed_at": "2026-06-08T07:11:09.699325+00:00",
       "pnl_usd": -5.2375,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -30561,7 +30561,7 @@
       "opened_at": "2026-06-06T06:15:23.910035+00:00",
       "closed_at": "2026-06-08T07:11:10.444805+00:00",
       "pnl_usd": -5.2389,
-      "resolved_temp": null
+      "resolved_temp": 28.3
     },
     {
       "series_slug": "austin-daily-weather",
@@ -30587,7 +30587,7 @@
       "opened_at": "2026-06-06T06:15:23.912868+00:00",
       "closed_at": "2026-06-08T07:11:10.914661+00:00",
       "pnl_usd": -5.2313,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "miami-daily-weather",
@@ -30613,7 +30613,7 @@
       "opened_at": "2026-06-06T06:15:23.915738+00:00",
       "closed_at": "2026-06-08T07:11:11.376516+00:00",
       "pnl_usd": -5.2333,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -30639,7 +30639,7 @@
       "opened_at": "2026-06-06T06:15:23.917126+00:00",
       "closed_at": "2026-06-08T07:11:11.818341+00:00",
       "pnl_usd": -5.2313,
-      "resolved_temp": null
+      "resolved_temp": 28.3
     },
     {
       "series_slug": "houston-daily-weather",
@@ -30665,7 +30665,7 @@
       "opened_at": "2026-06-06T06:15:23.922748+00:00",
       "closed_at": "2026-06-08T07:11:12.424992+00:00",
       "pnl_usd": -5.2338,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "miami-daily-weather",
@@ -30691,7 +30691,7 @@
       "opened_at": "2026-06-06T06:15:23.926944+00:00",
       "closed_at": "2026-06-08T07:11:12.899426+00:00",
       "pnl_usd": -5.23,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "austin-daily-weather",
@@ -30717,7 +30717,7 @@
       "opened_at": "2026-06-06T06:15:23.933942+00:00",
       "closed_at": "2026-06-08T07:11:13.674384+00:00",
       "pnl_usd": -5.2125,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -30743,7 +30743,7 @@
       "opened_at": "2026-06-06T06:15:23.935383+00:00",
       "closed_at": "2026-06-08T07:11:14.125639+00:00",
       "pnl_usd": -5.2137,
-      "resolved_temp": null
+      "resolved_temp": 28.3
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -30769,7 +30769,7 @@
       "opened_at": "2026-06-06T09:13:29.361564+00:00",
       "closed_at": "2026-06-08T07:11:14.581019+00:00",
       "pnl_usd": -5.24,
-      "resolved_temp": null
+      "resolved_temp": 28.3
     },
     {
       "series_slug": "miami-daily-weather",
@@ -30796,7 +30796,7 @@
       "entry_fee": 0.2112,
       "closed_at": "2026-06-08T07:11:15.675402+00:00",
       "pnl_usd": -5.2112,
-      "resolved_temp": null
+      "resolved_temp": 31.7
     },
     {
       "series_slug": "nyc-daily-weather",
@@ -30823,7 +30823,7 @@
       "entry_fee": 0.2444,
       "closed_at": "2026-06-08T07:11:16.166451+00:00",
       "pnl_usd": -5.2444,
-      "resolved_temp": null
+      "resolved_temp": 28.3
     },
     {
       "series_slug": "denver-daily-weather",
@@ -30849,7 +30849,7 @@
       "opened_at": "2026-06-06T06:15:23.868951+00:00",
       "closed_at": "2026-06-08T12:12:15.587445+00:00",
       "pnl_usd": -5.241,
-      "resolved_temp": null
+      "resolved_temp": 34.2
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -30875,7 +30875,7 @@
       "opened_at": "2026-06-06T06:15:23.871810+00:00",
       "closed_at": "2026-06-08T12:12:16.139074+00:00",
       "pnl_usd": -5.2424,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "denver-daily-weather",
@@ -30901,7 +30901,7 @@
       "opened_at": "2026-06-06T06:15:23.892826+00:00",
       "closed_at": "2026-06-08T12:12:16.654090+00:00",
       "pnl_usd": -5.2353,
-      "resolved_temp": null
+      "resolved_temp": 34.2
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -30927,7 +30927,7 @@
       "opened_at": "2026-06-06T06:15:23.905624+00:00",
       "closed_at": "2026-06-08T12:12:17.270996+00:00",
       "pnl_usd": -5.2441,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "denver-daily-weather",
@@ -30953,7 +30953,7 @@
       "opened_at": "2026-06-06T06:15:23.918533+00:00",
       "closed_at": "2026-06-08T12:12:17.867817+00:00",
       "pnl_usd": -5.2213,
-      "resolved_temp": null
+      "resolved_temp": 34.2
     },
     {
       "series_slug": "denver-daily-weather",
@@ -30979,7 +30979,7 @@
       "opened_at": "2026-06-06T06:15:23.928307+00:00",
       "closed_at": "2026-06-08T12:12:18.381391+00:00",
       "pnl_usd": -5.215,
-      "resolved_temp": null
+      "resolved_temp": 34.2
     },
     {
       "series_slug": "denver-daily-weather",
@@ -31005,7 +31005,7 @@
       "opened_at": "2026-06-06T06:15:23.932575+00:00",
       "closed_at": "2026-06-08T12:12:18.893072+00:00",
       "pnl_usd": -5.1775,
-      "resolved_temp": null
+      "resolved_temp": 34.2
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -31031,7 +31031,7 @@
       "opened_at": "2026-06-06T16:59:42.445646+00:00",
       "closed_at": "2026-06-08T12:12:19.395659+00:00",
       "pnl_usd": -5.241,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -31057,7 +31057,7 @@
       "opened_at": "2026-06-06T18:04:11.459059+00:00",
       "closed_at": "2026-06-08T12:12:19.876831+00:00",
       "pnl_usd": 13.6842,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "denver-daily-weather",
@@ -31084,7 +31084,7 @@
       "entry_fee": 0.22,
       "closed_at": "2026-06-08T12:12:20.799932+00:00",
       "pnl_usd": 36.4467,
-      "resolved_temp": null
+      "resolved_temp": 34.2
     },
     {
       "series_slug": "denver-daily-weather",
@@ -31111,7 +31111,7 @@
       "entry_fee": 0.2432,
       "closed_at": "2026-06-08T12:12:21.313442+00:00",
       "pnl_usd": -5.2432,
-      "resolved_temp": null
+      "resolved_temp": 34.2
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -31137,7 +31137,7 @@
       "opened_at": "2026-06-06T21:59:18.128508+00:00",
       "closed_at": "2026-06-08T16:32:41.493341+00:00",
       "pnl_usd": -5.2436,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -31163,7 +31163,7 @@
       "opened_at": "2026-06-06T21:59:18.129863+00:00",
       "closed_at": "2026-06-08T16:32:42.061907+00:00",
       "pnl_usd": -5.2434,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -31190,7 +31190,7 @@
       "entry_fee": 0.2241,
       "closed_at": "2026-06-08T16:32:42.954325+00:00",
       "pnl_usd": -5.2241,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -31217,7 +31217,7 @@
       "entry_fee": 0.2412,
       "closed_at": "2026-06-08T19:12:39.966730+00:00",
       "pnl_usd": -5.2412,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "beijing-daily-weather",
@@ -31244,7 +31244,7 @@
       "entry_fee": 0.1963,
       "closed_at": "2026-06-08T19:12:40.536574+00:00",
       "pnl_usd": 18.0595,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -31270,7 +31270,7 @@
       "opened_at": "2026-06-06T22:25:01.418036+00:00",
       "closed_at": "2026-06-08T22:53:38.222886+00:00",
       "pnl_usd": -5.2417,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -31297,7 +31297,7 @@
       "entry_fee": 0.2407,
       "closed_at": "2026-06-08T22:53:38.674933+00:00",
       "pnl_usd": -5.2407,
-      "resolved_temp": null
+      "resolved_temp": 23.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -31324,7 +31324,7 @@
       "entry_fee": 0.2432,
       "closed_at": "2026-06-08T22:53:39.129311+00:00",
       "pnl_usd": -5.2432,
-      "resolved_temp": null
+      "resolved_temp": 34.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -31351,7 +31351,7 @@
       "entry_fee": 0.2275,
       "closed_at": "2026-06-09T01:57:14.229832+00:00",
       "pnl_usd": -5.2275,
-      "resolved_temp": null
+      "resolved_temp": 16.0
     },
     {
       "series_slug": "miami-daily-weather",
@@ -31378,7 +31378,7 @@
       "entry_fee": 0.24,
       "closed_at": "2026-06-09T06:03:01.012384+00:00",
       "pnl_usd": -5.24,
-      "resolved_temp": null
+      "resolved_temp": 32.8
     },
     {
       "series_slug": "chicago-daily-weather",
@@ -31405,7 +31405,7 @@
       "entry_fee": 0.235,
       "closed_at": "2026-06-09T06:03:01.772881+00:00",
       "pnl_usd": -5.235,
-      "resolved_temp": null
+      "resolved_temp": 28.9
     },
     {
       "series_slug": "denver-daily-weather",
@@ -31432,7 +31432,7 @@
       "entry_fee": 0.2387,
       "closed_at": "2026-06-09T10:06:29.672319+00:00",
       "pnl_usd": -5.2387,
-      "resolved_temp": null
+      "resolved_temp": 29.0
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -31459,7 +31459,7 @@
       "entry_fee": 0.2325,
       "closed_at": "2026-06-09T10:06:30.512027+00:00",
       "pnl_usd": -5.2325,
-      "resolved_temp": null
+      "resolved_temp": 24.0
     },
     {
       "series_slug": "seoul-daily-weather",
@@ -31486,7 +31486,7 @@
       "entry_fee": 0.2437,
       "closed_at": "2026-06-09T16:14:38.528472+00:00",
       "pnl_usd": -5.2437,
-      "resolved_temp": null
+      "resolved_temp": 25.0
     },
     {
       "series_slug": "tokyo-daily-weather",
@@ -31513,7 +31513,7 @@
       "entry_fee": 0.2412,
       "closed_at": "2026-06-09T16:14:39.325782+00:00",
       "pnl_usd": -5.2412,
-      "resolved_temp": null
+      "resolved_temp": 22.0
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -31540,7 +31540,7 @@
       "entry_fee": 0.2402,
       "closed_at": "2026-06-09T18:26:02.356907+00:00",
       "pnl_usd": -5.2402,
-      "resolved_temp": null
+      "resolved_temp": 30.0
     },
     {
       "series_slug": "taipei-daily-weather",
@@ -31567,7 +31567,7 @@
       "entry_fee": 0.21,
       "closed_at": "2026-06-09T18:26:03.131404+00:00",
       "pnl_usd": -5.21,
-      "resolved_temp": null
+      "resolved_temp": 26.0
     },
     {
       "series_slug": "munich-daily-weather",
@@ -31594,7 +31594,7 @@
       "entry_fee": 0.2416,
       "closed_at": "2026-06-09T23:47:26.599872+00:00",
       "pnl_usd": -5.2416,
-      "resolved_temp": null
+      "resolved_temp": 18.0
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -31621,7 +31621,7 @@
       "entry_fee": 0.2325,
       "closed_at": "2026-06-09T23:47:27.209025+00:00",
       "pnl_usd": -5.2325,
-      "resolved_temp": null
+      "resolved_temp": 18.0
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -31648,7 +31648,7 @@
       "entry_fee": 0.2325,
       "closed_at": "2026-06-09T23:47:27.845271+00:00",
       "pnl_usd": -5.2325,
-      "resolved_temp": null
+      "resolved_temp": 33.0
     },
     {
       "series_slug": "london-daily-weather",
@@ -31756,7 +31756,7 @@
       "entry_fee": 0.2037,
       "closed_at": "2026-06-10T23:52:40.546058+00:00",
       "pnl_usd": -5.2037,
-      "resolved_temp": null,
+      "resolved_temp": 13.0,
       "obs_source": "metar"
     }
   ],
@@ -31765,5 +31765,5 @@
   "n_lost": 980,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-11T07:24:13.880659+00:00"
+  "last_updated": "2026-06-11T09:41:47.843285+00:00"
 }
