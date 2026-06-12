@@ -1,5 +1,5 @@
 {
-  "bankroll": 9216.034899999999,
+  "bankroll": 9210.858699999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -277,6 +277,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-12T04:12:22.127878+00:00",
       "entry_fee": 0.2125,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "manila-daily-weather",
+      "event_date": "2026-06-12",
+      "question": "Will the highest temperature in Manila be 34\u00b0C on June 12?",
+      "condition_id": "0xb63959ef8870a36d8fc603525c2453f0fdaaf49e0a06e02fec49de6191ca52d5",
+      "temp_str": "34\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "34921766381667493561706084355336165943233754996296453030702451544398885152921",
+      "token_yes": "88001102616358669013077311661690165817380238914550526499872258251678319260960",
+      "model_prob_gaussian": 0.4750317433975587,
+      "entry_prob": 0.29500000000000004,
+      "model_prob": 0.475,
+      "edge": -0.23,
+      "net_edge": 0.2196,
+      "size_usd": 5.0,
+      "forecast_temp_c": 34.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 34.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-12T04:49:16.674583+00:00",
+      "entry_fee": 0.1762,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -32185,5 +32213,5 @@
   "n_lost": 983,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-12T04:12:22.128220+00:00"
+  "last_updated": "2026-06-12T04:49:16.866022+00:00"
 }
