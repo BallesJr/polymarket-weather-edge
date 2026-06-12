@@ -1,5 +1,5 @@
 {
-  "bankroll": 9164.268700000002,
+  "bankroll": 9159.078700000002,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-12T13:43:17.939531+00:00",
       "entry_fee": 0.16,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "london-daily-weather",
+      "event_date": "2026-06-12",
+      "question": "Will the highest temperature in London be 22\u00b0C on June 12?",
+      "condition_id": "0xb7ed8ebe121dc8cbfba244978c0f5959267f9b99718be95650f70079b24fa13e",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "27321165053148737906475313435934337329346662687332284899248041086084494056441",
+      "token_yes": "33606714063302899473261160486236146611415220162454657713842147601413675752255",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.24,
+      "model_prob": 0.4895,
+      "edge": -0.2705,
+      "net_edge": 0.2614,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-12T14:54:30.545632+00:00",
+      "entry_fee": 0.19,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -32465,5 +32493,5 @@
   "n_lost": 989,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-12T14:22:26.434405+00:00"
+  "last_updated": "2026-06-12T14:54:30.545957+00:00"
 }
