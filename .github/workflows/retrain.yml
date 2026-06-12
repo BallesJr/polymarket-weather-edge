@@ -19,6 +19,10 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          # Use the current tip, not the trigger-time SHA, so a retrain queued
+          # behind a bot run trains on the latest closed trades
+          ref: main
 
       - name: Setup Python
         uses: actions/setup-python@v5

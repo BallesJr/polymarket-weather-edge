@@ -1,9 +1,45 @@
+import json
 import os
 import requests
 from datetime import datetime, timezone
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
+
+# Messages are queued here during the cycle and only sent by flush_pending()
+# after the portfolio commit is pushed. A run that fails to push discards the
+# queue along with its state, so the next cycle's re-resolution of the same
+# position doesn't produce a duplicate notification.
+PENDING_PATH = "data/pending_notifications.json"
+
+
+def _queue(message: str) -> None:
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        return
+    pending = []
+    if os.path.exists(PENDING_PATH):
+        try:
+            with open(PENDING_PATH, "r") as f:
+                pending = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            pending = []
+    pending.append(message)
+    os.makedirs(os.path.dirname(PENDING_PATH), exist_ok=True)
+    with open(PENDING_PATH, "w") as f:
+        json.dump(pending, f)
+
+
+def flush_pending() -> int:
+    if not os.path.exists(PENDING_PATH):
+        return 0
+    try:
+        with open(PENDING_PATH, "r") as f:
+            pending = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        pending = []
+    sent = sum(1 for msg in pending if _send(msg))
+    os.remove(PENDING_PATH)
+    return sent
 
 
 def _send(message: str) -> bool:
@@ -45,7 +81,7 @@ def notify_cycle_summary(portfolio: dict, n_opened: int, n_resolved: int) -> Non
         f"Win rate: {win_rate:.1%} ({n_won}W / {n_lost}L)\n"
         f"Open positions: {n_open}"
     )
-    _send(msg)
+    _queue(msg)
 
 
 def notify_high_edge_open(direction: str, temp_str: str, city: str,
@@ -55,7 +91,7 @@ def notify_high_edge_open(direction: str, temp_str: str, city: str,
         f"{direction} | {temp_str} | {city}\n"
         f"Date: {event_date} | Edge: {net_edge:+.3f} | Size: ${size:.2f}"
     )
-    _send(msg)
+    _queue(msg)
 
 
 def notify_resolution(direction: str, temp_str: str, city: str,
@@ -65,4 +101,4 @@ def notify_resolution(direction: str, temp_str: str, city: str,
         f"{icon} <b>{status}</b> | {direction} {temp_str} | {city}\n"
         f"P&amp;L: ${pnl:+.2f} | Bankroll: ${bankroll:.2f}"
     )
-    _send(msg)
+    _queue(msg)

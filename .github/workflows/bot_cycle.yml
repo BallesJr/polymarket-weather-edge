@@ -22,6 +22,10 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          # Queued runs must use the current tip, not the SHA pinned at trigger
+          # time, or they rebase-conflict on the portfolio JSON and lose state
+          ref: main
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -50,3 +54,12 @@ jobs:
             if [ $n -ge 3 ]; then exit 1; fi
             sleep 10
           done
+
+      # Notifications queue during the cycle and only go out once the state
+      # they describe is pushed; a failed run drops its queue, so a resolution
+      # redone by the next cycle is notified exactly once
+      - name: Send queued Telegram notifications
+        run: python -c "import notifier; print(f'Sent {notifier.flush_pending()} notification(s)')"
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
