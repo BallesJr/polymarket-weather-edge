@@ -1,5 +1,5 @@
 {
-  "bankroll": 9185.593400000003,
+  "bankroll": 9180.404600000003,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -393,6 +393,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "toronto-daily-weather",
+      "event_date": "2026-06-12",
+      "question": "Will the highest temperature in Toronto be 26\u00b0C on June 12?",
+      "condition_id": "0x21251c1b89eb78a0d3448be05882722af461088dbcdfa0ff144815584eddce70",
+      "temp_str": "26\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "47366764923830962117396653233966186279359545557167100941570651029987513513477",
+      "token_yes": "72624755130977482581957007123438117331518468162466387022539587771732059596706",
+      "model_prob_gaussian": 0.5892076133249091,
+      "entry_prob": 0.245,
+      "model_prob": 0.5892,
+      "edge": -0.1658,
+      "net_edge": 0.1566,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.0,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-12T18:51:34.900084+00:00",
+      "entry_fee": 0.1888,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -32605,5 +32633,5 @@
   "n_lost": 992,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-12T18:37:21.129985+00:00"
+  "last_updated": "2026-06-12T18:51:34.900408+00:00"
 }
