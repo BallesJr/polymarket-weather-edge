@@ -1,5 +1,5 @@
 {
-  "bankroll": 9174.756700000007,
+  "bankroll": 9169.575500000006,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -725,6 +725,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-13T15:21:06.421251+00:00",
       "entry_fee": 0.1925,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "miami-daily-weather",
+      "event_date": "2026-06-13",
+      "question": "Will the highest temperature in Miami be between 90-91\u00b0F on June 13?",
+      "condition_id": "0xe66b8a9b50ac8ef8db2205fb7b2be37ee7e9709f5657a533d3f99d4a15ca91c3",
+      "temp_str": "between 90-91\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "30309442041921173131106065809153708519881709002595155659577151667448965052560",
+      "token_yes": "63620084069098615219441846546876532858385430333418463576830765225406404729814",
+      "model_prob_gaussian": 0.3098644974885977,
+      "entry_prob": 0.275,
+      "model_prob": 0.3099,
+      "edge": -0.4151,
+      "net_edge": 0.4051,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.1,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-13T15:32:42.828865+00:00",
+      "entry_fee": 0.1812,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -33445,5 +33473,5 @@
   "n_lost": 1002,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-13T15:21:06.547078+00:00"
+  "last_updated": "2026-06-13T15:32:42.829408+00:00"
 }
