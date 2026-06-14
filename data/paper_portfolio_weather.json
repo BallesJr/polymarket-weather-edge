@@ -1,5 +1,5 @@
 {
-  "bankroll": 9210.357700000002,
+  "bankroll": 9205.155200000003,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -249,6 +249,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-14T05:16:16.685035+00:00",
       "entry_fee": 0.195,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "beijing-daily-weather",
+      "event_date": "2026-06-14",
+      "question": "Will the highest temperature in Beijing be 28\u00b0C on June 14?",
+      "condition_id": "0x4974defaaae713f46b81ee220334bfbd395725b743492c73482c912ec3daba15",
+      "temp_str": "28\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "93376619943547383217366558979684658119616113282307219708595111138519431533324",
+      "token_yes": "110685092897816916698881109402965143290082888809746421547772960417002862782771",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.18999999999999995,
+      "model_prob": 0.4895,
+      "edge": -0.3205,
+      "net_edge": 0.3128,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-14T07:50:33.856275+00:00",
+      "entry_fee": 0.2025,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -33781,5 +33809,5 @@
   "n_lost": 1025,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-14T07:16:28.734532+00:00"
+  "last_updated": "2026-06-14T07:50:33.856608+00:00"
 }
