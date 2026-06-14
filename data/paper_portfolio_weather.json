@@ -1,5 +1,5 @@
 {
-  "bankroll": 9174.809900000004,
+  "bankroll": 9169.651100000005,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-14T16:45:29.737507+00:00",
       "entry_fee": 0.2087,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chicago-daily-weather",
+      "event_date": "2026-06-14",
+      "question": "Will the highest temperature in Chicago be between 68-69\u00b0F on June 14?",
+      "condition_id": "0xe6a6d1ea13981bd303841c58c39c77f31cece3d9a7bd36bf4d3ca015b42c3623",
+      "temp_str": "between 68-69\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "25055149319623407206299789102339505097453091841895152314144872041782879711877",
+      "token_yes": "50214929815460034785210679489983139512817290532590830572598308376380417647387",
+      "model_prob_gaussian": 0.35006949918260155,
+      "entry_prob": 0.365,
+      "model_prob": 0.3501,
+      "edge": -0.2849,
+      "net_edge": 0.2733,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 21.1,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-14T17:50:23.623395+00:00",
+      "entry_fee": 0.1588,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -34257,5 +34285,5 @@
   "n_lost": 1031,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-14T17:32:02.547591+00:00"
+  "last_updated": "2026-06-14T17:50:23.623700+00:00"
 }
