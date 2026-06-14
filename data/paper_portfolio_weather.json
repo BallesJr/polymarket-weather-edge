@@ -1,5 +1,5 @@
 {
-  "bankroll": 9213.264500000003,
+  "bankroll": 9208.059500000003,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -305,6 +305,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-14T03:13:35.738593+00:00",
       "entry_fee": 0.1688,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "qingdao-daily-weather",
+      "event_date": "2026-06-14",
+      "question": "Will the highest temperature in Qingdao be 25\u00b0C on June 14?",
+      "condition_id": "0x55f799b91fdbd778ce2a9becc7eaa126d7485108bd23d8c1634c9d368b9e49c7",
+      "temp_str": "25\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "30606893353418527138824156483278012477020530798131640435205122306375915128271",
+      "token_yes": "35205332126288787115864236924023761347461359415254759203063714654684429965222",
+      "model_prob_gaussian": 0.001,
+      "entry_prob": 0.18000000000000005,
+      "model_prob": 0.001,
+      "edge": -0.819,
+      "net_edge": 0.8116,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-14T04:11:27.627305+00:00",
+      "entry_fee": 0.205,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -33697,5 +33725,5 @@
   "n_lost": 1021,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-14T03:47:10.089400+00:00"
+  "last_updated": "2026-06-14T04:11:27.768532+00:00"
 }
