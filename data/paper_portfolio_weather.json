@@ -1,5 +1,5 @@
 {
-  "bankroll": 9212.919100000003,
+  "bankroll": 9207.755300000003,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -249,6 +249,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-14T01:13:35.657881+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "busan-daily-weather",
+      "event_date": "2026-06-14",
+      "question": "Will the highest temperature in Busan be 28\u00b0C on June 14?",
+      "condition_id": "0x0ae57dd75d32699f5e8953cce5f9d9a1f5280d9a13b40600410593bd411d1d4b",
+      "temp_str": "28\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "87266877455071670760172921912983660503669805978649541689048984258034968131107",
+      "token_yes": "16859164554216198594071594780463727550435858698067319103536046938027260131684",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.345,
+      "model_prob": 0.2311,
+      "edge": -0.4239,
+      "net_edge": 0.4126,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-14T01:45:23.849474+00:00",
+      "entry_fee": 0.1638,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -33613,5 +33641,5 @@
   "n_lost": 1021,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-14T01:13:35.658236+00:00"
+  "last_updated": "2026-06-14T01:45:23.849965+00:00"
 }
