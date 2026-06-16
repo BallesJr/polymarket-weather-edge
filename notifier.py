@@ -1,7 +1,6 @@
 import json
 import os
 import requests
-from datetime import datetime, timezone
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
@@ -58,11 +57,9 @@ def _send(message: str) -> bool:
 
 
 def notify_cycle_summary(portfolio: dict, n_opened: int, n_resolved: int) -> None:
-    # At 48 cycles/day a summary per cycle floods the chat. Quiet cycles only
-    # notify on the :00 run of even UTC hours (~every 2h, stateless check);
-    # cycles that opened or resolved something always notify
-    now = datetime.now(timezone.utc)
-    if n_opened == 0 and n_resolved == 0 and not (now.hour % 2 == 0 and now.minute < 30):
+    # Only notify on cycles that opened or resolved something. Quiet cycles stay
+    # silent (no periodic heartbeat) to avoid flooding the chat at 48 cycles/day.
+    if n_opened == 0 and n_resolved == 0:
         return
 
     bankroll = portfolio["bankroll"]
