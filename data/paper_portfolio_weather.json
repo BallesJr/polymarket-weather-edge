@@ -1,5 +1,5 @@
 {
-  "bankroll": 9320.981600000005,
+  "bankroll": 9335.267300000005,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -29,34 +29,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
-    },
-    {
-      "series_slug": "austin-daily-weather",
-      "event_date": "2026-06-15",
-      "question": "Will the highest temperature in Austin be between 80-81\u00b0F on June 15?",
-      "condition_id": "0xea7640ca912d4ededa49d83286c9e22118b276c02c8551eec93b03dccc867b05",
-      "temp_str": "between 80-81\u00b0F",
-      "direction": "BUY_NO",
-      "token_id": "73819753658936616916426777365816338733645746230135471422364452891331999933912",
-      "token_yes": "6827402913818208026319285433982953462531864372785711104841840683805681372069",
-      "model_prob_gaussian": 0.4896290044377242,
-      "entry_prob": 0.35,
-      "model_prob": 0.4896,
-      "edge": -0.1604,
-      "net_edge": 0.149,
-      "size_usd": 5.0,
-      "forecast_temp_c": 26.7,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 27.2,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-06-15T15:45:41.141134+00:00",
-      "entry_fee": 0.1625,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
     },
     {
       "series_slug": "austin-daily-weather",
@@ -35146,12 +35118,40 @@
       "pnl_usd": -5.195,
       "resolved_temp": 27.8,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "austin-daily-weather",
+      "event_date": "2026-06-15",
+      "question": "Will the highest temperature in Austin be between 80-81\u00b0F on June 15?",
+      "condition_id": "0xea7640ca912d4ededa49d83286c9e22118b276c02c8551eec93b03dccc867b05",
+      "temp_str": "between 80-81\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "73819753658936616916426777365816338733645746230135471422364452891331999933912",
+      "token_yes": "6827402913818208026319285433982953462531864372785711104841840683805681372069",
+      "model_prob_gaussian": 0.4896290044377242,
+      "entry_prob": 0.35,
+      "model_prob": 0.4896,
+      "edge": -0.1604,
+      "net_edge": 0.149,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 27.2,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-06-15T15:45:41.141134+00:00",
+      "entry_fee": 0.1625,
+      "closed_at": "2026-06-16T06:31:09.527732+00:00",
+      "pnl_usd": 9.1232,
+      "resolved_temp": 28.9,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -616.9185,
-  "n_won": 300,
+  "total_pnl": -607.7953,
+  "n_won": 301,
   "n_lost": 1049,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-16T06:17:58.559143+00:00"
+  "last_updated": "2026-06-16T06:51:58.509037+00:00"
 }
