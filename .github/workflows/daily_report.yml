@@ -1,0 +1,36 @@
+name: Daily Equity Report
+
+on:
+  schedule:
+    # End of the UTC day. The report defines "today" as the UTC day, matching the
+    # regime cutoff and the closed_at timestamps, so the cut lands cleanly here.
+    - cron: "30 23 * * *"
+  workflow_dispatch:
+
+jobs:
+  daily-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        # matplotlib is installed only here, not in requirements.txt, so the
+        # 30-minute bot cycle does not pay its install cost on every run.
+        run: |
+          pip install -r requirements.txt
+          pip install matplotlib
+
+      - name: Send daily equity report
+        run: python daily_report.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

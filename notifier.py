@@ -56,6 +56,29 @@ def _send(message: str) -> bool:
         return False
 
 
+def send_photo(image_path: str, caption: str = "") -> bool:
+    # Sent directly (not via the pending queue): the daily report runs in its own
+    # workflow and mutates no state, so there is no failed-push duplicate to guard.
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        return False
+    try:
+        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+        with open(image_path, "rb") as photo:
+            resp = requests.post(
+                url,
+                data={
+                    "chat_id": TELEGRAM_CHAT_ID,
+                    "caption": caption,
+                    "parse_mode": "HTML",
+                },
+                files={"photo": photo},
+                timeout=30,
+            )
+        return resp.ok
+    except Exception:
+        return False
+
+
 def notify_cycle_summary(portfolio: dict, n_opened: int, n_resolved: int) -> None:
     # Only notify on cycles that opened or resolved something. Quiet cycles stay
     # silent (no periodic heartbeat) to avoid flooding the chat at 48 cycles/day.
