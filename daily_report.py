@@ -20,10 +20,13 @@ def _intraday_caption(r: dict, intra: dict) -> str:
     )
 
 
-def _regime_caption(r: dict, reg: dict, had_intraday: bool) -> str:
-    lead = "" if had_intraday else "No resolutions today.\n"
+def _regime_caption(r: dict, reg: dict) -> str:
+    intra = r["intraday"]
+    today = (f"Today: <b>${intra['pnl']:+.2f}</b> over {intra['n']} resolutions"
+             if intra else "Today: no resolutions")
     return (
-        f"{lead}<b>New-regime P&amp;L (since regime start)</b>\n"
+        f"<b>New-regime P&amp;L (since regime start)</b>\n"
+        f"{today}\n"
         f"Regime: <b>${reg['pnl']:+.2f}</b> over {reg['n']} trades "
         f"({reg['wins']}W / {reg['losses']}L, {reg['win_rate']:.0%})\n"
         f"Bankroll: ${r['bankroll']:.2f} ({r['roi']:+.1%} ROI)"
@@ -60,7 +63,7 @@ def main() -> None:
     if intra:
         sent += send_photo(intra["path"], _intraday_caption(r, intra))
     if reg:
-        sent += send_photo(reg["path"], _regime_caption(r, reg, had_intraday=bool(intra)))
+        sent += send_photo(reg["path"], _regime_caption(r, reg))
     print(f"[DailyReport] Sent {sent} photo(s)")
 
 
