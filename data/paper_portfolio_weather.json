@@ -1,5 +1,5 @@
 {
-  "bankroll": 9330.333,
+  "bankroll": 9325.1452,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -193,6 +193,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-18T04:14:27.902084+00:00",
       "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "shenzhen-daily-weather",
+      "event_date": "2026-06-18",
+      "question": "Will the highest temperature in Shenzhen be 26\u00b0C on June 18?",
+      "condition_id": "0xa8f98be3030872f23d79c4c9ef92e81aebe312dc8ebe50b9550141ef36ca24bf",
+      "temp_str": "26\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "33806699545193086406432484727500699104715238759579460262129719479156129450146",
+      "token_yes": "82026727077908051367392799567457023699484990123671120256554848458169565862384",
+      "model_prob_gaussian": 0.008808509252227249,
+      "entry_prob": 0.249,
+      "model_prob": 0.0088,
+      "edge": -0.7422,
+      "net_edge": 0.7329,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 27.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-18T04:45:01.863397+00:00",
+      "entry_fee": 0.1878,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -36105,5 +36133,5 @@
   "n_lost": 1076,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-18T04:14:27.902435+00:00"
+  "last_updated": "2026-06-18T04:45:02.061330+00:00"
 }
