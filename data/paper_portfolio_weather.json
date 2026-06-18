@@ -1,5 +1,5 @@
 {
-  "bankroll": 9340.665400000002,
+  "bankroll": 9335.486700000001,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -137,6 +137,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-17T22:42:46.327883+00:00",
       "entry_fee": 0.17,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "taipei-daily-weather",
+      "event_date": "2026-06-18",
+      "question": "Will the highest temperature in Taipei be 35\u00b0C on June 18?",
+      "condition_id": "0x93901caf1c2584d078b657db0cd5e93249b9fdbed0a4a0e475738c8d5139e972",
+      "temp_str": "35\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "6868666968283174920228633512761537433310066232966791352055019349207273891190",
+      "token_yes": "72288808240200453578278440755643203150075540893043844570831931397336390915071",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.28500000000000003,
+      "model_prob": 0.4895,
+      "edge": -0.2255,
+      "net_edge": 0.2153,
+      "size_usd": 5.0,
+      "forecast_temp_c": 33.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 35.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-18T03:41:03.031034+00:00",
+      "entry_fee": 0.1787,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -36049,5 +36077,5 @@
   "n_lost": 1076,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-18T03:13:18.501210+00:00"
+  "last_updated": "2026-06-18T03:41:03.031437+00:00"
 }
