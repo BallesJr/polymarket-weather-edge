@@ -1,5 +1,5 @@
 {
-  "bankroll": 9267.8908,
+  "bankroll": 9262.732,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-18T13:15:22.720656+00:00",
       "entry_fee": 0.1663,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "paris-daily-weather",
+      "event_date": "2026-06-18",
+      "question": "Will the highest temperature in Paris be 36\u00b0C on June 18?",
+      "condition_id": "0x6380f4e5eee958660b4d645331b4799738a261b474a011f49021b62f0064964b",
+      "temp_str": "36\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "21871561666338082991302345798027285570177685406002613771080673855389227361088",
+      "token_yes": "3052355485773720966430507895156051373518319145741539119464685865696741428455",
+      "model_prob_gaussian": 0.4342222771268042,
+      "entry_prob": 0.365,
+      "model_prob": 0.4342,
+      "edge": -0.2008,
+      "net_edge": 0.1892,
+      "size_usd": 5.0,
+      "forecast_temp_c": 36.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 35.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-18T13:43:32.621029+00:00",
+      "entry_fee": 0.1588,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -36609,5 +36637,5 @@
   "n_lost": 1079,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-18T13:15:22.721189+00:00"
+  "last_updated": "2026-06-18T13:43:32.621358+00:00"
 }
