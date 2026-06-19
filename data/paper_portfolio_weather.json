@@ -1,5 +1,5 @@
 {
-  "bankroll": 9211.556799999995,
+  "bankroll": 9206.399299999995,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -641,6 +641,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-19T13:47:50.128182+00:00",
       "entry_fee": 0.1862,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "houston-daily-weather",
+      "event_date": "2026-06-19",
+      "question": "Will the highest temperature in Houston be between 92-93\u00b0F on June 19?",
+      "condition_id": "0x7aa771aa476859eaedcd38221eb2595e74df1b64a9b45523c834724d5bbf52fa",
+      "temp_str": "between 92-93\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "59719586971517743677870817089755766239897116404725031334872114998226601249190",
+      "token_yes": "13820192863295885637916869172737491445261010372808338681235395800083372969278",
+      "model_prob_gaussian": 0.4627192778309048,
+      "entry_prob": 0.37,
+      "model_prob": 0.4627,
+      "edge": -0.1673,
+      "net_edge": 0.1556,
+      "size_usd": 5.0,
+      "forecast_temp_c": 34.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-19T14:15:15.914282+00:00",
+      "entry_fee": 0.1575,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -37365,5 +37393,5 @@
   "n_lost": 1098,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-19T13:47:50.128556+00:00"
+  "last_updated": "2026-06-19T14:15:15.914594+00:00"
 }
