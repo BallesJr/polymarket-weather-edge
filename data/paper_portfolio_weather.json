@@ -1,5 +1,5 @@
 {
-  "bankroll": 9193.575499999995,
+  "bankroll": 9188.414199999996,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -333,6 +333,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-21T07:17:08.192140+00:00",
       "entry_fee": 0.1862,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "istanbul-daily-weather",
+      "event_date": "2026-06-21",
+      "question": "Will the highest temperature in Istanbul be 26\u00b0C on June 21?",
+      "condition_id": "0x58b510ba96f07f8418ae92349ddd8f58d260c4d8fb775b5577b82bfcc0966af0",
+      "temp_str": "26\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "109506250023237443655321646042337948889073418138104071369813778361928768239659",
+      "token_yes": "94732866214029843728743632419997265524108129475387820074384930565349395827434",
+      "model_prob_gaussian": 0.4750317433975594,
+      "entry_prob": 0.355,
+      "model_prob": 0.475,
+      "edge": -0.17,
+      "net_edge": 0.1586,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-21T09:29:45.112680+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -38569,5 +38597,5 @@
   "n_lost": 1140,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-21T09:17:30.743814+00:00"
+  "last_updated": "2026-06-21T09:29:45.113073+00:00"
 }
