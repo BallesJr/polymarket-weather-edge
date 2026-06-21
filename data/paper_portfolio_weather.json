@@ -1,5 +1,5 @@
 {
-  "bankroll": 9178.096699999996,
+  "bankroll": 9172.907899999997,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-21T10:47:09.979833+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "warsaw-daily-weather",
+      "event_date": "2026-06-21",
+      "question": "Will the highest temperature in Warsaw be 30\u00b0C or below on June 21?",
+      "condition_id": "0x1d34610c18e0ff5885a2520fef87427f69e1508db45f24386ac50460f219b1c0",
+      "temp_str": "30\u00b0C or below",
+      "direction": "BUY_NO",
+      "token_id": "13146492780047778486161653457427849420762907139343308651343003488746379820080",
+      "token_yes": "108342910463830752527704016537503292358778004491129003977963637964268926409752",
+      "model_prob_gaussian": 0.004244193143912827,
+      "entry_prob": 0.245,
+      "model_prob": 0.0042,
+      "edge": -0.7508,
+      "net_edge": 0.7416,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-21T11:15:19.158805+00:00",
+      "entry_fee": 0.1888,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -38653,5 +38681,5 @@
   "n_lost": 1140,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-21T10:47:09.980192+00:00"
+  "last_updated": "2026-06-21T11:15:19.159405+00:00"
 }
