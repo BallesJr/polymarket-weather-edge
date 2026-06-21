@@ -1,5 +1,5 @@
 {
-  "bankroll": 9235.060299999994,
+  "bankroll": 9229.884099999994,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -277,6 +277,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-21T02:42:24.828411+00:00",
       "entry_fee": 0.1675,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "kuala-lumpur-daily-weather",
+      "event_date": "2026-06-21",
+      "question": "Will the highest temperature in Kuala Lumpur be 32\u00b0C on June 21?",
+      "condition_id": "0xbba1e007c4e02b67ab7fbcfa42f035429b2cf8e1fb8d07604fbb7e257165d1d5",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "113903409636457975606914104792919758839557994083760946857713158525054447730796",
+      "token_yes": "96551106575560334387664361101526394128786958007810414820829817590443652289890",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.29500000000000004,
+      "model_prob": 0.4895,
+      "edge": -0.2155,
+      "net_edge": 0.2051,
+      "size_usd": 5.0,
+      "forecast_temp_c": 29.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-21T03:40:13.128995+00:00",
+      "entry_fee": 0.1762,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -38345,5 +38373,5 @@
   "n_lost": 1134,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-21T03:13:02.796037+00:00"
+  "last_updated": "2026-06-21T03:40:13.129372+00:00"
 }
