@@ -1,5 +1,5 @@
 {
-  "bankroll": 9272.741599999992,
+  "bankroll": 9285.899499999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -29,34 +29,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
-    },
-    {
-      "series_slug": "nyc-daily-weather",
-      "event_date": "2026-06-21",
-      "question": "Will the highest temperature in New York City be between 82-83\u00b0F on June 21?",
-      "condition_id": "0x8d42c9f7ce54644f286fb37a32aace8d07136dc8cca16f01d5d423962c8fbc22",
-      "temp_str": "between 82-83\u00b0F",
-      "direction": "BUY_NO",
-      "token_id": "4259151385784634965635070258210886226574955960046529452313169954553915686637",
-      "token_yes": "65582301688648929210405456636993996831909402428071665698009836608455123782376",
-      "model_prob_gaussian": 0.4102913251769376,
-      "entry_prob": 0.38,
-      "model_prob": 0.4103,
-      "edge": -0.2097,
-      "net_edge": 0.1979,
-      "size_usd": 5.0,
-      "forecast_temp_c": 28.6,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 22.2,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-06-21T12:47:17.519929+00:00",
-      "entry_fee": 0.155,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
     },
     {
       "series_slug": "austin-daily-weather",
@@ -39206,12 +39178,40 @@
       "pnl_usd": 13.0006,
       "resolved_temp": 24.0,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "nyc-daily-weather",
+      "event_date": "2026-06-21",
+      "question": "Will the highest temperature in New York City be between 82-83\u00b0F on June 21?",
+      "condition_id": "0x8d42c9f7ce54644f286fb37a32aace8d07136dc8cca16f01d5d423962c8fbc22",
+      "temp_str": "between 82-83\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "4259151385784634965635070258210886226574955960046529452313169954553915686637",
+      "token_yes": "65582301688648929210405456636993996831909402428071665698009836608455123782376",
+      "model_prob_gaussian": 0.4102913251769376,
+      "entry_prob": 0.38,
+      "model_prob": 0.4103,
+      "edge": -0.2097,
+      "net_edge": 0.1979,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.2,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-06-21T12:47:17.519929+00:00",
+      "entry_fee": 0.155,
+      "closed_at": "2026-06-22T05:31:11.387718+00:00",
+      "pnl_usd": 8.0029,
+      "resolved_temp": 29.4,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -665.1878,
-  "n_won": 341,
+  "total_pnl": -657.1849,
+  "n_won": 342,
   "n_lost": 1153,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-22T05:14:59.176897+00:00"
+  "last_updated": "2026-06-22T05:50:25.230107+00:00"
 }
