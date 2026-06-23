@@ -1,5 +1,5 @@
 {
-  "bankroll": 9286.340099999992,
+  "bankroll": 9281.173799999991,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -249,6 +249,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-23T05:47:37.999774+00:00",
       "entry_fee": 0.1737,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "guangzhou-daily-weather",
+      "event_date": "2026-06-23",
+      "question": "Will the highest temperature in Guangzhou be 36\u00b0C on June 23?",
+      "condition_id": "0xcc08f2c1e761e9098605e437d2b9a5961a5193a56d5cb5dac73ff7bf33325a9d",
+      "temp_str": "36\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "64222595447080481227608203304902289586920858590929995643494618782058949782720",
+      "token_yes": "67206999688897706161184939169288585656860309868849006181102752836535247006622",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.33499999999999996,
+      "model_prob": 0.2311,
+      "edge": -0.4339,
+      "net_edge": 0.4228,
+      "size_usd": 5.0,
+      "forecast_temp_c": 34.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 35.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-23T06:50:36.379178+00:00",
+      "entry_fee": 0.1663,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -39773,5 +39801,5 @@
   "n_lost": 1169,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-23T06:17:39.214664+00:00"
+  "last_updated": "2026-06-23T06:50:36.741072+00:00"
 }
