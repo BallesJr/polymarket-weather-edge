@@ -1,5 +1,5 @@
 {
-  "bankroll": 9296.719999999992,
+  "bankroll": 9291.513799999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -221,6 +221,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-23T05:04:37.839748+00:00",
       "entry_fee": 0.185,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "wuhan-daily-weather",
+      "event_date": "2026-06-23",
+      "question": "Will the highest temperature in Wuhan be 25\u00b0C on June 23?",
+      "condition_id": "0x732a4a7e2995bb46866dc7056903583d7901864261b3620fc9cac62d40b30efd",
+      "temp_str": "25\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "78175619766254521689176395707987033694616502667983300264000317125782499110849",
+      "token_yes": "49629063508497897332159388761264141623076367507233750048910753054574504988149",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.17500000000000004,
+      "model_prob": 0.4895,
+      "edge": -0.3355,
+      "net_edge": 0.3283,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-23T05:22:46.208653+00:00",
+      "entry_fee": 0.2062,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -39717,5 +39745,5 @@
   "n_lost": 1168,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-23T05:04:37.961325+00:00"
+  "last_updated": "2026-06-23T05:22:46.209069+00:00"
 }
