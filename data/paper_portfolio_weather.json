@@ -1,5 +1,5 @@
 {
-  "bankroll": 9261.380199999989,
+  "bankroll": 9256.22399999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -305,6 +305,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-24T03:16:33.493983+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "tel-aviv-daily-weather",
+      "event_date": "2026-06-24",
+      "question": "Will the highest temperature in Tel Aviv be 30\u00b0C on June 24?",
+      "condition_id": "0x232e69b862ccb52f34674900b9457ee570573bd83661ef2698f64daf2321ce3e",
+      "temp_str": "30\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "46734163549365254384041905161286618275155810499345162847238595107010850851640",
+      "token_yes": "85163940709441739316147093288949655016610354377495354746293092062065877394991",
+      "model_prob_gaussian": 0.4750317433975587,
+      "entry_prob": 0.375,
+      "model_prob": 0.475,
+      "edge": -0.15,
+      "net_edge": 0.1383,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-24T03:42:00.282174+00:00",
+      "entry_fee": 0.1562,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -40277,5 +40305,5 @@
   "n_lost": 1180,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-24T03:16:33.494319+00:00"
+  "last_updated": "2026-06-24T03:42:00.282543+00:00"
 }
