@@ -1,5 +1,5 @@
 {
-  "bankroll": 9220.61729999999,
+  "bankroll": 9215.44599999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -585,6 +585,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-24T11:50:13.659449+00:00",
       "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "munich-daily-weather",
+      "event_date": "2026-06-24",
+      "question": "Will the highest temperature in Munich be 33\u00b0C on June 24?",
+      "condition_id": "0xb6d946f6f8de082f7c06aa9f0899e9f335ea91e7f2550ac34a1ed0b3a0e0d81d",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "49880586176955500706736375612290813314443076243288688709153582567523990044456",
+      "token_yes": "24445932395583223677179777447016204394579287727134558713956666414657877566203",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.31499999999999995,
+      "model_prob": 0.4059,
+      "edge": -0.2791,
+      "net_edge": 0.2683,
+      "size_usd": 5.0,
+      "forecast_temp_c": 33.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-24T12:15:18.712503+00:00",
+      "entry_fee": 0.1713,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -40697,5 +40725,5 @@
   "n_lost": 1183,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-24T11:50:13.659870+00:00"
+  "last_updated": "2026-06-24T12:15:18.712871+00:00"
 }
