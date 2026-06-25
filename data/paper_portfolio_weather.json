@@ -1,5 +1,5 @@
 {
-  "bankroll": 9297.252799999991,
+  "bankroll": 9292.096599999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -249,6 +249,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-25T00:12:58.144530+00:00",
       "entry_fee": 0.1613,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chongqing-daily-weather",
+      "event_date": "2026-06-25",
+      "question": "Will the highest temperature in Chongqing be 25\u00b0C or below on June 25?",
+      "condition_id": "0x50022a7ee658dc47f42cb131b49f8f608f6032f5d7e73c3adb813a29bdeb5758",
+      "temp_str": "25\u00b0C or below",
+      "direction": "BUY_NO",
+      "token_id": "36777825283263199957818398504410101801299008543572096068991003059337818071628",
+      "token_yes": "33784666594199314978007280300833511468102983089406143445870623954779816129233",
+      "model_prob_gaussian": 0.004244193143912827,
+      "entry_prob": 0.375,
+      "model_prob": 0.0042,
+      "edge": -0.6208,
+      "net_edge": 0.6091,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 23.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-25T00:41:56.536236+00:00",
+      "entry_fee": 0.1562,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -40921,5 +40949,5 @@
   "n_lost": 1196,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-25T00:12:58.144911+00:00"
+  "last_updated": "2026-06-25T00:41:56.536791+00:00"
 }
