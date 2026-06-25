@@ -1,5 +1,5 @@
 {
-  "bankroll": 9265.241999999993,
+  "bankroll": 9260.068299999994,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -361,6 +361,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-25T11:13:15.273131+00:00",
       "entry_fee": 0.15,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "cape-town-daily-weather",
+      "event_date": "2026-06-25",
+      "question": "Will the highest temperature in Cape Town be 22\u00b0C on June 25?",
+      "condition_id": "0x02765a86bf52a64d108a114ec0b0d785c5fa584fc0f27b9cbb9e93325e8eb95f",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "68543983197624702491401584842448661999027423379429350492980611571656727033486",
+      "token_yes": "26626015153167948353620170074639259367274279655318695713028824979400427586613",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.30500000000000005,
+      "model_prob": 0.4858,
+      "edge": -0.2092,
+      "net_edge": 0.1986,
+      "size_usd": 5.0,
+      "forecast_temp_c": 22.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 21.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-25T11:43:49.000349+00:00",
+      "entry_fee": 0.1737,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -41173,5 +41201,5 @@
   "n_lost": 1200,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-25T11:13:15.273517+00:00"
+  "last_updated": "2026-06-25T11:43:49.000654+00:00"
 }
