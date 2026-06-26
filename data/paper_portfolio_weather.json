@@ -1,5 +1,5 @@
 {
-  "bankroll": 9228.078699999993,
+  "bankroll": 9222.924999999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -277,6 +277,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-26T01:43:35.209535+00:00",
       "entry_fee": 0.1888,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "singapore-daily-weather",
+      "event_date": "2026-06-26",
+      "question": "Will the highest temperature in Singapore be 32\u00b0C on June 26?",
+      "condition_id": "0x0adb8d8c5b873aa96093dca5c7c2a53bac01e3e68186c34b36dde53f9501b7c2",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "54688568534257570628989958512915421939013411618604953694515266779483965612191",
+      "token_yes": "65291854802859004952233497817369045383831675135699851584392621046325354686028",
+      "model_prob_gaussian": 0.3029362276662373,
+      "entry_prob": 0.385,
+      "model_prob": 0.3029,
+      "edge": -0.3121,
+      "net_edge": 0.3003,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-26T03:13:47.479896+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -41453,5 +41481,5 @@
   "n_lost": 1212,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-26T02:46:31.245796+00:00"
+  "last_updated": "2026-06-26T03:13:47.480268+00:00"
 }
