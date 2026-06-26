@@ -1,5 +1,5 @@
 {
-  "bankroll": 9193.285399999995,
+  "bankroll": 9188.129199999996,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-26T18:27:50.236957+00:00",
       "entry_fee": 0.1925,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "seattle-daily-weather",
+      "event_date": "2026-06-26",
+      "question": "Will the highest temperature in Seattle be between 64-65\u00b0F on June 26?",
+      "condition_id": "0xbeb44f6661348b7712780b28b0786f391915837f1bc325710135f531f6b5d223",
+      "temp_str": "between 64-65\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "7183631581146013625214753294299502164688474997503959131589733679879026683990",
+      "token_yes": "59537683437473672460951258165152770348003479792764401731192976160365347829592",
+      "model_prob_gaussian": 0.48962900443772434,
+      "entry_prob": 0.375,
+      "model_prob": 0.4896,
+      "edge": -0.1354,
+      "net_edge": 0.1237,
+      "size_usd": 5.0,
+      "forecast_temp_c": 16.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 17.8,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-26T19:44:53.602782+00:00",
+      "entry_fee": 0.1562,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -42041,5 +42069,5 @@
   "n_lost": 1224,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-26T19:16:41.239357+00:00"
+  "last_updated": "2026-06-26T19:44:53.603139+00:00"
 }
