@@ -1,5 +1,5 @@
 {
-  "bankroll": 9188.129199999996,
+  "bankroll": 9182.924199999996,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-26T19:44:53.602782+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "austin-daily-weather",
+      "event_date": "2026-06-26",
+      "question": "Will the highest temperature in Austin be between 94-95\u00b0F on June 26?",
+      "condition_id": "0x91a29b606175b381583cc66522d144164c32ada8a14a4db80c591a49cff60403",
+      "temp_str": "between 94-95\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "59114884400913644921410476649133745754589465070529533070389134552165112689127",
+      "token_yes": "47399012846541191645902890661407200773886856823156469574373518453058493021695",
+      "model_prob_gaussian": 0.5186382621603591,
+      "entry_prob": 0.18000000000000005,
+      "model_prob": 0.5186,
+      "edge": -0.3014,
+      "net_edge": 0.294,
+      "size_usd": 5.0,
+      "forecast_temp_c": 35.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 34.4,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-26T20:12:21.960298+00:00",
+      "entry_fee": 0.205,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -42069,5 +42097,5 @@
   "n_lost": 1224,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-26T19:44:53.603139+00:00"
+  "last_updated": "2026-06-26T20:12:21.960676+00:00"
 }
