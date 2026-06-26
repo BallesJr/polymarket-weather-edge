@@ -1,5 +1,5 @@
 {
-  "bankroll": 9176.043999999994,
+  "bankroll": 9193.285399999995,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -85,34 +85,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
-    },
-    {
-      "series_slug": "lucknow-daily-weather",
-      "event_date": "2026-06-26",
-      "question": "Will the highest temperature in Lucknow be 40\u00b0C on June 26?",
-      "condition_id": "0x49804269d3400b6eca7004ff56a68afe6668fa91a249b3f1b1438e66c99ac9ed",
-      "temp_str": "40\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "67955559006172684064716900376107928506355695671512950142151258799408820234986",
-      "token_yes": "59137878048563516262549083562662890318077647561730654543944840740485667653547",
-      "model_prob_gaussian": 0.48946186884544657,
-      "entry_prob": 0.29000000000000004,
-      "model_prob": 0.4895,
-      "edge": -0.2205,
-      "net_edge": 0.2102,
-      "size_usd": 5.0,
-      "forecast_temp_c": 39.7,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 40.0,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-06-26T09:08:52.472740+00:00",
-      "entry_fee": 0.1775,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
     },
     {
       "series_slug": "ankara-daily-weather",
@@ -42034,12 +42006,40 @@
       "pnl_usd": -5.195,
       "resolved_temp": 31.0,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "lucknow-daily-weather",
+      "event_date": "2026-06-26",
+      "question": "Will the highest temperature in Lucknow be 40\u00b0C on June 26?",
+      "condition_id": "0x49804269d3400b6eca7004ff56a68afe6668fa91a249b3f1b1438e66c99ac9ed",
+      "temp_str": "40\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "67955559006172684064716900376107928506355695671512950142151258799408820234986",
+      "token_yes": "59137878048563516262549083562662890318077647561730654543944840740485667653547",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.29000000000000004,
+      "model_prob": 0.4895,
+      "edge": -0.2205,
+      "net_edge": 0.2102,
+      "size_usd": 5.0,
+      "forecast_temp_c": 39.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 40.0,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-06-26T09:08:52.472740+00:00",
+      "entry_fee": 0.1775,
+      "closed_at": "2026-06-26T19:01:16.276971+00:00",
+      "pnl_usd": 12.0639,
+      "resolved_temp": 41.0,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -746.3794,
-  "n_won": 368,
+  "total_pnl": -734.3155,
+  "n_won": 369,
   "n_lost": 1224,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-26T18:46:20.113723+00:00"
+  "last_updated": "2026-06-26T19:16:41.239357+00:00"
 }
