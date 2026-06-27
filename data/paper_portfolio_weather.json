@@ -1,5 +1,5 @@
 {
-  "bankroll": 9207.365199999998,
+  "bankroll": 9196.967099999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -253,6 +253,62 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
+    },
+    {
+      "series_slug": "guangzhou-daily-weather",
+      "event_date": "2026-06-27",
+      "question": "Will the highest temperature in Guangzhou be 34\u00b0C on June 27?",
+      "condition_id": "0xa8e63346d61144f4279017b1ade98d656c1a2f91adb624b48c6be3f756cf6846",
+      "temp_str": "34\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "88735349716017464246507732299228100969367532153008500740567754292053247481465",
+      "token_yes": "68156705177438967634431339290022851389353701832896417779944592552350743643752",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.20499999999999996,
+      "model_prob": 0.4895,
+      "edge": -0.3055,
+      "net_edge": 0.2974,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 34.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-27T06:21:22.692696+00:00",
+      "entry_fee": 0.1988,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chengdu-daily-weather",
+      "event_date": "2026-06-27",
+      "question": "Will the highest temperature in Chengdu be 28\u00b0C on June 27?",
+      "condition_id": "0xe05f6836ec185500697e2e518c1844dbeb5dc81ed55daa17e325c8e846688bc3",
+      "temp_str": "28\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "962646808050715589623831813334756650043753027860402302956329413332593856032",
+      "token_yes": "70693709719204641504880513316711452108282111583265667172341418473211631067364",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.20299999999999996,
+      "model_prob": 0.4895,
+      "edge": -0.3075,
+      "net_edge": 0.2994,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-27T06:21:23.125582+00:00",
+      "entry_fee": 0.1993,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
   "closed_trades": [
@@ -42265,5 +42321,5 @@
   "n_lost": 1233,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-27T05:51:48.914720+00:00"
+  "last_updated": "2026-06-27T06:21:23.125896+00:00"
 }
