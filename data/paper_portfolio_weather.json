@@ -1,5 +1,5 @@
 {
-  "bankroll": 9212.517699999999,
+  "bankroll": 9207.365199999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -225,6 +225,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "busan-daily-weather",
+      "event_date": "2026-06-27",
+      "question": "Will the highest temperature in Busan be 27\u00b0C on June 27?",
+      "condition_id": "0x35b7c32096ce1b035b3e760d1ebd2c45e568c3c09e2ff67baca9fe271b2a821a",
+      "temp_str": "27\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "20287808333893084271177935327261566479640973888373197556783957258542856776185",
+      "token_yes": "26832903842094796206910579174120811439828310816715282168909344587696059245361",
+      "model_prob_gaussian": 0.0925538116390403,
+      "entry_prob": 0.39,
+      "model_prob": 0.0926,
+      "edge": -0.5174,
+      "net_edge": 0.5055,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.7,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-27T05:51:48.914212+00:00",
+      "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -42237,5 +42265,5 @@
   "n_lost": 1233,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-27T05:30:09.621065+00:00"
+  "last_updated": "2026-06-27T05:51:48.914720+00:00"
 }
