@@ -1,5 +1,5 @@
 {
-  "bankroll": 9269.2606,
+  "bankroll": 9264.1044,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -137,6 +137,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-29T05:48:20.064284+00:00",
       "entry_fee": 0.1663,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "amsterdam-daily-weather",
+      "event_date": "2026-06-29",
+      "question": "Will the highest temperature in Amsterdam be 24\u00b0C on June 29?",
+      "condition_id": "0x4bc31115e1a60d1c13ff0472d51237c83c53d9b8bba413db7cb7f97a5a8dcd76",
+      "temp_str": "24\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "78160140987411693400836780879349981178638696993872866450636772115900662727689",
+      "token_yes": "18708705913776554057495805686877613045249199419523779864506598220577722298745",
+      "model_prob_gaussian": 0.0028358219729170487,
+      "entry_prob": 0.375,
+      "model_prob": 0.0028,
+      "edge": -0.6222,
+      "net_edge": 0.6105,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 20.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-29T07:16:57.149315+00:00",
+      "entry_fee": 0.1562,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -43301,5 +43329,5 @@
   "n_lost": 1260,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-29T06:46:21.859426+00:00"
+  "last_updated": "2026-06-29T07:16:57.149795+00:00"
 }
