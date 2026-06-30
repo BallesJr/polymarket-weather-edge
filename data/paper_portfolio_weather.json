@@ -1,5 +1,5 @@
 {
-  "bankroll": 9312.3037,
+  "bankroll": 9307.130000000001,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -137,6 +137,34 @@
       "status": "OPEN",
       "opened_at": "2026-06-29T23:24:15.947336+00:00",
       "entry_fee": 0.1836,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chengdu-daily-weather",
+      "event_date": "2026-06-30",
+      "question": "Will the highest temperature in Chengdu be 30\u00b0C or higher on June 30?",
+      "condition_id": "0x664b795687dc0974dc43b1de18c61dae278e7da35751f1ecbfc812a1d5ea4952",
+      "temp_str": "30\u00b0C or higher",
+      "direction": "BUY_NO",
+      "token_id": "74708139215080522827933183745385487468192288063219076653877571138219709776377",
+      "token_yes": "60912147329833790410318907991761288061477665876444556676068047264784420013827",
+      "model_prob_gaussian": 0.5,
+      "entry_prob": 0.30500000000000005,
+      "model_prob": 0.5,
+      "edge": -0.195,
+      "net_edge": 0.1844,
+      "size_usd": 5.0,
+      "forecast_temp_c": 29.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 26.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-06-30T01:43:26.561731+00:00",
+      "entry_fee": 0.1737,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -43637,5 +43665,5 @@
   "n_lost": 1265,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-06-30T01:11:50.048181+00:00"
+  "last_updated": "2026-06-30T01:43:26.562096+00:00"
 }
