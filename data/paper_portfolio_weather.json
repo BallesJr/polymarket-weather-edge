@@ -1,5 +1,5 @@
 {
-  "bankroll": 9297.116899999999,
+  "bankroll": 9291.938199999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -221,6 +221,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-01T06:45:48.126571+00:00",
       "entry_fee": 0.1926,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "munich-daily-weather",
+      "event_date": "2026-07-01",
+      "question": "Will the highest temperature in Munich be 22\u00b0C on July 1?",
+      "condition_id": "0x68e34f62006bfdb0e9932f39a45a968f3260fe8b9d45817ea9fdbc45565981d7",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "48420343908993252837996305568652316746403416171083091117505045341802247392965",
+      "token_yes": "17091594316570983169711193906923029261008495119894944556358705849362217093540",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.28500000000000003,
+      "model_prob": 0.4895,
+      "edge": -0.2255,
+      "net_edge": 0.2153,
+      "size_usd": 5.0,
+      "forecast_temp_c": 20.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-01T07:18:07.227101+00:00",
+      "entry_fee": 0.1787,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -44197,5 +44225,5 @@
   "n_lost": 1277,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-01T06:45:48.127120+00:00"
+  "last_updated": "2026-07-01T07:18:07.227439+00:00"
 }
