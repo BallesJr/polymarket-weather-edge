@@ -1,5 +1,5 @@
 {
-  "bankroll": 9396.612399999998,
+  "bankroll": 9391.457399999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -53,6 +53,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-01T18:43:10.504049+00:00",
       "entry_fee": 0.1663,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "kuala-lumpur-daily-weather",
+      "event_date": "2026-07-02",
+      "question": "Will the highest temperature in Kuala Lumpur be 32\u00b0C on July 2?",
+      "condition_id": "0xe578798d87c4b7b2cb3b6c10f6b714e2e0ed54a5f6bcc3e0181f0cb1f0968520",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "98724273782225217683892140389823423293839514483954208632015007312084777851239",
+      "token_yes": "86858394199688481768034096884152863844424237048550596123459121579174228982235",
+      "model_prob_gaussian": 0.11192472259997954,
+      "entry_prob": 0.38,
+      "model_prob": 0.1119,
+      "edge": -0.5081,
+      "net_edge": 0.4963,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-02T02:42:36.935208+00:00",
+      "entry_fee": 0.155,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -44449,5 +44477,5 @@
   "n_lost": 1283,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-02T02:09:46.628401+00:00"
+  "last_updated": "2026-07-02T02:42:37.062115+00:00"
 }
