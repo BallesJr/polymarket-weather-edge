@@ -1,5 +1,5 @@
 {
-  "bankroll": 9391.748899999999,
+  "bankroll": 9386.543499999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -53,6 +53,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-04T05:54:24.999911+00:00",
       "entry_fee": 0.2125,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "helsinki-daily-weather",
+      "event_date": "2026-07-04",
+      "question": "Will the highest temperature in Helsinki be 18\u00b0C on July 4?",
+      "condition_id": "0xf6ea2eda5b6d0ce1f5983b2c0cd06eccaa8ad23193b9962d6d2822b4d3402b81",
+      "temp_str": "18\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "11002307077113042732096917263795655099101169298827586361844741973371521318072",
+      "token_yes": "19854842626998962403097523196032110151102461997699362699280285396769854936077",
+      "model_prob_gaussian": 0.3737858671778719,
+      "entry_prob": 0.1785,
+      "model_prob": 0.3738,
+      "edge": -0.4477,
+      "net_edge": 0.4404,
+      "size_usd": 5.0,
+      "forecast_temp_c": 18.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 18.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-04T12:42:51.845918+00:00",
+      "entry_fee": 0.2054,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -45121,5 +45149,5 @@
   "n_lost": 1300,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-04T12:14:18.142617+00:00"
+  "last_updated": "2026-07-04T12:42:51.846570+00:00"
 }
