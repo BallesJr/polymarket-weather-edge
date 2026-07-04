@@ -1,5 +1,5 @@
 {
-  "bankroll": 9386.543499999998,
+  "bankroll": 9381.354699999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -81,6 +81,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-04T12:42:51.845918+00:00",
       "entry_fee": 0.2054,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "paris-daily-weather",
+      "event_date": "2026-07-04",
+      "question": "Will the highest temperature in Paris be 30\u00b0C on July 4?",
+      "condition_id": "0x05b49d0e5492e9bc96bcda66cf50efdaa0c9293bd1be4e0c18e72d51405e35b7",
+      "temp_str": "30\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "86520166212000844187054382693316335593632271330961336912661554890452931946218",
+      "token_yes": "15064656346221166282082023276319839241659293917215288206648602809690326932124",
+      "model_prob_gaussian": 0.4750317433975594,
+      "entry_prob": 0.245,
+      "model_prob": 0.475,
+      "edge": -0.28,
+      "net_edge": 0.2708,
+      "size_usd": 5.0,
+      "forecast_temp_c": 29.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 29.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-04T13:49:37.226585+00:00",
+      "entry_fee": 0.1888,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -45149,5 +45177,5 @@
   "n_lost": 1300,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-04T13:14:35.010995+00:00"
+  "last_updated": "2026-07-04T13:49:37.227252+00:00"
 }
