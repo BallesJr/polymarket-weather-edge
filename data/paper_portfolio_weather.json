@@ -1,5 +1,5 @@
 {
-  "bankroll": 9400.958599999998,
+  "bankroll": 9395.798999999997,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -53,6 +53,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-06T19:41:57.972694+00:00",
       "entry_fee": 0.2087,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "qingdao-daily-weather",
+      "event_date": "2026-07-07",
+      "question": "Will the highest temperature in Qingdao be 23\u00b0C on July 7?",
+      "condition_id": "0x8fea103b685f1bd973720f3099a9f70a186928f0b5e3596b11aec2c78ec82910",
+      "temp_str": "23\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "5710680152965692683496164280924996623783328069867645299817319058325825697248",
+      "token_yes": "34043145896924856179069168001300817202277681591649287366748460240312897071462",
+      "model_prob_gaussian": 0.07100609698206348,
+      "entry_prob": 0.36150000000000004,
+      "model_prob": 0.071,
+      "edge": -0.5675,
+      "net_edge": 0.556,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 23.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-07T03:13:41.803209+00:00",
+      "entry_fee": 0.1596,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -45821,5 +45849,5 @@
   "n_lost": 1317,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-07T02:47:17.766898+00:00"
+  "last_updated": "2026-07-07T03:13:41.803857+00:00"
 }
