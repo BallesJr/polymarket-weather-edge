@@ -1,5 +1,5 @@
 {
-  "bankroll": 9395.798999999997,
+  "bankroll": 9390.617799999996,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -81,6 +81,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-07T03:13:41.803209+00:00",
       "entry_fee": 0.1596,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "guangzhou-daily-weather",
+      "event_date": "2026-07-07",
+      "question": "Will the highest temperature in Guangzhou be 30\u00b0C on July 7?",
+      "condition_id": "0x591c02a398623528e3510aa7d93e146fe9d54eb3faa1eb81d9a3c09411793517",
+      "temp_str": "30\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "108978836049312602857756687990149427806653607535729103563770992784535150404433",
+      "token_yes": "49799110239894543984120202342978616268392617632837944635834544104611865028116",
+      "model_prob_gaussian": 0.33905312041498725,
+      "entry_prob": 0.275,
+      "model_prob": 0.3391,
+      "edge": -0.3859,
+      "net_edge": 0.3759,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-07T04:49:21.209678+00:00",
+      "entry_fee": 0.1812,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -45849,5 +45877,5 @@
   "n_lost": 1317,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-07T04:14:14.820465+00:00"
+  "last_updated": "2026-07-07T04:49:21.210109+00:00"
 }
