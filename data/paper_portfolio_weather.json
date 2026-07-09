@@ -1,5 +1,5 @@
 {
-  "bankroll": 9388.817099999998,
+  "bankroll": 9383.630899999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -25,6 +25,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-09T08:07:54.453267+00:00",
       "entry_fee": 0.1963,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "ankara-daily-weather",
+      "event_date": "2026-07-09",
+      "question": "Will the highest temperature in Ankara be 31\u00b0C on July 9?",
+      "condition_id": "0xc4dca87216b467a4f29b04ed4f6721ec5b60bb8236f0c634f2019be6d29800cf",
+      "temp_str": "31\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "93337177821951567863432303642948721827057779639633438904550983783476502836515",
+      "token_yes": "78243202057115756073506710441872740932901855890127945450726632894286373953550",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.255,
+      "model_prob": 0.2311,
+      "edge": -0.5139,
+      "net_edge": 0.5044,
+      "size_usd": 5.0,
+      "forecast_temp_c": 29.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-09T11:34:19.662636+00:00",
+      "entry_fee": 0.1862,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -46297,5 +46325,5 @@
   "n_lost": 1330,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-09T11:14:41.528471+00:00"
+  "last_updated": "2026-07-09T11:34:19.663214+00:00"
 }
