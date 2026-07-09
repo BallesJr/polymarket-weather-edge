@@ -39,7 +39,7 @@ This project builds an automated paper trading bot that exploits a systematic mi
 | Directions enabled | BUY_NO only |
 | Horizons enabled | T+0 only |
 | NO-token price band | [0.15, 0.40] |
-| City win-rate filter | ≥ 35% over last 60 days (clean-data regime only) |
+| City tail-guard | binomial test vs per-city break-even, p < 0.05 over last 60 days (clean-data regime only) |
 | Kelly fraction | Half-Kelly, capped at $5 |
 
 ---
@@ -78,7 +78,7 @@ python backtester.py                  # portfolio analytics
 
 **Station coverage**: New Zealand stations are not in the IEM archive, so Wellington's resolution audit falls back to the less reliable ERA5 grid.
 
-**City filter cold start**: New cities are unfiltered until they accumulate 10 closed trades in the rolling window, so a bad city can run losses before it gets blocked.
+**City tail-guard latency**: A city is only blocked once its record is statistically incompatible with break-even (binomial test, p < 0.05), which takes ~9 straight losses at current entry prices — a genuinely bad city can lose ~$45 before exclusion. This is deliberate: with the strategy's natural win rate (~32%) barely above break-even (~31%), any harder cutoff blocks cities on noise (the earlier ≥35% win-rate rule had excluded 30 of 42 cities within a month, 11 of them profitable).
 
 **No live execution**: Still paper trading. Real execution requires Polymarket CLOB v2 API access and would introduce slippage and partial fills not modelled here.
 

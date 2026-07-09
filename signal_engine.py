@@ -1,4 +1,5 @@
 import json
+import math
 import os
 import pandas as pd
 import numpy as np
@@ -51,9 +52,13 @@ MAX_POSITION_FRACTION = 0.10
 # Maximum position size as an absolute value per trade
 MAX_POSITION_USD = 5.0
 
-# City performance filter: skip cities with win_rate below threshold (min trades required)
-MIN_CITY_WIN_RATE = 0.35
-MIN_CITY_TRADES = 10
+# City tail-guard: block a city only when its record is statistically
+# incompatible with reaching its own break-even (one-sided binomial test).
+# The strategy's natural win rate (~32%) sits barely above break-even (~31%),
+# so any fixed cutoff above that blocks cities on 10-trade noise: the old
+# >=35% rule had blocked 30 of 42 cities by 2026-07-09, 11 of them profitable,
+# and was strangling volume. Significance means ~9+ straight losses to block.
+CITY_BLOCK_ALPHA = 0.05
 CITY_WINDOW_DAYS = 60   # rolling window: old trades age out, giving blocked cities a second chance
 
 # Trades before this date ran under known data bugs (wrong Paris station, NaN
@@ -63,21 +68,23 @@ REGIME_START = "2026-06-10"
 PORTFOLIO_PATH = "data/paper_portfolio_weather.json"
 
 
-def _city_win_rates() -> dict[str, float]:
-    """Return {series_slug: win_rate} for BUY_NO T+0 trades within the rolling window.
+def _blocked_cities() -> set[str]:
+    """Cities whose BUY_NO T+0 record in the rolling window is statistically
+    incompatible with break-even (one-sided binomial test, p < CITY_BLOCK_ALPHA).
 
-    Cities with < MIN_CITY_TRADES in the window are excluded from the dict,
-    meaning they are NOT filtered — this is how blocked cities get a second chance
-    once their old bad trades age out of the window.
+    Break-even is per city, from its own entries: buying NO at price p with the
+    entry fee needs a win rate of p * (1 + fee_rate * (1 - p)). No minimum trade
+    count: the test itself cannot reject on a small sample, and blocked cities
+    get a second chance once their old trades age out of the window.
     """
     if not os.path.exists(PORTFOLIO_PATH):
-        return {}
+        return set()
     try:
         with open(PORTFOLIO_PATH) as f:
             data = json.load(f)
         df = pd.DataFrame(data.get("closed_trades", []))
         if df.empty:
-            return {}
+            return set()
         df = df[df["status"].isin(["WON", "LOST"])]
         df = df[(df["direction"] == "BUY_NO") & (df["forecast_horizon_days"] == 0)]
 
@@ -88,11 +95,21 @@ def _city_win_rates() -> dict[str, float]:
         df["opened_at"] = pd.to_datetime(df["opened_at"], utc=True)
         df = df[df["opened_at"] >= cutoff]
 
-        g = df.groupby("series_slug").agg(trades=("status", "count"), won=("status", lambda x: (x == "WON").sum()))
-        g["win_rate"] = g["won"] / g["trades"]
-        return g[g["trades"] >= MIN_CITY_TRADES]["win_rate"].to_dict()
+        blocked = set()
+        for slug, g in df.groupby("series_slug"):
+            entry = g["entry_prob"].dropna()
+            if entry.empty:
+                continue
+            p_be = float((entry * (1 + WEATHER_FEE_RATE * (1 - entry))).mean())
+            n = len(g)
+            wins = int((g["status"] == "WON").sum())
+            # P(X <= wins) if the city's true win rate were exactly break-even
+            p_val = sum(math.comb(n, k) * p_be**k * (1 - p_be) ** (n - k) for k in range(wins + 1))
+            if p_val < CITY_BLOCK_ALPHA:
+                blocked.add(slug)
+        return blocked
     except Exception:
-        return {}
+        return set()
 
 # --- Signal dataclass ---
 
@@ -176,7 +193,7 @@ def _get_confidence(net_edge: float) -> str:
 # and future model training, but do not gate the decision.
 def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
     signals = []
-    city_rates = _city_win_rates()
+    blocked_cities = _blocked_cities()
 
     for _, row in df.iterrows():
         model_prob = row.get("model_prob")
@@ -197,9 +214,9 @@ def generate_signals(df: pd.DataFrame, bankroll: float=50.0,) -> list[Signal]:
         if liquidity < MIN_LIQUIDITY:
             continue
 
-        # Skip cities with poor historical BUY_NO T+0 win rate
+        # Skip cities statistically unable to reach break-even
         slug = row.get("series_slug", "")
-        if slug in city_rates and city_rates[slug] < MIN_CITY_WIN_RATE:
+        if slug in blocked_cities:
             continue
 
         # Determine data source
