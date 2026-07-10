@@ -1,5 +1,5 @@
 {
-  "bankroll": 9327.745400000002,
+  "bankroll": 9322.586600000002,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-10T07:47:05.288550+00:00",
       "entry_fee": 0.1713,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "lucknow-daily-weather",
+      "event_date": "2026-07-10",
+      "question": "Will the highest temperature in Lucknow be 31\u00b0C on July 10?",
+      "condition_id": "0x0fc41f8dcea1541e5d3947cb1fdb7f502a0bbaace63532f59f0a34f5ddbd18b6",
+      "temp_str": "31\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "113485468910167618372416091514369091731855642001790957711107108350776534743366",
+      "token_yes": "92135823199135837031359728852282666591698103300507761756763702510665097577277",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.365,
+      "model_prob": 0.4059,
+      "edge": -0.2291,
+      "net_edge": 0.2175,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-10T09:47:13.230754+00:00",
+      "entry_fee": 0.1588,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -46829,5 +46857,5 @@
   "n_lost": 1334,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-10T09:17:01.410476+00:00"
+  "last_updated": "2026-07-10T09:47:13.231131+00:00"
 }
