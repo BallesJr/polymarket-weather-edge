@@ -1,5 +1,5 @@
 {
-  "bankroll": 9291.521900000003,
+  "bankroll": 9286.330600000003,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -585,6 +585,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-10T12:17:51.441563+00:00",
       "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "warsaw-daily-weather",
+      "event_date": "2026-07-10",
+      "question": "Will the highest temperature in Warsaw be 18\u00b0C on July 10?",
+      "condition_id": "0x91a8141e402243cc6a850a04d117531dc5290e5eaf2b0c7bea86a6d7ce4fa888",
+      "temp_str": "18\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "37000644736116561018854797330450139089610303467187828354445959486134361752101",
+      "token_yes": "28233442493977302117802757395633869435769867708300011944416676320367357314158",
+      "model_prob_gaussian": 0.01730828719736531,
+      "entry_prob": 0.235,
+      "model_prob": 0.0173,
+      "edge": -0.7477,
+      "net_edge": 0.7387,
+      "size_usd": 5.0,
+      "forecast_temp_c": 20.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 18.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-10T13:13:46.550732+00:00",
+      "entry_fee": 0.1913,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -47025,5 +47053,5 @@
   "n_lost": 1334,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-10T12:47:57.611822+00:00"
+  "last_updated": "2026-07-10T13:13:46.681841+00:00"
 }
