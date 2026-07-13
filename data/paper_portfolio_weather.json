@@ -1,5 +1,5 @@
 {
-  "bankroll": 9205.871400000002,
+  "bankroll": 9200.698900000001,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -333,6 +333,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-13T17:14:23.454548+00:00",
       "entry_fee": 0.2062,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "austin-daily-weather",
+      "event_date": "2026-07-13",
+      "question": "Will the highest temperature in Austin be between 92-93\u00b0F on July 13?",
+      "condition_id": "0xe040c08b1701ffc977cbf2e96145e5ec4f5cef653307e9c86dafdae7655e2928",
+      "temp_str": "between 92-93\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "37432484835703982244818485086686004605826612288934650603449212049503428080856",
+      "token_yes": "28547941001246016437709310380804205567220685950717114281403030712170554772939",
+      "model_prob_gaussian": 0.5186382621603591,
+      "entry_prob": 0.31000000000000005,
+      "model_prob": 0.5186,
+      "edge": -0.1714,
+      "net_edge": 0.1607,
+      "size_usd": 5.0,
+      "forecast_temp_c": 33.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 33.3,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-13T20:16:21.124532+00:00",
+      "entry_fee": 0.1725,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -49405,5 +49433,5 @@
   "n_lost": 1404,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-13T19:59:29.257156+00:00"
+  "last_updated": "2026-07-13T20:16:21.124892+00:00"
 }
