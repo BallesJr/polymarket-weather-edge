@@ -1,5 +1,5 @@
 {
-  "bankroll": 9224.623400000006,
+  "bankroll": 9219.469700000005,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -361,6 +361,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-13T02:12:49.176224+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "busan-daily-weather",
+      "event_date": "2026-07-13",
+      "question": "Will the highest temperature in Busan be 32\u00b0C on July 13?",
+      "condition_id": "0x1abbd25c4778581b36700b8dd6b6616d4c292dd9f43c3a44998a11d9d3da318f",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "421881417612870676211501742323599843247443516904778859939189361831141878589",
+      "token_yes": "86028108494614592738690767281599707227788470860111317320250717936948409834135",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.385,
+      "model_prob": 0.4059,
+      "edge": -0.2091,
+      "net_edge": 0.1973,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-13T03:16:04.680722+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -48873,5 +48901,5 @@
   "n_lost": 1390,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-13T02:12:49.176694+00:00"
+  "last_updated": "2026-07-13T03:16:04.681114+00:00"
 }
