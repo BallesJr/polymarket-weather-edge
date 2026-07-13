@@ -1,5 +1,5 @@
 {
-  "bankroll": 9219.469700000005,
+  "bankroll": 9214.315000000006,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-13T03:16:04.680722+00:00",
       "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "taipei-daily-weather",
+      "event_date": "2026-07-13",
+      "question": "Will the highest temperature in Taipei be 33\u00b0C on July 13?",
+      "condition_id": "0xa589554d18adac6b8066f946a8939da029486a3ae1533acfa5e737d0aa056a72",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "20153392012226621039077208833190463360319761537014589072735985470264342322974",
+      "token_yes": "63448393980507748576224472703127219909769488298163129042116833740684743973398",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.381,
+      "model_prob": 0.4895,
+      "edge": -0.1295,
+      "net_edge": 0.1177,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 33.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-13T04:01:35.629679+00:00",
+      "entry_fee": 0.1547,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -48901,5 +48929,5 @@
   "n_lost": 1390,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-13T03:44:16.809939+00:00"
+  "last_updated": "2026-07-13T04:01:35.630069+00:00"
 }
