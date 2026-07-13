@@ -1,5 +1,5 @@
 {
-  "bankroll": 9191.048100000004,
+  "bankroll": 9185.869400000003,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-13T06:47:00.612526+00:00",
       "entry_fee": 0.16,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chengdu-daily-weather",
+      "event_date": "2026-07-13",
+      "question": "Will the highest temperature in Chengdu be 38\u00b0C on July 13?",
+      "condition_id": "0x1d34dc47a21574c78ed6bc57f3441616b2431fef56b5a831d4200f6c1ca437f8",
+      "temp_str": "38\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "36625400684751366935274749775881989843081013774196732968859091486229658493787",
+      "token_yes": "385200957556201217823698890268389697749006670531069945254951222501699074304",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.28500000000000003,
+      "model_prob": 0.2311,
+      "edge": -0.4839,
+      "net_edge": 0.4737,
+      "size_usd": 5.0,
+      "forecast_temp_c": 36.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 37.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-13T07:46:21.551769+00:00",
+      "entry_fee": 0.1787,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -49125,5 +49153,5 @@
   "n_lost": 1394,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-13T07:16:30.927108+00:00"
+  "last_updated": "2026-07-13T07:46:21.552322+00:00"
 }
