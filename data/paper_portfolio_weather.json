@@ -1,5 +1,5 @@
 {
-  "bankroll": 9118.048100000002,
+  "bankroll": 9112.875600000001,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-14T10:31:23.278076+00:00",
       "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "amsterdam-daily-weather",
+      "event_date": "2026-07-14",
+      "question": "Will the highest temperature in Amsterdam be 28\u00b0C on July 14?",
+      "condition_id": "0x19e44f62c75a3d9fb5ab22f4425dbd3a5a05337320fcd8b1c54bcc9c68f41f0a",
+      "temp_str": "28\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "41403285387607214857834676796027481793008830024442409178584089567273542974666",
+      "token_yes": "85815788435562605697671964108439226028404497729243808488794903671191722611169",
+      "model_prob_gaussian": 0.001,
+      "entry_prob": 0.31000000000000005,
+      "model_prob": 0.001,
+      "edge": -0.689,
+      "net_edge": 0.6783,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 26.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-14T11:15:22.688511+00:00",
+      "entry_fee": 0.1725,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -49881,5 +49909,5 @@
   "n_lost": 1418,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-14T10:46:04.838171+00:00"
+  "last_updated": "2026-07-14T11:15:22.689079+00:00"
 }
