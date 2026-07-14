@@ -1,5 +1,5 @@
 {
-  "bankroll": 9102.5581,
+  "bankroll": 9097.4019,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-14T12:13:22.697385+00:00",
       "entry_fee": 0.1638,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "miami-daily-weather",
+      "event_date": "2026-07-14",
+      "question": "Will the highest temperature in Miami be between 92-93\u00b0F on July 14?",
+      "condition_id": "0x2a433d4930bacab732b8dc3cdb30d57386293d490b3de826d9ea6401f9127052",
+      "temp_str": "between 92-93\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "63255298444256014839200678684695866612248482602825699306197903738357072555511",
+      "token_yes": "26130989049334565798929602288119955229939605611536478230598643573562817133228",
+      "model_prob_gaussian": 0.5374376965424426,
+      "entry_prob": 0.375,
+      "model_prob": 0.5374,
+      "edge": -0.0876,
+      "net_edge": 0.0759,
+      "size_usd": 5.0,
+      "forecast_temp_c": 33.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.1,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-14T14:13:24.937496+00:00",
+      "entry_fee": 0.1562,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -49965,5 +49993,5 @@
   "n_lost": 1419,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-14T13:43:49.644033+00:00"
+  "last_updated": "2026-07-14T14:13:24.937920+00:00"
 }
