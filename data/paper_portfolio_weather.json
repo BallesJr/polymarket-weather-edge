@@ -1,5 +1,5 @@
 {
-  "bankroll": 9099.766099999995,
+  "bankroll": 9094.611099999995,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -277,6 +277,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-16T02:46:17.256885+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "istanbul-daily-weather",
+      "event_date": "2026-07-16",
+      "question": "Will the highest temperature in Istanbul be 28\u00b0C on July 16?",
+      "condition_id": "0x1c0b140335631b42f772cebd02534326d48343ea6ba342928b6ac23ca3ad3489",
+      "temp_str": "28\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "16490074823566607533917781638939498156200497276673054248243553299643187053682",
+      "token_yes": "112202359445071487909322317111322448993271409990323795552959773826295426590623",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.38,
+      "model_prob": 0.4895,
+      "edge": -0.1305,
+      "net_edge": 0.1187,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-16T03:15:14.626959+00:00",
+      "entry_fee": 0.155,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -50861,5 +50889,5 @@
   "n_lost": 1447,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-16T02:46:17.257250+00:00"
+  "last_updated": "2026-07-16T03:15:14.627401+00:00"
 }
