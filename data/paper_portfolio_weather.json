@@ -1,5 +1,5 @@
 {
-  "bankroll": 9041.449599999996,
+  "bankroll": 9036.288299999997,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-17T03:46:00.386902+00:00",
       "entry_fee": 0.1787,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "shanghai-daily-weather",
+      "event_date": "2026-07-17",
+      "question": "Will the highest temperature in Shanghai be 38\u00b0C on July 17?",
+      "condition_id": "0x6a3df9b3cb9e2c9bb8df8a89947696dbb943127ae77526bc080a9882b1f80dd3",
+      "temp_str": "38\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "44954382674625375657395057280727446189609936476936809090895578624716000049636",
+      "token_yes": "88764881757033945163918005197222296021513727055484556246185755005253040321121",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.355,
+      "model_prob": 0.4895,
+      "edge": -0.1555,
+      "net_edge": 0.1441,
+      "size_usd": 5.0,
+      "forecast_temp_c": 37.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 38.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-17T04:18:18.592849+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -51729,5 +51757,5 @@
   "n_lost": 1461,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-17T03:46:00.567907+00:00"
+  "last_updated": "2026-07-17T04:18:18.593277+00:00"
 }
