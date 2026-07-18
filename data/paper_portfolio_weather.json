@@ -1,5 +1,5 @@
 {
-  "bankroll": 9118.115299999996,
+  "bankroll": 9107.790099999997,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -281,6 +281,62 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "openmeteo"
+    },
+    {
+      "series_slug": "kuala-lumpur-daily-weather",
+      "event_date": "2026-07-18",
+      "question": "Will the highest temperature in Kuala Lumpur be 33\u00b0C on July 18?",
+      "condition_id": "0x8e65532e971132d77a649146d5fa0fb164a5ae4b41af001677751ebaff041c5c",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "29195888481350896904460039144659994307150212268359786573771878504108823867813",
+      "token_yes": "69214372003845371793721478719674408367007905076435497439283732372671903417190",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.399,
+      "model_prob": 0.2311,
+      "edge": -0.3699,
+      "net_edge": 0.3579,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-18T04:50:00.263014+00:00",
+      "entry_fee": 0.1502,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "singapore-daily-weather",
+      "event_date": "2026-07-18",
+      "question": "Will the highest temperature in Singapore be 31\u00b0C on July 18?",
+      "condition_id": "0x9d3c820fdf4579078a2aa9a421b151b027c4b15b844ad8be645f39d7e2c1b6b2",
+      "temp_str": "31\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "105631790790490098989253585233018465420436177144408327642354923771986763179434",
+      "token_yes": "36650144630773212903716065384268002642467536474285857194319804234043026137025",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.30000000000000004,
+      "model_prob": 0.4858,
+      "edge": -0.2142,
+      "net_edge": 0.2037,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-18T04:50:00.399609+00:00",
+      "entry_fee": 0.175,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
   "closed_trades": [
@@ -52401,5 +52457,5 @@
   "n_lost": 1483,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-18T04:13:43.022673+00:00"
+  "last_updated": "2026-07-18T04:50:00.400000+00:00"
 }
