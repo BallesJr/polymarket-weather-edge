@@ -1,5 +1,5 @@
 {
-  "bankroll": 9111.208499999993,
+  "bankroll": 9106.017199999993,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -445,6 +445,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-19T18:43:18.541358+00:00",
       "entry_fee": 0.185,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chicago-daily-weather",
+      "event_date": "2026-07-19",
+      "question": "Will the highest temperature in Chicago be between 78-79\u00b0F on July 19?",
+      "condition_id": "0xb3ab6d51af7c63ea6163a636f78df24e9c62d183011a6c6b697ed04d67bc2ac2",
+      "temp_str": "between 78-79\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "10678659574882952568625612099819517092918767653082588110982992325978397557301",
+      "token_yes": "81125929638336292320005702170631323475912195153256424942559493109456338679995",
+      "model_prob_gaussian": 0.30086278400850125,
+      "entry_prob": 0.235,
+      "model_prob": 0.3009,
+      "edge": -0.4641,
+      "net_edge": 0.4551,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.6,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-19T19:15:12.249096+00:00",
+      "entry_fee": 0.1913,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -53381,5 +53409,5 @@
   "n_lost": 1502,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-19T18:58:51.792853+00:00"
+  "last_updated": "2026-07-19T19:15:12.249677+00:00"
 }
