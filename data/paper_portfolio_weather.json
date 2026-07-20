@@ -1,5 +1,5 @@
 {
-  "bankroll": 9187.820499999994,
+  "bankroll": 9182.660499999994,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -165,6 +165,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-20T17:00:29.850731+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "seattle-daily-weather",
+      "event_date": "2026-07-20",
+      "question": "Will the highest temperature in Seattle be between 82-83\u00b0F on July 20?",
+      "condition_id": "0xc0682dfef4c67c5742076b316c58584aa03d2350d8085ebb8ce8aefb56a68246",
+      "temp_str": "between 82-83\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "72535048388091892070259355235093276169481170942527025825615774317295642846885",
+      "token_yes": "69653186697593582231470540203474138046708915298030758005400536189806830745453",
+      "model_prob_gaussian": 0.46847689302672474,
+      "entry_prob": 0.36,
+      "model_prob": 0.4685,
+      "edge": -0.1715,
+      "net_edge": 0.16,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 27.2,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-20T23:45:32.417128+00:00",
+      "entry_fee": 0.16,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -54081,5 +54109,5 @@
   "n_lost": 1525,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-20T23:23:10.731970+00:00"
+  "last_updated": "2026-07-20T23:45:32.417511+00:00"
 }
