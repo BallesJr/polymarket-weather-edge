@@ -1,5 +1,5 @@
 {
-  "bankroll": 9120.982399999992,
+  "bankroll": 9115.818599999991,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -361,6 +361,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-20T04:09:24.592394+00:00",
       "entry_fee": 0.1787,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "tokyo-daily-weather",
+      "event_date": "2026-07-20",
+      "question": "Will the highest temperature in Tokyo be 35\u00b0C on July 20?",
+      "condition_id": "0x02868bb7787e2bf4ff18383c116edf5e6f6ced6156f49e65991a3c381198480b",
+      "temp_str": "35\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "73101315015017766188478595888085969833407180934828069494913608157269281925185",
+      "token_yes": "47796078606704411510490036041101213539084508846675093296599609651345230608043",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.345,
+      "model_prob": 0.4895,
+      "edge": -0.1655,
+      "net_edge": 0.1542,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 35.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-20T04:24:44.911156+00:00",
+      "entry_fee": 0.1638,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -53661,5 +53689,5 @@
   "n_lost": 1511,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-20T04:09:24.733740+00:00"
+  "last_updated": "2026-07-20T04:24:44.911513+00:00"
 }
