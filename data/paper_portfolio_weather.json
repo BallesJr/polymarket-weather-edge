@@ -1,5 +1,5 @@
 {
-  "bankroll": 9162.873799999996,
+  "bankroll": 9152.551199999996,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -113,6 +113,62 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "wellington-daily-weather",
+      "event_date": "2026-07-22",
+      "question": "Will the highest temperature in Wellington be 14\u00b0C on July 22?",
+      "condition_id": "0x8c6e2a8f8611317a3eb477da40f49be4ef6ced2424488380d087b1de9ff908b1",
+      "temp_str": "14\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "5315599581368919106675820214925379544048640334542151798872874023406609485225",
+      "token_yes": "17917935337324443520167135086776420269195072438279984258330851450101007749740",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.365,
+      "model_prob": 0.2311,
+      "edge": -0.4039,
+      "net_edge": 0.3923,
+      "size_usd": 5.0,
+      "forecast_temp_c": 12.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 13.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-22T00:14:43.127454+00:00",
+      "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "denver-daily-weather",
+      "event_date": "2026-07-22",
+      "question": "Will the highest temperature in Denver be 94\u00b0F or higher on July 22?",
+      "condition_id": "0xfd1a0f5469fa051e9f5f605e8964c490e48b5b4c60a6680274549085019bb9a5",
+      "temp_str": "94\u00b0F or higher",
+      "direction": "BUY_NO",
+      "token_id": "61396794110300264709928064138534512234236055481739473127470869529327348151801",
+      "token_yes": "69098168475651430830906371015149352218089786240057643216865694802829340122747",
+      "model_prob_gaussian": 0.8290567649897274,
+      "entry_prob": 0.345,
+      "model_prob": 0.8291,
+      "edge": 0.1741,
+      "net_edge": 0.1628,
+      "size_usd": 5.0,
+      "forecast_temp_c": 34.7,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-22T00:14:43.423059+00:00",
+      "entry_fee": 0.1638,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -54585,5 +54641,5 @@
   "n_lost": 1540,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-22T00:00:39.807108+00:00"
+  "last_updated": "2026-07-22T00:14:43.669049+00:00"
 }
