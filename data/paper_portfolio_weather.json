@@ -1,5 +1,5 @@
 {
-  "bankroll": 9137.026199999998,
+  "bankroll": 9131.868699999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -249,6 +249,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-22T01:45:29.869933+00:00",
       "entry_fee": 0.175,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "singapore-daily-weather",
+      "event_date": "2026-07-22",
+      "question": "Will the highest temperature in Singapore be 31\u00b0C on July 22?",
+      "condition_id": "0x0d53cf76e7a990a8f4d7ae0e7d96e100b8402d45091b54a7e5602029cfcf76ec",
+      "temp_str": "31\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "11837172001580138889224538034592500574198229720801035743159337127483776567900",
+      "token_yes": "33992764868560822670301077972561463073960431037163986919811727656266220101085",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.37,
+      "model_prob": 0.4858,
+      "edge": -0.1442,
+      "net_edge": 0.1325,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-22T02:41:31.703328+00:00",
+      "entry_fee": 0.1575,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -54725,5 +54753,5 @@
   "n_lost": 1540,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-22T02:17:08.965836+00:00"
+  "last_updated": "2026-07-22T02:41:31.703772+00:00"
 }
