@@ -1,5 +1,5 @@
 {
-  "bankroll": 9049.0688,
+  "bankroll": 9043.913799999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-23T10:30:29.271295+00:00",
       "entry_fee": 0.1663,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "london-daily-weather",
+      "event_date": "2026-07-23",
+      "question": "Will the highest temperature in London be 26\u00b0C on July 23?",
+      "condition_id": "0x905121f14fc32bad842eb2280e3bd50a3234560d48a743f3c05b6a2a93e76473",
+      "temp_str": "26\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "106409022819439063270634111287305036822728778676956030585899590937374101753632",
+      "token_yes": "78464051770184127802203157955698669530160321256238687411655327660957446926267",
+      "model_prob_gaussian": 0.3737858671778719,
+      "entry_prob": 0.38,
+      "model_prob": 0.3738,
+      "edge": -0.2462,
+      "net_edge": 0.2344,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-23T10:47:33.955675+00:00",
+      "entry_fee": 0.155,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -55761,5 +55789,5 @@
   "n_lost": 1562,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-23T10:30:29.271709+00:00"
+  "last_updated": "2026-07-23T10:47:33.956340+00:00"
 }
