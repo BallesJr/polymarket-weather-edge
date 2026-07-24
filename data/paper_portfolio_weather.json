@@ -1,5 +1,5 @@
 {
-  "bankroll": 9014.983599999992,
+  "bankroll": 9009.802399999991,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-24T20:15:27.421076+00:00",
       "entry_fee": 0.195,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "toronto-daily-weather",
+      "event_date": "2026-07-24",
+      "question": "Will the highest temperature in Toronto be 25\u00b0C on July 24?",
+      "condition_id": "0xda628856cf0e636d22031473e4201f33f8a50e3b842dbfcf13c51545880eab2c",
+      "temp_str": "25\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "4137643947535189831095272709782666259305327450494515574326523949063247601824",
+      "token_yes": "23824326818055960587585437832221284343164484058211825548394697544177116558767",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.275,
+      "model_prob": 0.4895,
+      "edge": -0.2355,
+      "net_edge": 0.2255,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-24T20:39:14.437174+00:00",
+      "entry_fee": 0.1812,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -56741,5 +56769,5 @@
   "n_lost": 1586,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-24T20:15:27.421502+00:00"
+  "last_updated": "2026-07-24T20:39:14.437757+00:00"
 }
