@@ -1,5 +1,5 @@
 {
-  "bankroll": 9023.608599999996,
+  "bankroll": 9018.421099999996,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -305,6 +305,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-26T17:45:01.185142+00:00",
       "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "sao-paulo-daily-weather",
+      "event_date": "2026-07-26",
+      "question": "Will the highest temperature in Sao Paulo be 25\u00b0C on July 26?",
+      "condition_id": "0xb5b8a5eb0bf8060065ebc79bccfac2ed224c3ccfafa77216162334f4f8cd8f85",
+      "temp_str": "25\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "83348511169149004439704412684731862110930901728246601641579603030574727539828",
+      "token_yes": "49387856523997177201304804573878262149595200150573941178238952209802286958230",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.25,
+      "model_prob": 0.4895,
+      "edge": -0.2605,
+      "net_edge": 0.2511,
+      "size_usd": 5.0,
+      "forecast_temp_c": 23.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-26T18:57:54.069279+00:00",
+      "entry_fee": 0.1875,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -58029,5 +58057,5 @@
   "n_lost": 1625,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-26T18:44:09.074433+00:00"
+  "last_updated": "2026-07-26T18:57:54.069667+00:00"
 }
