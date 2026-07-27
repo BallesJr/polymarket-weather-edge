@@ -1,5 +1,5 @@
 {
-  "bankroll": 8978.563799999994,
+  "bankroll": 8973.412599999994,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-27T19:11:42.439731+00:00",
       "entry_fee": 0.1925,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "denver-daily-weather",
+      "event_date": "2026-07-27",
+      "question": "Will the highest temperature in Denver be between 90-91\u00b0F on July 27?",
+      "condition_id": "0x3b6147a1f743e1a6edb89cc911cf13d4c604ebe024ea5b718c59ce5bc0c5de78",
+      "temp_str": "between 90-91\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "48041829966372465414338540225029902831233512641218849588185775824294769345562",
+      "token_yes": "37611395700987436270719863833078433196944177132468110427128709860799825806093",
+      "model_prob_gaussian": 0.49340050742880276,
+      "entry_prob": 0.395,
+      "model_prob": 0.4934,
+      "edge": -0.1116,
+      "net_edge": 0.0997,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.9,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-27T21:40:26.483554+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -58701,5 +58729,5 @@
   "n_lost": 1641,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-27T21:17:15.473408+00:00"
+  "last_updated": "2026-07-27T21:40:26.484042+00:00"
 }
