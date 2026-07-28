@@ -1,5 +1,5 @@
 {
-  "bankroll": 8995.907999999994,
+  "bankroll": 8990.741699999993,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -361,6 +361,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-28T01:42:35.531194+00:00",
       "entry_fee": 0.1575,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "seoul-daily-weather",
+      "event_date": "2026-07-28",
+      "question": "Will the highest temperature in Seoul be 31\u00b0C on July 28?",
+      "condition_id": "0x2b2051da1d60e3ba2880a02a8bb8c929d1b6af36030f503caf1a7141ccc7ac31",
+      "temp_str": "31\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "12613079806804470399531627212792414167249609443049295811438612964302952600668",
+      "token_yes": "25000881746667440941900643668654048761453239614533888855298619454415954974229",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.33499999999999996,
+      "model_prob": 0.2311,
+      "edge": -0.4339,
+      "net_edge": 0.4228,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-28T02:46:36.357742+00:00",
+      "entry_fee": 0.1663,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -58841,5 +58869,5 @@
   "n_lost": 1644,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-28T02:12:19.396319+00:00"
+  "last_updated": "2026-07-28T02:46:36.358500+00:00"
 }
