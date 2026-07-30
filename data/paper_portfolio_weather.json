@@ -1,5 +1,5 @@
 {
-  "bankroll": 8884.436899999993,
+  "bankroll": 8879.240599999994,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-30T17:42:48.440648+00:00",
       "entry_fee": 0.1737,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "miami-daily-weather",
+      "event_date": "2026-07-30",
+      "question": "Will the highest temperature in Miami be between 96-97\u00b0F on July 30?",
+      "condition_id": "0xdc03c387d31812be8c3aca82d6146f6860f4c4ba4a0870a1bc67bdd0afb1ca02",
+      "temp_str": "between 96-97\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "114587027258128550740292439006769418763180273809134407166623823307159739854433",
+      "token_yes": "47640704727393446912368458933611076400365317596059843325331145958227909321181",
+      "model_prob_gaussian": 0.48962900443772434,
+      "entry_prob": 0.21499999999999997,
+      "model_prob": 0.4896,
+      "edge": -0.2954,
+      "net_edge": 0.287,
+      "size_usd": 5.0,
+      "forecast_temp_c": 34.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 35.6,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-30T18:43:29.291047+00:00",
+      "entry_fee": 0.1963,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -60941,5 +60969,5 @@
   "n_lost": 1695,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-30T18:21:24.316053+00:00"
+  "last_updated": "2026-07-30T18:43:29.426858+00:00"
 }
