@@ -1,5 +1,5 @@
 {
-  "bankroll": 8922.124699999993,
+  "bankroll": 8916.950999999994,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -477,6 +477,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
+    },
+    {
+      "series_slug": "wellington-daily-weather",
+      "event_date": "2026-07-30",
+      "question": "Will the highest temperature in Wellington be 14\u00b0C on July 30?",
+      "condition_id": "0x82946b1a4cdfe63a93c797747d3e4d83764a30ba01bb08bb9e7abfe33810f2d9",
+      "temp_str": "14\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "32046845937389219428424075839839804461312287279048501969700964583728463370521",
+      "token_yes": "5433235722195837905213515522607954751492423789189681214212355232685896205020",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.30500000000000005,
+      "model_prob": 0.4895,
+      "edge": -0.2055,
+      "net_edge": 0.1949,
+      "size_usd": 5.0,
+      "forecast_temp_c": 12.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 14.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-30T01:16:31.670548+00:00",
+      "entry_fee": 0.1737,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
   "closed_trades": [
@@ -60437,5 +60465,5 @@
   "n_lost": 1682,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-30T01:06:26.947261+00:00"
+  "last_updated": "2026-07-30T01:16:31.671124+00:00"
 }
