@@ -1,5 +1,5 @@
 {
-  "bankroll": 8913.639199999992,
+  "bankroll": 8908.484199999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-30T07:49:45.081607+00:00",
       "entry_fee": 0.1775,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "milan-daily-weather",
+      "event_date": "2026-07-30",
+      "question": "Will the highest temperature in Milan be 36\u00b0C on July 30?",
+      "condition_id": "0xa71662436b6e74c4cc9b2e0cd70268ea5fdbe6d0a4898c16be42bb560d1379ce",
+      "temp_str": "36\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "97222244994855872563605111589807123598999068754580230901579795506632963459636",
+      "token_yes": "16450179201486224967352430622845409718133983240028212495933478982639925861330",
+      "model_prob_gaussian": 0.3737858671778719,
+      "entry_prob": 0.38,
+      "model_prob": 0.3738,
+      "edge": -0.2462,
+      "net_edge": 0.2344,
+      "size_usd": 5.0,
+      "forecast_temp_c": 36.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 34.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-30T10:51:47.851967+00:00",
+      "entry_fee": 0.155,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -60689,5 +60717,5 @@
   "n_lost": 1690,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-30T10:34:59.344843+00:00"
+  "last_updated": "2026-07-30T10:51:47.852404+00:00"
 }
