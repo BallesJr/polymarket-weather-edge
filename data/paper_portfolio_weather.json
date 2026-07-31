@@ -1,5 +1,5 @@
 {
-  "bankroll": 8928.028499999993,
+  "bankroll": 8922.837199999993,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-31T16:17:22.024613+00:00",
       "entry_fee": 0.195,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "nyc-daily-weather",
+      "event_date": "2026-07-31",
+      "question": "Will the highest temperature in New York City be between 84-85\u00b0F on July 31?",
+      "condition_id": "0x102ee7d1acda2048d77d13d0123af50e3b97460e9a401533b885ce786e635772",
+      "temp_str": "between 84-85\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "107792153139662045419736238295881159194066038665066247459727038103870621241793",
+      "token_yes": "89292785136723214508331400274203218953907089223695879517020660644722918604694",
+      "model_prob_gaussian": 0.10781787055602927,
+      "entry_prob": 0.235,
+      "model_prob": 0.1078,
+      "edge": -0.6572,
+      "net_edge": 0.6482,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.9,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-31T18:47:15.614082+00:00",
+      "entry_fee": 0.1913,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -61641,5 +61669,5 @@
   "n_lost": 1709,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-31T18:26:43.040179+00:00"
+  "last_updated": "2026-07-31T18:47:15.614736+00:00"
 }
