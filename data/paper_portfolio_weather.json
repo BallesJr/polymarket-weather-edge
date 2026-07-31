@@ -1,5 +1,5 @@
 {
-  "bankroll": 8922.837199999993,
+  "bankroll": 8917.652199999993,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-31T18:47:15.614082+00:00",
       "entry_fee": 0.1913,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "buenos-aires-daily-weather",
+      "event_date": "2026-07-31",
+      "question": "Will the highest temperature in Buenos Aires be 23\u00b0C on July 31?",
+      "condition_id": "0xd34d043616fd4911e5df105b4e7e804c71d6127c202e7d8b9d43b8ce9eca9f5f",
+      "temp_str": "23\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "48162901426982353265623854663054457439801501204428226038301920305211317582015",
+      "token_yes": "87431613880553109441066022566011704452642223253633594509660161801288840509041",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.26,
+      "model_prob": 0.4895,
+      "edge": -0.2505,
+      "net_edge": 0.2409,
+      "size_usd": 5.0,
+      "forecast_temp_c": 20.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 23.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-31T20:01:20.852886+00:00",
+      "entry_fee": 0.185,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -61669,5 +61697,5 @@
   "n_lost": 1711,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-31T19:40:55.301940+00:00"
+  "last_updated": "2026-07-31T20:01:20.853293+00:00"
 }
