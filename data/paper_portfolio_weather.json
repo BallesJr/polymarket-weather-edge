@@ -1,5 +1,5 @@
 {
-  "bankroll": 8900.959299999993,
+  "bankroll": 8895.776799999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -361,6 +361,34 @@
       "status": "OPEN",
       "opened_at": "2026-07-31T01:45:05.353191+00:00",
       "entry_fee": 0.1638,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "madrid-daily-weather",
+      "event_date": "2026-07-31",
+      "question": "Will the highest temperature in Madrid be 37\u00b0C on July 31?",
+      "condition_id": "0x77a02451acbca31b3e530ac7c85950e05da8248eb400f85c4df1242b2964a5bf",
+      "temp_str": "37\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "15118586296103804021884720641995728228454469477716265541137283210547816678504",
+      "token_yes": "48670841950780178122144351355401936902775872647756593826722100442528208097067",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.27,
+      "model_prob": 0.4059,
+      "edge": -0.3241,
+      "net_edge": 0.3142,
+      "size_usd": 5.0,
+      "forecast_temp_c": 37.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 33.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-07-31T02:11:20.168628+00:00",
+      "entry_fee": 0.1825,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -61137,5 +61165,5 @@
   "n_lost": 1704,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-07-31T01:45:05.353601+00:00"
+  "last_updated": "2026-07-31T02:11:20.169049+00:00"
 }
