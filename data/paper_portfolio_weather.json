@@ -1,5 +1,5 @@
 {
-  "bankroll": 8898.36149999999,
+  "bankroll": 8893.18989999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-02T03:57:14.111476+00:00",
       "entry_fee": 0.195,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "manila-daily-weather",
+      "event_date": "2026-08-02",
+      "question": "Will the highest temperature in Manila be 29\u00b0C on August 2?",
+      "condition_id": "0x723b666547de7dbd24552873255779ebb3c44bf9d6afcfcce8c280cb3e75c592",
+      "temp_str": "29\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "14714785493260035750034560491509003388224832204600902459501873913914155470615",
+      "token_yes": "108793288427189726313803534470648328675634004228501870208406249062831252034375",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.3135,
+      "model_prob": 0.4895,
+      "edge": -0.197,
+      "net_edge": 0.1862,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 29.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-02T04:12:03.459940+00:00",
+      "entry_fee": 0.1716,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -62677,5 +62705,5 @@
   "n_lost": 1733,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-02T03:57:14.111947+00:00"
+  "last_updated": "2026-08-02T04:12:03.460362+00:00"
 }
