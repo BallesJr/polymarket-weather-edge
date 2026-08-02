@@ -1,5 +1,5 @@
 {
-  "bankroll": 8882.83479999999,
+  "bankroll": 8877.634799999989,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-02T05:45:54.219107+00:00",
       "entry_fee": 0.1638,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "wuhan-daily-weather",
+      "event_date": "2026-08-02",
+      "question": "Will the highest temperature in Wuhan be 37\u00b0C on August 2?",
+      "condition_id": "0x61e6ead88c4a34b6c1152d325a952ccaa7f37d6fe2fbcfeed44b704f18909866",
+      "temp_str": "37\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "49914337399600346760940756543218705000122379832911097610840099018939425207867",
+      "token_yes": "47498290009362037912714017974504592889761045213199299833841858864546193251615",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.19999999999999996,
+      "model_prob": 0.2311,
+      "edge": -0.5689,
+      "net_edge": 0.5609,
+      "size_usd": 5.0,
+      "forecast_temp_c": 34.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 36.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-02T07:00:42.998316+00:00",
+      "entry_fee": 0.2,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -62761,5 +62789,5 @@
   "n_lost": 1741,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-02T06:44:03.074286+00:00"
+  "last_updated": "2026-08-02T07:00:42.998905+00:00"
 }
