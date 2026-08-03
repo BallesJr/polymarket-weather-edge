@@ -1,5 +1,5 @@
 {
-  "bankroll": 8910.96649999999,
+  "bankroll": 8905.81529999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -221,6 +221,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-03T01:15:21.637232+00:00",
       "entry_fee": 0.1613,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "helsinki-daily-weather",
+      "event_date": "2026-08-03",
+      "question": "Will the highest temperature in Helsinki be 21\u00b0C on August 3?",
+      "condition_id": "0x6c4c601abe5243432dea2f50e04e77000ed4e40e708b15f07d4d38c44917880b",
+      "temp_str": "21\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "111372723763319886952402325768387980262574529517370036979827686031307679111156",
+      "token_yes": "96301862044260311736228161267732557143293917173618890039280025457135810983348",
+      "model_prob_gaussian": 0.16583637345607163,
+      "entry_prob": 0.395,
+      "model_prob": 0.1658,
+      "edge": -0.4392,
+      "net_edge": 0.4273,
+      "size_usd": 5.0,
+      "forecast_temp_c": 22.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 15.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-03T01:44:27.732869+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -63069,5 +63097,5 @@
   "n_lost": 1754,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-03T01:15:21.808877+00:00"
+  "last_updated": "2026-08-03T01:44:27.733433+00:00"
 }
