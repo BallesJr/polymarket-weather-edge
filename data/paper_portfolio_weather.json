@@ -1,5 +1,5 @@
 {
-  "bankroll": 8900.727199999992,
+  "bankroll": 8895.557199999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-04T21:42:12.737064+00:00",
       "entry_fee": 0.1963,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "denver-daily-weather",
+      "event_date": "2026-08-04",
+      "question": "Will the highest temperature in Denver be between 74-75\u00b0F on August 4?",
+      "condition_id": "0xb3a677fa543bbdb7110a0e79f299d58fd3f81d898f727102ebd24d91735e1f80",
+      "temp_str": "between 74-75\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "83964157505862400795549798323834467218306637513470774308170764346993890837683",
+      "token_yes": "28208618615471548801672290041451477820468023821391232121219590700570116031977",
+      "model_prob_gaussian": 0.5529579178960963,
+      "entry_prob": 0.31999999999999995,
+      "model_prob": 0.553,
+      "edge": -0.127,
+      "net_edge": 0.1161,
+      "size_usd": 5.0,
+      "forecast_temp_c": 23.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.6,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-04T22:32:30.551655+00:00",
+      "entry_fee": 0.17,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -64497,5 +64525,5 @@
   "n_lost": 1782,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-04T22:13:49.799791+00:00"
+  "last_updated": "2026-08-04T22:32:30.552064+00:00"
 }
