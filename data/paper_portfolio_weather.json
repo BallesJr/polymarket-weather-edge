@@ -1,5 +1,5 @@
 {
-  "bankroll": 8824.92569999999,
+  "bankroll": 8819.729399999991,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-04T11:15:37.257083+00:00",
       "entry_fee": 0.1737,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "cape-town-daily-weather",
+      "event_date": "2026-08-04",
+      "question": "Will the highest temperature in Cape Town be 18\u00b0C or below on August 4?",
+      "condition_id": "0x936c9ffae0b903d478c8816d58e3b69f23b45e8a5961fa06872514405e276485",
+      "temp_str": "18\u00b0C or below",
+      "direction": "BUY_NO",
+      "token_id": "19519141576608369829075070670440144603752834093714026933976970309516590358641",
+      "token_yes": "24349663228190983688491190958308572051904448723516759663019117056279482272479",
+      "model_prob_gaussian": 0.001,
+      "entry_prob": 0.21499999999999997,
+      "model_prob": 0.001,
+      "edge": -0.784,
+      "net_edge": 0.7756,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 14.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-04T11:47:16.330887+00:00",
+      "entry_fee": 0.1963,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -64161,5 +64189,5 @@
   "n_lost": 1776,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-04T11:15:37.257558+00:00"
+  "last_updated": "2026-08-04T11:47:16.498398+00:00"
 }
