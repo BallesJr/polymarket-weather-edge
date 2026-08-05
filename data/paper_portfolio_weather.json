@@ -1,5 +1,5 @@
 {
-  "bankroll": 8916.784699999991,
+  "bankroll": 8911.60599999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -305,6 +305,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-05T00:13:36.590027+00:00",
       "entry_fee": 0.1613,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "qingdao-daily-weather",
+      "event_date": "2026-08-05",
+      "question": "Will the highest temperature in Qingdao be 36\u00b0C or higher on August 5?",
+      "condition_id": "0x9d3c1182485c7acae0e48f8aa2c169b70f9c28dcdb981dbf3eead519a047d55e",
+      "temp_str": "36\u00b0C or higher",
+      "direction": "BUY_NO",
+      "token_id": "53212216486511012410717221450749503350143283794046475640779849259589836864846",
+      "token_yes": "29783397731807348879636249043346798489842832222999558180968063025529489333012",
+      "model_prob_gaussian": 0.9672916690970533,
+      "entry_prob": 0.28500000000000003,
+      "model_prob": 0.9673,
+      "edge": 0.2523,
+      "net_edge": 0.2421,
+      "size_usd": 5.0,
+      "forecast_temp_c": 36.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-05T01:08:05.606538+00:00",
+      "entry_fee": 0.1787,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -64609,5 +64637,5 @@
   "n_lost": 1788,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-05T00:44:04.093003+00:00"
+  "last_updated": "2026-08-05T01:08:05.606850+00:00"
 }
