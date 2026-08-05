@@ -1,5 +1,5 @@
 {
-  "bankroll": 8874.172799999988,
+  "bankroll": 8869.020299999987,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-05T10:33:47.071678+00:00",
       "entry_fee": 0.165,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "buenos-aires-daily-weather",
+      "event_date": "2026-08-05",
+      "question": "Will the highest temperature in Buenos Aires be 16\u00b0C on August 5?",
+      "condition_id": "0x56e5e07d3fe3e9e86fd0d31bc1993de56c99b1a86026a830d27feea9da9b64e6",
+      "temp_str": "16\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "93361958835363728034051706490133756194710720600083772122834158943149422862108",
+      "token_yes": "114469988684032172887228073040096407765053628856402025949075907545176228616216",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.39,
+      "model_prob": 0.4858,
+      "edge": -0.1242,
+      "net_edge": 0.1123,
+      "size_usd": 5.0,
+      "forecast_temp_c": 16.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 14.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-05T11:14:55.982876+00:00",
+      "entry_fee": 0.1525,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -65001,5 +65029,5 @@
   "n_lost": 1794,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-05T10:51:39.945279+00:00"
+  "last_updated": "2026-08-05T11:14:55.983397+00:00"
 }
