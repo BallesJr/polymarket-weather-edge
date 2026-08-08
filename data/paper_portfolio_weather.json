@@ -1,5 +1,5 @@
 {
-  "bankroll": 8873.292899999988,
+  "bankroll": 8868.142899999988,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-08T00:12:26.162301+00:00",
       "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "guangzhou-daily-weather",
+      "event_date": "2026-08-08",
+      "question": "Will the highest temperature in Guangzhou be 38\u00b0C on August 8?",
+      "condition_id": "0x29a6679ad274370a27e1527647673cc3d105a6eddb46eb5e7219088a7e547c12",
+      "temp_str": "38\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "7531934963567412888200739978992345348408077528340749175791352270239598777604",
+      "token_yes": "28269763108321957629407587099977555324501630243343624336314693674932350619372",
+      "model_prob_gaussian": 0.017308287197365324,
+      "entry_prob": 0.4,
+      "model_prob": 0.0173,
+      "edge": -0.5827,
+      "net_edge": 0.5707,
+      "size_usd": 5.0,
+      "forecast_temp_c": 35.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-08T01:44:08.039432+00:00",
+      "entry_fee": 0.15,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -66821,5 +66849,5 @@
   "n_lost": 1840,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-08T01:12:33.121877+00:00"
+  "last_updated": "2026-08-08T01:44:08.170068+00:00"
 }
