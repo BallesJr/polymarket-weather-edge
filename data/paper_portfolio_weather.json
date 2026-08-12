@@ -1,5 +1,5 @@
 {
-  "bankroll": 8704.730999999989,
+  "bankroll": 8699.56349999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-12T05:49:00.327593+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "beijing-daily-weather",
+      "event_date": "2026-08-12",
+      "question": "Will the highest temperature in Beijing be 27\u00b0C on August 12?",
+      "condition_id": "0x7cb49af6ae9ccaa302efe0eb003ac903499376a7c3a1b838e5c0b6f8a499ddd6",
+      "temp_str": "27\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "26177341048751872020389744970222707405538629239941173761400239120703531790243",
+      "token_yes": "30115655858648710933883774431213346246906586912064572372934833669207917510693",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.32999999999999996,
+      "model_prob": 0.2311,
+      "edge": -0.4389,
+      "net_edge": 0.4278,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 26.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-12T07:18:56.889423+00:00",
+      "entry_fee": 0.1675,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -70293,5 +70321,5 @@
   "n_lost": 1928,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-12T06:59:29.540230+00:00"
+  "last_updated": "2026-08-12T07:18:57.087070+00:00"
 }
