@@ -26,8 +26,11 @@ This project builds an automated paper trading bot that exploits a systematic mi
 - `paper_trader.py`: Paper portfolio manager; opens positions, resolves via the CLOB API, persists state to `data/paper_portfolio_weather.json`.
 - `notifier.py`: Sends Telegram notifications for cycle events and high-edge trades.
 - `backtester.py`: Portfolio analytics (P&L breakdown, win rate by segment, and open position summaries).
+- `equity_curve.py`: Reconstructs realized-equity curves (intraday and clean-regime) from closed trades.
+- `daily_report.py`: End-of-day Telegram report with the two equity curves; read-only, never writes state.
 - `.github/workflows/bot_cycle.yml`: Runs `paper_trader.py` every 30 minutes on GitHub Actions.
 - `.github/workflows/retrain.yml`: Retrains the RF model every Sunday at 04:00 UTC and commits the updated model.
+- `.github/workflows/daily_report.yml`: Sends the daily equity report at 23:30 UTC.
 
 ---
 
@@ -97,4 +100,4 @@ python backtester.py                  # portfolio analytics
 
 ## BACKGROUND
 
-I built this as a live extension of the [Polymarket Edge Model](../polymarket_edge_model/), which first identified the longshot bias in Polymarket's resolved market data. Weather temperature markets are a good fit because outcome probabilities can be modelled independently using real meteorological data, without relying on external prediction platforms.
+I built this as a live extension of the [Polymarket Edge Model](https://github.com/BallesJr/polymarket-edge-model), which first identified the longshot bias in Polymarket's resolved market data. Weather temperature markets are a good fit because outcome probabilities can be modelled independently using real meteorological data, without relying on external prediction platforms.
