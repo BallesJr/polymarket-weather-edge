@@ -1,5 +1,5 @@
 {
-  "bankroll": 8683.465899999988,
+  "bankroll": 8673.144699999988,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -589,6 +589,62 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "tokyo-daily-weather",
+      "event_date": "2026-08-12",
+      "question": "Will the highest temperature in Tokyo be 27\u00b0C on August 12?",
+      "condition_id": "0xe268db829ffd5b5fb89cb7381b2187d113b74a51058b6dab5d51edafa3709516",
+      "temp_str": "27\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "45494490312079415075553943540878282401779701594822653166469416014541384102903",
+      "token_yes": "32274652686178043483971381987549765848779323900103624624603110909207203169768",
+      "model_prob_gaussian": 0.4750317433975593,
+      "entry_prob": 0.32999999999999996,
+      "model_prob": 0.475,
+      "edge": -0.195,
+      "net_edge": 0.1839,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 27.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-12T03:13:14.918580+00:00",
+      "entry_fee": 0.1675,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "miami-daily-weather",
+      "event_date": "2026-08-12",
+      "question": "Will the highest temperature in Miami be between 92-93\u00b0F on August 12?",
+      "condition_id": "0x16e62582b8967feff0aff5ce01a39def18a09aec0f71b6a23fb6ae5d8ade9bb9",
+      "temp_str": "between 92-93\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "84909137046163349402475290603948203600094440024655064524685977131615579216687",
+      "token_yes": "85472776592305421164501698915100538984166346607049283544509258852022213922332",
+      "model_prob_gaussian": 0.402548495585192,
+      "entry_prob": 0.385,
+      "model_prob": 0.4025,
+      "edge": -0.2125,
+      "net_edge": 0.2007,
+      "size_usd": 5.0,
+      "forecast_temp_c": 34.3,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-12T03:13:15.128404+00:00",
+      "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -70153,5 +70209,5 @@
   "n_lost": 1923,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-12T02:59:26.191050+00:00"
+  "last_updated": "2026-08-12T03:13:15.128916+00:00"
 }
