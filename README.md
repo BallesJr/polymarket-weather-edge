@@ -46,9 +46,18 @@ This project builds an automated paper trading bot that exploits a systematic mi
 
 ## PAPER TRADING RESULTS
 
-The bot is currently live in paper trading mode. Live portfolio state (bankroll, P&L, win rate, and open positions) is persisted to `data/paper_portfolio_weather.json` and updated after every cycle.
+The bot is currently live in paper trading mode. Live portfolio state (bankroll, P&L, win rate, and open positions) is persisted to `data/paper_portfolio_weather.json` and updated after every cycle. The numbers below are a snapshot, last updated **2026-08-12**. They go stale as the bot keeps running; if that date is old, trust the state file over this section.
 
-The current filter stack (edge ≥ 0.25, BUY_NO only, T+0 only, NO price band) was applied in June 2026. Trades opened before 2026-06-10 ran under since-fixed data bugs (wrong Paris station, unparsed Fahrenheit markets, model-interpolated observations), so out-of-sample validation only counts trades from that date onward. Forward performance under the clean regime is still accumulating.
+The current filter stack (edge ≥ 0.25, BUY_NO only, T+0 only, NO price band) was applied in June 2026. Trades opened before 2026-06-10 ran under since-fixed data bugs (wrong Paris station, unparsed Fahrenheit markets, model-interpolated observations), so out-of-sample validation only counts trades from that date onward.
+
+### Snapshot as of 2026-08-12
+
+| Clean-regime period | Trades | Win rate vs break-even | Realized PnL |
+|---|---|---|---|
+| 2026-06-10 to 07-10 | 527 | 32.5% vs 29.8% (+2.7 pp) | +$157 |
+| 2026-07-10 to 08-12 | 847 | 28.9% vs 31.3% (-2.4 pp) | -$592 |
+
+The early clean-regime edge has not held out of sample: since mid-July the bot loses at a statistically significant rate on dollar PnL (t = -2.79) despite healthy volume (25 to 33 opens per day), which points at model calibration rather than the execution pipeline. High-claimed-edge losses were already flagged in July and the drift coincides with peak summer, so heat-wave tail behavior is the main suspect. Under investigation; whole-portfolio figures (bankroll $8,696 of $10,000 initial, total PnL -$1,196) additionally carry the pre-June buggy-era losses.
 
 ---
 
@@ -78,11 +87,11 @@ python backtester.py                  # portfolio analytics
 
 **Station coverage**: New Zealand stations are not in the IEM archive, so Wellington's resolution audit falls back to the less reliable ERA5 grid.
 
-**City tail-guard latency**: A city is only blocked once its record is statistically incompatible with break-even (binomial test, p < 0.05), which takes ~9 straight losses at current entry prices — a genuinely bad city can lose ~$45 before exclusion. This is deliberate: with the strategy's natural win rate (~32%) barely above break-even (~31%), any harder cutoff blocks cities on noise (the earlier ≥35% win-rate rule had excluded 30 of 42 cities within a month, 11 of them profitable).
+**City tail-guard latency**: A city is only blocked once its record is statistically incompatible with break-even (binomial test, p < 0.05), which takes ~9 straight losses at current entry prices; a genuinely bad city can lose ~$45 before exclusion. This is deliberate: with the strategy's natural win rate (~32%) barely above break-even (~31%), any harder cutoff blocks cities on noise (the earlier ≥35% win-rate rule had excluded 30 of 42 cities within a month, 11 of them profitable).
 
 **No live execution**: Still paper trading. Real execution requires Polymarket CLOB v2 API access and would introduce slippage and partial fills not modelled here.
 
-**Fee model**: The fee is calculated as `feeRate × size × (1 − entry_prob)`, which is a simplification. Real fees may differ for illiquid markets.
+**Fee model**: The fee is calculated as `feeRate * size * (1 - entry_prob)`, which is a simplification. Real fees may differ for illiquid markets.
 
 ---
 
