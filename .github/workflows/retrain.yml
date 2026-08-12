@@ -5,10 +5,9 @@ on:
     - cron: "0 4 * * 0"  # Every Sunday at 04:00 UTC
   workflow_dispatch:
 
-# Share the bot's group so a retrain never races a portfolio commit
-concurrency:
-  group: weather-bot-write
-  cancel-in-progress: false
+# No shared concurrency group with bot_cycle: only one pending run is allowed
+# per group, so queued retrains kept getting cancelled by the next bot cycle.
+# Push races are handled by the pull --rebase in the commit step instead.
 
 jobs:
   retrain:
