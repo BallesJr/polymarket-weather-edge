@@ -1,5 +1,5 @@
 {
-  "bankroll": 8664.664599999993,
+  "bankroll": 8677.485099999993,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -85,34 +85,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
-    },
-    {
-      "series_slug": "helsinki-daily-weather",
-      "event_date": "2026-08-13",
-      "question": "Will the highest temperature in Helsinki be 20\u00b0C on August 13?",
-      "condition_id": "0x5c06db041e311b6e75dee886195559de2af791fa86f7a845e8f1b7678e81b1ba",
-      "temp_str": "20\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "80592320313300045797464581395603729059999662080667115404710459343621843738603",
-      "token_yes": "68532221819100620374249876930816677167286409210691907360101034354580622427765",
-      "model_prob_gaussian": 0.3390531204149874,
-      "entry_prob": 0.39,
-      "model_prob": 0.3391,
-      "edge": -0.2709,
-      "net_edge": 0.259,
-      "size_usd": 5.0,
-      "forecast_temp_c": 20.7,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 12.6,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-08-13T00:14:45.292200+00:00",
-      "entry_fee": 0.1525,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "openmeteo"
     },
     {
       "series_slug": "madrid-daily-weather",
@@ -71546,12 +71518,40 @@
       "pnl_usd": 8.9232,
       "resolved_temp": 27.0,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "helsinki-daily-weather",
+      "event_date": "2026-08-13",
+      "question": "Will the highest temperature in Helsinki be 20\u00b0C on August 13?",
+      "condition_id": "0x5c06db041e311b6e75dee886195559de2af791fa86f7a845e8f1b7678e81b1ba",
+      "temp_str": "20\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "80592320313300045797464581395603729059999662080667115404710459343621843738603",
+      "token_yes": "68532221819100620374249876930816677167286409210691907360101034354580622427765",
+      "model_prob_gaussian": 0.3390531204149874,
+      "entry_prob": 0.39,
+      "model_prob": 0.3391,
+      "edge": -0.2709,
+      "net_edge": 0.259,
+      "size_usd": 5.0,
+      "forecast_temp_c": 20.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 12.6,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-08-13T00:14:45.292200+00:00",
+      "entry_fee": 0.1525,
+      "closed_at": "2026-08-13T22:08:55.500955+00:00",
+      "pnl_usd": 7.668,
+      "resolved_temp": 19.0,
+      "obs_source": "openmeteo"
     }
   ],
-  "total_pnl": -1216.3307,
-  "n_won": 682,
+  "total_pnl": -1208.6627,
+  "n_won": 683,
   "n_lost": 1956,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-13T22:08:18.043342+00:00"
+  "last_updated": "2026-08-13T22:27:13.067813+00:00"
 }
