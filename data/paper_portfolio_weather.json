@@ -1,5 +1,5 @@
 {
-  "bankroll": 8642.805799999991,
+  "bankroll": 8637.593299999991,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -697,6 +697,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-13T17:13:33.179110+00:00",
       "entry_fee": 0.2013,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chicago-daily-weather",
+      "event_date": "2026-08-13",
+      "question": "Will the highest temperature in Chicago be between 78-79\u00b0F on August 13?",
+      "condition_id": "0x9358beedfb03bcf99314e13ab01a5cbe47b1f4a3ccf900d7d9b321bdd41c549b",
+      "temp_str": "between 78-79\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "58695927317080505852264227554952433228163307785079703453736011019203614298584",
+      "token_yes": "28738911848833603991012616261082517891172585046419709763444555342954425445474",
+      "model_prob_gaussian": 0.10781787055603022,
+      "entry_prob": 0.15000000000000002,
+      "model_prob": 0.1078,
+      "edge": -0.7422,
+      "net_edge": 0.7358,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.6,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-13T17:28:26.742288+00:00",
+      "entry_fee": 0.2125,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -71497,5 +71525,5 @@
   "n_lost": 1954,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-13T17:13:33.179614+00:00"
+  "last_updated": "2026-08-13T17:28:26.928075+00:00"
 }
