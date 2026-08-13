@@ -1,5 +1,5 @@
 {
-  "bankroll": 8724.358999999991,
+  "bankroll": 8719.207799999991,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-13T01:12:47.630071+00:00",
       "entry_fee": 0.175,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "paris-daily-weather",
+      "event_date": "2026-08-13",
+      "question": "Will the highest temperature in Paris be 37\u00b0C on August 13?",
+      "condition_id": "0x4601d2a3b6d231f2171b35c69a82192e53b31665d2abd2e0a24942d26407a7cd",
+      "temp_str": "37\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "13679121726383736997468567168296300577596139785147358873116859944275688949590",
+      "token_yes": "89504394162546357513685000586802230036791787098480676687363384086660307108828",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.395,
+      "model_prob": 0.4895,
+      "edge": -0.1155,
+      "net_edge": 0.1036,
+      "size_usd": 5.0,
+      "forecast_temp_c": 37.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-13T02:43:00.782869+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -70965,5 +70993,5 @@
   "n_lost": 1947,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-13T02:16:51.006851+00:00"
+  "last_updated": "2026-08-13T02:43:00.783362+00:00"
 }
