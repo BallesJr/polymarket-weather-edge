@@ -1,5 +1,5 @@
 {
-  "bankroll": 8729.53399999999,
+  "bankroll": 8724.358999999991,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -365,6 +365,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
+    },
+    {
+      "series_slug": "shanghai-daily-weather",
+      "event_date": "2026-08-13",
+      "question": "Will the highest temperature in Shanghai be 28\u00b0C on August 13?",
+      "condition_id": "0x27c405610d9d32e5def88bd9923ecdefae9e631aea85069aedab692ef11c3e0d",
+      "temp_str": "28\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "71713167599982387469980536695103320568486474744267733466605755451187187681108",
+      "token_yes": "10677955339308619684573488837772550563198613348290641437264529688062654859034",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.30000000000000004,
+      "model_prob": 0.4858,
+      "edge": -0.2142,
+      "net_edge": 0.2037,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 27.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-13T01:12:47.630071+00:00",
+      "entry_fee": 0.175,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
   "closed_trades": [
@@ -70937,5 +70965,5 @@
   "n_lost": 1947,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-13T00:43:35.879096+00:00"
+  "last_updated": "2026-08-13T01:12:47.630627+00:00"
 }
