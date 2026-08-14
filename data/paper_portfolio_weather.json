@@ -1,5 +1,5 @@
 {
-  "bankroll": 8704.15759999999,
+  "bankroll": 8699.00009999999,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -613,6 +613,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-14T06:36:35.527840+00:00",
       "entry_fee": 0.1713,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "toronto-daily-weather",
+      "event_date": "2026-08-14",
+      "question": "Will the highest temperature in Toronto be 28\u00b0C on August 14?",
+      "condition_id": "0x53b0dbe21ac5915ea33779fc5541f9707932a24e37bac81739bef36e9a8392e4",
+      "temp_str": "28\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "113993605816768997963992278687537528718324920840803564332883577635196519843811",
+      "token_yes": "71695938434294403329727484844616457473626768483394775088426298728397965131",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.37,
+      "model_prob": 0.4895,
+      "edge": -0.1405,
+      "net_edge": 0.1288,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 21.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-14T07:18:23.062119+00:00",
+      "entry_fee": 0.1575,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -72141,5 +72169,5 @@
   "n_lost": 1969,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-14T06:50:53.168138+00:00"
+  "last_updated": "2026-08-14T07:18:23.062637+00:00"
 }
