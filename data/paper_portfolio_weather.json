@@ -1,5 +1,5 @@
 {
-  "bankroll": 8763.244199999985,
+  "bankroll": 8758.071699999984,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -669,6 +669,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-15T05:42:06.063653+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "kuala-lumpur-daily-weather",
+      "event_date": "2026-08-15",
+      "question": "Will the highest temperature in Kuala Lumpur be 34\u00b0C on August 15?",
+      "condition_id": "0x6674e7544d2401faf8ba0adfc9a65658d024038a00b872b463bcddaf6b0697ed",
+      "temp_str": "34\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "35406475389932834553755194227845501888306981679397546822114709129609186060051",
+      "token_yes": "57160312320407810180629656419328090702317263148445996638469488188702226468634",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.31000000000000005,
+      "model_prob": 0.4895,
+      "edge": -0.2005,
+      "net_edge": 0.1898,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 34.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-15T06:07:47.431980+00:00",
+      "entry_fee": 0.1725,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -73065,5 +73093,5 @@
   "n_lost": 1986,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-15T05:54:48.053211+00:00"
+  "last_updated": "2026-08-15T06:07:47.432413+00:00"
 }
