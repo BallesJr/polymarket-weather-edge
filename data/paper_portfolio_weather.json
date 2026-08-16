@@ -1,5 +1,5 @@
 {
-  "bankroll": 8823.768799999983,
+  "bankroll": 8818.588799999983,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-16T14:57:44.607202+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "nyc-daily-weather",
+      "event_date": "2026-08-16",
+      "question": "Will the highest temperature in New York City be between 80-81\u00b0F on August 16?",
+      "condition_id": "0xa152882ce9421417fabe672f4831ffd6bab799a078b1b2fc272e818d47c6e730",
+      "temp_str": "between 80-81\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "35692133553913279691888497066976838970004052835358152076030591832850268901464",
+      "token_yes": "43413449284088584558999572082762187401680444825510426939600932014687160418534",
+      "model_prob_gaussian": 0.37553186774714187,
+      "entry_prob": 0.28,
+      "model_prob": 0.3755,
+      "edge": -0.3445,
+      "net_edge": 0.3344,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 27.2,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-16T17:41:15.345211+00:00",
+      "entry_fee": 0.18,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -74213,5 +74241,5 @@
   "n_lost": 2016,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-16T17:22:56.052316+00:00"
+  "last_updated": "2026-08-16T17:41:15.345692+00:00"
 }
