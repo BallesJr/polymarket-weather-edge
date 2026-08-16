@@ -1,5 +1,5 @@
 {
-  "bankroll": 8715.227499999983,
+  "bankroll": 8710.066199999983,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -697,6 +697,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-16T11:43:14.120134+00:00",
       "entry_fee": 0.172,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "munich-daily-weather",
+      "event_date": "2026-08-16",
+      "question": "Will the highest temperature in Munich be 31\u00b0C on August 16?",
+      "condition_id": "0xdc1769d71cce265410944c29246c2804662a57bee375049b55a4fdd8317e72d7",
+      "temp_str": "31\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "105624130202976318379980082086129947940229912559088004564390951824338129836226",
+      "token_yes": "41032463882639070498537517791935453112264894894001919168354178833183413702223",
+      "model_prob_gaussian": 0.3029362276662373,
+      "entry_prob": 0.355,
+      "model_prob": 0.3029,
+      "edge": -0.3421,
+      "net_edge": 0.3307,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 29.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-16T11:58:31.850269+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -74129,5 +74157,5 @@
   "n_lost": 2013,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-16T11:43:14.120954+00:00"
+  "last_updated": "2026-08-16T11:58:31.850768+00:00"
 }
