@@ -1,5 +1,5 @@
 {
-  "bankroll": 8749.768899999981,
+  "bankroll": 8744.58629999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-16T03:50:44.329711+00:00",
       "entry_fee": 0.1968,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "seoul-daily-weather",
+      "event_date": "2026-08-16",
+      "question": "Will the highest temperature in Seoul (Incheon) be 26\u00b0C on August 16?",
+      "condition_id": "0x4f1a6a7f5e043f5615e3a75f126096914543d00059a5f26cc709fab7f984eaf4",
+      "temp_str": "26\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "6752897478682462408907672498129214620387437826654110485528439953434568846605",
+      "token_yes": "51635419954335651196981068062134271977274648351411786539830036772950716666774",
+      "model_prob_gaussian": 0.3390531204149874,
+      "entry_prob": 0.26949999999999996,
+      "model_prob": 0.3391,
+      "edge": -0.3914,
+      "net_edge": 0.3816,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 26.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-16T05:17:11.589179+00:00",
+      "entry_fee": 0.1826,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -73793,5 +73821,5 @@
   "n_lost": 2010,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-16T04:44:37.467586+00:00"
+  "last_updated": "2026-08-16T05:17:11.589610+00:00"
 }
