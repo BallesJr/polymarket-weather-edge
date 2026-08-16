@@ -1,5 +1,5 @@
 {
-  "bankroll": 8710.066199999983,
+  "bankroll": 8704.911199999982,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -725,6 +725,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-16T11:58:31.850269+00:00",
       "entry_fee": 0.1613,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "london-daily-weather",
+      "event_date": "2026-08-16",
+      "question": "Will the highest temperature in London be 26\u00b0C on August 16?",
+      "condition_id": "0x028a18ce2c77770981bfffffe9b53f3c670ff3e1e28713e89de265fa5a347ec7",
+      "temp_str": "26\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "68439378176029469877334338207219469496346908961222644759910192801284810818403",
+      "token_yes": "43067960249428131887066313830078747532231631660168384322389825966101118764367",
+      "model_prob_gaussian": 0.23107819410487657,
+      "entry_prob": 0.38,
+      "model_prob": 0.2311,
+      "edge": -0.3889,
+      "net_edge": 0.3771,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-16T13:42:43.192395+00:00",
+      "entry_fee": 0.155,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -74157,5 +74185,5 @@
   "n_lost": 2013,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-16T13:27:47.606695+00:00"
+  "last_updated": "2026-08-16T13:42:43.192921+00:00"
 }
