@@ -1,5 +1,5 @@
 {
-  "bankroll": 8832.804299999987,
+  "bankroll": 8827.593299999988,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-17T05:59:00.264305+00:00",
       "entry_fee": 0.1575,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "busan-daily-weather",
+      "event_date": "2026-08-17",
+      "question": "Will the highest temperature in Busan be 25\u00b0C on August 17?",
+      "condition_id": "0x29b58125de2daad82b30d2f19a179deda69a9a9fd394b011d065df504164455b",
+      "temp_str": "25\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "105918363410145515666593104185539065570903670853545523881163612018493040034320",
+      "token_yes": "112405513750644855162879174566801436954927028266469160039301146294287676811629",
+      "model_prob_gaussian": 0.07100609698206348,
+      "entry_prob": 0.15600000000000003,
+      "model_prob": 0.071,
+      "edge": -0.773,
+      "net_edge": 0.7664,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-17T06:15:36.967725+00:00",
+      "entry_fee": 0.211,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -74661,5 +74689,5 @@
   "n_lost": 2027,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-17T05:59:00.264778+00:00"
+  "last_updated": "2026-08-17T06:15:36.968437+00:00"
 }
