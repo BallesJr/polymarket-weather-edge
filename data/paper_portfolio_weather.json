@@ -1,5 +1,5 @@
 {
-  "bankroll": 8827.006799999988,
+  "bankroll": 8821.828299999988,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -613,6 +613,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-17T11:45:07.293243+00:00",
       "entry_fee": 0.15,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "milan-daily-weather",
+      "event_date": "2026-08-17",
+      "question": "Will the highest temperature in Milan be 28\u00b0C on August 17?",
+      "condition_id": "0xbcbc39a0c8280fbc973444c1f49e9d2a76e5164c4315cdd6497ead8bd16131de",
+      "temp_str": "28\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "52691645661602979283296280142007821326485025523142458766899653766235489993859",
+      "token_yes": "99662352090511354323196642076717319692685169532726933381252535899409287574371",
+      "model_prob_gaussian": 0.3390531204149874,
+      "entry_prob": 0.28600000000000003,
+      "model_prob": 0.3391,
+      "edge": -0.3749,
+      "net_edge": 0.3647,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-17T12:13:41.200699+00:00",
+      "entry_fee": 0.1785,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -74941,5 +74969,5 @@
   "n_lost": 2030,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-17T11:59:51.896163+00:00"
+  "last_updated": "2026-08-17T12:13:41.201436+00:00"
 }
