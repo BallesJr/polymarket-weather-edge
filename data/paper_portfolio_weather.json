@@ -1,5 +1,5 @@
 {
-  "bankroll": 8940.442799999986,
+  "bankroll": 8935.267799999987,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -333,6 +333,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-18T01:54:56.762598+00:00",
       "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "singapore-daily-weather",
+      "event_date": "2026-08-18",
+      "question": "Will the highest temperature in Singapore be 33\u00b0C on August 18?",
+      "condition_id": "0xd48594d9bf916eac281248729b8dc813038881c1641c7cac7353fb6339e4af84",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "84105069053585921586794434367908334464764231001786200149175351590409586555762",
+      "token_yes": "31297249767041044644208385848249295779961189251330841671190426424626175526432",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.30000000000000004,
+      "model_prob": 0.4059,
+      "edge": -0.2941,
+      "net_edge": 0.2836,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-18T03:27:59.685051+00:00",
+      "entry_fee": 0.175,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -75137,5 +75165,5 @@
   "n_lost": 2038,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-18T03:15:32.362878+00:00"
+  "last_updated": "2026-08-18T03:27:59.685507+00:00"
 }
