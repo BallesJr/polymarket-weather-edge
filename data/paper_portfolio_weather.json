@@ -1,5 +1,5 @@
 {
-  "bankroll": 8853.818499999983,
+  "bankroll": 8848.652199999982,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-19T12:44:42.375832+00:00",
       "entry_fee": 0.165,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "warsaw-daily-weather",
+      "event_date": "2026-08-19",
+      "question": "Will the highest temperature in Warsaw be 22\u00b0C on August 19?",
+      "condition_id": "0x1d1f2178f9e4dcdfccb902832b8316f293fd28d4dbe43526e2cc1a6992f17f1f",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "37132436931492744698432704546384190121699619431664961304127883081760945288094",
+      "token_yes": "56175484528761822416354542698357165594187833390004885411175276753384951828465",
+      "model_prob_gaussian": 0.3737858671778719,
+      "entry_prob": 0.33499999999999996,
+      "model_prob": 0.3738,
+      "edge": -0.2912,
+      "net_edge": 0.2801,
+      "size_usd": 5.0,
+      "forecast_temp_c": 22.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-19T13:17:17.031246+00:00",
+      "entry_fee": 0.1663,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -76201,5 +76229,5 @@
   "n_lost": 2064,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-19T12:44:42.376637+00:00"
+  "last_updated": "2026-08-19T13:17:17.031725+00:00"
 }
