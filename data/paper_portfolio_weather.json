@@ -1,5 +1,5 @@
 {
-  "bankroll": 8903.502499999984,
+  "bankroll": 8898.329999999984,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -281,6 +281,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "milan-daily-weather",
+      "event_date": "2026-08-19",
+      "question": "Will the highest temperature in Milan be 32\u00b0C on August 19?",
+      "condition_id": "0x76b71a203dbe1690d89f08229baec93dca01669ef2989884ce8eb3576b8f188e",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "43419079570845219911477616893465760973646129191625647476532749625138686603411",
+      "token_yes": "113733331688746829399230313394180275669903057382732585776577286618214145814560",
+      "model_prob_gaussian": 0.3029362276662386,
+      "entry_prob": 0.31000000000000005,
+      "model_prob": 0.3029,
+      "edge": -0.3871,
+      "net_edge": 0.3764,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 23.7,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-19T00:23:50.308987+00:00",
+      "entry_fee": 0.1725,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "openmeteo"
     }
   ],
   "closed_trades": [
@@ -75781,5 +75809,5 @@
   "n_lost": 2058,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-19T00:10:47.205752+00:00"
+  "last_updated": "2026-08-19T00:23:50.309516+00:00"
 }
