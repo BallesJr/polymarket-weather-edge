@@ -1,5 +1,5 @@
 {
-  "bankroll": 8865.50329999998,
+  "bankroll": 8860.34829999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-20T07:29:58.219719+00:00",
       "entry_fee": 0.1787,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "amsterdam-daily-weather",
+      "event_date": "2026-08-20",
+      "question": "Will the highest temperature in Amsterdam be 21\u00b0C on August 20?",
+      "condition_id": "0xb72a9054c11ccce67144a7f995272af11c5cae854628f6be0a335d906c1c0ad7",
+      "temp_str": "21\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "15827874882987473380196856633840994014343938566824164531330965652448102029680",
+      "token_yes": "94955829794526333060118264573729019993949991718868696558868817998931752976755",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.38,
+      "model_prob": 0.4895,
+      "edge": -0.1305,
+      "net_edge": 0.1187,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 20.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-20T08:48:56.332616+00:00",
+      "entry_fee": 0.155,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -76845,5 +76873,5 @@
   "n_lost": 2075,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-20T08:20:44.405747+00:00"
+  "last_updated": "2026-08-20T08:48:56.333277+00:00"
 }
