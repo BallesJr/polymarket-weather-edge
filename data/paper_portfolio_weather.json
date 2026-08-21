@@ -1,5 +1,5 @@
 {
-  "bankroll": 8924.41929999998,
+  "bankroll": 8914.11059999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -589,6 +589,62 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "buenos-aires-daily-weather",
+      "event_date": "2026-08-21",
+      "question": "Will the highest temperature in Buenos Aires be 12\u00b0C on August 21?",
+      "condition_id": "0xbf08b168115e50b001a92fde06c7001bf78e140ff31f7ca28bbcb0a4a6ce6b6d",
+      "temp_str": "12\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "107058687451767069085021645840907236830974699171939568923154521189236558165596",
+      "token_yes": "77552929163572596166464365046616546037923236515734434494223727190567991686498",
+      "model_prob_gaussian": 0.33905312041498736,
+      "entry_prob": 0.395,
+      "model_prob": 0.3391,
+      "edge": -0.2659,
+      "net_edge": 0.254,
+      "size_usd": 5.0,
+      "forecast_temp_c": 11.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 8.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-21T04:12:55.276298+00:00",
+      "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "toronto-daily-weather",
+      "event_date": "2026-08-21",
+      "question": "Will the highest temperature in Toronto be 25\u00b0C on August 21?",
+      "condition_id": "0x992138176ef2009faab13e8a72ca19447b0706626befe8fdaaa2d876a88fba31",
+      "temp_str": "25\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "110179549989958065633490026404259292352694720535867645454503916459925380704054",
+      "token_yes": "7553950199898751089390520292606044255644018781473373279261941800504643385600",
+      "model_prob_gaussian": 0.4750317433975593,
+      "entry_prob": 0.37,
+      "model_prob": 0.475,
+      "edge": -0.155,
+      "net_edge": 0.1433,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 16.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-21T04:12:55.476369+00:00",
+      "entry_fee": 0.1575,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "openmeteo"
     }
   ],
   "closed_trades": [
@@ -77517,5 +77573,5 @@
   "n_lost": 2087,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-21T03:41:26.427872+00:00"
+  "last_updated": "2026-08-21T04:12:55.476755+00:00"
 }
