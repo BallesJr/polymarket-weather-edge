@@ -1,5 +1,5 @@
 {
-  "bankroll": 8969.772599999977,
+  "bankroll": 8964.605099999977,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-21T17:42:45.675440+00:00",
       "entry_fee": 0.1812,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "houston-daily-weather",
+      "event_date": "2026-08-21",
+      "question": "Will the highest temperature in Houston be between 98-99\u00b0F on August 21?",
+      "condition_id": "0x3e4656f1e2752e29074858a80e1fa3e139e8b10a696a1f81da3be170bf20c515",
+      "temp_str": "between 98-99\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "57386421335922574630619754766742350921327694078724691163054088461793759800800",
+      "token_yes": "107522781241416681908403761577260895811179836216183127036667247916882209844013",
+      "model_prob_gaussian": 0.4102913251769388,
+      "entry_prob": 0.32999999999999996,
+      "model_prob": 0.4103,
+      "edge": -0.2597,
+      "net_edge": 0.2486,
+      "size_usd": 5.0,
+      "forecast_temp_c": 37.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 36.7,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-21T21:18:17.346983+00:00",
+      "entry_fee": 0.1675,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -77965,5 +77993,5 @@
   "n_lost": 2099,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-21T21:05:15.579438+00:00"
+  "last_updated": "2026-08-21T21:18:17.347511+00:00"
 }
