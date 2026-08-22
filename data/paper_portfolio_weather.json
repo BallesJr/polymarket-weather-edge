@@ -1,5 +1,5 @@
 {
-  "bankroll": 8946.74419999998,
+  "bankroll": 8941.592999999979,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-22T00:16:45.506244+00:00",
       "entry_fee": 0.1688,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "madrid-daily-weather",
+      "event_date": "2026-08-22",
+      "question": "Will the highest temperature in Madrid be 33\u00b0C on August 22?",
+      "condition_id": "0x837b111b50c0008f69aa29f809fc07e4fad88a7bc0b3b2177b8dcc8db90c2c30",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "51440557008712410192984073440651811677536695045069771719889132214942994690217",
+      "token_yes": "113492521532001312926811799749510233213614489123755527465081463307467344154736",
+      "model_prob_gaussian": 0.4575854521093148,
+      "entry_prob": 0.395,
+      "model_prob": 0.4576,
+      "edge": -0.1474,
+      "net_edge": 0.1355,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-22T01:10:42.006835+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -78245,5 +78273,5 @@
   "n_lost": 2107,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-22T00:44:51.510475+00:00"
+  "last_updated": "2026-08-22T01:10:42.007355+00:00"
 }
