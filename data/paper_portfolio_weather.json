@@ -1,5 +1,5 @@
 {
-  "bankroll": 8993.07149999998,
+  "bankroll": 8987.89029999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-23T09:45:24.976000+00:00",
       "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "lucknow-daily-weather",
+      "event_date": "2026-08-23",
+      "question": "Will the highest temperature in Lucknow be 33\u00b0C on August 23?",
+      "condition_id": "0xf4a47f2ef6ac1088da32056b5008015b56dc5e8d5bda983bb07d49f23e1d5e37",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "43273660919542005319433686064375858678942859651023133721386781766733512951556",
+      "token_yes": "38709551228389527362457233769375604303030325043388480545751418605429273438963",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.275,
+      "model_prob": 0.4895,
+      "edge": -0.2355,
+      "net_edge": 0.2255,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 33.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-23T09:57:50.188811+00:00",
+      "entry_fee": 0.1812,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -79281,5 +79309,5 @@
   "n_lost": 2127,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-23T09:45:24.976462+00:00"
+  "last_updated": "2026-08-23T09:57:50.189358+00:00"
 }
