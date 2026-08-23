@@ -1,5 +1,5 @@
 {
-  "bankroll": 8989.920399999979,
+  "bankroll": 8984.76419999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-23T17:50:19.544525+00:00",
       "entry_fee": 0.1825,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "austin-daily-weather",
+      "event_date": "2026-08-23",
+      "question": "Will the highest temperature in Austin be between 104-105\u00b0F on August 23?",
+      "condition_id": "0xf4758e7bd7d3265d248a47710016ff9aa009687a0b1602e325ddbf44b1e81d7c",
+      "temp_str": "between 104-105\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "60686939129319825442063939413761299639997385397258349959343342685222671780612",
+      "token_yes": "26508408423515061484377422883947254525133842624090169025526421032787316789980",
+      "model_prob_gaussian": 0.30986449748859823,
+      "entry_prob": 0.375,
+      "model_prob": 0.3099,
+      "edge": -0.3151,
+      "net_edge": 0.3034,
+      "size_usd": 5.0,
+      "forecast_temp_c": 39.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 39.4,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-23T20:54:26.434530+00:00",
+      "entry_fee": 0.1562,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -79477,5 +79505,5 @@
   "n_lost": 2133,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-23T20:43:20.406271+00:00"
+  "last_updated": "2026-08-23T20:54:26.435253+00:00"
 }
