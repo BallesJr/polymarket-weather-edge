@@ -1,5 +1,5 @@
 {
-  "bankroll": 8869.798699999985,
+  "bankroll": 8883.883199999986,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -57,34 +57,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
-    },
-    {
-      "series_slug": "ankara-daily-weather",
-      "event_date": "2026-08-24",
-      "question": "Will the highest temperature in Ankara be 32\u00b0C on August 24?",
-      "condition_id": "0x04ec3b360fd695be85a105b98cce7e97f969dd7e9fd88668829914648f2e62d5",
-      "temp_str": "32\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "55152761168043555218811437268291667713618721253635518058968451836336746565702",
-      "token_yes": "11194764201899745509367654046817410775259225198695959595000205829838301256038",
-      "model_prob_gaussian": 0.43422227712680417,
-      "entry_prob": 0.355,
-      "model_prob": 0.4342,
-      "edge": -0.2108,
-      "net_edge": 0.1994,
-      "size_usd": 5.0,
-      "forecast_temp_c": 31.6,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 21.0,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-08-24T00:11:05.126849+00:00",
-      "entry_fee": 0.1613,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
     },
     {
       "series_slug": "singapore-daily-weather",
@@ -80562,12 +80534,40 @@
       "pnl_usd": -5.1713,
       "resolved_temp": 28.0,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "ankara-daily-weather",
+      "event_date": "2026-08-24",
+      "question": "Will the highest temperature in Ankara be 32\u00b0C on August 24?",
+      "condition_id": "0x04ec3b360fd695be85a105b98cce7e97f969dd7e9fd88668829914648f2e62d5",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "55152761168043555218811437268291667713618721253635518058968451836336746565702",
+      "token_yes": "11194764201899745509367654046817410775259225198695959595000205829838301256038",
+      "model_prob_gaussian": 0.43422227712680417,
+      "entry_prob": 0.355,
+      "model_prob": 0.4342,
+      "edge": -0.2108,
+      "net_edge": 0.1994,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 21.0,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-08-24T00:11:05.126849+00:00",
+      "entry_fee": 0.1613,
+      "closed_at": "2026-08-24T22:30:47.838691+00:00",
+      "pnl_usd": 8.9232,
+      "resolved_temp": 33.0,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -970.0153,
-  "n_won": 798,
+  "total_pnl": -961.0921,
+  "n_won": 799,
   "n_lost": 2154,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-24T22:16:29.047088+00:00"
+  "last_updated": "2026-08-24T22:40:49.429952+00:00"
 }
