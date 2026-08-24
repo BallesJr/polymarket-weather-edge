@@ -1,5 +1,5 @@
 {
-  "bankroll": 8919.332399999983,
+  "bankroll": 8914.143599999983,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -725,6 +725,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-24T10:42:06.699561+00:00",
       "entry_fee": 0.1775,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "jeddah-daily-weather",
+      "event_date": "2026-08-24",
+      "question": "Will the highest temperature in Jeddah be 38\u00b0C on August 24?",
+      "condition_id": "0x8a3900db4f88e84e61399873101d16bc4096b684c427301a5289f3b22a78f252",
+      "temp_str": "38\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "4431925185278401200727692354997306521659311388665911161097091655726655399010",
+      "token_yes": "55481350587003748928799152836849771423289752887439939560028184456287837794278",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.245,
+      "model_prob": 0.4895,
+      "edge": -0.2655,
+      "net_edge": 0.2563,
+      "size_usd": 5.0,
+      "forecast_temp_c": 37.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 38.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-24T11:25:54.866211+00:00",
+      "entry_fee": 0.1888,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -80233,5 +80261,5 @@
   "n_lost": 2148,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-24T11:13:05.768759+00:00"
+  "last_updated": "2026-08-24T11:25:54.866674+00:00"
 }
