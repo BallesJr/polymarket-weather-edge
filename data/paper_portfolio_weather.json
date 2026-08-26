@@ -1,5 +1,5 @@
 {
-  "bankroll": 8878.662599999989,
+  "bankroll": 8873.508899999988,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-26T10:03:06.919847+00:00",
       "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "miami-daily-weather",
+      "event_date": "2026-08-26",
+      "question": "Will the highest temperature in Miami be between 90-91\u00b0F on August 26?",
+      "condition_id": "0x00308dc1b68ab3e0226f9f5f02db0d0e34aed7507dc5f0eaf81a4112d4b7497a",
+      "temp_str": "between 90-91\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "109698992513684527082149387949822303134132767958802774966702046695104441704164",
+      "token_yes": "40905649386345312692311512949769428682185765819046922133741889035756198367741",
+      "model_prob_gaussian": 0.3098644974885977,
+      "entry_prob": 0.385,
+      "model_prob": 0.3099,
+      "edge": -0.3051,
+      "net_edge": 0.2933,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.9,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-26T10:16:36.850962+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -81773,5 +81801,5 @@
   "n_lost": 2198,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-26T10:03:06.920451+00:00"
+  "last_updated": "2026-08-26T10:16:36.851597+00:00"
 }
