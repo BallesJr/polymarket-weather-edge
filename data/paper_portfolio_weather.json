@@ -1,5 +1,5 @@
 {
-  "bankroll": 8898.083299999988,
+  "bankroll": 8892.921999999988,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -361,6 +361,34 @@
       "status": "OPEN",
       "opened_at": "2026-08-26T01:13:42.415351+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "tel-aviv-daily-weather",
+      "event_date": "2026-08-26",
+      "question": "Will the highest temperature in Tel Aviv be 33\u00b0C on August 26?",
+      "condition_id": "0xf842b11c777082b2c365ff84741180d3d69dad79707f91cdd05b3586200cd13a",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "9011067898152200683604512854684028658031146795496466465546637593073573308032",
+      "token_yes": "31895271654227105310260439656043031358681530963731033666863271581056571747727",
+      "model_prob_gaussian": 0.4750317433975587,
+      "entry_prob": 0.355,
+      "model_prob": 0.475,
+      "edge": -0.17,
+      "net_edge": 0.1586,
+      "size_usd": 5.0,
+      "forecast_temp_c": 33.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 27.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-08-26T01:41:53.716010+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -81521,5 +81549,5 @@
   "n_lost": 2192,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-08-26T01:13:42.415780+00:00"
+  "last_updated": "2026-08-26T01:41:53.716603+00:00"
 }
