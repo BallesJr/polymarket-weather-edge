@@ -1,5 +1,5 @@
 {
-  "bankroll": 8868.206299999983,
+  "bankroll": 8863.046299999984,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -641,6 +641,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-04T10:14:22.737908+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "paris-daily-weather",
+      "event_date": "2026-09-04",
+      "question": "Will the highest temperature in Paris be 29\u00b0C on September 4?",
+      "condition_id": "0xa0305bf507a74a2d88b163531c1ba3e08ced2071fc59fc38629915fa6e4a55c8",
+      "temp_str": "29\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "38002198287551095312118964986000756104457768475752588063584089134194294098163",
+      "token_yes": "31571955857352348695623047099348999645547092112080817430795216404520121930169",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.36,
+      "model_prob": 0.2311,
+      "edge": -0.4089,
+      "net_edge": 0.3974,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-04T12:01:07.376039+00:00",
+      "entry_fee": 0.16,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -88493,5 +88521,5 @@
   "n_lost": 2351,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-04T11:46:13.040728+00:00"
+  "last_updated": "2026-09-04T12:01:07.376618+00:00"
 }
