@@ -1,5 +1,5 @@
 {
-  "bankroll": 8779.685899999986,
+  "bankroll": 8774.509699999986,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -585,6 +585,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-05T15:48:04.257447+00:00",
       "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "houston-daily-weather",
+      "event_date": "2026-09-05",
+      "question": "Will the highest temperature in Houston be between 90-91\u00b0F on September 5?",
+      "condition_id": "0xeee9c6414555338cbe9bfe4dc53e57c7a7038810066dceb41550d677128f0b4d",
+      "temp_str": "between 90-91\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "5661303443766734359735829825855809838427931627194057267510314975279173949855",
+      "token_yes": "66778551584314630307363416684532850417099642375494004231415045964190428735693",
+      "model_prob_gaussian": 0.35006949918259944,
+      "entry_prob": 0.29500000000000004,
+      "model_prob": 0.3501,
+      "edge": -0.3549,
+      "net_edge": 0.3445,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.7,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-05T19:46:05.543909+00:00",
+      "entry_fee": 0.1762,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -89417,5 +89445,5 @@
   "n_lost": 2380,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-05T19:22:59.948318+00:00"
+  "last_updated": "2026-09-05T19:46:05.544514+00:00"
 }
