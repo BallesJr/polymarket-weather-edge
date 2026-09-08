@@ -1,5 +1,5 @@
 {
-  "bankroll": 8806.552999999985,
+  "bankroll": 8801.402999999986,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -416,6 +416,34 @@
       "source_model": "band_rule",
       "status": "OPEN",
       "opened_at": "2026-09-08T17:15:23.522135+00:00",
+      "entry_fee": 0.15,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "seattle-daily-weather",
+      "event_date": "2026-09-08",
+      "question": "Will the highest temperature in Seattle be between 74-75\u00b0F on September 8?",
+      "condition_id": "0xf093bedf63b4def67255163cb0ad8abcbb3f973c2f4f3707374c298cc398e93d",
+      "temp_str": "between 74-75\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "11439325793577806578953085102412120350234051056350869289841965324529767146374",
+      "token_yes": "47676753102167163576896919162946221586956933135315716212636360878742838225968",
+      "model_prob_gaussian": 0.4277587254991372,
+      "entry_prob": 0.4,
+      "model_prob": 0.4278,
+      "edge": -0.1722,
+      "net_edge": 0.1602,
+      "size_usd": 5.0,
+      "forecast_temp_c": 23.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 16.7,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-08T17:48:14.757532+00:00",
       "entry_fee": 0.15,
       "closed_at": "",
       "pnl_usd": 0.0,
@@ -91685,5 +91713,5 @@
   "n_lost": 2437,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-08T17:36:24.366574+00:00"
+  "last_updated": "2026-09-08T17:48:14.758062+00:00"
 }
