@@ -1,5 +1,5 @@
 {
-  "bankroll": 8764.023799999988,
+  "bankroll": 8758.868799999987,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-09T00:33:34.626977+00:00",
       "entry_fee": 0.1613,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "madrid-daily-weather",
+      "event_date": "2026-09-09",
+      "question": "Will the highest temperature in Madrid be 27\u00b0C on September 9?",
+      "condition_id": "0x2d412dc9b221d98d86157d54385b719b82c29c01b1d132251f38333f5991538a",
+      "temp_str": "27\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "82235518737862809247117576053898242867828449614112977086025315636925962145062",
+      "token_yes": "113012574733124419895379936277762484853035283022586593511268954806460055909479",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.38,
+      "model_prob": 0.2311,
+      "edge": -0.3889,
+      "net_edge": 0.3771,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 26.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-09T01:10:12.803069+00:00",
+      "entry_fee": 0.155,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -92077,5 +92105,5 @@
   "n_lost": 2445,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-09T00:33:34.627635+00:00"
+  "last_updated": "2026-09-09T01:10:12.803591+00:00"
 }
