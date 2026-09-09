@@ -1,5 +1,5 @@
 {
-  "bankroll": 8748.498799999987,
+  "bankroll": 8738.172599999987,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -617,6 +617,62 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
+    },
+    {
+      "series_slug": "shenzhen-daily-weather",
+      "event_date": "2026-09-09",
+      "question": "Will the highest temperature in Shenzhen be 32\u00b0C on September 9?",
+      "condition_id": "0x64d3c4a5088af1c7fcd5158b9cbddf3bcc0eba2ad01b54bec99f13b7d76598e3",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "61332862950195897854882688022723287377679918450380582049842798185674665492170",
+      "token_yes": "93587271000527371765281433059683361671852074435335604546078873479492004512926",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.39,
+      "model_prob": 0.4895,
+      "edge": -0.1205,
+      "net_edge": 0.1086,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-09T04:41:12.213465+00:00",
+      "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "seoul-daily-weather",
+      "event_date": "2026-09-09",
+      "question": "Will the highest temperature in Seoul (Incheon) be 26\u00b0C on September 9?",
+      "condition_id": "0xded5baf35c78b615434710087fe108dd6ea104dad3e10a61882f4c8af7ac0f4d",
+      "temp_str": "26\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "3749387385809727831597712250285680506633428582042887268447758758108575610188",
+      "token_yes": "64372191465661463082885906221321409225529318270048921824969206682669297393081",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.30500000000000005,
+      "model_prob": 0.4895,
+      "edge": -0.2055,
+      "net_edge": 0.1949,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 26.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-09T04:41:12.335195+00:00",
+      "entry_fee": 0.1737,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
   "closed_trades": [
@@ -92161,5 +92217,5 @@
   "n_lost": 2445,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-09T04:13:53.949472+00:00"
+  "last_updated": "2026-09-09T04:41:12.335749+00:00"
 }
