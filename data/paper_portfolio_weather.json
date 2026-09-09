@@ -1,5 +1,5 @@
 {
-  "bankroll": 8758.868799999987,
+  "bankroll": 8753.662599999987,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-09T01:10:12.803069+00:00",
       "entry_fee": 0.155,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "wellington-daily-weather",
+      "event_date": "2026-09-09",
+      "question": "Will the highest temperature in Wellington be 14\u00b0C on September 9?",
+      "condition_id": "0xd24f1a0f3c7ae1cfc835e66f4c6a89f9cfc90a2da0de7dc7867ee1b2316e3312",
+      "temp_str": "14\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "18127786297373742870247807652158390034470204250714817151956403444872282649107",
+      "token_yes": "28745900821606742780435833564553036392207877441571901064015763643948803797548",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.17500000000000004,
+      "model_prob": 0.4895,
+      "edge": -0.3355,
+      "net_edge": 0.3283,
+      "size_usd": 5.0,
+      "forecast_temp_c": 12.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 14.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-09T01:24:02.401401+00:00",
+      "entry_fee": 0.2062,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -92105,5 +92133,5 @@
   "n_lost": 2445,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-09T01:10:12.803591+00:00"
+  "last_updated": "2026-09-09T01:24:02.402063+00:00"
 }
