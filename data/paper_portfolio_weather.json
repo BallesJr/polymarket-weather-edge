@@ -1,5 +1,5 @@
 {
-  "bankroll": 8787.70519999998,
+  "bankroll": 8800.69219999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -253,34 +253,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
-    },
-    {
-      "series_slug": "lucknow-daily-weather",
-      "event_date": "2026-09-10",
-      "question": "Will the highest temperature in Lucknow be 33\u00b0C on September 10?",
-      "condition_id": "0x6b1f39934601180abc56e9284c0d60a26f949992eaca06e8f77e013eda9c6257",
-      "temp_str": "33\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "14429189988332909350529103761273658778312292679215765579949513374933383427883",
-      "token_yes": "2677933168957399745357726855235048932197624664904860809837002901300061266924",
-      "model_prob_gaussian": 0.1658363734560715,
-      "entry_prob": 0.385,
-      "model_prob": 0.1658,
-      "edge": -0.4492,
-      "net_edge": 0.4374,
-      "size_usd": 5.0,
-      "forecast_temp_c": 31.8,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 31.0,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-09-10T04:47:37.242108+00:00",
-      "entry_fee": 0.1537,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
     },
     {
       "series_slug": "munich-daily-weather",
@@ -93050,12 +93022,40 @@
       "pnl_usd": 19.8,
       "resolved_temp": 33.0,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "lucknow-daily-weather",
+      "event_date": "2026-09-10",
+      "question": "Will the highest temperature in Lucknow be 33\u00b0C on September 10?",
+      "condition_id": "0x6b1f39934601180abc56e9284c0d60a26f949992eaca06e8f77e013eda9c6257",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "14429189988332909350529103761273658778312292679215765579949513374933383427883",
+      "token_yes": "2677933168957399745357726855235048932197624664904860809837002901300061266924",
+      "model_prob_gaussian": 0.1658363734560715,
+      "entry_prob": 0.385,
+      "model_prob": 0.1658,
+      "edge": -0.4492,
+      "net_edge": 0.4374,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.0,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-09-10T04:47:37.242108+00:00",
+      "entry_fee": 0.1537,
+      "closed_at": "2026-09-10T19:31:03.040793+00:00",
+      "pnl_usd": 7.8333,
+      "resolved_temp": 34.0,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -1129.536,
-  "n_won": 942,
+  "total_pnl": -1121.7027,
+  "n_won": 943,
   "n_lost": 2471,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-10T19:14:22.107644+00:00"
+  "last_updated": "2026-09-10T19:45:31.344373+00:00"
 }
