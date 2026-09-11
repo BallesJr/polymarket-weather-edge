@@ -1,5 +1,5 @@
 {
-  "bankroll": 8782.106999999982,
+  "bankroll": 8776.900799999981,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -697,6 +697,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-11T10:18:05.057040+00:00",
       "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "cape-town-daily-weather",
+      "event_date": "2026-09-11",
+      "question": "Will the highest temperature in Cape Town be 24\u00b0C on September 11?",
+      "condition_id": "0x46b6e909ad0d258dea812a8273c27808b1a0b2fda706cc1dbe5707bec9262f0b",
+      "temp_str": "24\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "115189427024042890416818175088000096876641760470888198002375620706360800433697",
+      "token_yes": "75301481774197298627493065795688815052202956662521743440033790379649137240820",
+      "model_prob_gaussian": 0.4342222771268042,
+      "entry_prob": 0.17500000000000004,
+      "model_prob": 0.4342,
+      "edge": -0.3908,
+      "net_edge": 0.3836,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 23.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-11T11:18:55.346615+00:00",
+      "entry_fee": 0.2062,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -93757,5 +93785,5 @@
   "n_lost": 2479,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-11T10:43:16.379132+00:00"
+  "last_updated": "2026-09-11T11:18:55.347148+00:00"
 }
