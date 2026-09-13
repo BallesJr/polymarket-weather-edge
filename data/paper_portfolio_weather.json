@@ -1,5 +1,5 @@
 {
-  "bankroll": 8906.49989999998,
+  "bankroll": 8901.30109999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -585,6 +585,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-13T10:41:53.370631+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "london-daily-weather",
+      "event_date": "2026-09-13",
+      "question": "Will the highest temperature in London be 23\u00b0C on September 13?",
+      "condition_id": "0xe71454be61dcfc013a60ffc75afbc41e8b31b1c4ab61f339cd72ce4599a5c34d",
+      "temp_str": "23\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "89755201406180074097353188322435453628756991739569107726808108971523674824081",
+      "token_yes": "67584544697786137849749412303542429009942563584921204686311346977365438529836",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.20499999999999996,
+      "model_prob": 0.4895,
+      "edge": -0.3055,
+      "net_edge": 0.2974,
+      "size_usd": 5.0,
+      "forecast_temp_c": 20.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 23.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-13T11:42:44.251675+00:00",
+      "entry_fee": 0.1988,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -95213,5 +95241,5 @@
   "n_lost": 2511,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-13T11:12:57.699371+00:00"
+  "last_updated": "2026-09-13T11:42:44.252201+00:00"
 }
