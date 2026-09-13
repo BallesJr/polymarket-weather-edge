@@ -1,5 +1,5 @@
 {
-  "bankroll": 8898.78729999998,
+  "bankroll": 8893.59349999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-13T04:05:45.626727+00:00",
       "entry_fee": 0.1675,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "manila-daily-weather",
+      "event_date": "2026-09-13",
+      "question": "Will the highest temperature in Manila be 32\u00b0C on September 13?",
+      "condition_id": "0xa52f12166ad20d573bdc667fc5a13e15041a172fbf945785468113283812ed6e",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "59280798744558640485505043057423187349261869140039221421585206535225769502981",
+      "token_yes": "23752038508717352382806966255763895957382553189639708055597415158782910326895",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.22499999999999998,
+      "model_prob": 0.4895,
+      "edge": -0.2855,
+      "net_edge": 0.2768,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-13T04:43:07.438426+00:00",
+      "entry_fee": 0.1938,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -95017,5 +95045,5 @@
   "n_lost": 2509,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-13T04:05:45.627252+00:00"
+  "last_updated": "2026-09-13T04:43:07.439148+00:00"
 }
