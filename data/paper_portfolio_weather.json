@@ -1,5 +1,5 @@
 {
-  "bankroll": 8914.28219999998,
+  "bankroll": 8909.128499999979,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -445,6 +445,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-13T00:45:23.372775+00:00",
       "entry_fee": 0.175,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "taipei-daily-weather",
+      "event_date": "2026-09-13",
+      "question": "Will the highest temperature in Taipei be 34\u00b0C on September 13?",
+      "condition_id": "0x5e5305cafddc5a46045bc7917e095822e530a5a7bf6d2200488ece9068af3897",
+      "temp_str": "34\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "7976057643358826139064391250342551519103933137933494217521513996315161430856",
+      "token_yes": "59259447005288009450355990396843299164012367080109551877650733361991122996985",
+      "model_prob_gaussian": 0.11192472259997954,
+      "entry_prob": 0.385,
+      "model_prob": 0.1119,
+      "edge": -0.5031,
+      "net_edge": 0.4913,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-13T01:37:37.037839+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -94933,5 +94961,5 @@
   "n_lost": 2509,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-13T01:16:35.193811+00:00"
+  "last_updated": "2026-09-13T01:37:37.038563+00:00"
 }
