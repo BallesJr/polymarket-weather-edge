@@ -1,5 +1,5 @@
 {
-  "bankroll": 8888.134999999978,
+  "bankroll": 8882.923799999979,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-14T01:12:08.113161+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "istanbul-daily-weather",
+      "event_date": "2026-09-14",
+      "question": "Will the highest temperature in Istanbul be 22\u00b0C on September 14?",
+      "condition_id": "0x1d8d835cd4fac465e8ce53cce5ed171f5b2e17037f8feb800064ed5c2032be55",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "92293236458839003368376426866708610692926414149655385587574494505224731341076",
+      "token_yes": "87411858192783363557755206195744891904789411892196975314681671097347496198674",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.15500000000000003,
+      "model_prob": 0.4858,
+      "edge": -0.3592,
+      "net_edge": 0.3527,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 20.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-14T01:46:22.676871+00:00",
+      "entry_fee": 0.2112,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -95605,5 +95633,5 @@
   "n_lost": 2526,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-14T01:12:08.113897+00:00"
+  "last_updated": "2026-09-14T01:46:22.677529+00:00"
 }
