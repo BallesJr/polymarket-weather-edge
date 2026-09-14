@@ -1,5 +1,5 @@
 {
-  "bankroll": 8868.92479999998,
+  "bankroll": 8863.74359999998,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -613,6 +613,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-14T18:47:08.954229+00:00",
       "entry_fee": 0.16,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chicago-daily-weather",
+      "event_date": "2026-09-14",
+      "question": "Will the highest temperature in Chicago be between 70-71\u00b0F on September 14?",
+      "condition_id": "0x6d64db7a7bdddbe0a6bad8aa1404393197c70392ea9ca93660bea2582f0192b3",
+      "temp_str": "between 70-71\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "103542899736757470962237402443164032277310885336186431421090537680631446468841",
+      "token_yes": "8136379040939234627364591129085603894749614515747179383869557529555149789832",
+      "model_prob_gaussian": 0.005683338358605606,
+      "entry_prob": 0.275,
+      "model_prob": 0.0057,
+      "edge": -0.7193,
+      "net_edge": 0.7093,
+      "size_usd": 5.0,
+      "forecast_temp_c": 23.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 21.7,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-14T19:29:38.464296+00:00",
+      "entry_fee": 0.1812,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -96193,5 +96221,5 @@
   "n_lost": 2536,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-14T19:12:04.096924+00:00"
+  "last_updated": "2026-09-14T19:29:38.465181+00:00"
 }
