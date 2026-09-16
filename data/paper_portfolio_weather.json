@@ -1,5 +1,5 @@
 {
-  "bankroll": 8886.933699999983,
+  "bankroll": 8881.774899999984,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -645,6 +645,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
+    },
+    {
+      "series_slug": "qingdao-daily-weather",
+      "event_date": "2026-09-16",
+      "question": "Will the highest temperature in Qingdao be 32\u00b0C on September 16?",
+      "condition_id": "0xf8abaedb2639f14d1c503c154d7ac48132e821025c36328e34b5d10ade9985b4",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "84890062913161915433425432778960337614954301707268201515971637183577237517809",
+      "token_yes": "92046734533011001603658335955171709176265886381700669841372390934210386698647",
+      "model_prob_gaussian": 0.3029362276662386,
+      "entry_prob": 0.365,
+      "model_prob": 0.3029,
+      "edge": -0.3321,
+      "net_edge": 0.3205,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-16T05:15:24.420949+00:00",
+      "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
   "closed_trades": [
@@ -97537,5 +97565,5 @@
   "n_lost": 2566,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-16T04:43:06.651775+00:00"
+  "last_updated": "2026-09-16T05:15:24.421613+00:00"
 }
