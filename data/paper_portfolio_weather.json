@@ -1,5 +1,5 @@
 {
-  "bankroll": 8909.612399999985,
+  "bankroll": 8904.405999999986,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -449,6 +449,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "denver-daily-weather",
+      "event_date": "2026-09-16",
+      "question": "Will the highest temperature in Denver be between 88-89\u00b0F on September 16?",
+      "condition_id": "0xf1e830b375deb39a32c0efc7033d4561de2952aeaf817bc0e4d30e78abeb3686",
+      "temp_str": "between 88-89\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "40284823234484568535227322105318407709990309236654263402271573011618190261241",
+      "token_yes": "21553003582906281920187046836730766221698450174857935349401119701169235346772",
+      "model_prob_gaussian": 0.005683338358605461,
+      "entry_prob": 0.1745,
+      "model_prob": 0.0057,
+      "edge": -0.8198,
+      "net_edge": 0.8126,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.9,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-16T20:43:13.650825+00:00",
+      "entry_fee": 0.2064,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "openmeteo"
     }
   ],
   "closed_trades": [
@@ -97873,5 +97901,5 @@
   "n_lost": 2580,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-16T20:18:55.231704+00:00"
+  "last_updated": "2026-09-16T20:43:13.651633+00:00"
 }
