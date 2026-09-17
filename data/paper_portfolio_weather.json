@@ -1,5 +1,5 @@
 {
-  "bankroll": 8870.024499999985,
+  "bankroll": 8864.827499999985,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-17T10:13:57.093815+00:00",
       "entry_fee": 0.15,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "ankara-daily-weather",
+      "event_date": "2026-09-17",
+      "question": "Will the highest temperature in Ankara be 18\u00b0C on September 17?",
+      "condition_id": "0x66eb8e385d148031f5e8c76db16bda824e523dfff49a61cf67485197b37bae44",
+      "temp_str": "18\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "47337065048278007711301397417408943770211596472952244750776355036445132838533",
+      "token_yes": "96914869730867764899562734120718903182297680535806909082711490017198364823517",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.21199999999999997,
+      "model_prob": 0.4858,
+      "edge": -0.3022,
+      "net_edge": 0.2938,
+      "size_usd": 5.0,
+      "forecast_temp_c": 18.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 18.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-17T11:19:36.409290+00:00",
+      "entry_fee": 0.197,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -98461,5 +98489,5 @@
   "n_lost": 2592,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-17T10:45:46.854417+00:00"
+  "last_updated": "2026-09-17T11:19:36.410111+00:00"
 }
