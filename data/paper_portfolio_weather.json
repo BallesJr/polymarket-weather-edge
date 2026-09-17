@@ -1,5 +1,5 @@
 {
-  "bankroll": 8849.337399999986,
+  "bankroll": 8844.183699999985,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -445,6 +445,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-17T15:47:23.395329+00:00",
       "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "toronto-daily-weather",
+      "event_date": "2026-09-17",
+      "question": "Will the highest temperature in Toronto be 24\u00b0C on September 17?",
+      "condition_id": "0x44ae04c77e69bab488d1238723b6dcd81bf43ef3dba22de89199474e4e8538a7",
+      "temp_str": "24\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "60847723318122705048917174995808344379994845024413744201972122777393055379401",
+      "token_yes": "21739105554466543290718928656560869470719161835140461271155879240729070394803",
+      "model_prob_gaussian": 0.0028358219729170487,
+      "entry_prob": 0.385,
+      "model_prob": 0.0028,
+      "edge": -0.6122,
+      "net_edge": 0.6004,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-17T17:25:18.853114+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -98573,5 +98601,5 @@
   "n_lost": 2600,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-17T17:08:24.235886+00:00"
+  "last_updated": "2026-09-17T17:25:18.854422+00:00"
 }
