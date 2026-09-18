@@ -1,5 +1,5 @@
 {
-  "bankroll": 8828.942299999986,
+  "bankroll": 8823.788599999985,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -585,6 +585,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-18T10:13:43.657962+00:00",
       "entry_fee": 0.1737,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "mexico-city-daily-weather",
+      "event_date": "2026-09-18",
+      "question": "Will the highest temperature in Mexico City be 25\u00b0C or higher on September 18?",
+      "condition_id": "0x6ddc2b680ddd355d4b890c4c04d5e6408238f5460a2a58b53833bd98106c0c85",
+      "temp_str": "25\u00b0C or higher",
+      "direction": "BUY_NO",
+      "token_id": "40495431996205137478943742546999251091463800578892656099316609124020142119570",
+      "token_yes": "53783743272011486176074243447156914965755094423811532501737715510715489270767",
+      "model_prob_gaussian": 0.17847300914043207,
+      "entry_prob": 0.385,
+      "model_prob": 0.1785,
+      "edge": -0.4365,
+      "net_edge": 0.4247,
+      "size_usd": 5.0,
+      "forecast_temp_c": 23.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 16.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-18T11:45:04.507870+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -99217,5 +99245,5 @@
   "n_lost": 2611,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-18T11:07:38.411547+00:00"
+  "last_updated": "2026-09-18T11:45:04.508591+00:00"
 }
