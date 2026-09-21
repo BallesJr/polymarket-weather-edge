@@ -1,5 +1,5 @@
 {
-  "bankroll": 8772.669099999972,
+  "bankroll": 8767.457899999972,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -641,6 +641,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-21T13:11:28.908008+00:00",
       "entry_fee": 0.17,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "tokyo-daily-weather",
+      "event_date": "2026-09-21",
+      "question": "Will the highest temperature in Tokyo be 26\u00b0C on September 21?",
+      "condition_id": "0x0a44687684f6ba3dad270708a29179470dad4ac550f4f2d0b3bd8040ae159372",
+      "temp_str": "26\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "87482854891585763773452884970147918074984637332005983574729592035674599689134",
+      "token_yes": "78337036860646403402580668120134764407240023385881019632194185733854316398826",
+      "model_prob_gaussian": 0.001,
+      "entry_prob": 0.15500000000000003,
+      "model_prob": 0.001,
+      "edge": -0.844,
+      "net_edge": 0.8375,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-21T13:46:06.936459+00:00",
+      "entry_fee": 0.2112,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -101541,5 +101569,5 @@
   "n_lost": 2667,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-21T13:11:28.908722+00:00"
+  "last_updated": "2026-09-21T13:46:06.937204+00:00"
 }
