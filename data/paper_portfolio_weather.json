@@ -1,5 +1,5 @@
 {
-  "bankroll": 8819.98129999997,
+  "bankroll": 8814.83129999997,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-22T04:05:50.013360+00:00",
       "entry_fee": 0.155,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "beijing-daily-weather",
+      "event_date": "2026-09-22",
+      "question": "Will the highest temperature in Beijing be 31\u00b0C on September 22?",
+      "condition_id": "0xe688b03e64766e05525f07077558351252d0920f4d99473599739548d4b283d1",
+      "temp_str": "31\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "336300379889932254496684791777798024349761831549839862451217644009109408761",
+      "token_yes": "23974784014777642600496883129981460649923953447653970443768304433375286354239",
+      "model_prob_gaussian": 0.19726114779632986,
+      "entry_prob": 0.4,
+      "model_prob": 0.1973,
+      "edge": -0.4027,
+      "net_edge": 0.3907,
+      "size_usd": 5.0,
+      "forecast_temp_c": 29.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-22T04:41:10.103509+00:00",
+      "entry_fee": 0.15,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -102073,5 +102101,5 @@
   "n_lost": 2681,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-22T04:05:50.013933+00:00"
+  "last_updated": "2026-09-22T04:41:10.104085+00:00"
 }
