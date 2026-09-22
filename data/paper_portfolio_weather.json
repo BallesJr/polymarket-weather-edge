@@ -1,5 +1,5 @@
 {
-  "bankroll": 8840.67759999997,
+  "bankroll": 8835.49889999997,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -449,6 +449,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "sao-paulo-daily-weather",
+      "event_date": "2026-09-22",
+      "question": "Will the highest temperature in Sao Paulo be 24\u00b0C or below on September 22?",
+      "condition_id": "0x2da9087cc59ca60fbb1700bb7223eeba391cd30bed3be9b78b4b5d8a061a60d8",
+      "temp_str": "24\u00b0C or below",
+      "direction": "BUY_NO",
+      "token_id": "27800863188471303059552027116643564387143925762389742775213533449764936663200",
+      "token_yes": "5656175558007459032577417594992207453707101163676124817211931171421959986687",
+      "model_prob_gaussian": 0.09408702133460028,
+      "entry_prob": 0.28500000000000003,
+      "model_prob": 0.0941,
+      "edge": -0.6209,
+      "net_edge": 0.6107,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.3,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-22T00:44:11.582946+00:00",
+      "entry_fee": 0.1787,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -101961,5 +101989,5 @@
   "n_lost": 2680,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-22T00:29:40.705947+00:00"
+  "last_updated": "2026-09-22T00:44:11.583948+00:00"
 }
