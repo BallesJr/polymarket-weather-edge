@@ -1,5 +1,5 @@
 {
-  "bankroll": 8831.918599999966,
+  "bankroll": 8826.717299999966,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-23T18:44:37.525223+00:00",
       "entry_fee": 0.1825,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "nyc-daily-weather",
+      "event_date": "2026-09-23",
+      "question": "Will the highest temperature in New York City be between 68-69\u00b0F on September 23?",
+      "condition_id": "0x7eb10dfee86b71a785e6b2d6bea6b75a00183c5ca2e3d33185e4129c7bb29849",
+      "temp_str": "between 68-69\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "52002292423991592792212324330617423272799158011410210092381683260001004140934",
+      "token_yes": "2084478964021155840694064226824011916834477508502253983748582796676152227193",
+      "model_prob_gaussian": 0.4934005074288053,
+      "entry_prob": 0.19499999999999995,
+      "model_prob": 0.4934,
+      "edge": -0.3116,
+      "net_edge": 0.3038,
+      "size_usd": 5.0,
+      "forecast_temp_c": 20.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 20.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-23T19:15:06.882243+00:00",
+      "entry_fee": 0.2013,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -103221,5 +103249,5 @@
   "n_lost": 2709,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-23T18:44:37.525864+00:00"
+  "last_updated": "2026-09-23T19:15:06.882771+00:00"
 }
