@@ -1,5 +1,5 @@
 {
-  "bankroll": 8877.44509999996,
+  "bankroll": 8872.295099999961,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -361,6 +361,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-26T02:15:41.612094+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "busan-daily-weather",
+      "event_date": "2026-09-26",
+      "question": "Will the highest temperature in Busan be 22\u00b0C on September 26?",
+      "condition_id": "0x5ef8a6de47a93de0e2c467e5f2cb426502d65afa8bde273b7eb4f2c7ea07b905",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "2463336633153656247268945689795644816833160426782461675926114204755582678148",
+      "token_yes": "52768034619458020593452761445544824792158665110709251357562060540714745134697",
+      "model_prob_gaussian": 0.3737858671778719,
+      "entry_prob": 0.4,
+      "model_prob": 0.3738,
+      "edge": -0.2262,
+      "net_edge": 0.2142,
+      "size_usd": 5.0,
+      "forecast_temp_c": 22.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-26T04:12:30.643635+00:00",
+      "entry_fee": 0.15,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -104565,5 +104593,5 @@
   "n_lost": 2744,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-26T03:43:40.107622+00:00"
+  "last_updated": "2026-09-26T04:12:30.760520+00:00"
 }
