@@ -1,5 +1,5 @@
 {
-  "bankroll": 8956.59149999996,
+  "bankroll": 8951.44029999996,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -249,6 +249,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-28T00:43:40.796541+00:00",
       "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "warsaw-daily-weather",
+      "event_date": "2026-09-28",
+      "question": "Will the highest temperature in Warsaw be 21\u00b0C on September 28?",
+      "condition_id": "0x950f247b6435126918b084fee5b8686caf36da7aa2e44e2b46b37d4aa28a5038",
+      "temp_str": "21\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "112682635362305255536629982427475250316062846221948530658414555453150001699753",
+      "token_yes": "32279370786120562819379551259332440943628560304095763969807253641679435478227",
+      "model_prob_gaussian": 0.3390531204149874,
+      "entry_prob": 0.395,
+      "model_prob": 0.3391,
+      "edge": -0.2659,
+      "net_edge": 0.254,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 11.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-28T02:44:25.359743+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -105377,5 +105405,5 @@
   "n_lost": 2762,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-28T02:09:51.753324+00:00"
+  "last_updated": "2026-09-28T02:44:25.360416+00:00"
 }
