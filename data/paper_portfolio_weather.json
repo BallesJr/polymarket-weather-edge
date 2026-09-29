@@ -1,5 +1,5 @@
 {
-  "bankroll": 8819.628899999956,
+  "bankroll": 8814.443899999957,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -613,6 +613,34 @@
       "status": "OPEN",
       "opened_at": "2026-09-29T12:46:02.696385+00:00",
       "entry_fee": 0.1713,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "milan-daily-weather",
+      "event_date": "2026-09-29",
+      "question": "Will the highest temperature in Milan be 24\u00b0C on September 29?",
+      "condition_id": "0x8636a9ddad39b73f0896a911bba8c337b656f05e45f0387ec854a6ce1da16979",
+      "temp_str": "24\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "31232843893048056607445426628910764006858287680558642117087551236565035346679",
+      "token_yes": "65682095752094428381285622389189241701165877497938185409279715655609875763157",
+      "model_prob_gaussian": 0.4342222771268042,
+      "entry_prob": 0.26,
+      "model_prob": 0.4342,
+      "edge": -0.3058,
+      "net_edge": 0.2962,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-09-29T14:16:54.521196+00:00",
+      "entry_fee": 0.185,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -106357,5 +106385,5 @@
   "n_lost": 2781,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-09-29T13:47:39.946598+00:00"
+  "last_updated": "2026-09-29T14:16:54.521844+00:00"
 }
