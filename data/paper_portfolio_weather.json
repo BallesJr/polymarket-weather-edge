@@ -1,5 +1,5 @@
 {
-  "bankroll": 8843.811399999957,
+  "bankroll": 8838.638899999956,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -305,6 +305,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-01T04:43:10.338563+00:00",
       "entry_fee": 0.1762,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "jeddah-daily-weather",
+      "event_date": "2026-10-01",
+      "question": "Will the highest temperature in Jeddah be 35\u00b0C on October 1?",
+      "condition_id": "0x9b0552fbf3f13c958ddf5b7d5b3fcd3f891b75f4a49472b1aa79db44275861be",
+      "temp_str": "35\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "83483948839234520191210398152840512280417096223362361138156217021836631969831",
+      "token_yes": "85936886723339950129400156191803117352461382253449675163882758931205149144406",
+      "model_prob_gaussian": 0.45758545210931484,
+      "entry_prob": 0.31000000000000005,
+      "model_prob": 0.4576,
+      "edge": -0.2324,
+      "net_edge": 0.2217,
+      "size_usd": 5.0,
+      "forecast_temp_c": 35.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 34.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-01T08:01:52.271977+00:00",
+      "entry_fee": 0.1725,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -107281,5 +107309,5 @@
   "n_lost": 2813,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-01T07:49:14.494046+00:00"
+  "last_updated": "2026-10-01T08:01:52.272709+00:00"
 }
