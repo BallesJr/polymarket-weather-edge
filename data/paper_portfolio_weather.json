@@ -1,5 +1,5 @@
 {
-  "bankroll": 8797.158199999956,
+  "bankroll": 8826.569999999956,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -29,34 +29,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "openmeteo"
-    },
-    {
-      "series_slug": "toronto-daily-weather",
-      "event_date": "2026-09-30",
-      "question": "Will the highest temperature in Toronto be 22\u00b0C on September 30?",
-      "condition_id": "0x2a2a2b977619c47ba6de055e2d8ae5fee5d266a2dc87f548edb90aeb06c981e0",
-      "temp_str": "22\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "50492847651132702997639109077301973381722639143997623952209209554231882536690",
-      "token_yes": "9314454546571820014872332922326902575422069044239711391852843801916785471763",
-      "model_prob_gaussian": 0.0018818842469020265,
-      "entry_prob": 0.17000000000000004,
-      "model_prob": 0.0019,
-      "edge": -0.8281,
-      "net_edge": 0.821,
-      "size_usd": 5.0,
-      "forecast_temp_c": 24.7,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 22.0,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-09-30T19:12:08.958581+00:00",
-      "entry_fee": 0.2075,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
     },
     {
       "series_slug": "mexico-city-daily-weather",
@@ -107274,12 +107246,40 @@
       "pnl_usd": -5.175,
       "resolved_temp": 29.4,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "toronto-daily-weather",
+      "event_date": "2026-09-30",
+      "question": "Will the highest temperature in Toronto be 22\u00b0C on September 30?",
+      "condition_id": "0x2a2a2b977619c47ba6de055e2d8ae5fee5d266a2dc87f548edb90aeb06c981e0",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "50492847651132702997639109077301973381722639143997623952209209554231882536690",
+      "token_yes": "9314454546571820014872332922326902575422069044239711391852843801916785471763",
+      "model_prob_gaussian": 0.0018818842469020265,
+      "entry_prob": 0.17000000000000004,
+      "model_prob": 0.0019,
+      "edge": -0.8281,
+      "net_edge": 0.821,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.0,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-09-30T19:12:08.958581+00:00",
+      "entry_fee": 0.2075,
+      "closed_at": "2026-10-01T06:01:04.765603+00:00",
+      "pnl_usd": 24.2043,
+      "resolved_temp": 24.0,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -1130.4094,
-  "n_won": 1111,
+  "total_pnl": -1106.2051,
+  "n_won": 1112,
   "n_lost": 2812,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-01T05:49:55.166704+00:00"
+  "last_updated": "2026-10-01T06:16:38.016729+00:00"
 }
