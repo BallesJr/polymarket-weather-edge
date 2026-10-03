@@ -1,5 +1,5 @@
 {
-  "bankroll": 8818.370899999954,
+  "bankroll": 8839.647499999954,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -57,34 +57,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
-    },
-    {
-      "series_slug": "tel-aviv-daily-weather",
-      "event_date": "2026-10-03",
-      "question": "Will the highest temperature in Tel Aviv be 30\u00b0C on October 3?",
-      "condition_id": "0x402fc12da61174f4115916a1551806eaf6027f18a26362f6b4bc936786905f40",
-      "temp_str": "30\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "16952090518470228861226344883287259521037511675244062589620176366018027874057",
-      "token_yes": "98267107280211199567918738150628048084261401003709408700686975447452953325471",
-      "model_prob_gaussian": 0.34688697254446443,
-      "entry_prob": 0.235,
-      "model_prob": 0.3469,
-      "edge": -0.4181,
-      "net_edge": 0.4091,
-      "size_usd": 5.0,
-      "forecast_temp_c": 29.3,
-      "forecast_horizon_days": 0,
-      "data_source": "forecast",
-      "observed_max_c": NaN,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-10-03T00:07:35.608746+00:00",
-      "entry_fee": 0.1913,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": ""
     },
     {
       "series_slug": "warsaw-daily-weather",
@@ -108674,12 +108646,40 @@
       "pnl_usd": -5.1575,
       "resolved_temp": 33.0,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "tel-aviv-daily-weather",
+      "event_date": "2026-10-03",
+      "question": "Will the highest temperature in Tel Aviv be 30\u00b0C on October 3?",
+      "condition_id": "0x402fc12da61174f4115916a1551806eaf6027f18a26362f6b4bc936786905f40",
+      "temp_str": "30\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "16952090518470228861226344883287259521037511675244062589620176366018027874057",
+      "token_yes": "98267107280211199567918738150628048084261401003709408700686975447452953325471",
+      "model_prob_gaussian": 0.34688697254446443,
+      "entry_prob": 0.235,
+      "model_prob": 0.3469,
+      "edge": -0.4181,
+      "net_edge": 0.4091,
+      "size_usd": 5.0,
+      "forecast_temp_c": 29.3,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-10-03T00:07:35.608746+00:00",
+      "entry_fee": 0.1913,
+      "closed_at": "2026-10-03T22:01:13.160607+00:00",
+      "pnl_usd": 16.0853,
+      "resolved_temp": 32.0,
+      "obs_source": ""
     }
   ],
-  "total_pnl": -1114.5505,
-  "n_won": 1129,
+  "total_pnl": -1098.4652,
+  "n_won": 1130,
   "n_lost": 2845,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-03T21:44:54.500871+00:00"
+  "last_updated": "2026-10-03T22:18:00.407046+00:00"
 }
