@@ -1,5 +1,5 @@
 {
-  "bankroll": 8771.341199999952,
+  "bankroll": 8766.188699999951,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -585,6 +585,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-04T10:35:50.243995+00:00",
       "entry_fee": 0.1713,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "london-daily-weather",
+      "event_date": "2026-10-04",
+      "question": "Will the highest temperature in London be 22\u00b0C on October 4?",
+      "condition_id": "0xea0dd8a6cf9d3b70e294a9bc93ac440ef27a5f93c7b414e44f6ea17d234b9a14",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "44354251497581400919688164966130476312651926189423254141076764353469364503514",
+      "token_yes": "99018084895476924417453360710811972079302125382947501186096348500459048330404",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.39,
+      "model_prob": 0.2311,
+      "edge": -0.3789,
+      "net_edge": 0.367,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 21.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-04T12:14:59.289126+00:00",
+      "entry_fee": 0.1525,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -109269,5 +109297,5 @@
   "n_lost": 2854,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-04T11:46:53.257834+00:00"
+  "last_updated": "2026-10-04T12:14:59.289705+00:00"
 }
