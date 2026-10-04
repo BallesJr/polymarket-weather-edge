@@ -1,5 +1,5 @@
 {
-  "bankroll": 8790.35959999995,
+  "bankroll": 8785.18089999995,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-04T03:36:01.217612+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "shenzhen-daily-weather",
+      "event_date": "2026-10-04",
+      "question": "Will the highest temperature in Shenzhen be 31\u00b0C on October 4?",
+      "condition_id": "0x88845e7ce3ae83515ffa66882bee58c515876cbbab5372202ecea263b88d581e",
+      "temp_str": "31\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "65840981396025804876883992538042340116267045694892919154691703684393612238930",
+      "token_yes": "40617973164696642383146247706871090407504230351459984954691748608943804916727",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.28500000000000003,
+      "model_prob": 0.4895,
+      "edge": -0.2255,
+      "net_edge": 0.2153,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-04T04:12:09.736432+00:00",
+      "entry_fee": 0.1787,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -109017,5 +109045,5 @@
   "n_lost": 2850,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-04T03:36:01.218184+00:00"
+  "last_updated": "2026-10-04T04:12:09.736993+00:00"
 }
