@@ -1,5 +1,5 @@
 {
-  "bankroll": 8793.30839999995,
+  "bankroll": 8788.147099999951,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-05T08:34:48.934326+00:00",
       "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "tel-aviv-daily-weather",
+      "event_date": "2026-10-05",
+      "question": "Will the highest temperature in Tel Aviv be 28\u00b0C on October 5?",
+      "condition_id": "0x17f004d06fd0fced80f3e3a0a9cf5c47b2827d6b81389292d53456fed84f45db",
+      "temp_str": "28\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "46908695073337517041731318104841720509365080106446659274842624166198788171093",
+      "token_yes": "89442844616828608793453444741714599346842668356962426900369940510143660354332",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.355,
+      "model_prob": 0.4858,
+      "edge": -0.1592,
+      "net_edge": 0.1478,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-05T09:16:44.794420+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -109801,5 +109829,5 @@
   "n_lost": 2872,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-05T08:34:48.935130+00:00"
+  "last_updated": "2026-10-05T09:16:44.794968+00:00"
 }
