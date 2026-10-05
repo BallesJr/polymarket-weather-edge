@@ -1,5 +1,5 @@
 {
-  "bankroll": 8803.623399999951,
+  "bankroll": 8798.462099999952,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -361,6 +361,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-05T06:40:12.707009+00:00",
       "entry_fee": 0.1638,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "singapore-daily-weather",
+      "event_date": "2026-10-05",
+      "question": "Will the highest temperature in Singapore be 32\u00b0C on October 5?",
+      "condition_id": "0xe28d410989d4f6ca6a8d57a1047087b23b4ef8cc55ebd902873a08da22ea5c06",
+      "temp_str": "32\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "43510022139313697291250918758175451605558198442832899113399137878511422292858",
+      "token_yes": "23576062934923739331940243414074139770744070396250852616222171300310613828291",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.355,
+      "model_prob": 0.4059,
+      "edge": -0.2391,
+      "net_edge": 0.2277,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-05T07:05:04.148399+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -109745,5 +109773,5 @@
   "n_lost": 2871,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-05T06:40:12.707743+00:00"
+  "last_updated": "2026-10-05T07:05:04.149020+00:00"
 }
