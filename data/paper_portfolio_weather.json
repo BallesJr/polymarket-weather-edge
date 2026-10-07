@@ -1,5 +1,5 @@
 {
-  "bankroll": 8842.606099999943,
+  "bankroll": 8837.448599999943,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-07T01:46:01.276574+00:00",
       "entry_fee": 0.155,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "tokyo-daily-weather",
+      "event_date": "2026-10-07",
+      "question": "Will the highest temperature in Tokyo be 24\u00b0C on October 7?",
+      "condition_id": "0xc40636d5629f4e5c8debe025b79d672d5f95d70b131f2d0913fdc509f8ed560d",
+      "temp_str": "24\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "82959086883898521531545575329639315134169514546992194939549005332596234081085",
+      "token_yes": "50336095972173887295927780826941519604193862495209260117444822116866317365637",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.37,
+      "model_prob": 0.4895,
+      "edge": -0.1405,
+      "net_edge": 0.1288,
+      "size_usd": 5.0,
+      "forecast_temp_c": 22.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-07T03:08:37.477904+00:00",
+      "entry_fee": 0.1575,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -111033,5 +111061,5 @@
   "n_lost": 2892,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-07T02:45:50.457009+00:00"
+  "last_updated": "2026-10-07T03:08:37.478536+00:00"
 }
