@@ -1,5 +1,5 @@
 {
-  "bankroll": 8837.448599999943,
+  "bankroll": 8827.144899999943,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -561,6 +561,62 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "warsaw-daily-weather",
+      "event_date": "2026-10-07",
+      "question": "Will the highest temperature in Warsaw be 21\u00b0C on October 7?",
+      "condition_id": "0xdbe79a2de21276ad40888c0996c175bacf9a4b3c77976425e9950489bd450b42",
+      "temp_str": "21\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "109291264726942055762311316711789713570039269445571107935341958982041250265185",
+      "token_yes": "59026035315936483776562594840605123211723536256381417126490415955617052312813",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.4,
+      "model_prob": 0.4858,
+      "edge": -0.1142,
+      "net_edge": 0.1022,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 11.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-07T04:36:09.183533+00:00",
+      "entry_fee": 0.15,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "austin-daily-weather",
+      "event_date": "2026-10-07",
+      "question": "Will the highest temperature in Austin be between 90-91\u00b0F on October 7?",
+      "condition_id": "0x59e1b75f8b050fd0255c0f43099f6ec19e9dc7d6dbcb9ae663a039c23a1936ff",
+      "temp_str": "between 90-91\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "79151835346515657397892568108585206645740924327126626915418364709416304871923",
+      "token_yes": "29552323553097340094779654168699870431177110738771822433309178451642022608770",
+      "model_prob_gaussian": 0.5127845742281607,
+      "entry_prob": 0.385,
+      "model_prob": 0.5128,
+      "edge": -0.1022,
+      "net_edge": 0.0904,
+      "size_usd": 5.0,
+      "forecast_temp_c": 33.0,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-07T04:36:09.304251+00:00",
+      "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -111061,5 +111117,5 @@
   "n_lost": 2893,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-07T04:12:58.479313+00:00"
+  "last_updated": "2026-10-07T04:36:09.304833+00:00"
 }
