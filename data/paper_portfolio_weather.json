@@ -1,5 +1,5 @@
 {
-  "bankroll": 8862.21109999994,
+  "bankroll": 8851.88859999994,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -281,6 +281,62 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "istanbul-daily-weather",
+      "event_date": "2026-10-08",
+      "question": "Will the highest temperature in Istanbul be 22\u00b0C on October 8?",
+      "condition_id": "0x634b726861b3fdfbb0920369362bfd4bca600decdeb33100464f824466d4d8a7",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "15338605128518378711438390281195041525137946666276384625836126001632910096015",
+      "token_yes": "25075365045485565353851261117518177500003455549660635771840660137146043522271",
+      "model_prob_gaussian": 0.33905312041498736,
+      "entry_prob": 0.33499999999999996,
+      "model_prob": 0.3391,
+      "edge": -0.3259,
+      "net_edge": 0.3148,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 16.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-08T00:31:53.619123+00:00",
+      "entry_fee": 0.1663,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "toronto-daily-weather",
+      "event_date": "2026-10-08",
+      "question": "Will the highest temperature in Toronto be 18\u00b0C on October 8?",
+      "condition_id": "0xf95809ce8d0029a4318de681430038ac5d75447e6b8474368dd9eb9e8603315a",
+      "temp_str": "18\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "62317601234458029123996104703897327641285544187482787191561352753307596134532",
+      "token_yes": "14053272852153153609116886385597424704720857704126187916251762722632939251353",
+      "model_prob_gaussian": 0.4959612962626484,
+      "entry_prob": 0.375,
+      "model_prob": 0.496,
+      "edge": -0.129,
+      "net_edge": 0.1173,
+      "size_usd": 5.0,
+      "forecast_temp_c": 17.6,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-08T00:31:53.809543+00:00",
+      "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -111453,5 +111509,5 @@
   "n_lost": 2911,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-08T00:16:46.336161+00:00"
+  "last_updated": "2026-10-08T00:31:53.810140+00:00"
 }
