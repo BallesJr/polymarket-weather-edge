@@ -1,5 +1,5 @@
 {
-  "bankroll": 8795.455299999936,
+  "bankroll": 8790.274099999935,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -641,6 +641,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-09T14:36:20.684062+00:00",
       "entry_fee": 0.165,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "miami-daily-weather",
+      "event_date": "2026-10-09",
+      "question": "Will the highest temperature in Miami be between 88-89\u00b0F on October 9?",
+      "condition_id": "0x72a2754973e10130e416edc7b3f27d89d8047f552e36ee3f42614331f4169db3",
+      "temp_str": "between 88-89\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "29258091271304643017269967868519937675710433695579082719912343353789747767561",
+      "token_yes": "112212273619746644059301476204302508888470982886434709918623773780331685213091",
+      "model_prob_gaussian": 0.5186382621603582,
+      "entry_prob": 0.275,
+      "model_prob": 0.5186,
+      "edge": -0.2064,
+      "net_edge": 0.1964,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 31.1,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-09T16:09:38.196656+00:00",
+      "entry_fee": 0.1812,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -112769,5 +112797,5 @@
   "n_lost": 2933,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-09T15:44:02.847478+00:00"
+  "last_updated": "2026-10-09T16:09:38.197384+00:00"
 }
