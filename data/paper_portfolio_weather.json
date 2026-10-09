@@ -1,5 +1,5 @@
 {
-  "bankroll": 8813.687099999937,
+  "bankroll": 8808.535899999937,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-09T02:15:21.241248+00:00",
       "entry_fee": 0.155,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "lucknow-daily-weather",
+      "event_date": "2026-10-09",
+      "question": "Will the highest temperature in Lucknow be 30\u00b0C on October 9?",
+      "condition_id": "0x546c1eecbd44e3a6098d25a1c7299c3eddabfd31cdb7a0901adc50171cfda148",
+      "temp_str": "30\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "2565870398979917533257616119937361962170056879762209503208152401841902068295",
+      "token_yes": "23005224496671972878639691087673369917117622781034216466317310395055310628012",
+      "model_prob_gaussian": 0.08984282819068778,
+      "entry_prob": 0.395,
+      "model_prob": 0.0898,
+      "edge": -0.5152,
+      "net_edge": 0.5033,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 26.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-09T03:12:46.066575+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -112349,5 +112377,5 @@
   "n_lost": 2928,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-09T02:45:46.261465+00:00"
+  "last_updated": "2026-10-09T03:12:46.067417+00:00"
 }
