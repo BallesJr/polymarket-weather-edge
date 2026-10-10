@@ -1,5 +1,5 @@
 {
-  "bankroll": 8823.449199999934,
+  "bankroll": 8836.107399999933,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -197,34 +197,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
-    },
-    {
-      "series_slug": "tel-aviv-daily-weather",
-      "event_date": "2026-10-10",
-      "question": "Will the highest temperature in Tel Aviv be 30\u00b0C on October 10?",
-      "condition_id": "0x2c648de93f461b256f13c3b1939a0890511c6548331dfcdc92eceb6cd20c0fee",
-      "temp_str": "30\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "38447792277483181697044295589944300932186116225834623418351001279490156264520",
-      "token_yes": "115340360394279305357231025594396093247563686233861875664234737523977507658289",
-      "model_prob_gaussian": 0.40591297866539944,
-      "entry_prob": 0.395,
-      "model_prob": 0.4059,
-      "edge": -0.1991,
-      "net_edge": 0.1872,
-      "size_usd": 5.0,
-      "forecast_temp_c": 29.5,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 24.0,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-10-10T04:33:41.372557+00:00",
-      "entry_fee": 0.1512,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
     },
     {
       "series_slug": "london-daily-weather",
@@ -113462,12 +113434,40 @@
       "pnl_usd": -5.155,
       "resolved_temp": 27.0,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "tel-aviv-daily-weather",
+      "event_date": "2026-10-10",
+      "question": "Will the highest temperature in Tel Aviv be 30\u00b0C on October 10?",
+      "condition_id": "0x2c648de93f461b256f13c3b1939a0890511c6548331dfcdc92eceb6cd20c0fee",
+      "temp_str": "30\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "38447792277483181697044295589944300932186116225834623418351001279490156264520",
+      "token_yes": "115340360394279305357231025594396093247563686233861875664234737523977507658289",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.395,
+      "model_prob": 0.4059,
+      "edge": -0.1991,
+      "net_edge": 0.1872,
+      "size_usd": 5.0,
+      "forecast_temp_c": 29.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.0,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-10-10T04:33:41.372557+00:00",
+      "entry_fee": 0.1512,
+      "closed_at": "2026-10-10T22:31:00.868405+00:00",
+      "pnl_usd": 7.507,
+      "resolved_temp": 29.0,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -1114.5897,
-  "n_won": 1188,
+  "total_pnl": -1107.0827,
+  "n_won": 1189,
   "n_lost": 2958,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-10T22:13:39.270573+00:00"
+  "last_updated": "2026-10-10T22:40:11.166153+00:00"
 }
