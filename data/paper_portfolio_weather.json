@@ -1,5 +1,5 @@
 {
-  "bankroll": 8781.532799999934,
+  "bankroll": 8771.219099999933,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -393,6 +393,62 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
+    },
+    {
+      "series_slug": "shanghai-daily-weather",
+      "event_date": "2026-10-10",
+      "question": "Will the highest temperature in Shanghai be 26\u00b0C on October 10?",
+      "condition_id": "0xf8d1347219b4086a177f124ce1f7b4b2b62eb463d36d75ae21c4c7b004ac51a9",
+      "temp_str": "26\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "25653687616708192866281086179913674500710479406640079601348376034231762515348",
+      "token_yes": "45510068863731958094827480217583277801213982782571311682464443912054462912273",
+      "model_prob_gaussian": 0.33905312041498736,
+      "entry_prob": 0.35,
+      "model_prob": 0.3391,
+      "edge": -0.3109,
+      "net_edge": 0.2995,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-10T01:18:14.231177+00:00",
+      "entry_fee": 0.1625,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "paris-daily-weather",
+      "event_date": "2026-10-10",
+      "question": "Will the highest temperature in Paris be 17\u00b0C on October 10?",
+      "condition_id": "0x2fbbfb9069733a0f7cedfbba8dccf5e87e84a49f1a5c191cab9d03480a05e948",
+      "temp_str": "17\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "107096953999203993663206246215324887042616910469256511877115479757199321918062",
+      "token_yes": "27543550795945271432240337802327854484967132887151777401696117148762810845284",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.395,
+      "model_prob": 0.4895,
+      "edge": -0.1155,
+      "net_edge": 0.1036,
+      "size_usd": 5.0,
+      "forecast_temp_c": 16.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 17.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-10T01:18:14.436336+00:00",
+      "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
   "closed_trades": [
@@ -112993,5 +113049,5 @@
   "n_lost": 2948,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-10T00:43:10.215398+00:00"
+  "last_updated": "2026-10-10T01:18:14.436916+00:00"
 }
