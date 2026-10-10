@@ -1,5 +1,5 @@
 {
-  "bankroll": 8755.931899999934,
+  "bankroll": 8750.721999999934,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-10T12:16:08.122296+00:00",
       "entry_fee": 0.175,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "amsterdam-daily-weather",
+      "event_date": "2026-10-10",
+      "question": "Will the highest temperature in Amsterdam be 14\u00b0C on October 10?",
+      "condition_id": "0xf63bd8e6c9c4dfb6bc949a9428666ab1590ee44dbbbdbfe5da40556edba84cf3",
+      "temp_str": "14\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "30634062207225105135354243819369005908641352515281951229245737545448113818581",
+      "token_yes": "77808672072457764809831359531849833682411867811168358242847177865359942338144",
+      "model_prob_gaussian": 0.2665968269423974,
+      "entry_prob": 0.16049999999999998,
+      "model_prob": 0.2666,
+      "edge": -0.5729,
+      "net_edge": 0.5662,
+      "size_usd": 5.0,
+      "forecast_temp_c": 14.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 14.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-10T13:39:14.649785+00:00",
+      "entry_fee": 0.2099,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -113441,5 +113469,5 @@
   "n_lost": 2954,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-10T13:18:35.029717+00:00"
+  "last_updated": "2026-10-10T13:39:14.650436+00:00"
 }
