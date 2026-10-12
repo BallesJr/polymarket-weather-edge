@@ -1,5 +1,5 @@
 {
-  "bankroll": 8705.251699999932,
+  "bankroll": 8700.095499999932,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-12T12:16:01.527145+00:00",
       "entry_fee": 0.165,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "buenos-aires-daily-weather",
+      "event_date": "2026-10-12",
+      "question": "Will the highest temperature in Buenos Aires be 17\u00b0C on October 12?",
+      "condition_id": "0xea227557544ec784cfe098428a97ead3292a887424921449176ccfc3e35f7b7a",
+      "temp_str": "17\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "12131716122064319154648217083449142808667915444378472040434043985815527784046",
+      "token_yes": "16210142820475828502350889337192490419162851779825018404647147333352639013091",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.375,
+      "model_prob": 0.2311,
+      "edge": -0.3939,
+      "net_edge": 0.3822,
+      "size_usd": 5.0,
+      "forecast_temp_c": 14.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 16.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-12T14:41:36.207052+00:00",
+      "entry_fee": 0.1562,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -114785,5 +114813,5 @@
   "n_lost": 2991,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-12T14:18:15.004886+00:00"
+  "last_updated": "2026-10-12T14:41:36.207927+00:00"
 }
