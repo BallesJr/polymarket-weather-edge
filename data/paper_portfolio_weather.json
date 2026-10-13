@@ -1,5 +1,5 @@
 {
-  "bankroll": 8679.522399999934,
+  "bankroll": 8674.333599999934,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-13T04:12:44.737491+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "qingdao-daily-weather",
+      "event_date": "2026-10-13",
+      "question": "Will the highest temperature in Qingdao be 22\u00b0C on October 13?",
+      "condition_id": "0xcf64612b029bd775e68d564c6ef03dfdf0a1276b7a9ad2bfb751355a76319569",
+      "temp_str": "22\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "112924235402308931311634917878071295067894868239481484730841533725215947376465",
+      "token_yes": "97896974181849669963984832343858784807856646189565644209909411023469828093501",
+      "model_prob_gaussian": 0.11192472259997947,
+      "entry_prob": 0.245,
+      "model_prob": 0.1119,
+      "edge": -0.6431,
+      "net_edge": 0.6339,
+      "size_usd": 5.0,
+      "forecast_temp_c": 23.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-13T04:43:34.641087+00:00",
+      "entry_fee": 0.1888,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -115317,5 +115345,5 @@
   "n_lost": 3003,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-13T04:12:44.737997+00:00"
+  "last_updated": "2026-10-13T04:43:34.808307+00:00"
 }
