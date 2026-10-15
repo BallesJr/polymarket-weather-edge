@@ -1,5 +1,5 @@
 {
-  "bankroll": 8701.645999999928,
+  "bankroll": 8696.495999999928,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -477,6 +477,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "houston-daily-weather",
+      "event_date": "2026-10-15",
+      "question": "Will the highest temperature in Houston be between 88-89\u00b0F on October 15?",
+      "condition_id": "0x12f2ab4f9a291935f493888392b93ab5e7a656d52e46cfeaf484f607c0920221",
+      "temp_str": "between 88-89\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "11320121267646154900946952186087558239403733790591162206261698215299839805446",
+      "token_yes": "52715009849382431024214804964477319269365140510168956605566252457108561771822",
+      "model_prob_gaussian": 0.1922643734936379,
+      "entry_prob": 0.4,
+      "model_prob": 0.1923,
+      "edge": -0.4077,
+      "net_edge": 0.3957,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.5,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-15T01:17:13.282148+00:00",
+      "entry_fee": 0.15,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -116437,5 +116465,5 @@
   "n_lost": 3029,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-15T00:41:27.693516+00:00"
+  "last_updated": "2026-10-15T01:17:13.282919+00:00"
 }
