@@ -1,5 +1,5 @@
 {
-  "bankroll": 8660.332299999927,
+  "bankroll": 8655.152299999927,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -585,6 +585,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-15T05:46:45.147479+00:00",
       "entry_fee": 0.1888,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chongqing-daily-weather",
+      "event_date": "2026-10-15",
+      "question": "Will the highest temperature in Chongqing be 23\u00b0C on October 15?",
+      "condition_id": "0x4555b430c6b4ed3ad603d76c622ad09a4143f83f81271a7b2f1d5db5a78be765",
+      "temp_str": "23\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "87515239275164959778699116619085854177349720975928237423004037319409691586442",
+      "token_yes": "732594328250341773417341724104723520394188058213009990918483787405633933512",
+      "model_prob_gaussian": 0.008808509252227249,
+      "entry_prob": 0.28,
+      "model_prob": 0.0088,
+      "edge": -0.7112,
+      "net_edge": 0.7011,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 23.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-15T06:47:40.773351+00:00",
+      "entry_fee": 0.18,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -116661,5 +116689,5 @@
   "n_lost": 3033,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-15T06:15:52.345581+00:00"
+  "last_updated": "2026-10-15T06:47:40.774223+00:00"
 }
