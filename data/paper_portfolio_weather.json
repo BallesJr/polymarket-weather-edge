@@ -1,5 +1,5 @@
 {
-  "bankroll": 8690.847199999926,
+  "bankroll": 8685.670999999926,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -221,6 +221,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-16T15:43:00.659573+00:00",
       "entry_fee": 0.15,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "seattle-daily-weather",
+      "event_date": "2026-10-16",
+      "question": "Will the highest temperature in Seattle be between 74-75\u00b0F on October 16?",
+      "condition_id": "0x0e6bebf7e1843d9cb67763fc41d5cf45470ff3c162813d826dd6817950602dea",
+      "temp_str": "between 74-75\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "47968375506622894690691717737937876231454542040827432184831863327546109369741",
+      "token_yes": "89742351957586521782172826932255850281509619525415780896524316939299866648003",
+      "model_prob_gaussian": 0.13499249666838187,
+      "entry_prob": 0.29500000000000004,
+      "model_prob": 0.135,
+      "edge": -0.57,
+      "net_edge": 0.5596,
+      "size_usd": 5.0,
+      "forecast_temp_c": 22.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.2,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-16T21:45:37.006355+00:00",
+      "entry_fee": 0.1762,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -117193,5 +117221,5 @@
   "n_lost": 3056,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-16T21:11:46.483277+00:00"
+  "last_updated": "2026-10-16T21:45:37.007091+00:00"
 }
