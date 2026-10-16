@@ -1,5 +1,5 @@
 {
-  "bankroll": 8697.024999999925,
+  "bankroll": 8691.863699999925,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -305,6 +305,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-16T02:48:08.109331+00:00",
       "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "manila-daily-weather",
+      "event_date": "2026-10-16",
+      "question": "Will the highest temperature in Manila be 34\u00b0C on October 16?",
+      "condition_id": "0x31e2447d53340e0cc3bedba2052af7803c9508ef5d1b397054c7de67ebb6c802",
+      "temp_str": "34\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "75206025414613112758680892963780223833076953409313780721324501857943915653913",
+      "token_yes": "58584878125321801049890803863979844816680809780695839565624357831822809823092",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.355,
+      "model_prob": 0.2311,
+      "edge": -0.4139,
+      "net_edge": 0.4025,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 33.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-16T03:09:21.117147+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -116941,5 +116969,5 @@
   "n_lost": 3047,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-16T02:48:08.110182+00:00"
+  "last_updated": "2026-10-16T03:09:21.118090+00:00"
 }
