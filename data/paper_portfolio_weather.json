@@ -1,5 +1,5 @@
 {
-  "bankroll": 8638.610299999926,
+  "bankroll": 8633.450299999926,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-17T09:05:44.926184+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "paris-daily-weather",
+      "event_date": "2026-10-17",
+      "question": "Will the highest temperature in Paris be 16\u00b0C on October 17?",
+      "condition_id": "0xdaf0dab5fe0237adb57e8c4a6597ed6d80c6251211eb844405c10d04307c7341",
+      "temp_str": "16\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "79241996538827563940760044545315737338123832320700790828916033906975465186788",
+      "token_yes": "96001351219875844498838140150827708164056550813666943139433390574708222620584",
+      "model_prob_gaussian": 0.3029362276662373,
+      "entry_prob": 0.36,
+      "model_prob": 0.3029,
+      "edge": -0.3371,
+      "net_edge": 0.3256,
+      "size_usd": 5.0,
+      "forecast_temp_c": 15.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 15.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-17T11:17:25.786304+00:00",
+      "entry_fee": 0.16,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -117613,5 +117641,5 @@
   "n_lost": 3063,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-17T10:43:30.219894+00:00"
+  "last_updated": "2026-10-17T11:17:25.787088+00:00"
 }
