@@ -1,5 +1,5 @@
 {
-  "bankroll": 8555.900099999926,
+  "bankroll": 8550.743899999927,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-18T13:17:23.876828+00:00",
       "entry_fee": 0.1526,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "nyc-daily-weather",
+      "event_date": "2026-10-18",
+      "question": "Will the highest temperature in New York City be between 58-59\u00b0F on October 18?",
+      "condition_id": "0xf7fdb17381dc5bb45db99dc0826859fb7335e01468c9ebfbcbbc2f15863d8d52",
+      "temp_str": "between 58-59\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "78529464559254308333960171280421721362294659661187951269070545019725189894708",
+      "token_yes": "46243740099467393037209311705240882837197006974775128335488072050038696932378",
+      "model_prob_gaussian": 0.5186382621603589,
+      "entry_prob": 0.375,
+      "model_prob": 0.5186,
+      "edge": -0.1064,
+      "net_edge": 0.0947,
+      "size_usd": 5.0,
+      "forecast_temp_c": 14.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 11.1,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-18T15:08:54.463211+00:00",
+      "entry_fee": 0.1562,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -118285,5 +118313,5 @@
   "n_lost": 3079,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-18T15:02:30.855834+00:00"
+  "last_updated": "2026-10-18T15:08:54.464027+00:00"
 }
