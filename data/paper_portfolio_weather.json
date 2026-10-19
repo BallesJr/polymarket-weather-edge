@@ -1,5 +1,5 @@
 {
-  "bankroll": 8556.088099999928,
+  "bankroll": 8550.884399999928,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -361,6 +361,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-19T02:11:41.713870+00:00",
       "entry_fee": 0.1625,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "wuhan-daily-weather",
+      "event_date": "2026-10-19",
+      "question": "Will the highest temperature in Wuhan be 18\u00b0C on October 19?",
+      "condition_id": "0x9c9b0950bf2c20608a450843431887dcaa4010a83725e0d76a17919a8562dfee",
+      "temp_str": "18\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "33710557667591971909636835612868140092471719604739438708619535980020086456550",
+      "token_yes": "62923697647661824810415798704398060118985439647945950412347377503487336235921",
+      "model_prob_gaussian": 0.055250509852934476,
+      "entry_prob": 0.18500000000000005,
+      "model_prob": 0.0553,
+      "edge": -0.7597,
+      "net_edge": 0.7522,
+      "size_usd": 5.0,
+      "forecast_temp_c": 19.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 18.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-19T02:43:47.016462+00:00",
+      "entry_fee": 0.2037,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -118593,5 +118621,5 @@
   "n_lost": 3092,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-19T02:11:41.924226+00:00"
+  "last_updated": "2026-10-19T02:43:47.152072+00:00"
 }
