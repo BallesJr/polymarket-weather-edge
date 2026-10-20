@@ -1,5 +1,5 @@
 {
-  "bankroll": 8430.823099999929,
+  "bankroll": 8425.650599999928,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -669,6 +669,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-20T03:11:58.094023+00:00",
       "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "shanghai-daily-weather",
+      "event_date": "2026-10-20",
+      "question": "Will the highest temperature in Shanghai be 29\u00b0C on October 20?",
+      "condition_id": "0x9cfa9287d0734044ae56cc7a073fe9bd7a8d699cd608af2623ab870034957756",
+      "temp_str": "29\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "13396919300398738411026350931140035229784368758641031731863809940561117680622",
+      "token_yes": "94571462464804818336656139814258552144333880480876830245330272600716484431450",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.31000000000000005,
+      "model_prob": 0.4895,
+      "edge": -0.2005,
+      "net_edge": 0.1898,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 29.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-20T03:44:59.071338+00:00",
+      "entry_fee": 0.1725,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -119349,5 +119377,5 @@
   "n_lost": 3107,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-20T03:11:58.094632+00:00"
+  "last_updated": "2026-10-20T03:44:59.071925+00:00"
 }
