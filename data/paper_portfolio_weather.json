@@ -1,5 +1,5 @@
 {
-  "bankroll": 8427.560199999925,
+  "bankroll": 8422.383999999925,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -977,6 +977,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-21T11:46:42.979864+00:00",
       "entry_fee": 0.1825,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "madrid-daily-weather",
+      "event_date": "2026-10-21",
+      "question": "Will the highest temperature in Madrid be 19\u00b0C on October 21?",
+      "condition_id": "0x93a94354f3c7e3a8cbe9d1abf87687d829e06936f6a0f11626a6b08e3e412f91",
+      "temp_str": "19\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "15213497662037447701105046849908942357215290354023837776270398959361646991413",
+      "token_yes": "23951011394755279520041669573934491236983350489149855719305393269481338955173",
+      "model_prob_gaussian": 0.33905312041498736,
+      "entry_prob": 0.29500000000000004,
+      "model_prob": 0.3391,
+      "edge": -0.3659,
+      "net_edge": 0.3555,
+      "size_usd": 5.0,
+      "forecast_temp_c": 18.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 17.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-21T12:19:12.835237+00:00",
+      "entry_fee": 0.1762,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -120133,5 +120161,5 @@
   "n_lost": 3114,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-21T11:46:42.980591+00:00"
+  "last_updated": "2026-10-21T12:19:12.835968+00:00"
 }
