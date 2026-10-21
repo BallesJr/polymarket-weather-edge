@@ -1,5 +1,5 @@
 {
-  "bankroll": 8422.383999999925,
+  "bankroll": 8417.232499999925,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -1005,6 +1005,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-21T12:19:12.835237+00:00",
       "entry_fee": 0.1762,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "istanbul-daily-weather",
+      "event_date": "2026-10-21",
+      "question": "Will the highest temperature in Istanbul be 15\u00b0C or below on October 21?",
+      "condition_id": "0xa2c3be967af4345f2f8cadd26df88633de8f4fb59c0956e7af140b147d073865",
+      "temp_str": "15\u00b0C or below",
+      "direction": "BUY_NO",
+      "token_id": "10787868976585468184358455309147092245454306870363965248135035414445456004308",
+      "token_yes": "84346852566435836126818852940998934795812834420796891756477345987260215006283",
+      "model_prob_gaussian": 0.001,
+      "entry_prob": 0.394,
+      "model_prob": 0.001,
+      "edge": -0.605,
+      "net_edge": 0.5931,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-21T12:41:33.038952+00:00",
+      "entry_fee": 0.1515,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -120161,5 +120189,5 @@
   "n_lost": 3114,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-21T12:19:12.835968+00:00"
+  "last_updated": "2026-10-21T12:41:33.039865+00:00"
 }
