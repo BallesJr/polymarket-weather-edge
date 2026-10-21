@@ -1,5 +1,5 @@
 {
-  "bankroll": 8417.232499999925,
+  "bankroll": 8412.021299999926,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -1005,6 +1005,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-21T12:41:33.038952+00:00",
       "entry_fee": 0.1515,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "denver-daily-weather",
+      "event_date": "2026-10-21",
+      "question": "Will the highest temperature in Denver be between 76-77\u00b0F on October 21?",
+      "condition_id": "0xab45dbf532dfc5a305ee91cf05ef1a5b0db01fc14bc7a1f5a245db73ed638b7a",
+      "temp_str": "between 76-77\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "100071879886867753884423194052816262387780393317838739263147502110824396540709",
+      "token_yes": "23777385358933848698457551694313572046745056226898679228618187881990657586113",
+      "model_prob_gaussian": 0.5186382621603591,
+      "entry_prob": 0.15500000000000003,
+      "model_prob": 0.5186,
+      "edge": -0.3264,
+      "net_edge": 0.3199,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 24.4,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-21T20:46:45.541439+00:00",
+      "entry_fee": 0.2112,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -120189,5 +120217,5 @@
   "n_lost": 3115,
   "n_expired": 8,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-21T20:17:56.207065+00:00"
+  "last_updated": "2026-10-21T20:46:45.542231+00:00"
 }
