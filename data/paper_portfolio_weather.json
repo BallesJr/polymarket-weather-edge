@@ -1,5 +1,5 @@
 {
-  "bankroll": 8321.96389999993,
+  "bankroll": 8316.81269999993,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -1229,6 +1229,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-23T00:41:53.810189+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
+    },
+    {
+      "series_slug": "miami-daily-weather",
+      "event_date": "2026-10-23",
+      "question": "Will the highest temperature in Miami be between 82-83\u00b0F on October 23?",
+      "condition_id": "0x32e6280e228d3187edb552319f05579b1fb6fe38402b41ad05266d61b94b633e",
+      "temp_str": "between 82-83\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "4900597107644357400168925400861224290304245167110546929200141162426146713064",
+      "token_yes": "87622846768583088067725180734989884279006024390443366933345192786538469098528",
+      "model_prob_gaussian": 0.0013596702576732511,
+      "entry_prob": 0.395,
+      "model_prob": 0.0014,
+      "edge": -0.6036,
+      "net_edge": 0.5917,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.7,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-23T01:55:22.494485+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -121001,5 +121029,5 @@
   "n_lost": 3131,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-23T01:36:15.633015+00:00"
+  "last_updated": "2026-10-23T01:55:22.495314+00:00"
 }
