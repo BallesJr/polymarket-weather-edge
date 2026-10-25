@@ -1,5 +1,5 @@
 {
-  "bankroll": 8375.91079999992,
+  "bankroll": 8370.75829999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-25T06:56:50.639448+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "milan-daily-weather",
+      "event_date": "2026-10-25",
+      "question": "Will the highest temperature in Milan be 15\u00b0C on October 25?",
+      "condition_id": "0xce806ae1551e49682732ef0a1d12a3008bf59576b00b89df3c1fbd38fa6820f4",
+      "temp_str": "15\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "79752060104687498679749982397760464198154762967278187079357778989483833107479",
+      "token_yes": "46933444335630831520199932581047468313523091086943150843882627959588784229555",
+      "model_prob_gaussian": 0.37378586717787265,
+      "entry_prob": 0.39,
+      "model_prob": 0.3738,
+      "edge": -0.2362,
+      "net_edge": 0.2243,
+      "size_usd": 5.0,
+      "forecast_temp_c": 14.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 12.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-25T09:11:35.040944+00:00",
+      "entry_fee": 0.1525,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -122345,5 +122373,5 @@
   "n_lost": 3187,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-25T08:44:54.377905+00:00"
+  "last_updated": "2026-10-25T09:11:35.041473+00:00"
 }
