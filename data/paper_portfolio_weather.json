@@ -1,5 +1,5 @@
 {
-  "bankroll": 8349.34959999992,
+  "bankroll": 8344.16719999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -585,6 +585,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-27T10:44:07.299408+00:00",
       "entry_fee": 0.1775,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "cape-town-daily-weather",
+      "event_date": "2026-10-27",
+      "question": "Will the highest temperature in Cape Town be 23\u00b0C on October 27?",
+      "condition_id": "0xd8a03d2a5881a6da371dff806c47f8729018388fd992ebcf511ab699c9ade6a1",
+      "temp_str": "23\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "55328649806982101023480030656597255228896563477410927098357656443066108914913",
+      "token_yes": "107062235732036093726167606917501504420679444040603034725784598211748961908638",
+      "model_prob_gaussian": 0.001,
+      "entry_prob": 0.27049999999999996,
+      "model_prob": 0.001,
+      "edge": -0.7285,
+      "net_edge": 0.7186,
+      "size_usd": 5.0,
+      "forecast_temp_c": 26.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 23.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-27T11:43:43.380314+00:00",
+      "entry_fee": 0.1824,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -123941,5 +123969,5 @@
   "n_lost": 3220,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-27T11:14:05.996021+00:00"
+  "last_updated": "2026-10-27T11:43:43.381155+00:00"
 }
