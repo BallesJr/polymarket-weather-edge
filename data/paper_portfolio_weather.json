@@ -1,5 +1,5 @@
 {
-  "bankroll": 8364.827099999919,
+  "bankroll": 8359.677099999919,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-27T08:13:04.569459+00:00",
       "entry_fee": 0.1762,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chicago-daily-weather",
+      "event_date": "2026-10-27",
+      "question": "Will the highest temperature in Chicago be between 68-69\u00b0F on October 27?",
+      "condition_id": "0xc84cb0d0f82fcc5b99dca4996fe05fbdaf76e577201e67e4f99f2bab0aacf335",
+      "temp_str": "between 68-69\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "27104483713991055484012663576055210865399962059447503155359329413076889774969",
+      "token_yes": "1222519741274666803350491817442086151494628910716221976551223912751820483530",
+      "model_prob_gaussian": 0.19678423501297743,
+      "entry_prob": 0.4,
+      "model_prob": 0.1968,
+      "edge": -0.4032,
+      "net_edge": 0.3912,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 13.3,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-27T08:43:28.013494+00:00",
+      "entry_fee": 0.15,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -123857,5 +123885,5 @@
   "n_lost": 3220,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-27T08:13:04.688911+00:00"
+  "last_updated": "2026-10-27T08:43:28.014176+00:00"
 }
