@@ -1,5 +1,5 @@
 {
-  "bankroll": 8404.093399999916,
+  "bankroll": 8398.925899999917,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -421,6 +421,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "seattle-daily-weather",
+      "event_date": "2026-10-27",
+      "question": "Will the highest temperature in Seattle be between 54-55\u00b0F on October 27?",
+      "condition_id": "0xb84dcc343cae471f8ad71f23b22b42836eecc4b802df73e317f57fb93958eaf3",
+      "temp_str": "between 54-55\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "110996610987365845979048528185266469368795863704262276445431150722138993086948",
+      "token_yes": "96312597199788754694175581746174855171449766797074189177545046777828091472600",
+      "model_prob_gaussian": 0.11640141642505453,
+      "entry_prob": 0.32999999999999996,
+      "model_prob": 0.1164,
+      "edge": -0.5536,
+      "net_edge": 0.5425,
+      "size_usd": 5.0,
+      "forecast_temp_c": 11.2,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-27T02:39:19.236471+00:00",
+      "entry_fee": 0.1675,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -123577,5 +123605,5 @@
   "n_lost": 3214,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-27T02:10:39.125128+00:00"
+  "last_updated": "2026-10-27T02:39:19.399658+00:00"
 }
