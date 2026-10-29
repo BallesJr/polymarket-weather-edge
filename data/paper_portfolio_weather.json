@@ -1,5 +1,5 @@
 {
-  "bankroll": 8392.887899999918,
+  "bankroll": 8407.380699999918,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -57,34 +57,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
-    },
-    {
-      "series_slug": "wellington-daily-weather",
-      "event_date": "2026-10-29",
-      "question": "Will the highest temperature in Wellington be 18\u00b0C on October 29?",
-      "condition_id": "0x134d19c9348d953fe0befd04fb90e6e192ea5de1b7ac782e994a6affaccad579",
-      "temp_str": "18\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "72062554770623053672828948346740796691792906047002866138540698125691582466537",
-      "token_yes": "11160776475367883055739205216150572153649623050942104368491000527266486015885",
-      "model_prob_gaussian": 0.26659682694239806,
-      "entry_prob": 0.345,
-      "model_prob": 0.2666,
-      "edge": -0.3884,
-      "net_edge": 0.3771,
-      "size_usd": 5.0,
-      "forecast_temp_c": 17.1,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 17.0,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-10-29T00:24:38.985643+00:00",
-      "entry_fee": 0.1638,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
     },
     {
       "series_slug": "amsterdam-daily-weather",
@@ -125054,12 +125026,40 @@
       "pnl_usd": 9.984,
       "resolved_temp": 24.4,
       "obs_source": ""
+    },
+    {
+      "series_slug": "wellington-daily-weather",
+      "event_date": "2026-10-29",
+      "question": "Will the highest temperature in Wellington be 18\u00b0C on October 29?",
+      "condition_id": "0x134d19c9348d953fe0befd04fb90e6e192ea5de1b7ac782e994a6affaccad579",
+      "temp_str": "18\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "72062554770623053672828948346740796691792906047002866138540698125691582466537",
+      "token_yes": "11160776475367883055739205216150572153649623050942104368491000527266486015885",
+      "model_prob_gaussian": 0.26659682694239806,
+      "entry_prob": 0.345,
+      "model_prob": 0.2666,
+      "edge": -0.3884,
+      "net_edge": 0.3771,
+      "size_usd": 5.0,
+      "forecast_temp_c": 17.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 17.0,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-10-29T00:24:38.985643+00:00",
+      "entry_fee": 0.1638,
+      "closed_at": "2026-10-29T11:31:00.163683+00:00",
+      "pnl_usd": 9.329,
+      "resolved_temp": 17.2,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -1534.7909,
-  "n_won": 1305,
+  "total_pnl": -1525.4619,
+  "n_won": 1306,
   "n_lost": 3252,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-29T11:16:39.914753+00:00"
+  "last_updated": "2026-10-29T11:43:12.846175+00:00"
 }
