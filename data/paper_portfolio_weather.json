@@ -1,5 +1,5 @@
 {
-  "bankroll": 8399.299799999917,
+  "bankroll": 8394.123599999917,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -249,6 +249,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-29T00:24:39.162703+00:00",
       "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "helsinki-daily-weather",
+      "event_date": "2026-10-29",
+      "question": "Will the highest temperature in Helsinki be 10\u00b0C on October 29?",
+      "condition_id": "0x38b80cc9d2e092c62f30c8c9f0fd0b53a395087ea2850dfb5a6e4122399ddb21",
+      "temp_str": "10\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "70454796525586530714871485230224563130965963298669883219055923205237973537958",
+      "token_yes": "106658961159674097361706808402252682351985179042308858696384204281262689039693",
+      "model_prob_gaussian": 0.4750317433975593,
+      "entry_prob": 0.29500000000000004,
+      "model_prob": 0.475,
+      "edge": -0.23,
+      "net_edge": 0.2196,
+      "size_usd": 5.0,
+      "forecast_temp_c": 10.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 9.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-29T00:40:31.743564+00:00",
+      "entry_fee": 0.1762,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -124781,5 +124809,5 @@
   "n_lost": 3250,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-29T00:24:39.329467+00:00"
+  "last_updated": "2026-10-29T00:40:31.744283+00:00"
 }
