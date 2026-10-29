@@ -1,5 +1,5 @@
 {
-  "bankroll": 8386.705899999917,
+  "bankroll": 8381.539599999916,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-29T14:18:22.036998+00:00",
       "entry_fee": 0.171,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "sao-paulo-daily-weather",
+      "event_date": "2026-10-29",
+      "question": "Will the highest temperature in Sao Paulo be 20\u00b0C on October 29?",
+      "condition_id": "0x89635caa8c4ccd088896c03b34db3e4a08914f1ef6ada42c56e94d0f0de4ff9e",
+      "temp_str": "20\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "14649849163230492798406284690046939637108155328782364837836574511079288409220",
+      "token_yes": "23555543230630044653206941624532654334472899773716543698824341062160947961977",
+      "model_prob_gaussian": 0.023689934558614456,
+      "entry_prob": 0.33499999999999996,
+      "model_prob": 0.0237,
+      "edge": -0.6413,
+      "net_edge": 0.6302,
+      "size_usd": 5.0,
+      "forecast_temp_c": 22.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 20.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-29T14:40:36.084183+00:00",
+      "entry_fee": 0.1663,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -125173,5 +125201,5 @@
   "n_lost": 3252,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-29T14:18:22.037936+00:00"
+  "last_updated": "2026-10-29T14:40:36.085052+00:00"
 }
