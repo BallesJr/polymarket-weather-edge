@@ -1,5 +1,5 @@
 {
-  "bankroll": 8391.876899999917,
+  "bankroll": 8386.705899999917,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -445,6 +445,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-29T13:42:44.849040+00:00",
       "entry_fee": 0.15,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "munich-daily-weather",
+      "event_date": "2026-10-29",
+      "question": "Will the highest temperature in Munich be 10\u00b0C on October 29?",
+      "condition_id": "0xdb2d6878ca873e1570f8cc7d5dc2e5eda3113a95f2d36c363c2f708044b8456a",
+      "temp_str": "10\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "98957528418322398413489101400010362674624786548286479803547969047292295099753",
+      "token_yes": "87949106706981962416554755061789239313897387196516894265382366557823109678691",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.31599999999999995,
+      "model_prob": 0.4895,
+      "edge": -0.1945,
+      "net_edge": 0.1837,
+      "size_usd": 5.0,
+      "forecast_temp_c": 10.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 10.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-29T14:18:22.036998+00:00",
+      "entry_fee": 0.171,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -125145,5 +125173,5 @@
   "n_lost": 3252,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-29T13:42:44.850054+00:00"
+  "last_updated": "2026-10-29T14:18:22.037936+00:00"
 }
