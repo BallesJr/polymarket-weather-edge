@@ -1,5 +1,5 @@
 {
-  "bankroll": 8378.807499999913,
+  "bankroll": 8373.653799999913,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -449,6 +449,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "nyc-daily-weather",
+      "event_date": "2026-10-30",
+      "question": "Will the highest temperature in New York City be between 70-71\u00b0F on October 30?",
+      "condition_id": "0x1cf86c978e58e55e5e1bad8e57a0dd2377895ec810430b95b7b476b98ce29f30",
+      "temp_str": "between 70-71\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "61980819051061390467820062324097007829981540671851992338997439690809656187959",
+      "token_yes": "37499207005486074609493803630935504772658328573975691976382885999881940605396",
+      "model_prob_gaussian": 0.6324760857499521,
+      "entry_prob": 0.385,
+      "model_prob": 0.6325,
+      "edge": 0.0175,
+      "net_edge": 0.0057,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.2,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-30T02:42:03.566138+00:00",
+      "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -125537,5 +125565,5 @@
   "n_lost": 3262,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-30T02:10:13.832344+00:00"
+  "last_updated": "2026-10-30T02:42:03.566710+00:00"
 }
