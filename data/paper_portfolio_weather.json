@@ -1,5 +1,5 @@
 {
-  "bankroll": 8295.842199999915,
+  "bankroll": 8290.680899999916,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-10-31T16:44:07.509617+00:00",
       "entry_fee": 0.2087,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "houston-daily-weather",
+      "event_date": "2026-10-31",
+      "question": "Will the highest temperature in Houston be between 82-83\u00b0F on October 31?",
+      "condition_id": "0x10704271d4cbd1113d2a76bb0a4cc50a5070c06ec431eec2753489ff4bef92a9",
+      "temp_str": "between 82-83\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "97264652010666219886830900987184993662724560159328137189390467189395013895953",
+      "token_yes": "390268085494465714523092430352225507380654138791816860538658274095491884681",
+      "model_prob_gaussian": 0.4896290044377242,
+      "entry_prob": 0.355,
+      "model_prob": 0.4896,
+      "edge": -0.1554,
+      "net_edge": 0.144,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 28.3,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-31T18:47:26.270111+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -126573,5 +126601,5 @@
   "n_lost": 3293,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-31T18:16:12.766974+00:00"
+  "last_updated": "2026-10-31T18:47:26.270768+00:00"
 }
