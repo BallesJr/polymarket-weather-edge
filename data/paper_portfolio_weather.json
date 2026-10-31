@@ -1,5 +1,5 @@
 {
-  "bankroll": 8341.583599999914,
+  "bankroll": 8336.427399999915,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -309,6 +309,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "miami-daily-weather",
+      "event_date": "2026-10-31",
+      "question": "Will the highest temperature in Miami be between 84-85\u00b0F on October 31?",
+      "condition_id": "0x4762b82159850ae5746baaeec731e2fc254ae28625a1b14fca82107e60440c2a",
+      "temp_str": "between 84-85\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "1479032073253763501164218377635811194511969918059873670384897594149589543250",
+      "token_yes": "12373601891262307374128694915022339703797360408643662529953491760374389664211",
+      "model_prob_gaussian": 0.44167301884225096,
+      "entry_prob": 0.375,
+      "model_prob": 0.4417,
+      "edge": -0.1833,
+      "net_edge": 0.1716,
+      "size_usd": 5.0,
+      "forecast_temp_c": 28.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-10-31T04:09:40.661876+00:00",
+      "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "openmeteo"
     }
   ],
   "closed_trades": [
@@ -126097,5 +126125,5 @@
   "n_lost": 3282,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-10-31T03:40:24.850690+00:00"
+  "last_updated": "2026-10-31T04:09:40.662535+00:00"
 }
