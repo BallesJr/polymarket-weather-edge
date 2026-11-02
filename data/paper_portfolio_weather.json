@@ -1,5 +1,5 @@
 {
-  "bankroll": 8177.682299999918,
+  "bankroll": 8172.528599999918,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-02T11:48:27.248313+00:00",
       "entry_fee": 0.21,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "denver-daily-weather",
+      "event_date": "2026-11-02",
+      "question": "Will the highest temperature in Denver be between 48-49\u00b0F on November 2?",
+      "condition_id": "0xd862731a40b412bb7f0acd11bd75e05b1e59f7b3588559185cd93c8ab494a9af",
+      "temp_str": "between 48-49\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "83486806479197571218386041584299064758111207321348218566642634068697361306140",
+      "token_yes": "49090878950076608098608895892600399531733929528477672709012342438675794297689",
+      "model_prob_gaussian": 0.46847689302672424,
+      "entry_prob": 0.385,
+      "model_prob": 0.4685,
+      "edge": -0.1465,
+      "net_edge": 0.1347,
+      "size_usd": 5.0,
+      "forecast_temp_c": 9.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 9.5,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-02T17:45:00.211632+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -127861,5 +127889,5 @@
   "n_lost": 3332,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-02T17:15:47.974920+00:00"
+  "last_updated": "2026-11-02T17:45:00.212593+00:00"
 }
