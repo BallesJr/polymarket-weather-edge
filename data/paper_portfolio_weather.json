@@ -1,5 +1,5 @@
 {
-  "bankroll": 8206.324399999918,
+  "bankroll": 8201.124399999917,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -445,6 +445,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-02T02:13:57.432105+00:00",
       "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "taipei-daily-weather",
+      "event_date": "2026-11-02",
+      "question": "Will the highest temperature in Taipei be 30\u00b0C on November 2?",
+      "condition_id": "0xa2e9147565e245e0a066d3a40094a0866a802228cf30100eb2292745dae25341",
+      "temp_str": "30\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "96981679307122337759045212535368311292706241372963054562351559304948445337907",
+      "token_yes": "18824063587203570691773243870187745347628240801396420147287871390480513521723",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.19999999999999996,
+      "model_prob": 0.4895,
+      "edge": -0.3105,
+      "net_edge": 0.3025,
+      "size_usd": 5.0,
+      "forecast_temp_c": 27.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 30.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-02T02:30:23.068595+00:00",
+      "entry_fee": 0.2,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -127553,5 +127581,5 @@
   "n_lost": 3321,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-02T02:13:57.432657+00:00"
+  "last_updated": "2026-11-02T02:30:23.069245+00:00"
 }
