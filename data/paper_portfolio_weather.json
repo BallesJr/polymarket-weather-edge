@@ -1,5 +1,5 @@
 {
-  "bankroll": 8211.478099999918,
+  "bankroll": 8206.324399999918,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-02T01:12:25.791105+00:00",
       "entry_fee": 0.195,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "paris-daily-weather",
+      "event_date": "2026-11-02",
+      "question": "Will the highest temperature in Paris be 11\u00b0C on November 2?",
+      "condition_id": "0x30264c72c3c8e1a5514df4f2df85896253fc98de44e8719b92c3cd9a506e94de",
+      "temp_str": "11\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "18310131153988031813314054777796594711750193885123418436080041942785454746441",
+      "token_yes": "4476095139550493206458062476352821822123797944973148761938945725664013714945",
+      "model_prob_gaussian": 0.48581413802573975,
+      "entry_prob": 0.385,
+      "model_prob": 0.4858,
+      "edge": -0.1292,
+      "net_edge": 0.1174,
+      "size_usd": 5.0,
+      "forecast_temp_c": 11.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 9.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-02T02:13:57.432105+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -127525,5 +127553,5 @@
   "n_lost": 3321,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-02T01:44:15.975297+00:00"
+  "last_updated": "2026-11-02T02:13:57.432657+00:00"
 }
