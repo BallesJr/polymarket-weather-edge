@@ -1,5 +1,5 @@
 {
-  "bankroll": 8163.4919999999165,
+  "bankroll": 8158.3206999999165,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-03T01:43:22.509559+00:00",
       "entry_fee": 0.16,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "shanghai-daily-weather",
+      "event_date": "2026-11-03",
+      "question": "Will the highest temperature in Shanghai be 20\u00b0C on November 3?",
+      "condition_id": "0x4c804fe56eff49570556738cc0057f93577caf7a157f2c46e9e838eef0945afe",
+      "temp_str": "20\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "72144652687932690700410621761269674000109234719505806341116820640319036553514",
+      "token_yes": "102100799700594890172533942991098099930959240497605011477103759059739715165765",
+      "model_prob_gaussian": 0.48581413802573964,
+      "entry_prob": 0.31499999999999995,
+      "model_prob": 0.4858,
+      "edge": -0.1992,
+      "net_edge": 0.1884,
+      "size_usd": 5.0,
+      "forecast_temp_c": 20.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 20.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-03T03:13:09.571641+00:00",
+      "entry_fee": 0.1713,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -128253,5 +128281,5 @@
   "n_lost": 3339,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-03T02:54:09.970285+00:00"
+  "last_updated": "2026-11-03T03:13:09.572244+00:00"
 }
