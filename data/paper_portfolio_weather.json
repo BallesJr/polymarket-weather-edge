@@ -1,5 +1,5 @@
 {
-  "bankroll": 8133.121999999916,
+  "bankroll": 8127.954499999916,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -613,6 +613,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-03T10:44:46.081207+00:00",
       "entry_fee": 0.1787,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "munich-daily-weather",
+      "event_date": "2026-11-03",
+      "question": "Will the highest temperature in Munich be 6\u00b0C on November 3?",
+      "condition_id": "0x136be6420590d4ef7e451595eb80ad1198c4ec6f0027dff4e0a7eee655c4d931",
+      "temp_str": "6\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "22742888600912494165455511256560089868729436009132925841053604506928291512988",
+      "token_yes": "98028089990485481479773748605514361667035041657380499674734381204829555192126",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.32999999999999996,
+      "model_prob": 0.4059,
+      "edge": -0.2641,
+      "net_edge": 0.253,
+      "size_usd": 5.0,
+      "forecast_temp_c": 6.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 5.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-03T11:15:40.644118+00:00",
+      "entry_fee": 0.1675,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -128561,5 +128589,5 @@
   "n_lost": 3343,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-03T10:44:46.081888+00:00"
+  "last_updated": "2026-11-03T11:15:40.644795+00:00"
 }
