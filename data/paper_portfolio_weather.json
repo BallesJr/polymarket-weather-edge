@@ -1,5 +1,5 @@
 {
-  "bankroll": 8216.477799999913,
+  "bankroll": 8211.324099999913,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -277,6 +277,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-04T00:14:32.063775+00:00",
       "entry_fee": 0.1663,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "kuala-lumpur-daily-weather",
+      "event_date": "2026-11-04",
+      "question": "Will the highest temperature in Kuala Lumpur be 33\u00b0C on November 4?",
+      "condition_id": "0x76af1f71ae07b37df71809bdc8254377a0be8ce3e2d2fbdd6add78159bbaf435",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "1951291524904590613128543580465040942764083848684292641460698781084787939583",
+      "token_yes": "58414450831263378691528527574036971640677933326224857096614389241913235048583",
+      "model_prob_gaussian": 0.19726114779632986,
+      "entry_prob": 0.385,
+      "model_prob": 0.1973,
+      "edge": -0.4177,
+      "net_edge": 0.4059,
+      "size_usd": 5.0,
+      "forecast_temp_c": 31.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 26.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-04T00:44:18.244362+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -128813,5 +128841,5 @@
   "n_lost": 3355,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-04T00:14:32.283351+00:00"
+  "last_updated": "2026-11-04T00:44:18.245193+00:00"
 }
