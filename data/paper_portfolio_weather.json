@@ -1,5 +1,5 @@
 {
-  "bankroll": 8144.713199999916,
+  "bankroll": 8139.545699999916,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -641,6 +641,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-05T12:14:48.296555+00:00",
       "entry_fee": 0.1812,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "amsterdam-daily-weather",
+      "event_date": "2026-11-05",
+      "question": "Will the highest temperature in Amsterdam be 9\u00b0C on November 5?",
+      "condition_id": "0xdaaa5b3c4308daa89faacb4a713b8516de1a459a35fc98aa33a64ffed0ae8be0",
+      "temp_str": "9\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "16152936646513221998218123563216612688794386651149971390137712101506626342312",
+      "token_yes": "82909905180132172066543089081796291511945406374880722846667418315744757653214",
+      "model_prob_gaussian": 0.1972611477963305,
+      "entry_prob": 0.32999999999999996,
+      "model_prob": 0.1973,
+      "edge": -0.4727,
+      "net_edge": 0.4616,
+      "size_usd": 5.0,
+      "forecast_temp_c": 10.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 9.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-05T12:45:21.080789+00:00",
+      "entry_fee": 0.1675,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -129989,5 +130017,5 @@
   "n_lost": 3374,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-05T12:14:48.297763+00:00"
+  "last_updated": "2026-11-05T12:45:21.081834+00:00"
 }
