@@ -1,5 +1,5 @@
 {
-  "bankroll": 8210.225899999914,
+  "bankroll": 8205.055899999914,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -277,6 +277,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-05T00:14:13.934353+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "helsinki-daily-weather",
+      "event_date": "2026-11-05",
+      "question": "Will the highest temperature in Helsinki be 8\u00b0C on November 5?",
+      "condition_id": "0x7ef3739508a0be8f377091bdda5997da5536e69b9e7a72c466a7b127b061e2bc",
+      "temp_str": "8\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "38188259306494337412545489259526722866178651726514816333295380913997177128030",
+      "token_yes": "51957609777004392298368611929240362034072058860034245342960486743497040868584",
+      "model_prob_gaussian": 0.33905312041498703,
+      "entry_prob": 0.31999999999999995,
+      "model_prob": 0.3391,
+      "edge": -0.3409,
+      "net_edge": 0.33,
+      "size_usd": 5.0,
+      "forecast_temp_c": 7.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 7.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-05T00:44:04.917928+00:00",
+      "entry_fee": 0.17,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -129429,5 +129457,5 @@
   "n_lost": 3369,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-05T00:30:39.227690+00:00"
+  "last_updated": "2026-11-05T00:44:04.918615+00:00"
 }
