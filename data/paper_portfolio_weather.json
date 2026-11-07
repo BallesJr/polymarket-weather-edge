@@ -1,5 +1,5 @@
 {
-  "bankroll": 8143.522699999917,
+  "bankroll": 8138.367699999917,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -305,6 +305,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-07T17:43:19.633365+00:00",
       "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "mexico-city-daily-weather",
+      "event_date": "2026-11-07",
+      "question": "Will the highest temperature in Mexico City be 24\u00b0C on November 7?",
+      "condition_id": "0xfcbf9808e186eed80103dc2f8e9ca935d69d66964a542a5e08028da2e7ea44ea",
+      "temp_str": "24\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "23522861413333893446077977425301205690569482167929647354582340670662006783158",
+      "token_yes": "8163740310947905901434696961661720731886499463947185251005547310257697077519",
+      "model_prob_gaussian": 0.4342222771268042,
+      "entry_prob": 0.38,
+      "model_prob": 0.4342,
+      "edge": -0.1858,
+      "net_edge": 0.174,
+      "size_usd": 5.0,
+      "forecast_temp_c": 24.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 22.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-07T19:44:59.898407+00:00",
+      "entry_fee": 0.155,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -131361,5 +131389,5 @@
   "n_lost": 3421,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-07T19:14:00.045670+00:00"
+  "last_updated": "2026-11-07T19:44:59.899073+00:00"
 }
