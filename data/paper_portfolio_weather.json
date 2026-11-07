@@ -1,5 +1,5 @@
 {
-  "bankroll": 8114.648999999917,
+  "bankroll": 8109.487699999917,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-07T05:42:20.746320+00:00",
       "entry_fee": 0.155,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "ankara-daily-weather",
+      "event_date": "2026-11-07",
+      "question": "Will the highest temperature in Ankara be 7\u00b0C on November 7?",
+      "condition_id": "0x99e1bcc074e7b9bbadec4dad30fecfdc04a93c52f90fde752d7fe024f332d535",
+      "temp_str": "7\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "93231146590443926503371297122091229869151605246744026024417460610800804247980",
+      "token_yes": "90686408758683014354733210322598879319326307305292080499903914338151385560421",
+      "model_prob_gaussian": 0.33905312041498714,
+      "entry_prob": 0.355,
+      "model_prob": 0.3391,
+      "edge": -0.3059,
+      "net_edge": 0.2945,
+      "size_usd": 5.0,
+      "forecast_temp_c": 7.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 7.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-07T10:46:19.179915+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -131249,5 +131277,5 @@
   "n_lost": 3411,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-07T10:12:20.369687+00:00"
+  "last_updated": "2026-11-07T10:46:19.180509+00:00"
 }
