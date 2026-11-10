@@ -1,5 +1,5 @@
 {
-  "bankroll": 8127.48039999992,
+  "bankroll": 8122.325399999921,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-10T01:12:42.289686+00:00",
       "entry_fee": 0.1963,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "tel-aviv-daily-weather",
+      "event_date": "2026-11-10",
+      "question": "Will the highest temperature in Tel Aviv be 23\u00b0C on November 10?",
+      "condition_id": "0x99d23d4d9629f37d934b7e25d905a04cd14d8bf88abe226aa731019abdd566d7",
+      "temp_str": "23\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "93803178673836475234040078409022427293933566352528496827317824060642322119971",
+      "token_yes": "30040043082399431383978907729142372275704559858880562549273535653074839631203",
+      "model_prob_gaussian": 0.4750317433975593,
+      "entry_prob": 0.38,
+      "model_prob": 0.475,
+      "edge": -0.145,
+      "net_edge": 0.1332,
+      "size_usd": 5.0,
+      "forecast_temp_c": 23.2,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 13.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-10T02:45:43.011686+00:00",
+      "entry_fee": 0.155,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -132901,5 +132929,5 @@
   "n_lost": 3455,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-10T02:12:00.437320+00:00"
+  "last_updated": "2026-11-10T02:45:43.012574+00:00"
 }
