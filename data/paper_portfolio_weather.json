@@ -1,5 +1,5 @@
 {
-  "bankroll": 8054.21679999992,
+  "bankroll": 8049.05799999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -365,6 +365,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
+    },
+    {
+      "series_slug": "busan-daily-weather",
+      "event_date": "2026-11-11",
+      "question": "Will the highest temperature in Busan be 18\u00b0C on November 11?",
+      "condition_id": "0x64bb2f7284a66eaa639a0b7f2cb546bb2b46910a2abd103a3b1f973488613907",
+      "temp_str": "18\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "46344068582181933514546444576488394670101001211487779671221250452340675092471",
+      "token_yes": "35801867695212930039147402062303123113412187134134892967451209581598576789144",
+      "model_prob_gaussian": 0.13729338208966468,
+      "entry_prob": 0.365,
+      "model_prob": 0.1373,
+      "edge": -0.4977,
+      "net_edge": 0.4861,
+      "size_usd": 5.0,
+      "forecast_temp_c": 16.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 12.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-11T01:40:39.219454+00:00",
+      "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
   "closed_trades": [
@@ -133517,5 +133545,5 @@
   "n_lost": 3475,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-11T01:11:18.089056+00:00"
+  "last_updated": "2026-11-11T01:40:39.220294+00:00"
 }
