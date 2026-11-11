@@ -1,5 +1,5 @@
 {
-  "bankroll": 7998.362399999921,
+  "bankroll": 7993.209899999921,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -641,6 +641,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-11T12:44:52.739674+00:00",
       "entry_fee": 0.2013,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chicago-daily-weather",
+      "event_date": "2026-11-11",
+      "question": "Will the highest temperature in Chicago be between 54-55\u00b0F on November 11?",
+      "condition_id": "0x1d00752e5c8df2ba8aa16001746220e0ebc1463882e4d46f433948e33e532ac4",
+      "temp_str": "between 54-55\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "100397400344508718668551534838937243168837559038508454728265775233443282499840",
+      "token_yes": "38188842013485318842519165981048513540070608039875412029848186062444733886729",
+      "model_prob_gaussian": 0.270296431776298,
+      "entry_prob": 0.39,
+      "model_prob": 0.2703,
+      "edge": -0.3397,
+      "net_edge": 0.3278,
+      "size_usd": 5.0,
+      "forecast_temp_c": 13.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 7.8,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-11T13:47:28.577020+00:00",
+      "entry_fee": 0.1525,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -133965,5 +133993,5 @@
   "n_lost": 3479,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-11T13:14:41.070817+00:00"
+  "last_updated": "2026-11-11T13:47:28.577800+00:00"
 }
