@@ -133928,7 +133928,7 @@
       "entry_fee": 0.2125,
       "closed_at": "2026-11-11T16:31:20.151646+00:00",
       "pnl_usd": 28.1208,
-      "resolved_temp": null,
+      "resolved_temp": 15.0,
       "obs_source": "metar"
     },
     {
@@ -133993,5 +133993,5 @@
   "n_lost": 3485,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-11T16:45:22.837529+00:00"
+  "last_updated": "2026-11-11T17:15:42.983961+00:00"
 }
