@@ -1,5 +1,5 @@
 {
-  "bankroll": 8046.40509999992,
+  "bankroll": 8041.23379999992,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-12T09:45:34.877877+00:00",
       "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "london-daily-weather",
+      "event_date": "2026-11-12",
+      "question": "Will the highest temperature in London be 8\u00b0C on November 12?",
+      "condition_id": "0xb3509b38bd27bd59224feaad6099ac80d31c1835f6ab994d1f2172623f3648e8",
+      "temp_str": "8\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "61392890505254545787780885084453944217340076941808763872176005123355989985801",
+      "token_yes": "8020202919299167100679257348928723769484050908322937193698305096109724538342",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.31499999999999995,
+      "model_prob": 0.4059,
+      "edge": -0.2791,
+      "net_edge": 0.2683,
+      "size_usd": 5.0,
+      "forecast_temp_c": 8.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 7.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-12T10:27:50.710562+00:00",
+      "entry_fee": 0.1713,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -134553,5 +134581,5 @@
   "n_lost": 3496,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-12T10:18:30.400888+00:00"
+  "last_updated": "2026-11-12T10:27:50.711269+00:00"
 }
