@@ -1,5 +1,5 @@
 {
-  "bankroll": 8154.991099999919,
+  "bankroll": 8149.839899999919,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-13T10:38:20.369682+00:00",
       "entry_fee": 0.1963,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "toronto-daily-weather",
+      "event_date": "2026-11-13",
+      "question": "Will the highest temperature in Toronto be 5\u00b0C on November 13?",
+      "condition_id": "0x92df3cbb54326aa2046f2b29ffbb5646066310003bc6381df4c43bc4d9d8b897",
+      "temp_str": "5\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "9578786611814449385344091701987471860828849050041777716213296107819871620109",
+      "token_yes": "9620944648046793837385076138377865931374637778991871202203316129374366309466",
+      "model_prob_gaussian": 0.1372933820896649,
+      "entry_prob": 0.395,
+      "model_prob": 0.1373,
+      "edge": -0.4677,
+      "net_edge": 0.4558,
+      "size_usd": 5.0,
+      "forecast_temp_c": 3.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 2.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-13T14:35:21.137212+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -135309,5 +135337,5 @@
   "n_lost": 3509,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-13T14:08:24.347801+00:00"
+  "last_updated": "2026-11-13T14:35:21.138019+00:00"
 }
