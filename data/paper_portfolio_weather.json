@@ -1,5 +1,5 @@
 {
-  "bankroll": 8148.5415999999195,
+  "bankroll": 8143.390399999919,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -253,6 +253,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "miami-daily-weather",
+      "event_date": "2026-11-14",
+      "question": "Will the highest temperature in Miami be between 72-73\u00b0F on November 14?",
+      "condition_id": "0xaaa5963763e3dbaeb5066d222432fab2bd5e53f0e34b9d9294e569ebcc2f1426",
+      "temp_str": "between 72-73\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "94963646869501534511783744233182130057597777361417298391762642165310113437686",
+      "token_yes": "19374752374476775945821162052293984394922773553586468018134647073264587613865",
+      "model_prob_gaussian": 0.23894350296561717,
+      "entry_prob": 0.395,
+      "model_prob": 0.2389,
+      "edge": -0.3661,
+      "net_edge": 0.3542,
+      "size_usd": 5.0,
+      "forecast_temp_c": 21.5,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-14T02:07:58.426184+00:00",
+      "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
     }
   ],
   "closed_trades": [
@@ -135505,5 +135533,5 @@
   "n_lost": 3523,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-14T01:47:33.800792+00:00"
+  "last_updated": "2026-11-14T02:07:58.427129+00:00"
 }
