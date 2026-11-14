@@ -1,5 +1,5 @@
 {
-  "bankroll": 8153.692999999919,
+  "bankroll": 8148.5415999999195,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -249,6 +249,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-14T00:02:29.176407+00:00",
       "entry_fee": 0.1675,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "warsaw-daily-weather",
+      "event_date": "2026-11-14",
+      "question": "Will the highest temperature in Warsaw be 7\u00b0C on November 14?",
+      "condition_id": "0x7a780714aae1a5148cb2e759b09d14d2d97a7304243344ad3bb36ea0ae6d05ac",
+      "temp_str": "7\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "58874563328028490513315455401924631988968845891282603749854686433949084024531",
+      "token_yes": "87447530458987221485469062627878411856806467474897911106205758191763822039118",
+      "model_prob_gaussian": 0.023689934558614456,
+      "entry_prob": 0.39449999999999996,
+      "model_prob": 0.0237,
+      "edge": -0.5818,
+      "net_edge": 0.5699,
+      "size_usd": 5.0,
+      "forecast_temp_c": 4.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 5.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-14T00:31:34.135134+00:00",
+      "entry_fee": 0.1514,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -135477,5 +135505,5 @@
   "n_lost": 3522,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-14T00:02:29.177167+00:00"
+  "last_updated": "2026-11-14T00:31:34.136057+00:00"
 }
