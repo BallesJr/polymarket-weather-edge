@@ -1,6 +1,8 @@
 # POLYMARKET WEATHER EDGE BOT
 
-This project builds an automated paper trading bot that exploits a systematic mispricing in Polymarket's daily temperature markets. I noticed that the market consistently overprices extreme temperature outcomes (YES side), so I built a pipeline that combines live METAR observations from each market's resolution station and Open-Meteo forecasts with a Gaussian probability model to trade the NO side. The live entry rule is an explicit NO-price band validated on historical trade buckets; every trade records the full set of weather features so a Random Forest calibrator can be retrained on clean data and reintroduced as a gate.
+This project is a live test of one hypothesis: that Polymarket's daily temperature markets overprice extreme outcomes (the YES side). **The live test rejected it.** Since the data fixes of June 2026, 3,724 resolved paper trades won 31.1% of the time against an average entry price of 31.6%, and lost money at a statistically significant rate (t = -2.36). See [Paper trading results](#paper-trading-results).
+
+To test the hypothesis I built an automated paper trading bot with a pipeline that combines live METAR observations from each market's resolution station and Open-Meteo forecasts with a Gaussian probability model to trade the NO side. The live entry rule is an explicit NO-price band validated on historical trade buckets; every trade records the full set of weather features so a Random Forest calibrator can be retrained on clean data and reintroduced as a gate.
 
 ---
 
@@ -49,18 +51,24 @@ This project builds an automated paper trading bot that exploits a systematic mi
 
 ## PAPER TRADING RESULTS
 
-The bot is currently live in paper trading mode. Live portfolio state (bankroll, P&L, win rate, and open positions) is persisted to `data/paper_portfolio_weather.json` and updated after every cycle. The numbers below are a snapshot, last updated **2026-08-12**. They go stale as the bot keeps running; if that date is old, trust the state file over this section.
+The bot is still running in paper trading mode. Live portfolio state is persisted to `data/paper_portfolio_weather.json` and updated after every cycle. The numbers below are a snapshot taken on **2026-11-15**; trust the state file over this section if that date is old.
 
-The current filter stack (edge ≥ 0.25, BUY_NO only, T+0 only, NO price band) was applied in June 2026. Trades opened before 2026-06-10 ran under since-fixed data bugs (wrong Paris station, unparsed Fahrenheit markets, model-interpolated observations), so out-of-sample validation only counts trades from that date onward.
+The current filter stack (edge ≥ 0.25, BUY_NO only, T+0 only, NO price band) was applied in June 2026. Trades opened before 2026-06-10 ran under since-fixed data bugs (wrong Paris station, unparsed Fahrenheit markets, model-interpolated observations), so the test only counts trades opened from that date onward.
 
-### Snapshot as of 2026-08-12
+### Snapshot as of 2026-11-15
 
-| Clean-regime period | Trades | Win rate vs break-even | Realized PnL |
-|---|---|---|---|
-| 2026-06-10 to 07-10 | 527 | 32.5% vs 29.8% (+2.7 pp) | +$157 |
-| 2026-07-10 to 08-12 | 847 | 28.9% vs 31.3% (-2.4 pp) | -$592 |
+Resolved trades only (expired positions excluded), grouped by opening date. A BUY_NO trade breaks even, before fees, when its win rate equals the NO price paid, so the average entry price is the win rate the strategy has to beat. t is the t-statistic of the mean PnL per trade.
 
-The early clean-regime edge has not held out of sample: since mid-July the bot loses at a statistically significant rate on dollar PnL (t = -2.79) despite healthy volume (25 to 33 opens per day), which points at model calibration rather than the execution pipeline. High-claimed-edge losses were already flagged in July and the drift coincides with peak summer, so heat-wave tail behavior is the main suspect. Under investigation; whole-portfolio figures (bankroll $8,696 of $10,000 initial, total PnL -$1,196) additionally carry the pre-June buggy-era losses.
+| Period | Trades | Win rate | Avg entry price | Realized PnL | t |
+|---|---:|---:|---:|---:|---:|
+| 2026-06-10 to 07-09 | 526 | 32.5% | 29.9% | +$149 | 0.79 |
+| 2026-07-10 to 08-11 | 838 | 28.8% | 31.3% | -$610 | -2.90 |
+| 2026-08-12 to 11-15 | 2,360 | 31.7% | 32.1% | -$632 | -1.73 |
+| **All clean-regime trades** | **3,724** | **31.1%** | **31.6%** | **-$1,093** | **-2.36** |
+
+**Conclusion: the edge is rejected.** The first month looked positive but was not significant (t = 0.79). Over the whole clean regime the strategy wins slightly less often than the price it pays and loses money at a statistically significant rate.
+
+Whole portfolio since 2026-04-23, including the pre-June buggy period: 4,971 closed trades, total realized PnL -$1,847 on a $10,000 paper bankroll with stakes capped at $5.
 
 ---
 
