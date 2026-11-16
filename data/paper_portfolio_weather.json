@@ -1,5 +1,5 @@
 {
-  "bankroll": 8025.8460999999215,
+  "bankroll": 8020.639899999922,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-16T07:01:42.671764+00:00",
       "entry_fee": 0.2037,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "cape-town-daily-weather",
+      "event_date": "2026-11-16",
+      "question": "Will the highest temperature in Cape Town be 25\u00b0C on November 16?",
+      "condition_id": "0xfb1613139c66718437236baff303152eb283e018b08c9a702cd1079a7c06d20c",
+      "temp_str": "25\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "93447241745753704491319430811194543605277034211306276381343885201817786015224",
+      "token_yes": "11838781178919278557391425851826315324374972926951174730005883344099353080843",
+      "model_prob_gaussian": 0.4575854521093141,
+      "entry_prob": 0.17500000000000004,
+      "model_prob": 0.4576,
+      "edge": -0.3674,
+      "net_edge": 0.3602,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-16T09:37:41.840757+00:00",
+      "entry_fee": 0.2062,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -137073,5 +137101,5 @@
   "n_lost": 3557,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-16T09:09:18.093265+00:00"
+  "last_updated": "2026-11-16T09:37:41.841653+00:00"
 }
