@@ -1,5 +1,5 @@
 {
-  "bankroll": 8031.9197999999205,
+  "bankroll": 8026.766099999921,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -389,6 +389,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-17T00:07:41.758463+00:00",
       "entry_fee": 0.1588,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": ""
+    },
+    {
+      "series_slug": "seattle-daily-weather",
+      "event_date": "2026-11-17",
+      "question": "Will the highest temperature in Seattle be between 50-51\u00b0F on November 17?",
+      "condition_id": "0xb3a59954c3483b034e950d339f41d00c5dc73294e438131b7a874d26e1331af2",
+      "temp_str": "between 50-51\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "30040481695167872939752884912671282921947620785517324732411145033265292541875",
+      "token_yes": "59763529046142842255344179555637888795018200082148549220274706965086683540079",
+      "model_prob_gaussian": 0.4025484955851909,
+      "entry_prob": 0.385,
+      "model_prob": 0.4025,
+      "edge": -0.2125,
+      "net_edge": 0.2007,
+      "size_usd": 5.0,
+      "forecast_temp_c": 9.6,
+      "forecast_horizon_days": 0,
+      "data_source": "forecast",
+      "observed_max_c": NaN,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-17T00:36:23.562347+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -137493,5 +137521,5 @@
   "n_lost": 3572,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-17T00:07:41.759085+00:00"
+  "last_updated": "2026-11-17T00:36:23.766919+00:00"
 }
