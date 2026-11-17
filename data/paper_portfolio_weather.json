@@ -1,5 +1,5 @@
 {
-  "bankroll": 8000.855099999921,
+  "bankroll": 7995.693799999921,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-17T18:05:59.570660+00:00",
       "entry_fee": 0.1566,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "nyc-daily-weather",
+      "event_date": "2026-11-17",
+      "question": "Will the highest temperature in New York City be between 56-57\u00b0F on November 17?",
+      "condition_id": "0x26601a0bfc25d27c8ceb317d85cce46b427346d657026eb81ae5a77d71009a38",
+      "temp_str": "between 56-57\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "75209760035207335440967487481524693986592359746863852810637433515526883809159",
+      "token_yes": "52698859719281747627111501405566817576272493502119129429572836185697373788121",
+      "model_prob_gaussian": 0.35006949918260144,
+      "entry_prob": 0.355,
+      "model_prob": 0.3501,
+      "edge": -0.2949,
+      "net_edge": 0.2835,
+      "size_usd": 5.0,
+      "forecast_temp_c": 14.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 14.4,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-17T20:35:03.006606+00:00",
+      "entry_fee": 0.1613,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -137969,5 +137997,5 @@
   "n_lost": 3582,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-17T20:06:13.082742+00:00"
+  "last_updated": "2026-11-17T20:35:03.007215+00:00"
 }
