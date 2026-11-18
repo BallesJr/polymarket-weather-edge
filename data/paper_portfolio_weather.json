@@ -1,5 +1,5 @@
 {
-  "bankroll": 7984.300399999919,
+  "bankroll": 7979.142899999919,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -557,6 +557,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-18T03:35:36.116595+00:00",
       "entry_fee": 0.2013,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "beijing-daily-weather",
+      "event_date": "2026-11-18",
+      "question": "Will the highest temperature in Beijing be 7\u00b0C on November 18?",
+      "condition_id": "0x64ad8b214274503dcc19b017c71c86f55885249a2b26a9b2340f3d6fdbfcecba",
+      "temp_str": "7\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "107966068679973213660361963827390142164641670645199125290669271088029031834900",
+      "token_yes": "24092625414537529803130293785321053066195137474092497793332348725334059773534",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.37,
+      "model_prob": 0.2311,
+      "edge": -0.3989,
+      "net_edge": 0.3872,
+      "size_usd": 5.0,
+      "forecast_temp_c": 5.3,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 6.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-18T04:04:40.061300+00:00",
+      "entry_fee": 0.1575,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -138333,5 +138361,5 @@
   "n_lost": 3589,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-18T03:35:36.117293+00:00"
+  "last_updated": "2026-11-18T04:04:40.062256+00:00"
 }
