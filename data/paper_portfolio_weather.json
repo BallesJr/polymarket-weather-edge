@@ -1,5 +1,5 @@
 {
-  "bankroll": 7962.230199999919,
+  "bankroll": 7957.033899999919,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-18T07:34:25.711642+00:00",
       "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "istanbul-daily-weather",
+      "event_date": "2026-11-18",
+      "question": "Will the highest temperature in Istanbul be 18\u00b0C on November 18?",
+      "condition_id": "0x08eb1d5c342cf11204828b8e15144e559faa588c66081791c463540f5618b235",
+      "temp_str": "18\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "16440082493126181866450523987508911173754941330037463777474019397139503132768",
+      "token_yes": "57110232204929578141791156626055768513109129875101659908622426717537884658674",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.21499999999999997,
+      "model_prob": 0.4895,
+      "edge": -0.2955,
+      "net_edge": 0.2871,
+      "size_usd": 5.0,
+      "forecast_temp_c": 18.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 18.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-18T10:11:11.352298+00:00",
+      "entry_fee": 0.1963,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -138529,5 +138557,5 @@
   "n_lost": 3596,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-18T09:34:28.447807+00:00"
+  "last_updated": "2026-11-18T10:11:11.352944+00:00"
 }
