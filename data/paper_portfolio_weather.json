@@ -1,5 +1,5 @@
 {
-  "bankroll": 7974.615299999919,
+  "bankroll": 7988.1287999999195,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -29,34 +29,6 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
-    },
-    {
-      "series_slug": "london-daily-weather",
-      "event_date": "2026-11-18",
-      "question": "Will the highest temperature in London be 13\u00b0C on November 18?",
-      "condition_id": "0xf40e7553233b63d01caa305f363c298fc1f6a091c01fde33eb39fd214be9e322",
-      "temp_str": "13\u00b0C",
-      "direction": "BUY_NO",
-      "token_id": "23642633317243776562227582331966639380601553975082562233260079744784613722933",
-      "token_yes": "91937561029799096926982748374416470416918592567786297827497665266076934829354",
-      "model_prob_gaussian": 0.2665968269423974,
-      "entry_prob": 0.37,
-      "model_prob": 0.2666,
-      "edge": -0.3634,
-      "net_edge": 0.3517,
-      "size_usd": 5.0,
-      "forecast_temp_c": 12.1,
-      "forecast_horizon_days": 0,
-      "data_source": "observation",
-      "observed_max_c": 10.0,
-      "source_model": "band_rule",
-      "status": "OPEN",
-      "opened_at": "2026-11-18T01:13:03.839964+00:00",
-      "entry_fee": 0.1575,
-      "closed_at": "",
-      "pnl_usd": 0.0,
-      "resolved_temp": null,
-      "obs_source": "metar"
     },
     {
       "series_slug": "toronto-daily-weather",
@@ -139026,12 +138998,40 @@
       "pnl_usd": -5.1674,
       "resolved_temp": 13.6,
       "obs_source": "metar"
+    },
+    {
+      "series_slug": "london-daily-weather",
+      "event_date": "2026-11-18",
+      "question": "Will the highest temperature in London be 13\u00b0C on November 18?",
+      "condition_id": "0xf40e7553233b63d01caa305f363c298fc1f6a091c01fde33eb39fd214be9e322",
+      "temp_str": "13\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "23642633317243776562227582331966639380601553975082562233260079744784613722933",
+      "token_yes": "91937561029799096926982748374416470416918592567786297827497665266076934829354",
+      "model_prob_gaussian": 0.2665968269423974,
+      "entry_prob": 0.37,
+      "model_prob": 0.2666,
+      "edge": -0.3634,
+      "net_edge": 0.3517,
+      "size_usd": 5.0,
+      "forecast_temp_c": 12.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 10.0,
+      "source_model": "band_rule",
+      "status": "WON",
+      "opened_at": "2026-11-18T01:13:03.839964+00:00",
+      "entry_fee": 0.1575,
+      "closed_at": "2026-11-19T01:01:16.019018+00:00",
+      "pnl_usd": 8.356,
+      "resolved_temp": 14.0,
+      "obs_source": "metar"
     }
   ],
-  "total_pnl": -1927.1764,
-  "n_won": 1443,
+  "total_pnl": -1918.8204,
+  "n_won": 1444,
   "n_lost": 3608,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-19T00:33:52.088319+00:00"
+  "last_updated": "2026-11-19T01:07:37.065747+00:00"
 }
