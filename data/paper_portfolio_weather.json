@@ -1,5 +1,5 @@
 {
-  "bankroll": 7944.230299999917,
+  "bankroll": 7939.074099999917,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -617,6 +617,34 @@
       "pnl_usd": 0.0,
       "resolved_temp": null,
       "obs_source": ""
+    },
+    {
+      "series_slug": "madrid-daily-weather",
+      "event_date": "2026-11-20",
+      "question": "Will the highest temperature in Madrid be 15\u00b0C on November 20?",
+      "condition_id": "0x91bd3a8bedc805c6f7922d8a51dbf15c89e1a5987ea1d6265325cf5049fadfa7",
+      "temp_str": "15\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "71074484790693082728985839448117365160699232434502512994407656165867245545143",
+      "token_yes": "67707696974787034244831400745933322974321814371218894608535753211963448614960",
+      "model_prob_gaussian": 0.08984282819068778,
+      "entry_prob": 0.375,
+      "model_prob": 0.0898,
+      "edge": -0.5352,
+      "net_edge": 0.5235,
+      "size_usd": 5.0,
+      "forecast_temp_c": 13.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 10.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-20T04:02:00.076030+00:00",
+      "entry_fee": 0.1562,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
     }
   ],
   "closed_trades": [
@@ -139929,5 +139957,5 @@
   "n_lost": 3628,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-20T03:37:47.086800+00:00"
+  "last_updated": "2026-11-20T04:02:00.265950+00:00"
 }
