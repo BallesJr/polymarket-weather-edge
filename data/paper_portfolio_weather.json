@@ -1,5 +1,5 @@
 {
-  "bankroll": 7955.036599999916,
+  "bankroll": 7949.8628999999155,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -473,6 +473,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-21T02:07:54.720890+00:00",
       "entry_fee": 0.1939,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "tokyo-daily-weather",
+      "event_date": "2026-11-21",
+      "question": "Will the highest temperature in Tokyo be 15\u00b0C on November 21?",
+      "condition_id": "0x7707525e23ae61c4f3a652af5628b01b75842b013ea172424cc2bb7bfefae6c8",
+      "temp_str": "15\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "99070295470569790182021506264274096626023963775774572293011503187574814743869",
+      "token_yes": "101417892352372615075596166653871912915128407232503921245805020532827419484357",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.30500000000000005,
+      "model_prob": 0.4895,
+      "edge": -0.2055,
+      "net_edge": 0.1949,
+      "size_usd": 5.0,
+      "forecast_temp_c": 14.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 15.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-21T03:02:03.232603+00:00",
+      "entry_fee": 0.1737,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -140573,5 +140601,5 @@
   "n_lost": 3647,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-21T02:37:54.658598+00:00"
+  "last_updated": "2026-11-21T03:02:03.233479+00:00"
 }
