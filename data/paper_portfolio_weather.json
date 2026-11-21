@@ -1,5 +1,5 @@
 {
-  "bankroll": 7976.749199999916,
+  "bankroll": 7971.574199999915,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -501,6 +501,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-21T03:31:47.781022+00:00",
       "entry_fee": 0.165,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "wuhan-daily-weather",
+      "event_date": "2026-11-21",
+      "question": "Will the highest temperature in Wuhan be 18\u00b0C on November 21?",
+      "condition_id": "0xabaa7e1087c975fdad9d87509993e8194a0076b6ffaf48082ed1ca2b2af0cedf",
+      "temp_str": "18\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "11495216112627724397652892367712901935226765534686344573637662779016595135521",
+      "token_yes": "47550383162226708557125341742022894954172369991974594652191625050672813322865",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.30000000000000004,
+      "model_prob": 0.4895,
+      "edge": -0.2105,
+      "net_edge": 0.2,
+      "size_usd": 5.0,
+      "forecast_temp_c": 17.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 18.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-21T05:39:36.434153+00:00",
+      "entry_fee": 0.175,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -140629,5 +140657,5 @@
   "n_lost": 3647,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-21T05:06:46.236227+00:00"
+  "last_updated": "2026-11-21T05:39:36.434880+00:00"
 }
