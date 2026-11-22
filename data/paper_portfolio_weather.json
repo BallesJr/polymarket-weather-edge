@@ -1,5 +1,5 @@
 {
-  "bankroll": 7963.971099999915,
+  "bankroll": 7958.762399999915,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-22T03:37:48.009823+00:00",
       "entry_fee": 0.1575,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "manila-daily-weather",
+      "event_date": "2026-11-22",
+      "question": "Will the highest temperature in Manila be 33\u00b0C on November 22?",
+      "condition_id": "0x4a9894fe9435077316716658e84d8ccc4391a6bb2381e53b83eb4947f803b749",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "59649022048424522401700373218132592847037717251788352788280365243248959294333",
+      "token_yes": "108999539196405147002524228969325294858686182560463636549231275509611092913430",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.16500000000000004,
+      "model_prob": 0.4895,
+      "edge": -0.3455,
+      "net_edge": 0.3386,
+      "size_usd": 5.0,
+      "forecast_temp_c": 32.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 33.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-22T04:35:33.977540+00:00",
+      "entry_fee": 0.2087,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -141273,5 +141301,5 @@
   "n_lost": 3665,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-22T04:02:08.333722+00:00"
+  "last_updated": "2026-11-22T04:35:33.978366+00:00"
 }
