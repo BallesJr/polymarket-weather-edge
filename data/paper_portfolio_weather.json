@@ -1,5 +1,5 @@
 {
-  "bankroll": 8037.516699999912,
+  "bankroll": 8032.334199999912,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -305,6 +305,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-23T03:32:15.917988+00:00",
       "entry_fee": 0.1875,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "singapore-daily-weather",
+      "event_date": "2026-11-23",
+      "question": "Will the highest temperature in Singapore be 33\u00b0C on November 23?",
+      "condition_id": "0xbda5cfc04ee21ed1914ec8487dae6db832b0c4caae01dc4f103e21a25aa83307",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "50854251073321100221533253978614556640832063685971326508969441642665066399503",
+      "token_yes": "79570569312715118314973435302395683849066588063818933280984217551621110888782",
+      "model_prob_gaussian": 0.2310781941048765,
+      "entry_prob": 0.27,
+      "model_prob": 0.2311,
+      "edge": -0.4989,
+      "net_edge": 0.489,
+      "size_usd": 5.0,
+      "forecast_temp_c": 30.8,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-23T04:02:09.668045+00:00",
+      "entry_fee": 0.1825,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -141917,5 +141945,5 @@
   "n_lost": 3680,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-23T03:32:15.918783+00:00"
+  "last_updated": "2026-11-23T04:02:09.669087+00:00"
 }
