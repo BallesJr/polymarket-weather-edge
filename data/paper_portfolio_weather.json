@@ -1,5 +1,5 @@
 {
-  "bankroll": 7999.19879999991,
+  "bankroll": 7994.04759999991,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -529,6 +529,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-25T01:33:56.168187+00:00",
       "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "qingdao-daily-weather",
+      "event_date": "2026-11-25",
+      "question": "Will the highest temperature in Qingdao be 14\u00b0C on November 25?",
+      "condition_id": "0x75844a15e6b695d9034effc4edb019772d1463654d719f97c80605e1600356e0",
+      "temp_str": "14\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "13879654856065882088493795314399004391962101251985572828905024955859955873325",
+      "token_yes": "42387749799769273320138533353894244485080232956633703584231883021962424144212",
+      "model_prob_gaussian": 0.4342222771268039,
+      "entry_prob": 0.395,
+      "model_prob": 0.4342,
+      "edge": -0.1708,
+      "net_edge": 0.1589,
+      "size_usd": 5.0,
+      "forecast_temp_c": 13.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 6.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-25T01:34:59.825807+00:00",
+      "entry_fee": 0.1512,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -143261,5 +143289,5 @@
   "n_lost": 3707,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-25T01:33:56.168988+00:00"
+  "last_updated": "2026-11-25T01:34:59.826505+00:00"
 }
