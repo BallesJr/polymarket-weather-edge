@@ -1,5 +1,5 @@
 {
-  "bankroll": 7987.579399999908,
+  "bankroll": 7982.410599999907,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -445,6 +445,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-26T13:31:41.466820+00:00",
       "entry_fee": 0.1537,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "austin-daily-weather",
+      "event_date": "2026-11-26",
+      "question": "Will the highest temperature in Austin be between 58-59\u00b0F on November 26?",
+      "condition_id": "0x28887cd0e088bc9bcb943bd0312f37c222d0facd3f63f8a6d24cbd76779533bb",
+      "temp_str": "between 58-59\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "5007639749963646010649291461273775264179727098339975279584824010171302401459",
+      "token_yes": "56739029435543766304353820095888346727678665306290992366682320952057777051788",
+      "model_prob_gaussian": 0.4934005074288042,
+      "entry_prob": 0.32499999999999996,
+      "model_prob": 0.4934,
+      "edge": -0.1816,
+      "net_edge": 0.1706,
+      "size_usd": 5.0,
+      "forecast_temp_c": 15.1,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 13.3,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-26T19:31:31.185321+00:00",
+      "entry_fee": 0.1688,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -144801,5 +144829,5 @@
   "n_lost": 3747,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-26T19:02:25.150055+00:00"
+  "last_updated": "2026-11-26T19:31:31.186063+00:00"
 }
