@@ -1,5 +1,5 @@
 {
-  "bankroll": 7893.897999999908,
+  "bankroll": 7888.709199999908,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -781,6 +781,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-26T05:31:33.883752+00:00",
       "entry_fee": 0.175,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "chengdu-daily-weather",
+      "event_date": "2026-11-26",
+      "question": "Will the highest temperature in Chengdu be 15\u00b0C on November 26?",
+      "condition_id": "0x50b67de6c7e62e66179ded0812ddabfe09fb69dc67826bec90dfb96772e66966",
+      "temp_str": "15\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "24806145776708792275983770014600537011164244300927073002637621427004458673920",
+      "token_yes": "54754820173386103102017881013539345651528796216377849636874904050927334068901",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.245,
+      "model_prob": 0.4895,
+      "edge": -0.2655,
+      "net_edge": 0.2563,
+      "size_usd": 5.0,
+      "forecast_temp_c": 13.6,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 15.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-26T06:02:01.326121+00:00",
+      "entry_fee": 0.1888,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -144493,5 +144521,5 @@
   "n_lost": 3734,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-26T05:31:33.884421+00:00"
+  "last_updated": "2026-11-26T06:02:01.326899+00:00"
 }
