@@ -1,5 +1,5 @@
 {
-  "bankroll": 7940.109399999906,
+  "bankroll": 7934.932499999905,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -417,6 +417,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-27T19:02:01.275473+00:00",
       "entry_fee": 0.1663,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "houston-daily-weather",
+      "event_date": "2026-11-27",
+      "question": "Will the highest temperature in Houston be between 62-63\u00b0F on November 27?",
+      "condition_id": "0xdd7133d6556ba9a877cf4d4e5d5643a4580edeb828cdf00d0588f14bf5515b4c",
+      "temp_str": "between 62-63\u00b0F",
+      "direction": "BUY_NO",
+      "token_id": "107912856621068329116046286309125256807680899226599126026450656634588575148314",
+      "token_yes": "97767032574686815720854690269163612398860596280972793701479351486355656214755",
+      "model_prob_gaussian": 0.030072326200095856,
+      "entry_prob": 0.2925,
+      "model_prob": 0.0301,
+      "edge": -0.6774,
+      "net_edge": 0.6671,
+      "size_usd": 5.0,
+      "forecast_temp_c": 18.9,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 16.1,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-27T20:31:33.649289+00:00",
+      "entry_fee": 0.1769,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -145501,5 +145529,5 @@
   "n_lost": 3767,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-27T20:01:48.364847+00:00"
+  "last_updated": "2026-11-27T20:31:33.650257+00:00"
 }
