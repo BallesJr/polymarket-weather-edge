@@ -1,5 +1,5 @@
 {
-  "bankroll": 7945.761499999906,
+  "bankroll": 7940.608999999906,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -528,6 +528,34 @@
       "source_model": "band_rule",
       "status": "OPEN",
       "opened_at": "2026-11-27T05:31:57.995290+00:00",
+      "entry_fee": 0.1525,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "jeddah-daily-weather",
+      "event_date": "2026-11-27",
+      "question": "Will the highest temperature in Jeddah be 33\u00b0C on November 27?",
+      "condition_id": "0x36aa57c979955afc822859b044de24a6d88d30aa93fafa1b1a5f08c4dd1c2fb8",
+      "temp_str": "33\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "109781257721695279624817664756487168877745126719371574965422262014290167533720",
+      "token_yes": "14484150878826798892121022368467518747427691827678339194306405364146929465578",
+      "model_prob_gaussian": 0.23107819410487657,
+      "entry_prob": 0.39,
+      "model_prob": 0.2311,
+      "edge": -0.3789,
+      "net_edge": 0.367,
+      "size_usd": 5.0,
+      "forecast_temp_c": 34.0,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 32.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-27T08:31:39.475780+00:00",
       "entry_fee": 0.1525,
       "closed_at": "",
       "pnl_usd": 0.0,
@@ -145333,5 +145361,5 @@
   "n_lost": 3759,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-27T08:01:42.552384+00:00"
+  "last_updated": "2026-11-27T08:31:39.476515+00:00"
 }
