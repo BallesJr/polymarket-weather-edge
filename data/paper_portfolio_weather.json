@@ -1,5 +1,5 @@
 {
-  "bankroll": 7862.648799999904,
+  "bankroll": 7857.495099999905,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -585,6 +585,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-28T04:01:52.591851+00:00",
       "entry_fee": 0.19,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "guangzhou-daily-weather",
+      "event_date": "2026-11-28",
+      "question": "Will the highest temperature in Guangzhou be 27\u00b0C on November 28?",
+      "condition_id": "0x0e57c92e515379679c6e6941349019ce6b37f6eb709f8e0ca500108a668728eb",
+      "temp_str": "27\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "52717705245654053359882204034838702995308929853118453520772438438211309562495",
+      "token_yes": "63680409764533070566266002113167985946264954659711438074522916144810516038082",
+      "model_prob_gaussian": 0.13729338208966468,
+      "entry_prob": 0.385,
+      "model_prob": 0.1373,
+      "edge": -0.4777,
+      "net_edge": 0.4659,
+      "size_usd": 5.0,
+      "forecast_temp_c": 25.7,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 25.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-28T04:12:08.415963+00:00",
+      "entry_fee": 0.1537,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -145921,5 +145949,5 @@
   "n_lost": 3776,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-28T04:01:52.592904+00:00"
+  "last_updated": "2026-11-28T04:12:08.416927+00:00"
 }
