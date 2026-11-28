@@ -1,5 +1,5 @@
 {
-  "bankroll": 7836.788899999904,
+  "bankroll": 7831.636399999904,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -697,6 +697,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-28T05:32:13.389761+00:00",
       "entry_fee": 0.1787,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "milan-daily-weather",
+      "event_date": "2026-11-28",
+      "question": "Will the highest temperature in Milan be 9\u00b0C on November 28?",
+      "condition_id": "0x0f00dae2d43d4b50d82a0dabdef006d68fc622dbbd2e822b3d02c64f4a7c8ccb",
+      "temp_str": "9\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "45601993690135329622132017982630523878552980918287327528309598226460575322896",
+      "token_yes": "110904037262098412326391612862615311748099287683796939412130766392224701568547",
+      "model_prob_gaussian": 0.40591297866539944,
+      "entry_prob": 0.39,
+      "model_prob": 0.4059,
+      "edge": -0.2041,
+      "net_edge": 0.1922,
+      "size_usd": 5.0,
+      "forecast_temp_c": 8.5,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 6.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-28T06:01:54.795292+00:00",
+      "entry_fee": 0.1525,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -146061,5 +146089,5 @@
   "n_lost": 3777,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-28T05:32:13.390419+00:00"
+  "last_updated": "2026-11-28T06:01:54.795990+00:00"
 }
