@@ -1,5 +1,5 @@
 {
-  "bankroll": 7914.469499999906,
+  "bankroll": 7909.268199999906,
   "initial_bankroll": 10000,
   "positions": [
     {
@@ -445,6 +445,34 @@
       "status": "OPEN",
       "opened_at": "2026-11-28T16:31:46.746868+00:00",
       "entry_fee": 0.1512,
+      "closed_at": "",
+      "pnl_usd": 0.0,
+      "resolved_temp": null,
+      "obs_source": "metar"
+    },
+    {
+      "series_slug": "buenos-aires-daily-weather",
+      "event_date": "2026-11-28",
+      "question": "Will the highest temperature in Buenos Aires be 35\u00b0C on November 28?",
+      "condition_id": "0x6f254557778f18e4f11013e83c4f847bc9e331da644e6e087a8ca574319d0fd2",
+      "temp_str": "35\u00b0C",
+      "direction": "BUY_NO",
+      "token_id": "46050041608100537817926670711781999369297832850602371282453778784525511035121",
+      "token_yes": "44155076451279230833211782192288034012447157418879652796263952058253782091279",
+      "model_prob_gaussian": 0.48946186884544657,
+      "entry_prob": 0.19499999999999995,
+      "model_prob": 0.4895,
+      "edge": -0.3155,
+      "net_edge": 0.3077,
+      "size_usd": 5.0,
+      "forecast_temp_c": 33.4,
+      "forecast_horizon_days": 0,
+      "data_source": "observation",
+      "observed_max_c": 35.0,
+      "source_model": "band_rule",
+      "status": "OPEN",
+      "opened_at": "2026-11-28T17:31:43.219965+00:00",
+      "entry_fee": 0.2013,
       "closed_at": "",
       "pnl_usd": 0.0,
       "resolved_temp": null,
@@ -146257,5 +146285,5 @@
   "n_lost": 3786,
   "n_expired": 9,
   "created_at": "2026-04-23T04:21:15.978125+00:00",
-  "last_updated": "2026-11-28T17:02:47.342705+00:00"
+  "last_updated": "2026-11-28T17:31:43.220699+00:00"
 }
